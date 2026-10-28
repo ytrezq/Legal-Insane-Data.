@@ -1,12 +1,12 @@
 # Contributing
 
 Thank you for helping to make this map more accurate. Corrections from people who know a jurisdiction's
-law and practice are the most valuable contributions. *Une version française suit plus bas.*
+law and practice are the most valuable contributions. (Contributions in French go to the `francais` branch,
+which has its own dataset and guide.)
 
 ## Pull requests: the JSON data only
 
-- Pull requests may only modify the dataset **`data/insanity_procedure_map.json`** (English edition).
-  Corrections to the French text of `data/fr/irresponsabilite_penale.json` are also accepted.
+- Pull requests may only modify the dataset **`data/insanity_procedure_map.json`**.
 - Do not edit the maps (`maps/`), the tools (`tools/`) or the documentation in a pull request: an automatic
   check rejects pull requests that touch anything other than JSON files under `data/`. After a merge, the
   maps are regenerated from the JSON.
@@ -86,26 +86,3 @@ python3 tools/dataset.py validate data/insanity_procedure_map.json
 
 The same check runs automatically on every pull request. To preview the map locally (optional; needs
 Node.js 18+ and Python 3 with Pillow): `sh tools/build.sh`, then open `maps/insanity_procedure_map.svg`.
-
----
-
-## Contribuer (français)
-
-- **Pull requests sur le JSON uniquement** : `data/insanity_procedure_map.json` (édition anglaise, celle qui
-  est maintenue) ; les corrections du texte français de `data/fr/irresponsabilite_penale.json` sont aussi
-  acceptées. Les cartes, les outils et la documentation ne se modifient pas par pull request : les cartes
-  sont régénérées à partir du JSON après fusion. Ne modifiez pas les champs dérivés (`summary`,
-  `cases_to_check`, comptes de la légende, `colour_derived_from_facts`).
-- **Périmètre** : un régime autoritaire n'est pas exclu en tant que tel. Certains pays autoritaires
-  conservent, pour les affaires de droit commun, une justice où la loi sur les droits de la défense reste
-  suivie (hors corruption) : ils sont inclus. Pour d'autres, l'absence d'État de droit fait que la loi n'est
-  qu'indicative (« hint »), pas une obligation à suivre : ils sont écartés (en blanc, avec la raison dans
-  `scope.excluded`).
-- **Couleurs** (dans cet ordre) : noir (aucune irresponsabilité), bleu (l'accusé choisit le moment de
-  l'examen), jaune (irresponsabilité d'abord, sans vrai procès : non-lieu ou procédure amoindrie), violet
-  (irresponsabilité d'abord, mais vrai procès avant la mesure ou sur demande), vert (on juge d'abord), blanc
-  (pas de données ou hors périmètre).
-- **Preuves** : couleur seulement si le mécanisme procédural décisif a été lu dans une source primaire ;
-  sinon blanc avec `hypothetical_colour`. Source avec URL, articles exacts, extrait verbatim de 25 mots au
-  plus dans la langue d'origine, note en anglais, niveau de confiance.
-- **Vérification** : `python3 tools/dataset.py validate data/insanity_procedure_map.json`.

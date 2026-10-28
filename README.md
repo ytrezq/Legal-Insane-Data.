@@ -5,7 +5,8 @@ non-responsibility first?**
 
 A world map, with its dataset, of what criminal procedure does with a person prosecuted for a serious crime
 (e.g. a homicide) whose discernment, or control of their acts, was totally abolished by a mental disorder at
-the time of the act. Law in force on 28 October 2026. *Résumé en français plus bas.*
+the time of the act. Law in force on 28 October 2026. A French edition is kept on the
+[`francais`](https://github.com/ytrezq/Legal-Insane-Data./tree/francais) branch.
 
 ![Map (Mollweide projection)](maps/insanity_procedure_map.jpg)
 
@@ -44,9 +45,7 @@ unverified hypothesis when there is one. Contributions are especially welcome th
 | Path | Content |
 |---|---|
 | `data/insanity_procedure_map.json` | **The dataset** (English): 253 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
-| `data/fr/irresponsabilite_penale.json` | The original French working edition (28 October 2026), from which the English edition was translated. |
 | `maps/insanity_procedure_map.svg` / `.jpg` | English map: interactive SVG and 3740 × 2680 JPG (10 megapixels). |
-| `maps/fr/` | French map (SVG and PNG). |
 | `tools/` | Validation (`dataset.py`) and map generation (`build.sh`, Node.js + Python). |
 
 ## How the data was compiled
@@ -70,8 +69,14 @@ To rebuild locally (Node.js 18+, Python 3 with Pillow):
 ```sh
 python3 tools/dataset.py validate data/insanity_procedure_map.json
 python3 tools/dataset.py refresh data/insanity_procedure_map.json
-sh tools/build.sh          # add --fr to rebuild the French map as well
+sh tools/build.sh
 ```
+
+## French edition
+
+The dataset was first written in French; that original working edition, its French map and French
+documentation are kept on the [`francais`](https://github.com/ytrezq/Legal-Insane-Data./tree/francais) branch, which accepts pull requests in French on
+its own JSON file. The English dataset on `main` was translated from it on 28 October 2026.
 
 ## Credits
 
@@ -81,15 +86,3 @@ DeepStateMap daily data ([cyterat/deepstate-map-data](https://github.com/cyterat
 Transnistria: Natural Earth administrative units; country names:
 [i18n-iso-countries](https://github.com/michaelwittig/node-i18n-iso-countries); projection:
 [d3-geo-projection](https://github.com/d3/d3-geo-projection).
-
----
-
-## En français
-
-Carte du monde (projection de Mollweide) et jeu de données sur le sort procédural d'un accusé dont le
-discernement était totalement aboli au moment des faits : vert, on juge d'abord ; jaune, irresponsabilité
-d'abord, sans vrai procès ; violet, irresponsabilité d'abord, mais jugement ; bleu, l'accusé choisit le
-moment ; noir, aucune irresponsabilité reconnue ; blanc, pas de données ou hors cadrage. Droit en vigueur au
-28 octobre 2026. Le jeu de données maintenu est l'édition anglaise (`data/insanity_procedure_map.json`) ;
-l'édition française d'origine est dans `data/fr/` et la carte française dans `maps/fr/`. Les contributions se
-font par pull request sur le JSON uniquement (voir [CONTRIBUTING.md](CONTRIBUTING.md), section en français).

@@ -501,7 +501,7 @@
   "projection": "Mollweide",
   "n_entries": 253,
   "edition": "English",
-  "translated_from": "irresponsabilite_penale.json (French working edition)",
+  "translated_from": "irresponsabilite_penale.json (French working edition, kept on the francais branch of this repository)",
   "methodology": {
    "question": "When an accused whose discernment was totally abolished by a mental disorder at the time of the act is prosecuted for a serious crime, is non-responsibility established before a trial (which then does not take place, or not really), during the trial, at the accused's choice, or is it not recognised at all?",
    "reference_scenario": "An adult is prosecuted for a serious crime (for example a homicide). The psychiatric evidence indicates that at the time of the act a mental disorder (for example an acute psychosis) totally abolished their discernment or control over their acts; they need secure care.",
@@ -538,7 +538,7 @@
    "extension_28_10_bis": "Extension of 28/10/2026 (22:00): Sri Lanka, Madagascar (second attempt), Ukraine (government-controlled territory) and Moldova (except Transnistria), one agent per country; Albania and North Macedonia relaunched separately. Occupied Ukrainian territories (line of control on 28/10/2026 according to the daily DeepStateMap data, cyterat/deepstate-map-data repository) and Transnistria (Natural Earth administrative units) drawn white with dashes.",
    "extension_28_10_ter": "Additions of 28/10/2026 (23:00): texts supplied by the user (North Macedonia, Madagascar, Entre Ríos, La Pampa, La Rioja); 9 Legal Data Hunter queries run one at a time, without agents, on the jurisdictions still white (Albania and Mauritania classified; Guinea, Rwanda, Zanzibar and Brčko still white; daily quota reached); United Arab Emirates added through web research, without Legal Data Hunter (Federal Decree-Laws No. 31 of 2021 and No. 38 of 2022, official portal).",
    "scope_criterion": "An authoritarian regime is not excluded as such: some authoritarian countries keep, for ordinary criminal cases, a justice system in which the law on defence rights is still followed (corruption aside); they are included. Excluded are those where the lack of rule of law means that the law is only a hint, not a requirement to follow.",
-   "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This English file is the dataset maintained in the repository; the French edition (data/fr/irresponsabilite_penale.json) is the original of 28/10/2026 and prevails for that date in case of a translation discrepancy."
+   "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This file is the dataset maintained on the main branch; the French edition is kept on the francais branch of the repository and prevails for 28/10/2026 in case of a translation discrepancy."
   },
   "contributing": [
    "See CONTRIBUTING.md. Pull requests may only modify the JSON data (data/insanity_procedure_map.json); maps are regenerated from it.",

@@ -12,7 +12,7 @@
 
 ## Checklist
 
-- [ ] Only `data/insanity_procedure_map.json` (or the French text in `data/fr/`) is modified.
+- [ ] Only `data/insanity_procedure_map.json` is modified.
 - [ ] The decisive procedural mechanism (who decides, at what stage, in what kind of hearing) was read in a
       primary source or in scholarship quoting it; otherwise the entry stays white with `hypothetical_colour`.
 - [ ] Each coloured entry has at least one source with a working URL, exact articles in `legal_bases`, and an
