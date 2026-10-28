@@ -1,0 +1,33 @@
+name: Validate data
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull requests may only change the JSON data
+        run: |
+          git diff --name-only "origin/${{ github.base_ref }}...HEAD" | tee changed.txt
+          if grep -v -E '^data/(fr/)?[^/]+\.json$' changed.txt; then
+            echo "::error::Pull requests may only modify the JSON data files under data/ (see CONTRIBUTING.md)."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate the dataset
+        run: python3 tools/dataset.py validate data/insanity_procedure_map.json
+
+      - name: The French edition is valid JSON
+        run: python3 -c "import json; json.load(open('data/fr/irresponsabilite_penale.json', encoding='utf-8'))"

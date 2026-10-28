@@ -1,0 +1,52 @@
+name: Rebuild maps
+
+# After a change to the dataset on main: recompute the derived fields and regenerate the English map
+# (SVG + 10-megapixel JPG), then commit the result.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/insanity_procedure_map.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-maps
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
+      - name: Refresh derived fields
+        run: python3 tools/dataset.py refresh data/insanity_procedure_map.json --geo tools/geo/admin1_subset.geojson
+
+      - name: Build the maps
+        run: sh tools/build.sh
+
+      - name: Commit regenerated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/insanity_procedure_map.json maps/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Regenerate derived fields and maps from the data"
+            git push
+          fi
