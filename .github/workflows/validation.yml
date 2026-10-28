@@ -1,0 +1,31 @@
+name: Validation des données
+
+on:
+  pull_request:
+    branches: [francais]
+
+permissions:
+  contents: read
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Les pull requests ne modifient que le JSON
+        run: |
+          git diff --name-only "origin/${{ github.base_ref }}...HEAD" | tee modifies.txt
+          if grep -v -E '^donnees/[^/]+\.json$' modifies.txt; then
+            echo "::error::Les pull requests ne peuvent modifier que les fichiers JSON de donnees/ (voir CONTRIBUTING.md)."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Valider le jeu de données
+        run: python3 outils/donnees.py valider donnees/irresponsabilite_penale.json

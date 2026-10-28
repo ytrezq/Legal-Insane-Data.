@@ -1,0 +1,18 @@
+{
+  "name": "outils-legal-insane-data",
+  "private": true,
+  "description": "Construit la carte SVG (projection de Mollweide) et ses rendus à partir de donnees/irresponsabilite_penale.json",
+  "scripts": {
+    "construire": "sh construire.sh"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "d3-geo": "3.1.1",
+    "d3-geo-projection": "4.0.0",
+    "i18n-iso-countries": "7.14.0",
+    "topojson-client": "3.1.0",
+    "topojson-server": "3.0.1",
+    "topojson-simplify": "3.0.3",
+    "world-atlas": "2.0.2"
+  }
+}
