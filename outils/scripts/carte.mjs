@@ -147,16 +147,19 @@ const COMPTES = (() => {
   const dessinee = (e) => e.niveau === 'subdivision' && e.parent && unites.has(e.parent) && unites.get(e.parent).includes(e.code);
   const varie = new Set();
   const parUnite = {};
+  const uniforme = {};
   for (const par of new Set(data.entites.filter(dessinee).map((e) => e.parent))) {
     const cols = unites.get(par).map((code) => (entrees.get(code) || entrees.get(par))?.couleur || 'blanc');
     if (new Set(cols).size > 1) {
       varie.add(par);
       for (const c of cols) parUnite[c] = (parUnite[c] || 0) + 1;
+    } else if (!entrees.has(par)) {
+      uniforme[cols[0]] = (uniforme[cols[0]] || 0) + 1; // pays sans entrée nationale, unités de même couleur
     }
   }
   const nPays = {}, nSubs = {};
   for (const k of COULEURS) {
-    nPays[k] = data.entites.filter((e) => e.niveau === 'pays' && !varie.has(e.code) && e.couleur === k).length;
+    nPays[k] = data.entites.filter((e) => e.niveau === 'pays' && !varie.has(e.code) && e.couleur === k).length + (uniforme[k] || 0);
     nSubs[k] = (parUnite[k] || 0) + data.entites.filter((e) => e.niveau === 'subdivision' && !dessinee(e) && e.couleur === k).length;
   }
   return { pays: nPays, subs: nSubs };

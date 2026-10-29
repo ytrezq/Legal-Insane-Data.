@@ -181,6 +181,12 @@ def rafraichir(d, chemin_geo):
             comptes_unites.update(cols)
     n_pays = {k: sum(1 for e in ents if e["niveau"] == "pays" and e["code"] not in varie and e["couleur"] == k)
               for k in COULEURS}
+    # un pays dessiné par unités, de règle uniforme mais sans entrée nationale (Bosnie), compte une fois
+    for par in {e["parent"] for e in ents if dessinee(e)} - varie:
+        if par not in par_code:
+            cols = {(par_code.get(c) or {}).get("couleur", "blanc") for c in unites[par]}
+            if len(cols) == 1:
+                n_pays[cols.pop()] += 1
     n_subs = {k: comptes_unites.get(k, 0) + sum(1 for e in ents if e["niveau"] == "subdivision" and not dessinee(e)
                                                  and e["couleur"] == k) for k in COULEURS}
     d["synthese"] = {

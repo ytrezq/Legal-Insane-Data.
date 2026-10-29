@@ -18,7 +18,7 @@
     "constate l'irresponsabilité et ordonne elle-même la mesure de soins ou de sûreté."
    ],
    "definition": "Aucune porte d'entrée préalable : l'affaire va à un procès ordinaire ; la juridiction de jugement établit d'abord les faits, puis statue sur l'irresponsabilité (acquittement, exemption, verdict spécial) et ordonne elle-même la mesure. L'expertise psychiatrique est ordonnée par les autorités ou le tribunal, non au choix de l'accusé.",
-   "n_pays": 86,
+   "n_pays": 87,
    "n_subdivisions": 23
   },
   "jaune": {
@@ -40,8 +40,8 @@
     "le juge du fond, mêmes preuves) a toujours lieu avant la mesure, ou à la demande de l'accusé."
    ],
    "definition": "L'irresponsabilité est examinée d'abord et détourne l'affaire vers une procédure spéciale, mais la juridiction de jugement tient une vraie audience de fond avec les garanties du procès pénal ordinaire (débat oral contradictoire, administration complète de la preuve des faits, même standard de preuve) avant toute mesure, ou l'accusé peut obtenir un procès complet sur demande malgré l'abolition de son discernement.",
-   "n_pays": 25,
-   "n_subdivisions": 5
+   "n_pays": 26,
+   "n_subdivisions": 3
   },
   "bleu": {
    "libelle": "L'accusé choisit le moment",
@@ -73,8 +73,8 @@
     "et Mauritanie, Érythrée, Cuba, Turquie, Serbie ; tirets : Chypre du Nord, Ukraine occupée, Transnistrie), pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
-   "n_pays": 8,
-   "n_subdivisions": 2
+   "n_pays": 7,
+   "n_subdivisions": 1
   }
  },
  "perimetre": {
@@ -629,25 +629,24 @@
  },
  "synthese": {
   "pays": {
-   "vert": 86,
+   "vert": 87,
    "jaune": 23,
-   "violet": 25,
+   "violet": 26,
    "bleu": 3,
    "noir": 0,
-   "blanc": 8
+   "blanc": 7
   },
   "subdivisions": {
    "vert": 23,
    "jaune": 23,
-   "violet": 5,
+   "violet": 3,
    "bleu": 53,
    "noir": 1,
-   "blanc": 2
+   "blanc": 1
   },
   "pays_federaux_a_regles_differentes": [
    "AR",
    "AU",
-   "BA",
    "GB",
    "TZ",
    "US"
@@ -740,6 +739,7 @@
     "PN",
     "PT",
     "PW",
+    "RW",
     "SB",
     "SC",
     "SE",
@@ -822,6 +822,7 @@
     "AT",
     "AU-QLD",
     "BA-BIH",
+    "BA-BRC",
     "BA-SRP",
     "BR",
     "CH",
@@ -911,13 +912,11 @@
     "US-ID"
    ],
    "blanc": [
-    "BA-BRC",
     "BJ",
     "DJ",
     "GN",
     "GQ",
     "KM",
-    "RW",
     "SO",
     "SS",
     "TZ-ZAN"
@@ -925,8 +924,8 @@
   },
   "confiance": {
    "élevée": 76,
-   "moyenne": 141,
-   "faible": 40
+   "moyenne": 142,
+   "faible": 39
   }
  },
  "cas_a_verifier": [
@@ -1508,7 +1507,7 @@
   {
    "code": "RW",
    "nom": "Rwanda",
-   "couleur": "blanc",
+   "couleur": "vert",
    "confiance": "faible",
    "drapeaux": [
     "confiance_faible"
@@ -1714,10 +1713,9 @@
   {
    "code": "BA-BRC",
    "nom": "District de Brčko",
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "violet",
+   "confiance": "moyenne",
    "drapeaux": [
-    "confiance_faible",
     "verification_incomplete"
    ]
   },
@@ -15313,36 +15311,36 @@
     "sw"
    ],
    "langues_recherche": [
-    "rw",
     "en",
-    "fr"
+    "fr",
+    "rw"
    ],
-   "couleur": "blanc",
+   "couleur": "vert",
    "confiance": "faible",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Irresponsabilité pour trouble mental reconnue en jurisprudence (Cour suprême 2014, ancien Code pénal art. 70 : non-responsabilité constatée en appel + transfert pour soins au CARAES Ndera) ; textes actuels (lois 68/2018 et 027/2019) non lus.",
+    "issue": "Irresponsabilité pour trouble mental constatée par la juridiction de jugement (Cour suprême 2014, en appel, avec soins au CARAES Ndera) ; prise en charge selon l'évaluation par au moins trois médecins demandée par un organe judiciaire (loi 026/2025, art. 35).",
     "qui_declenche_examen": "mixte",
     "accuse_choisit_moment": false,
     "stade_decision": "proces_ordinaire",
     "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Non vérifié sur les textes actuels (illisibles) ; dans les deux affaires connues (2014, 2023) la question est tranchée ou expertisée par la juridiction de jugement, sans filtre préalable observé (valeur par défaut sans valeur probante).",
+    "procedure_remplacement_detail": "Aucune : le CPP de 2019 ne prévoit ni procédure spéciale ni clôture propre à l'irresponsabilité ; seul existe le classement sans suite général du parquet (art. 24, 6°), qui ne suffit pas pour le jaune.",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": true,
-    "inaptitude_a_etre_juge": "Non vérifié sur le texte. Pratique : en 2023 la Haute Cour (Nyanza) a ordonné, à la demande de la défense, une expertise psychiatrique par trois médecins du CARAES Ndera avant de poursuivre le procès ; l'accusé a ensuite continué à être jugé (HRW 2024, d'après Asylos)."
+    "inaptitude_a_etre_juge": "Aucune règle spécifique dans le CPP de 2019 ; l'évaluation par trois médecins sur demande d'un organe judiciaire (loi 026/2025, art. 35) vaut aussi en cours de procédure. Pratique : en 2023, la Haute Cour a ordonné une expertise à la demande de la défense puis a poursuivi le procès."
    },
-   "bases_legales": "Loi n° 68/2018 du 30/08/2018 déterminant les infractions et les peines en général (mod. loi n° 69/2019, qui ne touche que les art. 60, 68, 92, 133, 136, 140, 154, 190, 233, 236, 263) ; loi n° 027/2019 du 19/09/2019 relative à la procédure pénale ; ancien Code pénal (décret-loi 21/77) art. 70, appliqué par la Cour suprême en 2014 ; articles actuels sur le trouble mental non identifiés",
-   "extrait": "",
-   "note": "Blanc : lois 68/2018 et 027/2019 non lues article par article (Legal Data Hunter n'indexe le CPP que d'un bloc ; portails fermés). La loi n° 026/2025 sur les services de santé a un art. 35 sur la personne atteinte d'un trouble mental et poursuivie pénalement, mais seul son titre est lisible. Pratique : la Cour suprême (2014) constate l'irresponsabilité en appel. Tendance vert non prouvée.",
+   "bases_legales": "Loi n° 027/2019 du 19/09/2019 relative à la procédure pénale (art. 24, 6° : classement sans suite ; aucune disposition sur le trouble mental) ; loi n° 026/2025 du 17/09/2025 régissant les services de santé, art. 35 (évaluation par au moins trois médecins sur demande d'un organe judiciaire) ; loi n° 68/2018 déterminant les infractions et les peines (article sur le trouble mental non lu) ; Cour suprême 2014 (ancien CP art. 70).",
+   "extrait": "Upon request from a judicial organ, a person suspected of, or diagnosed with, a mental health condition who is subjected to a criminal proceeding",
+   "note": "Pas de filtre préalable : le CPP de 2019, lu en entier via Legal Data Hunter, ne contient aucune disposition sur le trouble mental, seulement le classement sans suite général du parquet (art. 24, 6°). La loi santé de 2025 (art. 35) prévoit l'évaluation par trois médecins sur demande judiciaire. Pratique (Cour suprême 2014) : irresponsabilité constatée par le juge du fond. CP actuel non lu.",
    "sources": [
     {
-     "titre": "Loi n° 026/2025 du 17/09/2025 régissant les services de santé, art. 35 (titre seul lisible), consultée via Legal Data Hunter (Amategeko)",
-     "url": "https://www.amategeko.gov.rw/view/toc/doc/9823/10318",
+     "titre": "Loi n° 027/2019 du 19/09/2019 relative à la procédure pénale (texte trilingue, Amategeko), art. 24, consultée en entier via Legal Data Hunter",
+     "url": "https://www.amategeko.gov.rw/view/toc/doc/4000/4176",
      "langue": "en"
     },
     {
-     "titre": "Loi n° 027/2019 du 19/09/2019 relative à la procédure pénale (Amategeko), indexée par Legal Data Hunter sans découpage par article",
-     "url": "https://www.amategeko.gov.rw/view/toc/doc/4000/4176",
+     "titre": "Loi n° 026/2025 du 17/09/2025 régissant les services de santé (texte trilingue, Amategeko), art. 35, consultée via Legal Data Hunter",
+     "url": "https://www.amategeko.gov.rw/view/toc/doc/9823/10318",
      "langue": "en"
     },
     {
@@ -15361,18 +15359,8 @@
      "langue": "en"
     },
     {
-     "titre": "MINIJUST – Law n° 69/2019 amending Law n° 68/2018 (Offences and penalties in general 2019)",
-     "url": "https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/Offences_and_penalties_in_general_2019.pdf",
-     "langue": "en"
-    },
-    {
      "titre": "Law n° 68/2018 determining offences and penalties in general (RwandaLII, PDF non lisible)",
      "url": "https://rwandalii.org/akn/rw/act/law/2018/68/eng@2018-09-27",
-     "langue": "en"
-    },
-    {
-     "titre": "Law n° 027/2019 relating to the criminal procedure (RwandaLII, PDF non lisible)",
-     "url": "https://rwandalii.org/akn/rw/act/law/2019/27/eng@2019-11-08",
      "langue": "en"
     }
    ],
@@ -15388,10 +15376,16 @@
      "couleur": "blanc",
      "confiance": "faible",
      "note": "Lois 68/2018 et 027/2019 illisibles (PDF sans texte exploitable, portails fermés aux robots) : articles sur le trouble mental non vérifiés. Pratique seule : Cour suprême 2014 (ancien Code, art. 70) constate l'irresponsabilité en appel et ordonne des soins ; Haute Cour 2023 ordonne une expertise à la demande de la défense. Aucun filtre préalable observé (tendance vert, non prouvée) : blanc."
+    },
+    {
+     "fichier": "pass2/ext_40_ldh.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : lois 68/2018 et 027/2019 non lues article par article (Legal Data Hunter n'indexe le CPP que d'un bloc ; portails fermés). La loi n° 026/2025 sur les services de santé a un art. 35 sur la personne atteinte d'un trouble mental et poursuivie pénalement, mais seul son titre est lisible. Pratique : la Cour suprême (2014) constate l'irresponsabilité en appel. Tendance vert non prouvée."
     }
    ],
-   "fichier_source": "pass2/ext_40_ldh.json",
-   "couleur_agent": "blanc",
+   "fichier_source": "pass2/ext_60_ldh2.json",
+   "couleur_agent": "vert",
    "couleur_deduite_des_faits": "vert",
    "groupe": "Afrique",
    "ocde": false,
@@ -18496,42 +18490,40 @@
     "sr"
    ],
    "langues_recherche": [
-    "bs",
-    "sr",
-    "en"
+    "bs"
    ],
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "violet",
+   "confiance": "moyenne",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "probablement constat judiciaire de l'acte illicite commis en neuračunljivost + placement en établissement de santé (non vérifié)",
+    "issue": "Jugement (presuda) constatant que l'accusé a commis l'acte illicite en état de neuračunljivost, rendu après un glavni pretres ; placement forcé provisoire de six mois en établissement de santé par rješenje séparé, puis procédure de placement devant le juge compétent selon la loi sur la protection des personnes atteintes de troubles mentaux.",
     "qui_declenche_examen": "autorites",
     "accuse_choisit_moment": false,
     "stade_decision": "proces_special",
     "procedure_remplacement": "vrai_proces_special",
-    "procedure_remplacement_detail": "Hypothèse non vérifiée : procédure sur optužnica avec proposition du procureur, comme en FBiH ; texte du ZKP BD sur ce point non lu.",
+    "procedure_remplacement_detail": "Le procureur ne peut clore l'enquête pour neuračunljivost (čl. 224, 1, b) ; il dépose une optužnica avec proposition de constater l'acte illicite commis en neuračunljivost, et le tribunal statue après un glavni pretres, défenseur obligatoire (čl. 389).",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": true,
-    "inaptitude_a_etre_juge": "Non vérifié (probablement prekid postupka jusqu'au rétablissement, comme en FBiH)."
+    "inaptitude_a_etre_juge": "Maladie mentale survenue après les faits : après expertise psychiatrique, le tribunal suspend la procédure par rješenje et adresse l'accusé à l'organe de protection sociale ; reprise si son état s'améliore, clôture en cas de prescription (čl. 207, 388)."
    },
-   "bases_legales": "ZKP BD (Sl. glasnik BD 10/03, prečišćeni tekst 33/13) čl. 224 (obustava istrage, osim u slučaju postupka zbog neuračunljivosti); dispositions spéciales sur le neuračunljiv et KZ BD non lues",
-   "extrait": "",
-   "note": "Blanc : seul le čl. 224 ZKP BD est lu, via la doctrine (Janković 2018) : le procureur ne peut clore l'enquête pour neuračunljivost, une procédure spéciale s'impose. Le texte consolidé (2013) est indexé par Legal Data Hunter, mais le quota a été épuisé avant les articles utiles ; le PDF de l'Assemblée est fermé aux robots. Hypothèse : violet, comme en FBiH.",
+   "bases_legales": "ZKP BD (Sl. glasnik BD 10/03, prečišćeni tekst Sl. glasnik BD 33/13) čl. 206 (neuračunljivost : décision selon čl. 389), 207, 224 st. 1 tač. b (pas de clôture de l'enquête pour neuračunljivost), 388 (prekid postupka), 389 (postupak u slučaju neuračunljivosti) ; Zakon o zaštiti lica s mentalnim poremećajem BD (2006) čl. 32 ; KZ BD (neuračunljivost).",
+   "extrait": "Ako sud nakon provedenog glavnog pretresa utvrdi da je optuženi učinio protivpravno djelo u stanju neuračunljivosti, donijet će presudu",
+   "note": "Le procureur ne peut clore l'enquête pour neuračunljivost (čl. 224) : il dépose une optužnica avec proposition de constater l'acte illicite commis sans discernement ; après un glavni pretres (défenseur obligatoire), le tribunal rend une presuda et ordonne par rješenje un placement provisoire de six mois (čl. 389). Texte consolidé de 2013 lu ; amendements ultérieurs non vérifiés.",
    "sources": [
     {
-     "titre": "Zakon o krivičnom postupku Brčko distrikta BiH, prečišćeni tekst (Sl. glasnik BD 33/13), indexé par Legal Data Hunter (source BA/Brcko)",
+     "titre": "Zakon o krivičnom postupku Brčko distrikta BiH, prečišćeni tekst (Sl. glasnik BD 33/13), čl. 206, 207, 224, 388-389, consulté via Legal Data Hunter (source BA/Brcko)",
      "url": "https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20krivic--nom%20postupku%20Brc--ko%20Distrikta%20BiH/01B33-13%20Zakon%20o%20krivic--nom%20postupku,%20prec--is--c-eni%20tekst.pdf",
+     "langue": "bs"
+    },
+    {
+     "titre": "Zakon o zaštiti lica s mentalnim poremećajem Brčko distrikta BiH (2006), čl. 32 (mesures de sûreté prononcées par le juge pénal), consulté via Legal Data Hunter",
+     "url": "https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20zas--titi%20lica%20s%20mentalnim%20poremec-ajem/000%2012-06%20Zakon%20o%20zas--titi%20lica%20s%20mentalnim%20poremec-ajem.pdf",
      "langue": "bs"
     },
     {
      "titre": "R. Janković, Pritužba protiv naredbi o nesprovođenju i obustavi istrage, Godišnjak FPN Banja Luka 8, 2018",
      "url": "https://doisrpska.nub.rs/index.php/gfpn/article/download/4828/4622/10046",
      "langue": "sr"
-    },
-    {
-     "titre": "Zakon o krivičnom postupku Brčko distrikta BiH, prečišćeni tekst 33/13 (Tužilaštvo BiH)",
-     "url": "https://www.tuzilastvobih.gov.ba/files/docs/Zakon_o_krivicnom_postupku_BDBiH_precisceni_tekst_33_13_bos.pdf",
-     "langue": "bs"
     }
    ],
    "historique": [
@@ -18540,15 +18532,20 @@
      "couleur": "blanc",
      "confiance": "faible",
      "note": "Blanc : seule la règle de čl. 224 ZKP BD lue via doctrine (Janković 2018) : le procureur ne peut clore l'enquête pour neuračunljivost, une procédure spéciale s'impose. Le ZKP BD consolidé (tuzilastvobih.gov.ba, paragraf.ba) n'a pu être lu qu'en partie (texte tronqué). Hypothèse : régime calqué sur la FBiH (optužnica avec proposition, tribunal, placement), donc violet probable."
+    },
+    {
+     "fichier": "pass2/ext_40_ldh.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : seul le čl. 224 ZKP BD est lu, via la doctrine (Janković 2018) : le procureur ne peut clore l'enquête pour neuračunljivost, une procédure spéciale s'impose. Le texte consolidé (2013) est indexé par Legal Data Hunter, mais le quota a été épuisé avant les articles utiles ; le PDF de l'Assemblée est fermé aux robots. Hypothèse : violet, comme en FBiH."
     }
    ],
-   "fichier_source": "pass2/ext_40_ldh.json",
-   "couleur_agent": "blanc",
+   "fichier_source": "pass2/ext_60_ldh2.json",
+   "couleur_agent": "violet",
    "couleur_deduite_des_faits": "violet",
    "groupe": "Balkans",
    "ocde": false,
    "drapeaux": [
-    "confiance_faible",
     "verification_incomplete"
    ]
   },
