@@ -2,10 +2,10 @@
  "titre": "Abolition totale du discernement : juger d'abord, ou établir l'irresponsabilité d'abord ?",
  "description": "Carte du monde en projection de Mollweide classant les droits pénaux selon le sort procédural d'un accusé dont le discernement était totalement aboli par un trouble mental au moment des faits : on juge d'abord (vert), irresponsabilité établie d'abord sans vrai procès (jaune), irresponsabilité établie d'abord mais jugement (violet), l'accusé choisit le moment de l'examen (bleu), aucune irresponsabilité reconnue (noir), pas de données ou hors cadrage (blanc).",
  "sous_titre": "Crime grave (ex. homicide), discernement totalement aboli au moment des faits · altération partielle et plaider-coupable ignorés · droit en vigueur au 28 octobre 2026",
- "sous_titre_2": "OCDE et UE (hors Turquie, Chypre du Nord), Amériques (hors Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée, Sahel sauf Sénégal, Mauritanie), Balkans (hors Serbie), Ukraine, Moldavie (zones contrôlées), Asie (sélection)",
- "legende_reperes": "Cercle : État trop petit pour être visible à cette échelle (même couleur que sur la carte). Passez la souris sur un pays : base légale, nuance et niveau de confiance.",
+ "sous_titre_2": "Périmètre : OCDE et UE, Amériques, Océanie, Afrique, Balkans, Ukraine et Moldavie (zones contrôlées), Asie (sélection), États et territoires insulaires ; exclusions en blanc (voir la légende)",
+ "legende_reperes": "Cercle : État trop petit pour être visible à cette échelle (même couleur que sur la carte). Survol d'un pays : base légale, nuances, confiance.",
  "pied": [
-  "Méthode : recherche juridique dans la langue officielle de chaque pays (codes pénaux, codes de procédure, jurisprudence) par 24 agents, seconde passe de vérification des entrées faibles, puis contrôle indépendant des entrées à fort enjeu. Sources, extraits et confiance de chaque entrée : fichier JSON associé.",
+  "Méthode : recherche juridique dans la langue officielle de chaque pays (codes pénaux, codes de procédure, jurisprudence) par des agents, seconde passe de vérification des entrées faibles, puis contrôle indépendant des entrées à fort enjeu. Sources, extraits et confiance de chaque entrée : fichier JSON associé.",
   "Blanc : texte de procédure introuvable ou illisible (hypothèse dans l'infobulle), pays écartés du cadrage, pays et territoires non étudiés. Deux voies coexistantes : la voie ordinaire du scénario de référence est retenue ; les voies par accord des parties sont assimilées à un plaidoyer.",
   "Ligne de contrôle en Ukraine au 28/10/2026 : DeepStateMap (données quotidiennes, dépôt cyterat/deepstate-map-data) ; Transnistrie : unités administratives Natural Earth ; fond de carte : Natural Earth (world-atlas)."
  ],
@@ -19,7 +19,7 @@
    ],
    "definition": "Aucune porte d'entrée préalable : l'affaire va à un procès ordinaire ; la juridiction de jugement établit d'abord les faits, puis statue sur l'irresponsabilité (acquittement, exemption, verdict spécial) et ordonne elle-même la mesure. L'expertise psychiatrique est ordonnée par les autorités ou le tribunal, non au choix de l'accusé.",
    "n_pays": 87,
-   "n_subdivisions": 23
+   "n_subdivisions": 35
   },
   "jaune": {
    "libelle": "Irresponsabilité d'abord, sans vrai procès",
@@ -29,7 +29,7 @@
     "(France depuis 2008 : audience devant la chambre de l'instruction). Procès seulement si l'accusé est jugé responsable."
    ],
    "definition": "L'état mental au moment des faits est examiné pendant la phase préparatoire ; si le discernement était aboli, l'affaire se termine sans vrai procès, soit par un non-lieu ou une décision de non-renvoi, soit par une procédure amoindrie qui remplace le procès (audience devant une juridiction d'instruction, chambre du conseil, tribunal de soins non public, procédure écrite ou simplifiée, standard de preuve réduit, absence de l'accusé comme règle). La personne peut néanmoins être internée. Un procès n'a lieu que si elle est jugée responsable.",
-   "n_pays": 23,
+   "n_pays": 24,
    "n_subdivisions": 23
   },
   "violet": {
@@ -51,8 +51,8 @@
     "le parquet ou le juge ne peuvent pas l'imposer à un accusé apte (ex. Canada, arrêt Swain)."
    ],
    "definition": "La défense maîtrise si et quand l'état mental au moment des faits est examiné : avant le procès, à sa fin (par exemple une phase sur la santé mentale que la défense choisit d'ouvrir) ou après le verdict. Le parquet ou le tribunal ne peuvent pas imposer l'expertise ou le moyen d'irresponsabilité à un accusé apte, ou seulement après un verdict de culpabilité.",
-   "n_pays": 3,
-   "n_subdivisions": 53
+   "n_pays": 4,
+   "n_subdivisions": 54
   },
   "noir": {
    "libelle": "Aucune irresponsabilité reconnue",
@@ -70,11 +70,12 @@
    "couleur": "#ffffff",
    "legende": [
     "Données insuffisantes (texte de procédure introuvable ou illisible), pays et zones écartés du cadrage (Maghreb, Égypte, Sahel hors Sénégal",
-    "et Mauritanie, Érythrée, Cuba, Turquie, Serbie ; tirets : Chypre du Nord, Ukraine occupée, Transnistrie), pays non étudiés."
+    "et Mauritanie, Érythrée, Cuba, Turquie, Serbie, Bahreïn, Singapour, Brunei ; tirets : Chypre du Nord, Ukraine occupée, Transnistrie),",
+    "pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
-   "n_pays": 7,
-   "n_subdivisions": 1
+   "n_pays": 6,
+   "n_subdivisions": 3
   }
  },
  "perimetre": {
@@ -235,7 +236,8 @@
     "LK",
     "AE",
     "SY",
-    "TL"
+    "TL",
+    "MV"
    ],
    "balkans_hors_serbie": [
     "HR",
@@ -262,6 +264,23 @@
    "europe_ue_hors_ocde": [
     "CY",
     "MT"
+   ],
+   "territoires_insulaires": [
+    "JE",
+    "GG",
+    "IM",
+    "BM",
+    "KY",
+    "VG",
+    "AI",
+    "MS",
+    "TC",
+    "FK",
+    "SH",
+    "AW",
+    "CW",
+    "SX",
+    "VI"
    ]
   },
   "exclus": [
@@ -388,9 +407,24 @@
     "code": "CY-N",
     "nom": "CY-N",
     "raison": "territoire sous contrôle turc (« République turque de Chypre du Nord »), traité comme la Turquie : écarté du périmètre (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
+   },
+   {
+    "code": "BH",
+    "nom": "BH",
+    "raison": "État insulaire du golfe Persique : écarté du périmètre par choix du cadrage"
+   },
+   {
+    "code": "SG",
+    "nom": "SG",
+    "raison": "écarté du périmètre par choix du cadrage (régime jugé dictatorial)"
+   },
+   {
+    "code": "BN",
+    "nom": "BN",
+    "raison": "écarté du périmètre par choix du cadrage (régime jugé dictatorial)"
    }
   ],
-  "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie, Syrie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie, Philippines et Timor oriental) sont laissés en blanc.",
+  "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie, Syrie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie, Philippines et Timor oriental ; les États et territoires insulaires sont tous inclus sauf Cuba, Bahreïn, Singapour et Brunei, écartés) sont laissés en blanc.",
   "marqueurs": {
    "TV": [
     179.2,
@@ -531,6 +565,22 @@
    "MO": [
     112.9,
     21.4
+   ],
+   "VI": [
+    -65.0,
+    17.45
+   ],
+   "VG": [
+    -64.35,
+    18.75
+   ],
+   "AI": [
+    -62.85,
+    18.55
+   ],
+   "SX": [
+    -63.2,
+    17.9
    ]
   },
   "territoires_rattaches": {
@@ -578,17 +628,19 @@
     "Textes fournis par l'utilisateur (28/10, 22 h 38) : code de procédure pénale macédonien de 2010 (traduction OSCE), code malgache (copie ONUDC) et loi 2016-017, codes d'Entre Ríos (loi 9754 consolidée), de La Pampa (loi 3192, éd. STJ 2021) et de La Rioja (loi 1574) ; ils ont permis de classer la Macédoine du Nord (violet), Madagascar, Entre Ríos, La Pampa et La Rioja (jaune)."
    ],
    "critere_du_blanc": "Une couleur n'est retenue que si le mécanisme procédural décisif (qui statue, à quel stade, dans quel type d'audience) a été lu dans une source primaire (loi, décision) ou une doctrine fiable qui la cite ; sinon l'entrée reste blanche et l'hypothèse est conservée (champ couleur_hypothese).",
-   "perimetre_asie": "Asie (sélection) : Inde (et Kerala), Bangladesh, Pakistan, Sri Lanka, Népal, Bhoutan, Indonésie, Thaïlande, Malaisie, Philippines, Taïwan, Hong Kong, Macao, Mongolie, Kazakhstan, Jordanie, Syrie, Émirats arabes unis, Timor oriental, ainsi que le Japon, la Corée du Sud et Israël (OCDE).",
+   "perimetre_asie": "Asie (sélection) : Inde (et Kerala), Bangladesh, Pakistan, Sri Lanka, Népal, Bhoutan, Indonésie, Thaïlande, Malaisie, Philippines, Taïwan, Hong Kong, Macao, Mongolie, Kazakhstan, Jordanie, Syrie, Émirats arabes unis, Timor oriental, Maldives, ainsi que le Japon, la Corée du Sud et Israël (OCDE).",
    "extension_28_10": "Extension du 28/10/2026 (21 h) : Égypte retirée (procédure pénale jugée indicative plutôt que contraignante) ; ajout de 13 pays ou territoires d'Asie, de la Mauritanie, des Balkans hors Serbie et des territoires insulaires du Pacifique encore non couverts ; Sénégal revérifié.",
    "extension_28_10_bis": "Extension du 28/10/2026 (22 h) : Sri Lanka, Madagascar (seconde tentative), Ukraine (territoire contrôlé par le gouvernement) et Moldavie (hors Transnistrie), un agent par pays ; Albanie et Macédoine du Nord relancées séparément. Territoires ukrainiens occupés (ligne de contrôle du 28/10/2026 d'après les données quotidiennes DeepStateMap, dépôt cyterat/deepstate-map-data) et Transnistrie (unités administratives Natural Earth) dessinés en blanc à tirets.",
    "extension_28_10_ter": "Compléments du 28/10/2026 (23 h) : textes fournis par l'utilisateur (Macédoine du Nord, Madagascar, Entre Ríos, La Pampa, La Rioja) ; 9 requêtes Legal Data Hunter menées une à une, sans agent, sur les juridictions restées blanches (Albanie et Mauritanie classées, Guinée, Rwanda, Zanzibar et Brčko toujours blancs, quota journalier atteint) ; Émirats arabes unis ajoutés par recherche web, sans Legal Data Hunter (décrets-lois fédéraux n° 31 de 2021 et n° 38 de 2022, portail officiel).",
    "critere_du_perimetre": "Un régime autoritaire n'est pas exclu en tant que tel : certains pays autoritaires conservent, pour les affaires de droit commun, une justice où la loi sur les droits de la défense reste suivie (hors corruption) ; ils sont inclus. Sont écartés ceux où l'absence d'État de droit fait que la loi n'est qu'indicative (« hint »), pas une obligation à suivre.",
    "extension_29_10": "Extension du 29/10/2026 (0 h 40) : Chypre (zones contrôlées par la République de Chypre), Malte, Timor oriental et Syrie, un agent par pays ; Chypre du Nord (sous contrôle turc) traitée comme la Turquie et dessinée en blanc à tirets.",
+   "extension_29_10_bis": "Extension du 29/10/2026 (18 h 20) : tous les États et territoires insulaires, sauf Cuba, Bahreïn (golfe Persique), Singapour et Brunei (régimes jugés dictatoriaux) : Maldives ajoutées, Comores revérifiées, et territoires insulaires à droit pénal propre (Jersey, Guernesey, Île de Man, Bermudes, Îles Caïmans, Îles Vierges britanniques, Anguilla, Montserrat, Îles Turques-et-Caïques, Malouines, Sainte-Hélène, Aruba, Curaçao, Saint-Martin néerlandais, Îles Vierges des États-Unis).",
+   "extension_29_10_ter": "Compléments du 29/10/2026 (19 h) : quand l'outil de lecture des agents tronquait un texte officiel, le PDF ou la page complète a été téléchargé et lu en entier (Jersey, Bermudes, Îles Vierges britanniques, Anguilla, Aruba, Îles Caïmans, Montserrat, Comores, Maldives, dont le code de procédure pénale en dhivehi) ; Saint-Martin néerlandais classé d'après un jugement du Gerecht in eerste aanleg (données ouvertes de rechtspraak.nl). Guernesey et les Malouines restent blanches : textes décisifs inaccessibles (site refusé à l'outil, application JavaScript).",
    "edition_anglaise": "Une édition anglaise, traduite le 28/10/2026 à partir de celle-ci, est tenue sur la branche main du dépôt pour les contributions internationales ; les deux éditions évoluent séparément."
   },
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "nb_entrees": 257,
+  "nb_entrees": 273,
   "contribuer": [
    "Voir CONTRIBUTING.md. Les pull requests ne modifient que le JSON (donnees/irresponsabilite_penale.json) ; les cartes en sont régénérées.",
    "Une couleur autre que blanc suppose d'avoir lu le mécanisme procédural décisif (qui statue, à quel stade, dans quel type d'audience) dans une source primaire (loi, décision) ou une doctrine qui la cite ; sinon l'entrée reste blanche avec une couleur_hypothese.",
@@ -630,19 +682,19 @@
  "synthese": {
   "pays": {
    "vert": 87,
-   "jaune": 23,
+   "jaune": 24,
    "violet": 26,
-   "bleu": 3,
+   "bleu": 4,
    "noir": 0,
-   "blanc": 7
+   "blanc": 6
   },
   "subdivisions": {
-   "vert": 23,
+   "vert": 35,
    "jaune": 23,
    "violet": 3,
-   "bleu": 53,
+   "bleu": 54,
    "noir": 1,
-   "blanc": 1
+   "blanc": 3
   },
   "pays_federaux_a_regles_differentes": [
    "AR",
@@ -654,6 +706,7 @@
   "codes_par_couleur": {
    "vert": [
     "AG",
+    "AI",
     "AO",
     "AR-B",
     "AR-J",
@@ -666,9 +719,11 @@
     "AU-TAS",
     "AU-VIC",
     "AU-WA",
+    "AW",
     "BB",
     "BD",
     "BI",
+    "BM",
     "BO",
     "BS",
     "BT",
@@ -679,6 +734,7 @@
     "CM",
     "CO",
     "CV",
+    "CW",
     "CY",
     "DK",
     "DM",
@@ -704,22 +760,26 @@
     "ID",
     "IE",
     "IL",
+    "IM",
     "IN",
     "IN-KL",
     "IS",
     "IT",
+    "JE",
     "JM",
     "JO",
     "KE",
     "KI",
     "KN",
     "KR",
+    "KY",
     "LC",
     "LK",
     "LR",
     "LS",
     "MN",
     "MO",
+    "MS",
     "MU",
     "MW",
     "MY",
@@ -743,12 +803,15 @@
     "SB",
     "SC",
     "SE",
+    "SH",
     "SL",
     "SN",
     "SR",
     "ST",
+    "SX",
     "SY",
     "SZ",
+    "TC",
     "TH",
     "TK",
     "TL",
@@ -761,6 +824,7 @@
     "US-HI",
     "UY",
     "VC",
+    "VG",
     "VU",
     "WS",
     "ZA",
@@ -802,6 +866,7 @@
     "GA",
     "HT",
     "JP",
+    "KM",
     "LU",
     "LV",
     "MG",
@@ -856,6 +921,7 @@
     "GU",
     "MH",
     "MP",
+    "MV",
     "PH",
     "PR",
     "US",
@@ -906,7 +972,8 @@
     "US-WA",
     "US-WI",
     "US-WV",
-    "US-WY"
+    "US-WY",
+    "VI"
    ],
    "noir": [
     "US-ID"
@@ -914,18 +981,19 @@
    "blanc": [
     "BJ",
     "DJ",
+    "FK",
+    "GG",
     "GN",
     "GQ",
-    "KM",
     "SO",
     "SS",
     "TZ-ZAN"
    ]
   },
   "confiance": {
-   "élevée": 76,
-   "moyenne": 142,
-   "faible": 39
+   "élevée": 80,
+   "moyenne": 153,
+   "faible": 40
   }
  },
  "cas_a_verifier": [
@@ -1437,16 +1505,6 @@
    ]
   },
   {
-   "code": "KM",
-   "nom": "Comores",
-   "couleur": "blanc",
-   "confiance": "faible",
-   "drapeaux": [
-    "confiance_faible",
-    "verification_incomplete"
-   ]
-  },
-  {
    "code": "MZ",
    "nom": "Mozambique",
    "couleur": "vert",
@@ -1762,6 +1820,35 @@
    "nom": "Chypre",
    "couleur": "vert",
    "confiance": "moyenne",
+   "drapeaux": [
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "GG",
+   "nom": "Guernesey",
+   "couleur": "blanc",
+   "confiance": "faible",
+   "drapeaux": [
+    "confiance_faible",
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "FK",
+   "nom": "Îles Malouines",
+   "couleur": "blanc",
+   "confiance": "faible",
+   "drapeaux": [
+    "confiance_faible",
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "SH",
+   "nom": "Sainte-Hélène",
+   "couleur": "vert",
+   "confiance": "élevée",
    "drapeaux": [
     "verification_incomplete"
    ]
@@ -14602,48 +14689,53 @@
     "ar",
     "en"
    ],
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "jaune",
+   "confiance": "moyenne",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Irresponsabilité reconnue (CP 2020 art. 27, 1° : « ni crime ni délit » en cas de démence) ; issue procédurale non vérifiée (hypothèse : non-lieu du juge d'instruction) ; aucun internement dans le CP ; soins hors procédure pénale, non vérifiés",
+    "issue": "Non-lieu par ordonnance du juge d'instruction (art. 176 CPP) ou arrêt de la chambre d'accusation (art. 211), le fait commis en état de démence n'étant « ni crime ni délit » (CP 2020, art. 27, 1°) ; soins possibles hors procès par hospitalisation sans consentement « sur réquisition administrative ou judiciaire » (CSP 2011, art. 141-142).",
     "qui_declenche_examen": "autorites",
     "accuse_choisit_moment": false,
-    "stade_decision": "sans_objet",
-    "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Inconnu : CPP de 2014 illisible (scan) ; instruction obligatoire en matière criminelle et clôture par non-lieu attestées par un avocat, sans lien avec la démence (valeurs par défaut sans valeur probante).",
-    "internement_sans_proces": false,
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "non_lieu_simple",
+    "procedure_remplacement_detail": "L'instruction est obligatoire en matière criminelle (art. 71) ; le juge d'instruction ordonne l'examen médico-psychologique (art. 73) et déclare n'y avoir lieu à suivre si les faits ne constituent ni crime ni délit (art. 176), comme la chambre d'accusation (art. 211).",
+    "internement_sans_proces": true,
     "proces_toujours_ou_sur_demande": false,
-    "inaptitude_a_etre_juge": "Non vérifié (CPP non lu)."
+    "inaptitude_a_etre_juge": "Aucune disposition spécifique trouvée dans le CPP ; sous contrôle judiciaire, des soins peuvent être imposés « même sous le régime de l'hospitalisation » (art. 130, 10°)."
    },
-   "bases_legales": "CP (loi n° 20-038/AU du 29 décembre 2020, promulguée par décret n° 21-018/PR) art. 27, 1° ; CPP (loi du 22 décembre 2014) : PDF du ministère de la Justice = scan illisible ; articles sur le non-lieu, l'expertise et l'internement non lus",
-   "extrait": "Il n'y a ni crime ni délit : 1° lorsque le prévenu était en état de démence au temps de l'action",
-   "note": "Blanc : CPP de 2014 non lu (PDF de justice.gouv.km = scan ; ni autre copie ni nouveau CPP trouvés). Lu : CP 2020 art. 27, 1° (« ni crime ni délit » en cas de démence ; pas d'internement pénal) ; un avocat (Masiwa) cite le CPP : information obligatoire en matière criminelle, clôture par non-lieu motivé. Hypothèse non vérifiée : non-lieu du juge d'instruction pour démence, soins hors procès.",
+   "bases_legales": "CP (loi n° 20-038/AU du 29 décembre 2020) art. 27, 1° (démence : « ni crime ni délit ») ; CPP (loi du 22 décembre 2014) art. 71 (instruction obligatoire en matière criminelle), 73 (examen médico-psychologique), 130, 10°, 174-176 (règlement de l'information, non-lieu), 210-211 (chambre d'accusation, non-lieu), 341 (cour d'assises : vote sur les causes d'irresponsabilité pénale), 459 (relaxe pour démence) ; Code de la santé publique (loi n° 11-001/AU du 26 mars 2011) art. 141-142.",
+   "extrait": "ne constituent ni crime, ni délit, ni contravention [...] il déclare, par une ordonnance, qu'il n'y a lieu à suivre",
+   "note": "Lecture combinée : démence = « ni crime ni délit » (CP art. 27, 1°) ; l'instruction étant obligatoire pour les crimes (CPP art. 71), le juge d'instruction (art. 176) ou la chambre d'accusation (art. 211) déclarent n'y avoir lieu à suivre. Si l'affaire va aux assises, la cour vote sur l'irresponsabilité (art. 341). Articles lus dans le PDF officiel du CPP, dont la couche texte est complète.",
    "sources": [
     {
-     "titre": "Ministère de la Justice des Comores : Code pénal 2020 (décret n° 21-018/PR portant promulgation de la loi n° 20-038/AU)",
-     "url": "https://justice.gouv.km/texte/code-penal-2020/",
-     "langue": "fr"
-    },
-    {
-     "titre": "Comores, Code pénal 2020 (texte lisible, droit-afrique), art. 27",
-     "url": "https://www.droit-afrique.com/uploads/Comores-Code-2020-penal.pdf",
-     "langue": "fr"
-    },
-    {
-     "titre": "Loi du 22 décembre 2014 portant Code de procédure pénale (PDF du ministère, scan non lisible par l'outil)",
+     "titre": "Ministère de la Justice : loi du 22 décembre 2014 portant Code de procédure pénale, art. 71, 73, 130, 174-176, 210-211, 341, 459 (PDF officiel, texte extrait intégralement)",
      "url": "https://justice.gouv.km/wp-content/uploads/2025/03/loi-du-22-decembre-2014-portant-code-de-procedure-penale.pdf",
      "langue": "fr"
     },
     {
-     "titre": "Masiwa : entretien avec Me Gérard Youssouf (CPP : information obligatoire en matière criminelle, non-lieu)",
-     "url": "https://masiwa-comores.com/?p=11013",
+     "titre": "Loi n° 20-038/AU du 29 décembre 2020 portant Code pénal (texte lisible, droit-afrique), art. 27",
+     "url": "https://www.droit-afrique.com/uploads/Comores-Code-2020-penal.pdf",
      "langue": "fr"
     },
     {
-     "titre": "Criminal Defense Wiki (IBJ) : Comoros (instruction, chambre d'accusation, cour d'assises)",
-     "url": "https://defensewiki.ibj.org/index.php?title=Comoros",
-     "langue": "en"
+     "titre": "Ministère de la Justice : loi n° 11-001/AU du 26 mars 2011 portant Code de la santé publique (chap. VI, santé mentale, art. 138-143)",
+     "url": "https://justice.gouv.km/wp-content/uploads/2025/03/loi-n-11-001au-du-26-mars-2011-portant-code-de-la-sante-2011.pdf",
+     "langue": "fr"
+    },
+    {
+     "titre": "Mayotte Hebdo, 16 janvier 2026 : 25 personnes renvoyées devant la cour d'assises par la chambre de mise en accusation de Moroni",
+     "url": "https://www.mayottehebdo.com/actualite/justice/comores-25-personnes-renvoyees-devant-la-cour-dassises-pour-assassinat/",
+     "langue": "fr"
+    },
+    {
+     "titre": "Mayotte Hebdo, 23 juin 2025 : près de 21 dossiers renvoyés devant la cour d'assises (art. 232 CPP)",
+     "url": "https://www.mayottehebdo.com/actualite/justice/comores-pres-de-21-dossiers-renvoyes-devant-la-cour-dassises/",
+     "langue": "fr"
+    },
+    {
+     "titre": "Masiwa : entretien avec Me Gérard Youssouf (information obligatoire en matière criminelle ; ordonnance de non-lieu motivée)",
+     "url": "https://masiwa-comores.com/?p=11013",
+     "langue": "fr"
     }
    ],
    "historique": [
@@ -14658,18 +14750,26 @@
      "couleur": "jaune",
      "confiance": "faible",
      "note": "Le nouveau CP (loi 20-038/AU du 29/12/2020) maintient à l'art. 27, 1° : « ni crime ni délit » en cas de démence ; aucun internement dans les art. 1-143. CPP de 2014 illisible ; un wiki (état antérieur) décrit instruction obligatoire pour les crimes, chambre d'accusation, cour d'assises. Jaune inféré, non vérifié ; arabe sans résultat. Confiance faible."
+    },
+    {
+     "fichier": "pass2/p2_26_afr_franco_proc_b.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : CPP de 2014 non lu (PDF de justice.gouv.km = scan ; ni autre copie ni nouveau CPP trouvés). Lu : CP 2020 art. 27, 1° (« ni crime ni délit » en cas de démence ; pas d'internement pénal) ; un avocat (Masiwa) cite le CPP : information obligatoire en matière criminelle, clôture par non-lieu motivé. Hypothèse non vérifiée : non-lieu du juge d'instruction pour démence, soins hors procès."
+    },
+    {
+     "fichier": "pass2/ext_62_km.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : CPP 2014 lisible jusqu'à l'art. 154 seulement (pages suivantes sans texte) ; règlement de l'information, chambre d'accusation, assises non lus ; ni autre copie (ACJR, Policinglaw, FAOLEX, LEAP), ni affaire de démence dans la presse, ni source arabe. Lu : CP art. 27, 1° ; CPP art. 71, 73 ; renvoi aux assises par la chambre d'accusation (presse). Hypothèse : non-lieu, soins via CSP art. 141."
     }
    ],
-   "fichier_source": "pass2/p2_26_afr_franco_proc_b.json",
-   "couleur_agent": "blanc",
-   "couleur_deduite_des_faits": "vert",
+   "fichier_source": "pass2/ext_80_km_texte.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
    "groupe": "Afrique",
    "ocde": false,
-   "couleur_hypothese": "jaune",
-   "drapeaux": [
-    "confiance_faible",
-    "verification_incomplete"
-   ]
+   "drapeaux": []
   },
   {
    "code": "MG",
@@ -19373,6 +19473,1078 @@
    "couleur_deduite_des_faits": "vert",
    "groupe": "Asie",
    "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "GG",
+   "nom": "Guernesey",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en",
+    "fr"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "blanc",
+   "confiance": "faible",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "verdict spécial de non-culpabilité pour aliénation rendu par la Cour royale (Jurats), puis mesure (hospitalisation probable) — non vérifié dans le texte",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Hypothèse non vérifiée : pas de procédure de remplacement, la Cour royale établit d'abord les faits puis statue sur l'aliénation par un verdict spécial.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Non vérifié : la Mental Health Law 2010 traiterait de l'inaptitude à être jugé (piste du dossier), mais ni la procédure (examen des faits, ajournement) ni l'issue n'ont pu être lues."
+   },
+   "bases_legales": "Mental Health (Bailiwick of Guernsey) Law, 2010 (partie sur les personnes impliquées dans une procédure pénale ; texte non consulté) ; common law de l'insanity et du special verdict devant la Royal Court (non vérifiée)",
+   "extrait": "",
+   "note": "Blanc : texte décisif non lu (guernseylegalresources.gg : client_error ; gov.gg : robots). Hypothèse « vert » : affaire Clancy (2012, presse), la Cour royale a d'abord jugé que l'accusé avait commis les faits, puis tenu une audience de verdict spécial où les Jurats statuent sur l'aliénation au vu de l'expertise ; faits mineurs jugés en Cour royale. Initiative et inaptitude non vérifiées.",
+   "sources": [
+    {
+     "titre": "Guernsey Press, 21 juin 2012 : special verdict hearing devant la Royal Court (affaire Brian Clancy)",
+     "url": "https://guernseypress.com/news/2012/06/21/goose-stepping-growler-who-split-officers-lip-may-have-been-insane",
+     "langue": "en"
+    },
+    {
+     "titre": "Guernsey Legal Resources (portail officiel ; pages des lois et arrêts inaccessibles au fetch)",
+     "url": "https://www.guernseylegalresources.gg",
+     "langue": "en"
+    },
+    {
+     "titre": "Projet de Loi entitled The Mental Health (Bailiwick of Guernsey) Law, 2010 (Billet d'État ; non lisible, robots)",
+     "url": "https://www.gov.gg/CHttpHandler.ashx?id=4488&p=0",
+     "langue": "en"
+    },
+    {
+     "titre": "Jersey & Guernsey Law Review, Summary of Legislation (Guernsey) : approbation de la Mental Health Law 2010",
+     "url": "https://www.jerseylaw.je/publications/jglr/Pages/JLR1102_Legislation_Gsy.aspx",
+     "langue": "en"
+    },
+    {
+     "titre": "States of Guernsey : Mental Health and Capacity Review Tribunal (loi de 2010 en vigueur)",
+     "url": "https://gov.gg/mhrt",
+     "langue": "en"
+    }
+   ],
+   "couleur_hypothese": "vert",
+   "historique": [
+    {
+     "fichier": "pass2/ext_64_gg.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : texte décisif non lu (guernseylegalresources.gg : client_error ; gov.gg : robots). Hypothèse « vert » : affaire Clancy (2012, presse), la Cour royale a d'abord jugé que l'accusé avait commis les faits, puis tenu une audience de verdict spécial où les Jurats statuent sur l'aliénation au vu de l'expertise ; faits mineurs jugés en Cour royale. Initiative et inaptitude non vérifiées."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "blanc",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": [
+    "confiance_faible",
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "IM",
+   "nom": "Île de Man",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en",
+    "gv"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "verdict spécial « not guilty by reason of insanity » (s. 21 CJA 1993) puis mesure ordonnée par la cour selon la s. 54 (hospital order avec ou sans restriction order, guardianship order, supervision and treatment order, d'après les renvois des ss. 45(1) et 54B)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune procédure de remplacement : le jury (ou le Deemster seul) tranche l'irresponsabilité au procès ordinaire, après avoir constaté l'acte.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Soulevée par la défense ou autrement, tranchée dès qu'elle se pose par un jury (Deemster seul si procès sans jury) sur avis de deux médecins (ss. 9, 19) ; le procès s'arrête et un jury ou la cour vérifie, sur les preuves de l'accusation et d'un défenseur désigné, si l'accusé a commis l'acte : sinon acquittement, sinon mesure de la s. 54 (s. 9(6)-(9)) ; reprise du procès en cas de guérison non vérifiée."
+   },
+   "bases_legales": "Criminal Jurisdiction Act 1993 (IoM) ss. 1, 8A-8C, 9, 19, 21, 24(2), 30(2)-(3), 35-36, 45(1), 54-54B ; Mental Health Act 1998 (IoM) s. 12 (médecins agréés)",
+   "extrait": "the jury shall return or, in the case where the trial is being conducted without a jury, the court shall return, a special verdict",
+   "note": "Pas de filtre préalable : au procès devant la Court of General Gaol Delivery, le jury (ou le Deemster seul, ss. 8A-8C) constate l'acte puis rend le verdict spécial (s. 21) sur avis de deux médecins (s. 19) ; la cour ordonne la mesure (s. 54, non lue). Texte neutre sur qui soulève l'insanity (« given in evidence ») ; jurisprudence mannoise non trouvée. Pas de « Criminal Procedure Act 2023 ».",
+   "sources": [
+    {
+     "titre": "Criminal Jurisdiction Act 1993 (IoM), texte consolidé (Justice Reform Act 2021 et projet de loi 2025), ss. 9, 19, 21 — consultation du Department of Home Affairs",
+     "url": "https://consult.gov.im/home-affairs/justice-reform-amend-and-contempt-of-court-bills/user_uploads/criminal-jurisdiction-act-1993-v7---as-amended-by-jra-2021-as-amended-by-jha-rma-bill--introduced-_compressed.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Justice Reform (Amendment) Bill 2025 and Contempt of Court Bill 2025 — consultation (glossaire : CJA 1993 et Courts of General Gaol Delivery)",
+     "url": "https://consult.gov.im/home-affairs/justice-reform-amend-and-contempt-of-court-bills/consultation/subpage.2025-09-09.0780249125",
+     "langue": "en"
+    },
+    {
+     "titre": "IOM Today, « The six big changes proposed for the Isle of Man's court system under new bill » (12 février 2026)",
+     "url": "https://www.iomtoday.co.im/news/the-six-big-changes-proposed-for-the-isle-of-mans-court-system-under-new-bill-878049",
+     "langue": "en"
+    },
+    {
+     "titre": "Anderson v HM Attorney General for the Isle of Man [2021] UKPC 20 (procès pour meurtre devant jury ; autorités anglaises appliquées)",
+     "url": "https://caselaw.nationalarchives.gov.uk/ukpc/2021/20",
+     "langue": "en"
+    }
+   ],
+   "fichier_source": "pass2/ext_65_im.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "KY",
+   "nom": "Îles Caïmans",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "élevée",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Verdict spécial « not guilty of the act or omission by reason of insanity » rendu au procès devant la Grand Court (CPC s. 158), puis mesure choisie par la cour depuis la réforme de 2025 : supervision order (internement), treatment order (soins ambulatoires), mesure de l'Alternative Sentencing Act, libération conditionnelle ou absolue (s. 159)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : l'aliénation au moment des faits n'arrête pas l'enquête préliminaire (CPC s. 49) et est tranchée au procès sur acte d'accusation devant la Grand Court, par un verdict spécial.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Si le tribunal soupçonne l'accusé incapable de se défendre, il enquête et peut ordonner un rapport médical (CPC s. 47) ; s'il le juge inapte, il ajourne la procédure : caution, ou détention en hôpital, prison ou lieu sûr (s. 48) ; reprise dès l'aptitude recouvrée (s. 50). Au moment de plaider, un jury peut statuer sur l'aptitude (s. 122(2)) ; l'accusé inapte relève alors des mesures de la s. 159, sans constat des faits."
+   },
+   "bases_legales": "Penal Code (2022 Revision) s. 9 (presumption of sanity), s. 10 (insanity), s. 11 (intoxication) ; Criminal Procedure Code (2026 Revision, à jour au 31.12.2025) ss. 47-50 (unsoundness of mind ; defence of insanity at preliminary investigation), s. 122 (refusal or incapacity to plead), s. 129 (election of trial by Judge alone), Part 7 : s. 158 (special verdict), ss. 159-159B (mesures, Act 6 of 2025) ; Mental Health Act (2023 Revision)",
+   "extrait": "the jury shall return a special verdict that the accused is not guilty of the act or omission by reason of insanity",
+   "note": "Pas de filtre préalable : l'allégation d'aliénation n'arrête pas l'enquête préliminaire (CPC s. 49). Au procès devant la Grand Court, le jury qui constate l'acte rend un verdict spécial de non-culpabilité pour aliénation (s. 158) ; juge seul possible sur option (s. 129). Depuis 2025, la cour choisit la mesure : internement, soins ambulatoires ou libération (s. 159).",
+   "sources": [
+    {
+     "titre": "GOV.KY : Criminal Procedure Code (2026 Revision), PDF officiel complet (ss. 47-50, 122, 158-159B lues)",
+     "url": "https://gov.ky/documents/35692/0/Criminal+Procedure+Code+%282026+Revision%29%2C.pdf/4cddd7cf-4cc9-6e68-1657-2d39776450a1?t=1770147240921",
+     "langue": "en"
+    },
+    {
+     "titre": "Penal Code (2022 Revision) – Cayman Islands Law School",
+     "url": "https://caymanlawschool.ky/n0c-storage/legislation3/penal-code-2022-revision.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Cayman Compass, 12 janv. 2020 : Bodden Town man meets test of insanity (cite CPC ss. 158-159)",
+     "url": "https://www.caymancompass.com/2020/01/12/bodden-town-man-meets-test-of-insanity/",
+     "langue": "en"
+    },
+    {
+     "titre": "Cayman News Service : Docs agree Webb insane but court to decide verdict",
+     "url": "https://caymannewsservice.com/?p=70592",
+     "langue": "en"
+    },
+    {
+     "titre": "Cayman Compass, 11 mai 2023 : Lawyer warns over indefinite detention of mentally ill prisoners",
+     "url": "https://www.caymancompass.com/2023/05/11/lawyer-warns-over-indefinite-detention-of-mentally-ill-prisoners/",
+     "langue": "en"
+    },
+    {
+     "titre": "Radio Cayman : In Parliament summary for 5 February (2025) – Criminal Procedure (Amendment) Bill, 2025",
+     "url": "https://radiocayman.gov.ky/news/in-parliament-summary-for-5-february",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_67_ky.json",
+     "couleur": "vert",
+     "confiance": "moyenne",
+     "note": "Pas de filtre préalable : l'allégation d'aliénation n'arrête pas l'enquête préliminaire (CPC s. 49). Au procès devant la Grand Court, le jury rend un verdict spécial (s. 158, lu via la presse : PDF officiel tronqué) ; juge seul possible sur option (s. 129). Insanité soulevée surtout par la défense (PC s. 9), experts mandatés aussi par le parquet (Webb). Réforme Act 6/2025 (s. 159-159B) non lue."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "MS",
+   "nom": "Montserrat",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Verdict spécial au procès sur acte d'accusation : l'accusé « was guilty of the act or omission charged against him, but was insane » (CPC s. 177), sans peine : internement jusqu'à libération sur ordre du Gouverneur (s. 188)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : à la Sufficiency Hearing, la High Court renvoie en jugement malgré l'aliénation alléguée (s. 73 CPC) ; le verdict spécial est rendu à l'issue du procès sur acte d'accusation.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "La High Court enquête sur l'incapacité de se défendre (Sufficiency Hearing, arraignment ou procès : ss. 72, 120, 153 CPC) et peut renvoyer pour rapport médical ; si l'accusé est incapable, procédure ajournée, caution ou détention sur ordre du Gouverneur (s. 154), reprise s'il redevient capable (s. 155) ; aucun procès des faits prévu."
+   },
+   "bases_legales": "Penal Code (Cap. 4.02, Act 12 of 1983, éd. révisée au 1.1.2025) ss. 9, 10, 11(3)(b) ; Criminal Procedure Code (Cap. 4.01, Act 9 of 2010 ; Parts 1-22 et ss. 184-192 en vigueur le 1.3.2016, SRO 8/2016) ss. 72, 73, 120, 153-156, 177, 188, 210-211 ; Criminal Procedure Rules 2026 (SRO 3/2026) r. 1.2, 13.2 ; Mental Treatment Act (Cap. 14.03) ss. 2, 10, 32",
+   "extrait": "it is alleged that, at the time when the act was committed […] he was insane […], the High Court shall proceed with the case",
+   "note": "Pas de filtre préalable : à la Sufficiency Hearing, la High Court renvoie en jugement malgré l'aliénation (CPC s. 73). L'aliénation (PC s. 10) est une « special defence » notifiée par l'accusé (CPR 2026, r. 13.2) ; établie au procès, elle mène le jury (ou la cour) qui constate l'acte à un verdict spécial « coupable mais aliéné » (s. 177), puis à l'internement sur ordre du Gouverneur (s. 188).",
+   "sources": [
+    {
+     "titre": "Montserrat : Criminal Procedure Code, Cap. 4.01 (édition révisée au 1.1.2019), PDF complet (ss. 73, 120, 154-155, 177, 188 lues)",
+     "url": "https://www.gov.ms/wp-content/uploads/2020/06/Criminal-Procedure-Code-1.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Montserrat — Penal Code, Cap. 4.02 (Revised Edition 1 Jan 2025)",
+     "url": "https://www.gov.ms/wp-content/uploads/2026/02/4.02-Penal-Code.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "S.R.O. 8 of 2016 — Criminal Procedure (No. 2) Code (Cap. 4.01) (Commencement) Order",
+     "url": "https://www.gov.ms/wp-content/uploads/2020/11/SRO.-No.-8-of-2016-Criminal-Procedure-No.-2-Code-Cap.-4.-01-Commencement-Order-2016.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "S.R.O. 3 of 2026 — Criminal Procedure Rules 2026",
+     "url": "https://parliament.ms/wp-content/uploads/2026/04/SRO-No.-3-of-2026-Criminal-Procedure-Rules-2026.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Montserrat — Mental Treatment Act, Cap. 14.03",
+     "url": "https://parliament.ms/wp-content/uploads/2026/05/14.03-Mental-Treatment-Act-.pdf",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_69_ms_tc.json",
+     "couleur": "vert",
+     "confiance": "moyenne",
+     "note": "Pas de filtre préalable : à la Sufficiency Hearing, la High Court renvoie en jugement malgré l'aliénation alléguée (s. 73 CPC). L'aliénation (s. 10 PC) est une « special defence » notifiée par l'accusé (CPR 2026, r. 13.2) ; le jury rend un verdict spécial « coupable mais aliéné » (s. 177), puis garde (s. 188). Texte des ss. 154, 177 et 188 non lu (PDF tronqué à s. 127) : intitulés seuls."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "TC",
+   "nom": "Îles Turques-et-Caïques",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "élevée",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "verdict spécial du jury (ou du juge seul) « coupable de l'acte ou de l'omission mais aliéné » + placement dans un établissement de santé mentale, garde jusqu'à libération sur ordre du Gouverneur (s. 65 CPO)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : la sufficiency hearing (Part II CPO) ne traite pas de l'aliénation, invoquée sous le plaidoyer de non-culpabilité et tranchée par le verdict spécial du procès (s. 64 CPO).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Si l'accusé paraît aliéné avant ou lors de l'arraignment, la cour peut faire statuer un jury spécial sur sa santé mentale (s. 24(2) CPO) ; s'il est déclaré aliéné et inapte, placement en établissement de santé mentale jusqu'à libération par le Gouverneur (s. 65) ; ni procès des faits ni reprise du procès prévus par le texte."
+   },
+   "bases_legales": "Criminal Procedure Ordinance (Cap. 3.03, Ord. 26 of 1968, éd. révisée au 31.3.2021) ss. 9(7), 11, 24, 26, 58, 62, 64, 65 (mod. Ord. 25 of 2016, en vigueur 1.12.2017) ; Mental Health Ordinance (Cap. 8.08, Ord. 25 of 2016) ss. 15, 18, 21-25 (Part III exclue de l'entrée en vigueur du 1.12.2017) ; critère de fond : common law (Criminal Law Ordinance, Cap. 3.01, muette)",
+   "extrait": "the jury shall return a special verdict that the accused was guilty of the act or omission charged against him",
+   "note": "Pas de filtre préalable : l'aliénation (critère de common law, aucun texte local) s'invoque sous le plaidoyer de non-culpabilité, annoncée à la plea and directions hearing (s. 9(7)) ; au procès, le jury (ou juge seul, s. 62) rend le verdict spécial (s. 64), puis placement jusqu'à décision du Gouverneur (s. 65). Ex. : affaire Randy Harvey, 2011. Inapte : jury spécial, internement sans procès.",
+   "sources": [
+    {
+     "titre": "TCI — Criminal Procedure Ordinance, Cap. 3.03 (Revised Edition, law as at 31 March 2021)",
+     "url": "https://www.gov.tc/agc/component/edocman/03-03-criminal-procedure-ordinance-2/fdocument?Itemid=9999",
+     "langue": "en"
+    },
+    {
+     "titre": "TCI — Mental Health Ordinance, Cap. 8.08 (Revised Edition, law as at 31 March 2021)",
+     "url": "https://www.gov.tc/agc/component/edocman/08-08-mental-health-ordinance-2/fdocument?Itemid=9999",
+     "langue": "en"
+    },
+    {
+     "titre": "TCI — Criminal Law Ordinance, Cap. 3.01 (Revised Edition, law as at 31 March 2018)",
+     "url": "https://www.gov.tc/agc/component/edocman/03-01-criminal-law-ordinance-2/fdocument?Itemid=9999",
+     "langue": "en"
+    },
+    {
+     "titre": "Attorney General's Chambers TCI — 2021 Revised Laws",
+     "url": "https://www.gov.tc/agc/2021-revised-laws",
+     "langue": "en"
+    },
+    {
+     "titre": "RTC 89 FM — Randy Harvey found guilty of murder but insane (Supreme Court, 28 Oct 2011)",
+     "url": "https://www.rtc89fm.com/?p=2747",
+     "langue": "en"
+    }
+   ],
+   "fichier_source": "pass2/ext_69_ms_tc.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "VG",
+   "nom": "Îles Vierges britanniques",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Verdict spécial du jury « not guilty by reason of insanity » (Criminal Procedure Act, s. 56), détention « until Her Majesty's pleasure shall be known » (s. 57), puis rapport au Gouverneur, qui ordonne le traitement comme « criminal of unsound mind » (s. 58)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : si l'aliénation est établie par les preuves du procès sur acte d'accusation, le jury qui constate que l'accusé a commis l'acte rend le verdict spécial (s. 56) ; la loi ne prévoit aucun filtre préalable.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "S. 54 : si l'accusé paraît aliéné au moment de plaider, un jury statue sur son aptitude ; s. 55 : s'il paraît aliéné pendant le procès, le jury rend un verdict d'aliénation au lieu du verdict sur l'acte d'accusation, sans préjudice d'un procès ultérieur ; détention puis décision du Gouverneur (ss. 57-58) ; pas de procès des faits."
+   },
+   "bases_legales": "Criminal Procedure Act, Cap. 18 (édition révisée à jour au 30 juin 2013 ; Act 3 of 1873, mod. 1991, 1997 et 2006), Part VII, ss. 54-58 ; Criminal Code 1997 (No. 1 of 1997) ; Mental Health Act 2014 et ECSC Criminal Procedure Rules 2026 (non lues)",
+   "extrait": "it appears to the jury […] that he or she did the act or made the omission charged, but was insane at the time",
+   "note": "Pas de filtre préalable : si l'aliénation est établie au procès sur acte d'accusation, le jury qui constate que l'accusé a commis l'acte rend un verdict spécial « not guilty by reason of insanity » (Criminal Procedure Act, s. 56), puis détention et décision du Gouverneur (ss. 57-58). Texte lu dans l'édition révisée de 2013 ; Mental Health Act 2014 et règles de procédure de 2026 non lues.",
+   "sources": [
+    {
+     "titre": "Attorney General's Chambers (laws.gov.vg) : Criminal Procedure Act, édition révisée au 30 juin 2013 (PDF ; ss. 54-58 lues)",
+     "url": "https://laws.gov.vg/sites/default/files/consolidated_laws/2013/Criminial%20%26%20Elections%20Legislation/Criminal%20Procedure%20Act%20.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "laws.gov.vg : fiche du Criminal Procedure Act",
+     "url": "https://laws.gov.vg/Laws/criminal-procedure-act",
+     "langue": "en"
+    },
+    {
+     "titre": "High Court (ECSC), The Queen v. Elrys Todman (2014)",
+     "url": "https://www.eccourts.org/wp-content/files_mf/thequeenvelrystodman.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Court of Appeal (ECSC), Sylvester Gaston v. The Queen (1977), via vLex",
+     "url": "https://vg.vlex.com/vid/sylvester-gaston-appellant-v-805344697",
+     "langue": "en"
+    },
+    {
+     "titre": "laws.gov.vg : Mental Health Act 2014 (fiche)",
+     "url": "https://laws.gov.vg/laws/mental-health-act-2014",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_68_vg_ai.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : textes décisifs non lus (laws.gov.vg ne livre pas le texte du Criminal Procedure Act Cap. 18, de la MHA 2014 ni des ECSC Criminal Procedure Rules 2026). Indices : Todman (2014) vise les personnes inaptes « at trial » ou « found not guilty by reason of insanity » (MHA Cap. 191 s. 11) ; Gaston (CA 1977) : grief d'avoir retiré l'aliénation au jury. Hypothèse : vert."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "AI",
+   "nom": "Anguilla",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Verdict spécial du jury : l'accusé « was guilty of the act or omission charged against him, but was insane » (Criminal Procedure Act, s. 53), sans peine : détention « until His Majesty's pleasure shall be known » (s. 54), puis rapport au Gouverneur, qui ordonne le traitement comme « criminal of unsound mind » (s. 55)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : si l'aliénation est établie par les preuves du procès sur acte d'accusation, le jury qui constate que l'accusé a commis l'acte rend le verdict spécial (s. 53) ; la loi ne prévoit aucun filtre préalable.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "S. 51 : si l'accusé paraît aliéné au moment de plaider, un jury statue sur son aptitude ; s. 52 : s'il paraît aliéné pendant le procès, le jury rend un verdict d'aliénation au lieu du verdict sur l'acte d'accusation, sans préjudice d'un procès ultérieur ; détention puis décision du Gouverneur (ss. 54-55) ; pas de procès des faits."
+   },
+   "bases_legales": "Criminal Procedure Act, R.S.A. c. C150 (Revised Statutes, à jour au 31 décembre 2022 ; Act 16/2022), Part 8, ss. 51-55 ; Criminal Code, R.S.A. c. C140, et Mental Health Act, c. M072 (non lus)",
+   "extrait": "it appears to the jury […] that he did the act or made the omission charged, but was insane as aforesaid",
+   "note": "Pas de filtre préalable : si l'aliénation est établie au procès sur acte d'accusation, le jury qui constate que l'accusé a commis l'acte rend un verdict spécial « guilty of the act […] but was insane » (Criminal Procedure Act, s. 53), sans peine : détention, puis décision du Gouverneur (ss. 54-55). Texte lu dans les Revised Statutes à jour au 31 décembre 2022.",
+   "sources": [
+    {
+     "titre": "Government of Anguilla : Revised Statutes, Criminal Procedure Act, R.S.A. c. C150, à jour au 31.12.2022 (PDF ; ss. 51-55 lues)",
+     "url": "https://www.gov.ai/Legislation/Acts/C150-Criminal%20Procedure%20Act.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Government of Anguilla : index des Revised Statutes and Regulations 2022",
+     "url": "https://gov.ai/index.php/service/2022-revised-statutes-and-regulations",
+     "langue": "en"
+    },
+    {
+     "titre": "Attorney General's Chambers : projet de Criminal Justice Reform Act (2018)",
+     "url": "https://www.gov.ai/document/ag/CJRBFinal.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Government of Anguilla : lois de 2025",
+     "url": "https://gov.ai/laws/acts-2025",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_68_vg_ai.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : aucun texte décisif lu. Les liens de gov.ai vers le Criminal Code C140, le Criminal Procedure Act C150 et la Mental Health Act M072 renvoient une erreur ; laws.gov.ai n'affiche que des tableaux sans liens ; aucune décision anguillaise trouvée. Le projet de Criminal Justice Reform Act 2018 ne touche pas l'aliénation ; lois de 2025 sans réforme pertinente. Hypothèse non vérifiée : vert."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "BM",
+   "nom": "Bermudes",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "élevée",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Verdict spécial du jury : acquittement pour aliénation (CC s. 546(1)), garde stricte puis hospitalisation sur ordre du Gouverneur après avis du comité de la grâce (s. 546(2)) ; depuis 2016, inscription possible au programme de soins en communauté (s. 68A(5)(c))",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : s'il « est allégué ou apparaît » au procès sur acte d'accusation que l'accusé était aliéné, le jury statue par un verdict spécial (s. 546(1)) ; le programme de la s. 68A n'intervient qu'après une déclaration de culpabilité ou un acquittement.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "S. 514 : si l'aptitude de l'accusé à comprendre le procès est incertaine au moment de plaider, un jury statue ; s'il est inapte, garde stricte jusqu'à la décision du Gouverneur, puis hospitalisation (s. 545(4)), et il peut être rejugé (s. 514(4)) ; même régime pour l'accusé trouvé aliéné pendant le procès (s. 545) ; pas de procès des faits."
+   },
+   "bases_legales": "Criminal Code Act 1907 (CC, texte consolidé) s. 40 (présomption de santé d'esprit), s. 41 (aliénation), s. 68A (Mental Health Treatment Programme, 2016:30), s. 514 (inaptitude), ss. 544-546 (Part XXVII : discharge of persons acquitted ; accused person insane at trial ; acquittal on ground of insanity ; mod. 1998:32) ; Mental Health Act 1968 ss. 33, 38, 39, 43, 44",
+   "extrait": "the jury are to be required to find specially, if they find that he is not guilty, whether he was insane at the time",
+   "note": "Pas de filtre préalable : s'il « est allégué ou apparaît » au procès sur acte d'accusation que l'accusé était aliéné (CC s. 41 ; présomption de santé d'esprit, s. 40), le jury rend un verdict spécial d'acquittement pour aliénation (s. 546(1)) ; garde puis hospitalisation sur ordre du Gouverneur (s. 546(2)). Depuis 2016, programme de soins en communauté possible après l'acquittement (s. 68A(5)).",
+   "sources": [
+    {
+     "titre": "Bermuda Laws Online : Criminal Code Act 1907, version consolidée (PDF complet ; ss. 40-41, 68A, 514, 544-546 lues)",
+     "url": "https://www.bermudalaws.bm/Laws/Consolidated%20Law/1907/Criminal%20Code%20Act%201907",
+     "langue": "en"
+    },
+    {
+     "titre": "Criminal Code Amendment Act 2016 (2016:30) : Mental Health Treatment Programme, s. 68A(5)",
+     "url": "https://bermudalaws.bm/Laws/Annual%20Law/Acts/2016/Criminal%20Code%20Amendment%20Act%202016",
+     "langue": "en"
+    },
+    {
+     "titre": "Mental Health Act 1968 (consolidé) : Part III, ss. 33, 38, 39, 43, 44",
+     "url": "https://bermudalaws.bm/Laws/Consolidated%20Law/1968/Mental%20Health%20Act%201968",
+     "langue": "en"
+    },
+    {
+     "titre": "Mental Health Amendment Act 1998 (1998:32) : Governor remplacé par Minister (MHA s. 43), modification CC ss. 545(4), 546(2)",
+     "url": "https://bermudalaws.bm/Laws/Annual%20Law/Acts/1998/Mental%20Health%20Amendment%20Act%201998",
+     "langue": "en"
+    },
+    {
+     "titre": "Criminal Jurisdiction and Procedure Act 2015 : s. 50 (renvoi pour examen médical)",
+     "url": "https://www.bermudalaws.bm/Laws/Annual%20Law/Acts/2015/Criminal%20Jurisdiction%20and%20Procedure%20Act%202015",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_66_bm.json",
+     "couleur": "vert",
+     "confiance": "moyenne",
+     "note": "Pas de filtre préalable : l'irresponsabilité (CC s. 41 ; présomption de santé d'esprit s. 40) est tranchée au procès sur acte d'accusation, qui « acquitte » (s. 546, cité par s. 68A(5)(c)) ; garde puis internement sur ordre du Ministre (MHA s. 43). Texte de s. 546 non lu (PDF tronqué) : rôle du jury et initiative (défense/Couronne) non vérifiés. Réforme 2016 : option s. 68A si soins en communauté."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "MV",
+   "nom": "Maldives",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "dv"
+   ],
+   "langues_recherche": [
+    "dv",
+    "en"
+   ],
+   "couleur": "bleu",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Jugement au procès : le juge peut conclure que l'accusé n'a pas à répondre pénalement (CPC s. 154(b)) ; l'acquitté pour aliénation est placé d'office pour examen (60 jours au plus) en vue d'un internement civil (CP s. 52(c))",
+    "qui_declenche_examen": "defense",
+    "accuse_choisit_moment": true,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : l'aliénation est une excuse (chapitre 50 CP) tranchée au procès ; seules les défenses « non disculpatoires » du chapitre 60 (prescription, inaptitude, immunité…) sont examinées dès l'audience préliminaire (CPC s. 110(c)).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "CP s. 62 et CPC s. 121 : l'accusé peut invoquer à tout stade son incapacité à comprendre la procédure ou à se défendre ; le tribunal, d'office ou à la demande de l'État, ordonne un examen médical ; s'il est inapte, le procès est différé ou abandonné et il est placé d'office pour examen (60 jours au plus) en vue d'un internement civil ; pas de procès des faits."
+   },
+   "bases_legales": "Code pénal / ޤާނޫނުލްޢުޤޫބާތު (loi de 2014, en vigueur le 16.07.2015) s. 15(b)(3) et 15(d) (charge de la preuve des « general defenses »), 50, 52 (aliénation), 60, 62 (inaptitude) ; Code de procédure pénale / ޖިނާއީ އިޖުރާއަތުގެ ޤާނޫނު (loi n° 12/2016, Gazette vol. 45 n° 67 du 2 mai 2016) s. 110(c), 120, 121, 138, 154, 155(b)(3), 199",
+   "extrait": "ޖިނާއީ މަސްއޫލިއްޔަތު އުފުލަން ނުޖެހޭކަމަށް ކަމުގައިވާނަމަ، އެކަން ސާބިތުކުރުމަށްޓަކައި ދަޢުވާ ލިބޭ ފަރާތުން ނަގާފައިވާ ދިފާޢެއް އޭނާއަށް ސާބިތުކޮށްދެވުނު",
+   "note": "L'aliénation (CP s. 52) est une excuse que l'accusé doit soulever et prouver par prépondérance (s. 15(b)(3)). Elle est jugée au procès : le juge peut conclure à l'absence de responsabilité pénale en motivant pourquoi la défense soulevée par l'accusé est établie (CPC 12/2016, s. 154(b), 155(b)(3)). Seules les défenses du chapitre 60 CP (prescription, inaptitude…) passent à l'audience préliminaire.",
+   "sources": [
+    {
+     "titre": "Gazette du gouvernement des Maldives, vol. 45 n° 67 (2 mai 2016) : loi n° 12/2016, Code de procédure pénale (PDF officiel en dhivehi ; s. 110, 120-121, 138, 154-155, 199 lues)",
+     "url": "https://storage.googleapis.com/gazette.gov.mv/docs/gazette/4046.pdf",
+     "langue": "dv"
+    },
+    {
+     "titre": "CJAD (Université de Nottingham) : Penal Code of the Maldives 2014, traduction anglaise (s. 15, 50, 52, 60, 62 lues)",
+     "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/Maldives-penal-code_2014_EN.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Gazette du gouvernement des Maldives : publication n° 3938",
+     "url": "https://www.gazette.gov.mv/gazette/3938",
+     "langue": "dv"
+    },
+    {
+     "titre": "CJAD : Maldives, fiche sur l'aliénation",
+     "url": "https://cjad.nottingham.ac.uk/en/state/170/keyword/585",
+     "langue": "en"
+    },
+    {
+     "titre": "Raajje.mv : évaluation de l'aptitude ordonnée par le Tribunal pénal (2023)",
+     "url": "https://raajje.mv/138115",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_61_mv.json",
+     "couleur": "vert",
+     "confiance": "faible",
+     "note": "Le tribunal pénal tranche au procès ordinaire : l'aliénation (s. 52 CP) est une « general defense » que l'accusé doit prouver par prépondérance (s. 15(b)(3)) ; l'acquitté est placé d'office pour examen (≤ 60 j) avant internement civil. Pas de filtre préalable vu. CPC 12/2016 non lu au-delà de l'art. 32 (PDF tronqué, lethun.pgo.mv bloqué) : si seule la défense contrôle l'examen, classer « bleu »."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "bleu",
+   "couleur_deduite_des_faits": "bleu",
+   "groupe": "Asie",
+   "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "VI",
+   "nom": "Îles Vierges des États-Unis",
+   "niveau": "subdivision",
+   "parent": "US",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "bleu",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "verdict spécial du jury « not guilty by reason of insanity » + internement en unité médico-légale (forensic unit) jusqu'à ce que le tribunal constate le rétablissement de la capacité et l'absence de dangerosité",
+    "qui_declenche_examen": "defense",
+    "accuse_choisit_moment": true,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : l'aliénation est tranchée au procès ordinaire devant jury (ou juge si l'accusé y renonce), par un verdict spécial après débat complet sur les faits.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "19 V.I.C. § 1028 (2023) : audience sur requête de la défense, de l'Attorney General ou d'office ; si inaptitude (prépondérance), placement au Department of Health pour restauration (12 mois max.), procès suspendu ; à défaut, internement civil (§§ 1026, 1039) ; pas de procès des faits. En 2026, la Superior Court a refusé le classement sans demande préalable d'internement civil."
+   },
+   "bases_legales": "14 V.I.C. § 14(4) (critère du « produit » de la maladie mentale) ; 19 V.I.C. §§ 1028-1029 (Behavioral Health Act, Act No. 8688, en vigueur le 19 janv. 2023) ; 5 V.I.C. § 3637 (texte parallèle sur le verdict et l'internement) ; V.I. R. Crim. P. 12.2 (Promulgation Order 2017-010, en vigueur le 1er déc. 2017) ; Petric v. People, S. Ct. Crim. No. 2013-0067 (V.I. 2014) ; Rouse v. People, 2024 VI 4 ; People v. Cruz-Santiago, 2026 VI Super 34U",
+   "extrait": "Upon the filing of a notice […] that the defendant intends to rely on the defense of insanity, the court […] shall order",
+   "note": "Défense de l'accusé : sans avis (V.I. R. Crim. P. 12.2(a)) il ne peut invoquer l'aliénation ; l'expertise est ordonnée après cet avis (19 V.I.C. § 1029(a), 2023). Le jury tranche au procès ordinaire (verdict spécial NGRI ; santé mentale à prouver par le parquet), puis internement médico-légal. Nuance : R. 12.2(c)(1) permet des examens d'office ; aucune jurisprudence lue sur une défense imposée.",
+   "sources": [
+    {
+     "titre": "19 V.I.C. § 1029 — Insanity as a Defense (Behavioral Health Act, Act No. 8688 ; Justia, Code 2025)",
+     "url": "https://law.justia.com/codes/virgin-islands/title-19/part-v/chapter-45/subchapter-ix/1029/",
+     "langue": "en"
+    },
+    {
+     "titre": "19 V.I.C. § 1028 — Determination of mental competency to stand trial (Justia, Code 2025)",
+     "url": "https://law.justia.com/codes/virgin-islands/title-19/part-v/chapter-45/subchapter-ix/1028/",
+     "langue": "en"
+    },
+    {
+     "titre": "Virgin Islands Rules of Criminal Procedure (Supreme Court of the Virgin Islands), Rule 12.2 — Notice of an Insanity Defense; Mental Examination",
+     "url": "https://www.vicourts.org//UserFiles/DBFiles/server_9784218/201911/16185775/vi_rules_of_criminal_procedure.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "14 V.I.C. § 14 — Capacity to commit crimes or offenses (Justia)",
+     "url": "https://law.justia.com/codes/virgin-islands/title-14/chapter-1/subchapter-ii/14/",
+     "langue": "en"
+    },
+    {
+     "titre": "Rouse v. People of the Virgin Islands, 2024 VI 4 (Supreme Court of the Virgin Islands, 17 janv. 2024)",
+     "url": "https://supreme.vicourts.org/court_opinions/published_opinions/2024_published_opinions/rouse_v__people_of_the_virgin_islands",
+     "langue": "en"
+    },
+    {
+     "titre": "People v. Cruz-Santiago ; People v. Rivera, 2026 VI Super 34U (Superior Court, St. Croix, 28 juil. 2026) — application du 19 V.I.C. § 1028",
+     "url": "https://usvipublicportal-api.vicourts.org/courts/87edff36-c02b-4073-aea4-c0652bc123d9/cms/case/5AC0A5E2-50C2-4ED1-A49A-5A946A15958D/docketentrydocuments/5E0B839A-2D27-45BD-8A45-2F003AD0DDCA",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_72_vi.json",
+     "couleur": "bleu",
+     "confiance": "moyenne",
+     "note": "Défense de l'accusé : sans avis (V.I. R. Crim. P. 12.2(a)) il ne peut invoquer l'aliénation ; l'expertise est ordonnée après cet avis (19 V.I.C. § 1029(a), 2023). Le jury tranche au procès ordinaire (verdict spécial NGRI ; santé mentale à prouver par le parquet), puis internement médico-légal. Nuance : R. 12.2(c)(1) permet des examens d'office ; aucune jurisprudence lue sur une défense imposée."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "bleu",
+   "couleur_deduite_des_faits": "bleu",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "JE",
+   "nom": "Jersey",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en",
+    "fr"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Verdict spécial « not criminally responsible » enregistré par la juridiction de jugement après avoir constaté que l'accusé a commis l'acte (art. 72 MHL 2016), puis acquittement ou mesure de l'art. 59 (treatment order avec ou sans restrictions, guardianship order)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : l'art. 72 s'applique « in any proceedings » ; la juridiction de jugement constate d'abord que l'accusé a commis l'acte, puis l'irresponsabilité (jury dans l'affaire Moon, 2021) ; l'audience sans jury devant l'Inferior Number ne vise que l'accusé inapte (art. 58-59).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Lu (art. 55-59 MHL 2016) : si l'accusé paraît incapable de participer effectivement (trouble mental ou incapacité de communiquer), la juridiction de jugement (Magistrate's Court, Youth Court ou Royal Court) ajourne et tranche seule, selon la prépondérance des probabilités, sur l'avis obligatoire de deux médecins, éventuellement hors de sa présence ; mesures spéciales si elles suffisent ; sinon ajournement pour soins (6 mois au plus) puis, s'il doit rester incapable, « the proceedings ... shall not proceed further » : libération sans condition ou, après examen des preuves et constat qu'il a commis l'acte, treatment order (avec ou sans restrictions) ou guardianship order. Affaire Nicolle (2023, presse) : audience devant l'Inferior Number sans jury (« not a conventional trial »), constat des faits puis « not criminally responsible » et acquittement. Avant le 1er octobre 2018 (loi de 1964, art. 1) : question tranchée par la Superior Number (jusqu'à la réforme de 2015), puis détention « during Her Majesty's pleasure », sans audience sur les faits prévue par le texte."
+   },
+   "bases_legales": "Mental Health (Jersey) Law 2016 (L.29/2016, version consolidée du 24 nov. 2025), art. 55-59 (Part 8), 60(5), 65, 66, 68 et 72 (special verdicts) ; Mental Health (Jersey) Law 2016 (Appointed Day) Act 2018 (entrée en vigueur le 1er oct. 2018) ; Criminal Justice (Insane Persons) (Jersey) Law 1964 (abrogée) ; Mental Health, Capacity and Self-Determination (Jersey) Amendment Law 2026 (adoptée le 26 mars 2026 ; ne modifie ni la Part 8 ni l'art. 72)",
+   "extrait": "Where the court finds that […] the defendant carried out the act alleged; but […] ought not to be held criminally responsible",
+   "note": "Pas de filtre préalable : dans toute procédure, la juridiction de jugement constate d'abord que l'accusé a commis l'acte, puis enregistre un verdict spécial d'irresponsabilité et acquitte ou ordonne soins ou tutelle (art. 72 et 59 MHL 2016) ; jury dans l'affaire Moon (2021). Inapte : la cour tranche sur deux avis médicaux, puis audience des faits sans jury (art. 55-59). Initiative non précisée.",
+   "sources": [
+    {
+     "titre": "Jersey Legal Information Board : Mental Health (Jersey) Law 2016, version consolidée (texte complet ; art. 55-59 et 72 lus)",
+     "url": "https://www.jerseylaw.je/laws/current/l_29_2016",
+     "langue": "en"
+    },
+    {
+     "titre": "Criminal Justice (Insane Persons) (Jersey) Law 1964, édition révisée remplacée (31 août 2004) – jerseylaw.je",
+     "url": "https://jerseylaw.je/laws/superseded/Pages/2004/08.280.aspx",
+     "langue": "en"
+    },
+    {
+     "titre": "P.78/2016 – Draft Mental Health (Jersey) Law 201- : rapport du ministre (paras 64-66, verdict spécial et inaptitude) – States Assembly",
+     "url": "https://statesassembly.je/getmedia/707256ab-6235-4aa4-bd36-e0cdf2fb6157/P.78-2016.pdf?ext=.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Bailiwick Express, 12 févr. 2021 – procès Moon : le jury examine la responsabilité pénale (verdict spécial)",
+     "url": "https://www.bailiwickexpress.com/news/trial-jury-still-considering-if-man-was-criminally-responsible-armed-stand/",
+     "langue": "en"
+    },
+    {
+     "titre": "Bailiwick Express, 15 févr. 2023 – affaire Nicolle : inaptitude, audience devant l'Inferior Number, « not criminally responsible »",
+     "url": "https://www.bailiwickexpress.com/news/former-chief-ministers-private-secretary-not-criminally-responsible-spate-attacks/",
+     "langue": "en"
+    },
+    {
+     "titre": "Mental Health, Capacity and Self-Determination (Jersey) Amendment Law 202- (texte adopté) – jerseylaw.je",
+     "url": "https://www.jerseylaw.je/laws/pending/PDFs/MentalHealth,CapacityandSelf-DeterminationAmendmentLaw202-_ADOPTED.pdf",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_63_je.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : art. 72 MHL 2016 (verdict spécial) non lu, textes consolidés tronqués par l'outil après l'art. 68, aucun arrêt trouvé. Hypothèse vert : pas de filtre préalable ; selon la presse (Moon, 2021), le jury doit être sûr des faits puis peut retenir « not criminally responsible » (plus probable que non) ; la cour acquitte ou ordonne soins/tutelle. Inapte : audience des faits sans jury (art. 59)."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "FK",
+   "nom": "Îles Malouines",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "blanc",
+   "confiance": "faible",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Hypothèse non vérifiée : verdict spécial « not guilty by reason of insanity » au procès + mesure (hospital order, supervision, absolute discharge) selon la Part 34 de la Criminal Procedure and Evidence Ordinance 2014, non lue",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Hypothèse non vérifiée : la Part 34 de la CPEO 2014 reprendrait le Criminal Procedure (Insanity) Act 1964 (verdict spécial rendu au procès) ; texte non lu.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Non vérifié (hypothèse : comme le CP(I)A 1964 repris par la Part 34 de la CPEO 2014, décision du juge sur l'aptitude puis examen des faits avant toute mesure)."
+   },
+   "bases_legales": "Criminal Procedure and Evidence Ordinance 2014 (en vigueur le 21.04.2017), Part 34 (mentally disordered offenders), non lue ; Crimes Ordinance 2014, qui ne codifie pas l'insanité (common law, règles M'Naghten)",
+   "extrait": "",
+   "note": "Blanc : Part 34 (mentally disordered offenders) de la CPEO 2014, en vigueur depuis le 21.04.2017, non lue : legislation.gov.fk rendu en JavaScript, supplément 11/2014 de la Gazette inaccessible. Le mémoire du Crimes Bill 2014 dit l'insanité non codifiée et le CP(I)A 1964 « covered in Part 34 ». Hypothèse : verdict spécial au procès (jury de 7 ou 12, ou juge seul), donc vert.",
+   "sources": [
+    {
+     "titre": "Falkland Islands Gazette Supplement, Vol. 25, No. 10 (15 août 2014) : Crimes Bill 2014 et mémoire explicatif",
+     "url": "https://nationalarchives.gov.fk/jdownloads/Gazettes%20Proclamations%20Notices/2014%20Supplement%2010.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Falkland Islands Courts – Criminal Proceedings : Trial (jury de 7, 12 pour le meurtre, ou juge seul au choix de l'accusé)",
+     "url": "https://www.gov.fk/courts/courts/criminal/trial/",
+     "langue": "en"
+    },
+    {
+     "titre": "Legislative Assembly Record, 27 avril 2017 (entrée en vigueur de la CPEO 2014 le 21 avril 2017)",
+     "url": "https://assembly.gov.fk/jdownloads/Assembly%20Records%20and%20Order%20Papers/Legislative%20Assembly%20Records/2017/Legislative%20Assembly%20Record%2027April%202017.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Falkland Islands Statute Law Database (consulté, contenu non lisible)",
+     "url": "https://www.legislation.gov.fk/",
+     "langue": "en"
+    }
+   ],
+   "couleur_hypothese": "vert",
+   "historique": [
+    {
+     "fichier": "pass2/ext_70_fk_sh.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : Part 34 (mentally disordered offenders) de la CPEO 2014, en vigueur depuis le 21.04.2017, non lue : legislation.gov.fk rendu en JavaScript, supplément 11/2014 de la Gazette inaccessible. Le mémoire du Crimes Bill 2014 dit l'insanité non codifiée et le CP(I)A 1964 « covered in Part 34 ». Hypothèse : verdict spécial au procès (jury de 7 ou 12, ou juge seul), donc vert."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "blanc",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": [
+    "confiance_faible",
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "SH",
+   "nom": "Sainte-Hélène",
+   "niveau": "subdivision",
+   "parent": "GB",
+   "langues_officielles": [
+    "en"
+   ],
+   "langues_recherche": [
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "élevée",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "verdict spécial « not guilty by reason of insanity » + rapport au Gouverneur, qui ordonne la détention (hôpital psychiatrique, prison ou autre lieu sûr, à Sainte-Hélène ou ailleurs), avec rapports périodiques et libération sur décision du Gouverneur",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : l'allégation d'aliénation n'empêche pas le renvoi en jugement (s. 120) ; le verdict spécial est rendu au procès par le jury, le juge seul ou la Magistrates' Court.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "S. 117 : si l'accusé paraît aliéné et incapable de se défendre, le tribunal enquête ; si c'est le cas, la procédure est suspendue et le Gouverneur peut ordonner l'internement, sans jugement des faits ; reprise sur certificat d'aptitude (ss. 118-119). S. 122 : accusé non aliéné mais ne comprenant pas la procédure : représentant désigné, audition des preuves, constat de l'acte sans condamnation, mesures du Gouverneur."
+   },
+   "bases_legales": "Criminal Procedure Ordinance 1975 (Ord. No. 9 of 1975, Rev. Ed. 2017, texte à jour au 30.08.2022), ss. 3(2), 117-122 (notamment ss. 120, 121(1)-(6), 122(1)-(12)) ; English Law (Application) Ordinance 2005 (droit pénal de fond)",
+   "extrait": "must make a special finding or return a special verdict to the effect that the defendant is not guilty by reason of insanity",
+   "note": "Aucun filtre préalable : le tribunal doit renvoyer en jugement malgré l'allégation d'aliénation (s. 120). Au procès, le jury (ou juge seul, ou Magistrates' Court) qui constate l'acte rend le verdict spécial (s. 121(1)) ; la détention relève du Gouverneur. Droit de fond anglais (loi de 2005). L'aliéné inapte peut être interné sans jugement des faits (s. 117). Ascension/Tristan non vérifiés.",
+   "sources": [
+    {
+     "titre": "Criminal Procedure Ordinance 1975, texte consolidé à jour au 30 août 2022 (St Helena Government)",
+     "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2022/09/Criminal-Procedure-Ord-Updated-300822.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Criminal Procedure Ordinance, Revised Edition 2017 (St Helena Government)",
+     "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2017/11/Criminal-Procedure-Ordinance.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Laws of St Helena – liste des lois par catégorie (St Helena Government, 2025)",
+     "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2025/04/20250204_STH-Laws_Category-list.pdf",
+     "langue": "en"
+    }
+   ],
+   "fichier_source": "pass2/ext_70_fk_sh.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": [
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "AW",
+   "nom": "Aruba",
+   "niveau": "subdivision",
+   "parent": "NL",
+   "langues_officielles": [
+    "nl",
+    "pap"
+   ],
+   "langues_recherche": [
+    "nl"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Jugement au fond : si les faits sont prouvés mais l'auteur non punissable, ontslag van alle rechtsvervolging (Sv art. 396, al. 2) avec, si nécessaire, placement d'un an en hôpital psychiatrique (WvSr art. 1:80) ou TBR (art. 1:81)",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : après l'audience, le juge délibère sur la preuve des faits, leur qualification, puis la punissabilité de l'auteur (Sv art. 394) ; le classement par l'OM reste discrétionnaire (plainte au Hof, art. 15 Sv).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Art. 33 Sv : si le prévenu n'est plus en état de comprendre la portée des poursuites, le juge les suspend à tout stade (d'office ou sur demande) ; la suspension est levée dès son rétablissement."
+   },
+   "bases_legales": "WvSr (AB 2012 no. 24) art. 1:115, a (non-imputabilité pour trouble mental), 1:80 (plaatsing in een psychiatrisch ziekenhuis), 1:81-1:82 (terbeschikkingstelling) ; Sv (AB 1996 no. 75, registre central au 19 sept. 2017) art. 15, 33, 394, 396 al. 2",
+   "extrait": "Acht het Hof het feit bewezen, en het feit of de verdachte niet strafbaar, dan ontslaat het hem van alle rechtsvervolging te dier zake.",
+   "note": "Pas de filtre préalable : après l'audience, le juge délibère sur la preuve des faits puis sur la punissabilité de l'auteur (Sv art. 394) ; si l'acte ne peut lui être imputé (WvSr art. 1:115, a), il prononce un ontslag van alle rechtsvervolging et, si nécessaire, le placement psychiatrique d'un an (art. 1:80) ou la TBR (art. 1:81) (Sv art. 396, al. 2). Aucun jugement arubais lu.",
+   "sources": [
+    {
+     "titre": "Overheid Aruba : Wetboek van Strafrecht (AB 2012 no. 24), PDF complet (art. 1:80-1:82, 1:115 lus)",
+     "url": "https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/1601ab12.024.pdf",
+     "langue": "nl"
+    },
+    {
+     "titre": "Overheid Aruba : Wetboek van Strafvordering (AB 1996 no. 75), PDF complet (art. 33, 394-396 lus)",
+     "url": "https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/1603ab96.075.pdf",
+     "langue": "nl"
+    },
+    {
+     "titre": "R.S.T. Gaarthuis & F. Koenraadt, « Vraag en aanbod binnen het Arubaanse forensisch-psychiatrische veld », Caribisch Juristenblad 2014 (4)",
+     "url": "https://dspace.library.uu.nl/bitstream/handle/1874/297176/Vraag_en_aanbod_binnen_het_Arubaanse_forensisch-psychiatrische_veld.pdf?sequence=1",
+     "langue": "nl"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_71_aw_cw_sx.json",
+     "couleur": "vert",
+     "confiance": "faible",
+     "note": "Le WvSr (AB 2012 no. 24) réserve au « rechter » le placement d'un an en hôpital psychiatrique de l'auteur non imputable et dangereux (art. 1:80) et la TBR (art. 1:81, al. 2 : le juge apprécie l'imputabilité) ; selon la doctrine (CJB 2014), mesures du juge pénal. Non lus : article d'irresponsabilité, délibéré du Sv (PDF tronqué à l'art. 111), jugement arubais ; d'où confiance faible."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "CW",
+   "nom": "Curaçao",
+   "niveau": "subdivision",
+   "parent": "NL",
+   "langues_officielles": [
+    "nl",
+    "pap",
+    "en"
+   ],
+   "langues_recherche": [
+    "nl"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Jugement au fond du Gerecht in eerste aanleg (puis du Hof en appel) sur la punissabilité de l'auteur ; en cas de non-imputabilité, issue attendue : ontslag van alle rechtsvervolging + TBR ou placement psychiatrique (non lue dans un jugement)",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune voie préalable relevée : la punissabilité de l'auteur est tranchée dans le jugement rendu après l'audience et la preuve des faits (ECLI:NL:OGHACMB:2013:BZ4659 ; 2025:338).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Nouveau Sv (P.B. 2025, 60) art. 33 : le juge suspend les poursuites à tout stade si le prévenu n'est plus en état d'en comprendre la portée ; disposition correspondante de l'ancien Sv (P.B. 1996, 164) non lue."
+   },
+   "bases_legales": "WvSr (P.B. 2011, 48 ; mod. P.B. 2015, 74 ; 2020, 163 ; 2022, 90 ; 2024, 102) : articles sur l'ontoerekeningsvatbaarheid, la TBR et le placement non lus ; Sv (P.B. 1996, 164, en vigueur en 1997) ; nouveau Sv (P.B. 2025, 60) art. 1 (einduitspraak), 15 et 25 (beklag), 33 (schorsing), 63 lid 5, 70i (deskundige) ; ECLI:NL:OGHACMB:2013:BZ4659.",
+   "extrait": "Zowel de psychiater als de psycholoog achten de verdachte volledig toerekeningsvatbaar. […] Het Hof maakt dit oordeel tot het zijne.",
+   "note": "Aucun filtre préalable relevé : dans ECLI:NL:OGHACMB:2013:BZ4659 (meurtre), le juge du fond, après les audiences et la preuve des faits, statue lui-même sur l'imputabilité au vu des rapports du psychiatre et du psychologue. Non lus : WvSr (P.B. 2011, 48), délibéré du Sv, jugement d'irresponsabilité. Nouveau Sv (P.B. 2025, 60) adopté le 26-5-2025 ; entrée en vigueur non constatée.",
+   "sources": [
+    {
+     "titre": "Gemeenschappelijk Hof van Justitie, 14 mars 2013, H92/2012, ECLI:NL:OGHACMB:2013:BZ4659 (appel, Curaçao)",
+     "url": "https://uitspraken.rechtspraak.nl/api/pdfdownload/ECLI_NL_OGHACMB_2013_BZ4659",
+     "langue": "nl"
+    },
+    {
+     "titre": "Gemeenschappelijk Hof van Justitie, 18 déc. 2025, H-79/24, ECLI:NL:OGHACMB:2025:338 (appel, Curaçao)",
+     "url": "https://omgevingsweb.nl/jurisprudentie/eclinloghacmb2025338-gemeenschappelijk-hof-van-justitie-van-aruba-curacao-sint-maarten-en-van-bonaire-sint-eustatius-en-saba-18-12-2025-h-79-24/",
+     "langue": "nl"
+    },
+    {
+     "titre": "Landsverordening houdende vaststelling van een nieuw Wetboek van Strafvordering, P.B. 2025, no. 60 (gobiernu.cw)",
+     "url": "https://gobiernu.cw/wp-content/uploads/2025/06/60.-Wetboek-van-Strafvordering-2.pdf",
+     "langue": "nl"
+    },
+    {
+     "titre": "Klapper P.B. Hoofdstuk XV Justitie, mise à jour jusqu'au P.B. 2025 no. 148 (gobiernu.cw)",
+     "url": "https://gobiernu.cw/wp-content/uploads/2025/09/Klapper-PB-Hoofdstuk-XV-Justitie-Update-tot-en-met-P.B-2025-no.-148.pdf",
+     "langue": "nl"
+    }
+   ],
+   "fichier_source": "pass2/ext_71_aw_cw_sx.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "SX",
+   "nom": "Saint-Martin (partie néerlandaise)",
+   "niveau": "subdivision",
+   "parent": "NL",
+   "langues_officielles": [
+    "nl",
+    "en"
+   ],
+   "langues_recherche": [
+    "nl",
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Jugement au fond du Gerecht in eerste aanleg : une non-imputabilité totale (WvSr art. 1:115) « kan leiden tot ontslag van alle rechtsvervolging » ; la TBR existe et a été prononcée par le tribunal pour un homicide (presse, 2020)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune relevée : dans ECLI:NL:OGEAM:2022:131, le Gerecht statue sur la punissabilité de l'auteur après avoir déclaré les faits prouvés, au vu des pièces produites par la défense ; la procédure suit le Sv des anciennes Antilles néerlandaises.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Non vérifié (Sv applicable non lu sur ce point)."
+   },
+   "bases_legales": "Wetboek van Strafrecht de Sint Maarten, art. 1:115 (non-imputabilité, cité par le Gerecht) ; Wetboek van Strafvordering van de Nederlandse Antillen, applicable à Sint Maarten (cité dans le même jugement) ; ECLI:NL:OGEAM:2022:131 (Gerecht in eerste aanleg van Sint Maarten, 22-12-2022)",
+   "extrait": "volledige ontoerekeningsvatbaarheid in de zin van artikel 1:115 van het Wetboek van Strafrecht kan leiden tot ontslag van alle rechtsvervolging",
+   "note": "Pas de filtre préalable relevé : dans ECLI:NL:OGEAM:2022:131, le Gerecht in eerste aanleg déclare d'abord les faits prouvés, puis examine la punissabilité de l'auteur : une non-imputabilité totale (WvSr art. 1:115) mènerait à l'ontslag van alle rechtsvervolging. TBR prononcée par le tribunal pour un homicide (presse, 2020). WvSr et Sv non lus directement.",
+   "sources": [
+    {
+     "titre": "Rechtspraak.nl (données ouvertes) : Gerecht in eerste aanleg van Sint Maarten, 22-12-2022, ECLI:NL:OGEAM:2022:131",
+     "url": "https://data.rechtspraak.nl/uitspraken/content?id=ECLI:NL:OGEAM:2022:131",
+     "langue": "nl"
+    },
+    {
+     "titre": "Rechtspraak.nl : ECLI:NL:OGEAM:2022:131 (lien permanent)",
+     "url": "http://deeplink.rechtspraak.nl/uitspraak?id=ECLI:NL:OGEAM:2022:131",
+     "langue": "nl"
+    },
+    {
+     "titre": "St. Maarten News : retour d'un condamné à la TBR (2020)",
+     "url": "https://stmaartennews.com/judicial/netherlands-releases-tbr-convicted-prisoner-sends-back-st-maarten/",
+     "langue": "en"
+    }
+   ],
+   "historique": [
+    {
+     "fichier": "pass2/ext_71_aw_cw_sx.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : ni le WvSr (2015) ni le Sv de Sint Maarten n'ont pu être lus, et la page d'ECLI:NL:OGEAM:2022:131 n'a pu être chargée. Hypothèse : vert (jugement du Gerecht in eerste aanleg en audience publique, ontslag van alle rechtsvervolging + TBR ou placement). Seule la presse (2020) atteste une TBR prononcée par le tribunal pour un homicide de 2014, sans base légale lue."
+    }
+   ],
+   "fichier_source": "pass2/ext_81_iles_textes.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Territoires insulaires",
+   "ocde": true,
    "drapeaux": []
   }
  ]

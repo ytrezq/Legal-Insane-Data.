@@ -55,6 +55,8 @@ Un régime autoritaire n'est pas, à lui seul, une raison d'exclusion. Certains 
 pour les affaires de droit commun, une justice où la loi sur les droits de la défense reste suivie (hors
 corruption) : ils sont inclus. Pour d'autres, l'absence d'État de droit fait que la loi n'est qu'indicative,
 pas une obligation à suivre : ils sont écartés (en blanc) et listés dans `perimetre.exclus` avec la raison.
+Certaines juridictions sont aussi écartées par choix du cadrage (par exemple Bahreïn, Singapour et Brunei) ;
+chaque exclusion figure dans `perimetre.exclus` avec sa raison.
 
 Pour proposer d'inclure ou d'exclure une juridiction, modifiez `perimetre.exclus` ou l'entité, et justifiez le
 changement dans la pull request au regard de ce critère, avec des sources sur la façon dont les affaires de
