@@ -17,12 +17,12 @@ the rule, its legal basis, nuances and the confidence level.
 
 | Colour | Meaning | Countries | Subdivisions or territories |
 |---|---|---:|---:|
-| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 86 | 23 |
+| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 87 | 23 |
 | Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 23 | 23 |
-| Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 25 | 5 |
+| Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 26 | 3 |
 | Blue | **The accused chooses the timing**: the defence decides whether and when mental state is examined (e.g. Canada, R. v. Swain). | 3 | 53 |
 | Black | **No non-responsibility recognised**: every convicted person goes to prison. | 0 | 1 |
-| White | **No data / outside the scope**. | 8 | 2 |
+| White | **No data / outside the scope**. | 7 | 1 |
 
 Colours are applied in the order black, blue, yellow, purple, green; diminished responsibility and plea
 bargaining are ignored; fitness to stand trial is described but never decides the colour. Federal countries are
@@ -38,7 +38,7 @@ the rights of the defence is still followed (corruption aside). Where the lack o
 only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 **Still white for lack of a readable procedural text:** Benin, Comoros, Djibouti, Equatorial Guinea, Guinea,
-Rwanda, Somalia, South Sudan, Zanzibar and the Brčko District. The tooltips and the JSON give the
+Somalia, South Sudan and Zanzibar. The tooltips and the JSON give the
 unverified hypothesis when there is one. Contributions are especially welcome there.
 
 ## Files

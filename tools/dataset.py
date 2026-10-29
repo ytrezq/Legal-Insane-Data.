@@ -179,6 +179,12 @@ def refresh(d, geo_path):
             unit_counts.update(cols)
     n_c = {k: sum(1 for e in ents if e["level"] == "country" and e["code"] not in varies and e["colour"] == k)
            for k in COLOURS}
+    # a country drawn by units, ruled uniformly but without a national entry (Bosnia), counts once
+    for par in {e["parent"] for e in ents if drawn(e)} - varies:
+        if par not in by:
+            cols = {(by.get(c) or {}).get("colour", "white") for c in units[par]}
+            if len(cols) == 1:
+                n_c[cols.pop()] += 1
     n_s = {k: unit_counts.get(k, 0) + sum(1 for e in ents if e["level"] == "subdivision" and not drawn(e)
                                           and e["colour"] == k) for k in COLOURS}
     d["summary"] = {

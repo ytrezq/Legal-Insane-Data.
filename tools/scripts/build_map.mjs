@@ -155,16 +155,19 @@ const COUNTS = (() => {
   const drawn = (e) => e.level === 'subdivision' && e.parent && units.has(e.parent) && units.get(e.parent).includes(e.code);
   const varies = new Set();
   const byUnit = {};
+  const uniform = {};
   for (const par of new Set(data.entities.filter(drawn).map((e) => e.parent))) {
     const cols = units.get(par).map((code) => (entries.get(code) || entries.get(par))?.colour || 'white');
     if (new Set(cols).size > 1) {
       varies.add(par);
       for (const c of cols) byUnit[c] = (byUnit[c] || 0) + 1;
+    } else if (!entries.has(par)) {
+      uniform[cols[0]] = (uniform[cols[0]] || 0) + 1; // country without a national entry whose units share one colour
     }
   }
   const countries = {}, subdivisions = {};
   for (const k of COLOURS) {
-    countries[k] = data.entities.filter((e) => e.level === 'country' && !varies.has(e.code) && e.colour === k).length;
+    countries[k] = data.entities.filter((e) => e.level === 'country' && !varies.has(e.code) && e.colour === k).length + (uniform[k] || 0);
     subdivisions[k] = (byUnit[k] || 0) + data.entities.filter((e) => e.level === 'subdivision' && !drawn(e) && e.colour === k).length;
   }
   return { countries, subdivisions };

@@ -18,7 +18,7 @@
     "the accused not responsible and itself orders the treatment or security measure."
    ],
    "definition": "No prior gateway: the case goes to an ordinary trial; the trial court first establishes the facts, then rules on non-responsibility (acquittal, exemption, special verdict) and itself orders the measure. The psychiatric examination is ordered by the authorities or the court, not at the accused's choice.",
-   "n_countries": 86,
+   "n_countries": 87,
    "n_subdivisions": 23
   },
   "yellow": {
@@ -40,8 +40,8 @@
     "before the trial judge, same evidence) always precedes the measure, or takes place at the accused's request."
    ],
    "definition": "Non-responsibility is examined first and diverts the case into a special procedure, but the trial court holds a genuine hearing on the merits with the guarantees of an ordinary criminal trial (oral adversarial hearing, full taking of evidence on the facts, same standard of proof) before any measure, or the accused can obtain a full trial on request despite the abolition of discernment.",
-   "n_countries": 25,
-   "n_subdivisions": 5
+   "n_countries": 26,
+   "n_subdivisions": 3
   },
   "blue": {
    "label": "The accused chooses the timing",
@@ -73,8 +73,8 @@
     "Senegal and Mauritania, Eritrea, Cuba, Turkey, Serbia; dashed: Northern Cyprus, occupied Ukraine, Transnistria), countries not studied."
    ],
    "definition": "Insufficient reliable data to classify, countries excluded from the scope by choice (lack of rule of law: the law there is only a hint, not a requirement to follow), or countries and territories not studied.",
-   "n_countries": 8,
-   "n_subdivisions": 2
+   "n_countries": 7,
+   "n_subdivisions": 1
   }
  },
  "scope": {
@@ -592,25 +592,24 @@
  },
  "summary": {
   "countries": {
-   "green": 86,
+   "green": 87,
    "yellow": 23,
-   "purple": 25,
+   "purple": 26,
    "blue": 3,
    "black": 0,
-   "white": 8
+   "white": 7
   },
   "subdivisions": {
    "green": 23,
    "yellow": 23,
-   "purple": 5,
+   "purple": 3,
    "blue": 53,
    "black": 1,
-   "white": 2
+   "white": 1
   },
   "federal_countries_with_differing_rules": [
    "AR",
    "AU",
-   "BA",
    "GB",
    "TZ",
    "US"
@@ -703,6 +702,7 @@
     "PN",
     "PT",
     "PW",
+    "RW",
     "SB",
     "SC",
     "SE",
@@ -785,6 +785,7 @@
     "AT",
     "AU-QLD",
     "BA-BIH",
+    "BA-BRC",
     "BA-SRP",
     "BR",
     "CH",
@@ -874,13 +875,11 @@
     "US-ID"
    ],
    "white": [
-    "BA-BRC",
     "BJ",
     "DJ",
     "GN",
     "GQ",
     "KM",
-    "RW",
     "SO",
     "SS",
     "TZ-ZAN"
@@ -888,8 +887,8 @@
   },
   "confidence": {
    "high": 76,
-   "medium": 141,
-   "low": 40
+   "medium": 142,
+   "low": 39
   }
  },
  "cases_to_check": [
@@ -1471,7 +1470,7 @@
   {
    "code": "RW",
    "name": "Rwanda",
-   "colour": "white",
+   "colour": "green",
    "confidence": "low",
    "flags": [
     "low_confidence"
@@ -1677,10 +1676,9 @@
   {
    "code": "BA-BRC",
    "name": "Brčko District",
-   "colour": "white",
-   "confidence": "low",
+   "colour": "purple",
+   "confidence": "medium",
    "flags": [
-    "low_confidence",
     "incomplete_verification"
    ]
   },
@@ -15276,36 +15274,36 @@
     "sw"
    ],
    "research_languages": [
-    "rw",
     "en",
-    "fr"
+    "fr",
+    "rw"
    ],
-   "colour": "white",
+   "colour": "green",
    "confidence": "low",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Non-responsibility for mental disorder recognised in case law (Supreme Court 2014, former Penal Code art. 70: non-responsibility found on appeal + transfer for care to CARAES Ndera); current texts (laws 68/2018 and 027/2019) not read.",
+    "outcome": "Non-responsibility for mental disorder found by the trial court (Supreme Court 2014, on appeal, with treatment at CARAES Ndera); care according to the assessment by at least three doctors requested by a judicial organ (Law 026/2025, art. 35).",
     "who_triggers_examination": "mixed",
     "accused_chooses_timing": false,
     "decision_stage": "ordinary_trial",
     "replacement_procedure": "none",
-    "replacement_procedure_detail": "Not verified on the current texts (unreadable); in the two known cases (2014, 2023) the issue is decided, or referred for expert examination, by the trial court, with no pretrial gate observed (default value with no evidential weight).",
+    "replacement_procedure_detail": "None: the 2019 CPP provides neither a special procedure nor a closure specific to non-responsibility; there is only the prosecution's general power to close the file without further action (art. 24, 6°), which is not enough for yellow.",
     "committal_without_trial": false,
     "trial_always_or_on_request": true,
-    "unfitness_to_stand_trial": "Not verified on the text. Practice: in 2023 the High Court (Nyanza), at the defence's request, ordered a psychiatric expert examination by three doctors from CARAES Ndera before continuing the trial; the accused then continued to be tried (HRW 2024, according to Asylos)."
+    "unfitness_to_stand_trial": "No specific rule in the 2019 CPP; the assessment by three doctors at the request of a judicial organ (Law 026/2025, art. 35) also applies during proceedings. Practice: in 2023, the High Court ordered an expert examination at the defence's request, then continued the trial."
    },
-   "legal_bases": "Law No. 68/2018 of 30/08/2018 determining offences and penalties in general (amended by Law No. 69/2019, which affects only arts. 60, 68, 92, 133, 136, 140, 154, 190, 233, 236, 263); Law No. 027/2019 of 19/09/2019 relating to the criminal procedure; former Penal Code (Decree-Law 21/77) art. 70, applied by the Supreme Court in 2014; current articles on mental disorder not identified",
-   "excerpt": "",
-   "note": "White: laws 68/2018 and 027/2019 not read article by article (Legal Data Hunter indexes the CPP only as a single block; portals closed). Law No. 026/2025 on health services has an art. 35 on persons with a mental disorder who are being criminally prosecuted, but only its title is readable. Practice: the Supreme Court (2014) finds non-responsibility on appeal. Leaning green, not proven.",
+   "legal_bases": "Law No. 027/2019 of 19/09/2019 relating to the criminal procedure (art. 24, 6°: closure of the file without further action; no provision on mental disorder); Law No. 026/2025 of 17/09/2025 regulating healthcare services, art. 35 (assessment by at least three doctors at the request of a judicial organ); Law No. 68/2018 determining offences and penalties in general (article on mental disorder not read); Supreme Court 2014 (former Penal Code art. 70).",
+   "excerpt": "Upon request from a judicial organ, a person suspected of, or diagnosed with, a mental health condition who is subjected to a criminal proceeding",
+   "note": "No pretrial gate: the 2019 CPP, read in full via Legal Data Hunter, contains no provision on mental disorder, only the prosecution's general power to close a file without further action (art. 24, 6°). The 2025 health law (art. 35) provides for an assessment by three doctors at the request of a judicial organ. Practice (Supreme Court 2014): non-responsibility found by the trial court. Current Penal Code not read.",
    "sources": [
     {
-     "title": "Loi n° 026/2025 du 17/09/2025 régissant les services de santé, art. 35 (only the title readable), accessed via Legal Data Hunter (Amategeko)",
-     "url": "https://www.amategeko.gov.rw/view/toc/doc/9823/10318",
+     "title": "Law No. 027/2019 of 19/09/2019 relating to the criminal procedure (trilingual text, Amategeko), art. 24, read in full via Legal Data Hunter",
+     "url": "https://www.amategeko.gov.rw/view/toc/doc/4000/4176",
      "language": "en"
     },
     {
-     "title": "Loi n° 027/2019 du 19/09/2019 relative à la procédure pénale (Amategeko), indexed by Legal Data Hunter without article-by-article segmentation",
-     "url": "https://www.amategeko.gov.rw/view/toc/doc/4000/4176",
+     "title": "Law No. 026/2025 of 17/09/2025 regulating healthcare services (trilingual text, Amategeko), art. 35, accessed via Legal Data Hunter",
+     "url": "https://www.amategeko.gov.rw/view/toc/doc/9823/10318",
      "language": "en"
     },
     {
@@ -15324,25 +15322,15 @@
      "language": "en"
     },
     {
-     "title": "MINIJUST – Law n° 69/2019 amending Law n° 68/2018 (Offences and penalties in general 2019)",
-     "url": "https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/Offences_and_penalties_in_general_2019.pdf",
-     "language": "en"
-    },
-    {
      "title": "Law n° 68/2018 determining offences and penalties in general (RwandaLII, PDF unreadable)",
      "url": "https://rwandalii.org/akn/rw/act/law/2018/68/eng@2018-09-27",
-     "language": "en"
-    },
-    {
-     "title": "Law n° 027/2019 relating to the criminal procedure (RwandaLII, PDF unreadable)",
-     "url": "https://rwandalii.org/akn/rw/act/law/2019/27/eng@2019-11-08",
      "language": "en"
     }
    ],
    "group": "Africa",
    "oecd": false,
-   "source_file": "pass2/ext_40_ldh.json",
-   "colour_from_agent": "white",
+   "source_file": "pass2/ext_60_ldh2.json",
+   "colour_from_agent": "green",
    "colour_derived_from_facts": "green",
    "flags": [
     "low_confidence"
@@ -15359,6 +15347,12 @@
      "colour": "white",
      "confidence": "low",
      "note": "Laws 68/2018 and 027/2019 unreadable (PDFs without usable text, portals blocked to automated access): articles on mental disorder not verified. Practice only: Supreme Court 2014 (former Code, art. 70) finds non-responsibility on appeal and orders care; High Court 2023 orders an expert examination at the defence's request. No pretrial gate observed (leaning green, not proven): white."
+    },
+    {
+     "file": "pass2/ext_40_ldh.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: laws 68/2018 and 027/2019 not read article by article (Legal Data Hunter indexes the CPP only as a single block; portals closed). Law No. 026/2025 on health services has an art. 35 on persons with a mental disorder who are being criminally prosecuted, but only its title is readable. Practice: the Supreme Court (2014) finds non-responsibility on appeal. Leaning green, not proven."
     }
    ]
   },
@@ -18459,51 +18453,48 @@
     "sr"
    ],
    "research_languages": [
-    "bs",
-    "sr",
-    "en"
+    "bs"
    ],
-   "colour": "white",
-   "confidence": "low",
+   "colour": "purple",
+   "confidence": "medium",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "probably a judicial finding of the unlawful act committed in neuračunljivost + placement in a health institution (not verified)",
+    "outcome": "Judgment (presuda) finding that the accused committed the unlawful act in a state of neuračunljivost, delivered after a glavni pretres; provisional compulsory placement of six months in a health facility by a separate rješenje, then placement proceedings before the competent court under the law on the protection of persons with mental disorders.",
     "who_triggers_examination": "authorities",
     "accused_chooses_timing": false,
     "decision_stage": "special_trial",
     "replacement_procedure": "genuine_special_trial",
-    "replacement_procedure_detail": "Unverified hypothesis: procedure on an optužnica with the prosecutor's proposal, as in the FBiH; ZKP BD text on this point not read.",
+    "replacement_procedure_detail": "The prosecutor cannot close the investigation for neuračunljivost (čl. 224, 1, b); he files an optužnica with a proposal to find that the unlawful act was committed in a state of neuračunljivost, and the court rules after a glavni pretres, with mandatory defence counsel (čl. 389).",
     "committal_without_trial": false,
     "trial_always_or_on_request": true,
-    "unfitness_to_stand_trial": "Not verified (probably prekid postupka until recovery, as in the FBiH)."
+    "unfitness_to_stand_trial": "Mental illness arising after the act: after a psychiatric expert examination, the court stays the proceedings by rješenje and refers the accused to the social-welfare authority; resumption if his condition improves, termination if the limitation period expires (čl. 207, 388)."
    },
-   "legal_bases": "ZKP BD (Sl. glasnik BD 10/03, prečišćeni tekst 33/13) čl. 224 (obustava istrage, osim u slučaju postupka zbog neuračunljivosti); special provisions on the neuračunljiv person and KZ BD not read",
-   "excerpt": "",
-   "note": "White: only čl. 224 ZKP BD read, via legal literature (Janković 2018): the prosecutor cannot close the investigation for neuračunljivost; a special procedure is required. The consolidated text (2013) is indexed by Legal Data Hunter, but the quota ran out before the relevant articles; the Assembly's PDF is blocked to automated access. Hypothesis: purple, as in the FBiH.",
+   "legal_bases": "ZKP BD (Sl. glasnik BD 10/03, prečišćeni tekst Sl. glasnik BD 33/13) čl. 206 (neuračunljivost: decision under čl. 389), 207, 224 st. 1 tač. b (no closure of the investigation for neuračunljivost), 388 (prekid postupka), 389 (postupak u slučaju neuračunljivosti); Zakon o zaštiti lica s mentalnim poremećajem BD (2006) čl. 32; KZ BD (neuračunljivost).",
+   "excerpt": "Ako sud nakon provedenog glavnog pretresa utvrdi da je optuženi učinio protivpravno djelo u stanju neuračunljivosti, donijet će presudu",
+   "note": "The prosecutor cannot close the investigation for neuračunljivost (čl. 224): he files an optužnica asking the court to find that the unlawful act was committed without discernment; after a glavni pretres (defence counsel mandatory), the court delivers a presuda and orders by rješenje a provisional placement of six months (čl. 389). Consolidated 2013 text read; later amendments not verified.",
    "sources": [
     {
-     "title": "Zakon o krivičnom postupku Brčko distrikta BiH, prečišćeni tekst (Sl. glasnik BD 33/13), indexed by Legal Data Hunter (source BA/Brcko)",
+     "title": "Zakon o krivičnom postupku Brčko distrikta BiH, prečišćeni tekst (Sl. glasnik BD 33/13), čl. 206, 207, 224, 388-389, accessed via Legal Data Hunter (source BA/Brcko)",
      "url": "https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20krivic--nom%20postupku%20Brc--ko%20Distrikta%20BiH/01B33-13%20Zakon%20o%20krivic--nom%20postupku,%20prec--is--c-eni%20tekst.pdf",
+     "language": "bs"
+    },
+    {
+     "title": "Zakon o zaštiti lica s mentalnim poremećajem Brčko distrikta BiH (2006), čl. 32 (security measures imposed by the criminal court), accessed via Legal Data Hunter",
+     "url": "https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20zas--titi%20lica%20s%20mentalnim%20poremec-ajem/000%2012-06%20Zakon%20o%20zas--titi%20lica%20s%20mentalnim%20poremec-ajem.pdf",
      "language": "bs"
     },
     {
      "title": "R. Janković, Pritužba protiv naredbi o nesprovođenju i obustavi istrage, Godišnjak FPN Banja Luka 8, 2018",
      "url": "https://doisrpska.nub.rs/index.php/gfpn/article/download/4828/4622/10046",
      "language": "sr"
-    },
-    {
-     "title": "Zakon o krivičnom postupku Brčko distrikta BiH, prečišćeni tekst 33/13 (Tužilaštvo BiH)",
-     "url": "https://www.tuzilastvobih.gov.ba/files/docs/Zakon_o_krivicnom_postupku_BDBiH_precisceni_tekst_33_13_bos.pdf",
-     "language": "bs"
     }
    ],
    "group": "Balkans",
    "oecd": false,
-   "source_file": "pass2/ext_40_ldh.json",
-   "colour_from_agent": "white",
+   "source_file": "pass2/ext_60_ldh2.json",
+   "colour_from_agent": "purple",
    "colour_derived_from_facts": "purple",
    "flags": [
-    "low_confidence",
     "incomplete_verification"
    ],
    "history": [
@@ -18512,6 +18503,12 @@
      "colour": "white",
      "confidence": "low",
      "note": "White: only the rule in čl. 224 ZKP BD read via legal literature (Janković 2018): the prosecutor cannot close the investigation for neuračunljivost; a special procedure is required. The consolidated ZKP BD (tuzilastvobih.gov.ba, paragraf.ba) could only be partly read (truncated text). Hypothesis: regime modelled on the FBiH (optužnica with proposal, court, placement), hence probably purple."
+    },
+    {
+     "file": "pass2/ext_40_ldh.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: only čl. 224 ZKP BD read, via legal literature (Janković 2018): the prosecutor cannot close the investigation for neuračunljivost; a special procedure is required. The consolidated text (2013) is indexed by Legal Data Hunter, but the quota ran out before the relevant articles; the Assembly's PDF is blocked to automated access. Hypothesis: purple, as in the FBiH."
     }
    ]
   },
