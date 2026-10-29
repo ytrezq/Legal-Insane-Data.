@@ -18,8 +18,8 @@
     "constate l'irresponsabilité et ordonne elle-même la mesure de soins ou de sûreté."
    ],
    "definition": "Aucune porte d'entrée préalable : l'affaire va à un procès ordinaire ; la juridiction de jugement établit d'abord les faits, puis statue sur l'irresponsabilité (acquittement, exemption, verdict spécial) et ordonne elle-même la mesure. L'expertise psychiatrique est ordonnée par les autorités ou le tribunal, non au choix de l'accusé.",
-   "n_pays": 87,
-   "n_subdivisions": 35
+   "n_pays": 88,
+   "n_subdivisions": 36
   },
   "jaune": {
    "libelle": "Irresponsabilité d'abord, sans vrai procès",
@@ -29,7 +29,7 @@
     "(France depuis 2008 : audience devant la chambre de l'instruction). Procès seulement si l'accusé est jugé responsable."
    ],
    "definition": "L'état mental au moment des faits est examiné pendant la phase préparatoire ; si le discernement était aboli, l'affaire se termine sans vrai procès, soit par un non-lieu ou une décision de non-renvoi, soit par une procédure amoindrie qui remplace le procès (audience devant une juridiction d'instruction, chambre du conseil, tribunal de soins non public, procédure écrite ou simplifiée, standard de preuve réduit, absence de l'accusé comme règle). La personne peut néanmoins être internée. Un procès n'a lieu que si elle est jugée responsable.",
-   "n_pays": 24,
+   "n_pays": 25,
    "n_subdivisions": 23
   },
   "violet": {
@@ -74,8 +74,8 @@
     "pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
-   "n_pays": 6,
-   "n_subdivisions": 3
+   "n_pays": 4,
+   "n_subdivisions": 2
   }
  },
  "perimetre": {
@@ -636,6 +636,7 @@
    "extension_29_10": "Extension du 29/10/2026 (0 h 40) : Chypre (zones contrôlées par la République de Chypre), Malte, Timor oriental et Syrie, un agent par pays ; Chypre du Nord (sous contrôle turc) traitée comme la Turquie et dessinée en blanc à tirets.",
    "extension_29_10_bis": "Extension du 29/10/2026 (18 h 20) : tous les États et territoires insulaires, sauf Cuba, Bahreïn (golfe Persique), Singapour et Brunei (régimes jugés dictatoriaux) : Maldives ajoutées, Comores revérifiées, et territoires insulaires à droit pénal propre (Jersey, Guernesey, Île de Man, Bermudes, Îles Caïmans, Îles Vierges britanniques, Anguilla, Montserrat, Îles Turques-et-Caïques, Malouines, Sainte-Hélène, Aruba, Curaçao, Saint-Martin néerlandais, Îles Vierges des États-Unis).",
    "extension_29_10_ter": "Compléments du 29/10/2026 (19 h) : quand l'outil de lecture des agents tronquait un texte officiel, le PDF ou la page complète a été téléchargé et lu en entier (Jersey, Bermudes, Îles Vierges britanniques, Anguilla, Aruba, Îles Caïmans, Montserrat, Comores, Maldives, dont le code de procédure pénale en dhivehi) ; Saint-Martin néerlandais classé d'après un jugement du Gerecht in eerste aanleg (données ouvertes de rechtspraak.nl). Guernesey et les Malouines restent blanches : textes décisifs inaccessibles (site refusé à l'outil, application JavaScript).",
+   "extension_29_10_quater": "Compléments du 29/10/2026 (23 h) : les 9 dernières requêtes Legal Data Hunter accordées par l'utilisateur (20 au total) ont servi, une à une et sans agent, aux juridictions restées blanches : Malouines (vert, CPEO 2014 s. 765-766), Djibouti (jaune, CPP art. 72, 74, 184 et 220) et Soudan du Sud (vert, CCPA 2008 s. 206-207) classés ; pour le Bénin et la Somalie, les textes décisifs ne figurent pas dans Legal Data Hunter.",
    "edition_anglaise": "Une édition anglaise, traduite le 28/10/2026 à partir de celle-ci, est tenue sur la branche main du dépôt pour les contributions internationales ; les deux éditions évoluent séparément."
   },
   "date": "2026-10-28",
@@ -681,20 +682,20 @@
  },
  "synthese": {
   "pays": {
-   "vert": 87,
-   "jaune": 24,
+   "vert": 88,
+   "jaune": 25,
    "violet": 26,
    "bleu": 4,
    "noir": 0,
-   "blanc": 6
+   "blanc": 4
   },
   "subdivisions": {
-   "vert": 35,
+   "vert": 36,
    "jaune": 23,
    "violet": 3,
    "bleu": 54,
    "noir": 1,
-   "blanc": 3
+   "blanc": 2
   },
   "pays_federaux_a_regles_differentes": [
    "AR",
@@ -742,6 +743,7 @@
     "ET",
     "FI",
     "FJ",
+    "FK",
     "FM",
     "FO",
     "GB",
@@ -807,6 +809,7 @@
     "SL",
     "SN",
     "SR",
+    "SS",
     "ST",
     "SX",
     "SY",
@@ -860,6 +863,7 @@
     "CG",
     "CI",
     "CZ",
+    "DJ",
     "EC",
     "EE",
     "FR",
@@ -980,20 +984,17 @@
    ],
    "blanc": [
     "BJ",
-    "DJ",
-    "FK",
     "GG",
     "GN",
     "GQ",
     "SO",
-    "SS",
     "TZ-ZAN"
    ]
   },
   "confiance": {
-   "élevée": 80,
-   "moyenne": 153,
-   "faible": 40
+   "élevée": 81,
+   "moyenne": 154,
+   "faible": 38
   }
  },
  "cas_a_verifier": [
@@ -1497,7 +1498,7 @@
   {
    "code": "DJ",
    "nom": "Djibouti",
-   "couleur": "blanc",
+   "couleur": "jaune",
    "confiance": "faible",
    "drapeaux": [
     "confiance_faible",
@@ -1610,10 +1611,10 @@
   {
    "code": "SS",
    "nom": "Soudan du Sud",
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "vert",
+   "confiance": "moyenne",
    "drapeaux": [
-    "confiance_faible"
+    "verification_incomplete"
    ]
   },
   {
@@ -1827,16 +1828,6 @@
   {
    "code": "GG",
    "nom": "Guernesey",
-   "couleur": "blanc",
-   "confiance": "faible",
-   "drapeaux": [
-    "confiance_faible",
-    "verification_incomplete"
-   ]
-  },
-  {
-   "code": "FK",
-   "nom": "Îles Malouines",
    "couleur": "blanc",
    "confiance": "faible",
    "drapeaux": [
@@ -14606,24 +14597,29 @@
     "ar",
     "en"
    ],
-   "couleur": "blanc",
+   "couleur": "jaune",
    "confiance": "faible",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Irresponsabilité reconnue (CP art. 27 al. 1 : trouble ayant aboli le discernement) ; issue procédurale non vérifiée (hypothèse : non-lieu du juge d'instruction) ; aucun internement dans le CP (art. 1-177) ; soins éventuels hors procédure pénale, non vérifiés",
+    "issue": "Non-lieu du juge d'instruction (CPP art. 184) ou de la chambre d'accusation (art. 220), la personne au discernement aboli n'étant pas pénalement responsable (CP art. 27) ; aucun internement pénal, soins éventuels hors procédure (non vérifiés)",
     "qui_declenche_examen": "autorites",
     "accuse_choisit_moment": false,
-    "stade_decision": "sans_objet",
-    "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Inconnu : CPP de 1995 non lu (copie ACJR illisible) ; l'hypothèse d'un non-lieu simple du juge d'instruction reste non vérifiée (valeurs par défaut sans valeur probante).",
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "non_lieu_simple",
+    "procedure_remplacement_detail": "L'instruction est obligatoire en matière criminelle (art. 72) et l'examen médico-psychologique y est obligatoire (art. 74) ; à la clôture, le juge d'instruction examine s'il existe des charges constitutives d'infraction (art. 183) et déclare n'y avoir lieu à suivre (art. 184), comme la chambre d'accusation (art. 219-220).",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": false,
-    "inaptitude_a_etre_juge": "Non vérifié (CPP non lu)."
+    "inaptitude_a_etre_juge": "Aucune disposition sur l'état mental de l'accusé au moment du procès repérée dans le CPP (recherche par mots-clés dans le texte intégral)."
    },
-   "bases_legales": "CP (loi n° 59/AN/94 du 5 janvier 1995) art. 27 al. 1 ; CPP (loi n° 99/AN/95/4ème L, mod. loi n° 192/AN/12/6ème L) : copie ACJR repérée mais illisible (scan) ; articles sur l'instruction, le non-lieu, l'expertise et l'internement non lus",
-   "extrait": "N'est pas pénalement responsable la personne qui était atteinte, au moment des faits, d'un trouble psychique ou neuropsychique ayant aboli son discernement",
-   "note": "Blanc : aucun texte de procédure lisible. CPP de 1995 repéré (ACJR) mais scan illisible ; JO en ligne (PresidenceOld), NATLEX, SHERLOC, droit-afrique inaccessibles. Seul le CP art. 27 al. 1 est lu (pas d'internement pénal). Hypothèse non vérifiée : non-lieu du juge d'instruction (modèle français d'avant 2008), soins hors procès. Réforme CP/CPP débattue en 2023, adoption non constatée.",
+   "bases_legales": "CP (loi n° 59/AN/94 du 5 janvier 1995) art. 27 al. 1 (trouble ayant aboli le discernement : pas de responsabilité pénale) ; CPP (version publiée par le ministère du Budget en 2022) art. 72 (instruction obligatoire en matière de crime), 74 (examen médico-psychologique obligatoire en matière criminelle), 183-184 (règlement de l'information, non-lieu), 187 (transmission à la chambre d'accusation), 219-220 (chambre d'accusation, non-lieu)",
+   "extrait": "s'il n'existe pas de charges suffisantes contre l'inculpé, il déclare, par une ordonnance, qu'il n'y a lieu à suivre",
+   "note": "Lecture combinée : instruction obligatoire pour les crimes (CPP art. 72), examen médico-psychologique obligatoire (art. 74) ; l'abolition du discernement exclut la responsabilité pénale (CP art. 27) ; faute de charges constitutives d'infraction, le juge d'instruction (art. 183-184) ou la chambre d'accusation (art. 220) dit n'y avoir lieu à suivre. Pas d'internement pénal ; pratique non vérifiée.",
    "sources": [
+    {
+     "titre": "Code de procédure pénale de Djibouti (PDF publié par le ministère du Budget, 2022), art. 72, 74, 183-184, 187, 219-220, texte intégral lu via Legal Data Hunter (DJ/DGI-TaxCode)",
+     "url": "https://budget.gouv.dj/wp-content/uploads/2022/07/Code-on-Penal-Procedure.pdf",
+     "langue": "fr"
+    },
     {
      "titre": "Equipo Nizkor : Code pénal de Djibouti (texte, art. 1-177)",
      "url": "https://www.derechos.org/intlaw/doc/dji1.html",
@@ -14662,14 +14658,19 @@
      "couleur": "jaune",
      "confiance": "faible",
      "note": "CP art. 27 al. 1 vérifié (formule de l'art. 122-1 français) ; aucun internement dans les art. 1-177. CPP de 1995 illisible (scans, hôtes bloqués) ; un wiki confirme un juge d'instruction. Jaune par inférence du modèle français (non-lieu), non vérifiée ; réforme des codes en débat en 2023, adoption non vérifiée. Confiance faible."
+    },
+    {
+     "fichier": "pass2/p2_26_afr_franco_proc_b.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : aucun texte de procédure lisible. CPP de 1995 repéré (ACJR) mais scan illisible ; JO en ligne (PresidenceOld), NATLEX, SHERLOC, droit-afrique inaccessibles. Seul le CP art. 27 al. 1 est lu (pas d'internement pénal). Hypothèse non vérifiée : non-lieu du juge d'instruction (modèle français d'avant 2008), soins hors procès. Réforme CP/CPP débattue en 2023, adoption non constatée."
     }
    ],
-   "fichier_source": "pass2/p2_26_afr_franco_proc_b.json",
-   "couleur_agent": "blanc",
-   "couleur_deduite_des_faits": "vert",
+   "fichier_source": "pass2/ext_82_ldh3.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
    "groupe": "Afrique",
    "ocde": false,
-   "couleur_hypothese": "jaune",
    "drapeaux": [
     "confiance_faible",
     "verification_incomplete"
@@ -16190,24 +16191,34 @@
    "langues_recherche": [
     "en"
    ],
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "vert",
+   "confiance": "moyenne",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Irresponsabilité reconnue par le Penal Code Act 2008, s. 34 (« unsoundness of mind », insanité permanente ou temporaire) ; l'issue procédurale (acquittement ou constat spécial, garde) n'a pas pu être vérifiée faute d'accès au Code of Criminal Procedure Act 2008.",
+    "issue": "Constat du tribunal, au procès, que l'accusé a commis l'acte mais était aliéné (CCPA s. 207), puis garde : par des proches sous caution, ou renvoi au County Commissioner (s. 206(2)-(4))",
     "qui_declenche_examen": "mixte",
     "accuse_choisit_moment": false,
     "stade_decision": "proces_ordinaire",
     "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Non vérifié : le Code of Criminal Procedure Act 2008 (Act n° 5 de 2008) n'a pu être lu (PDF illisible, portail du ministère de la Justice fermé aux robots) ; valeurs par défaut sans valeur probante.",
+    "procedure_remplacement_detail": "Aucune : le constat est fait par le tribunal du procès, au vu des preuves (s. 207) ; la loi ne prévoit aucun filtre préalable propre à l'aliénation.",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": true,
-    "inaptitude_a_etre_juge": "Non vérifié."
+    "inaptitude_a_etre_juge": "S. 206 : si l'accusé paraît, pendant le procès, aliéné et incapable de se défendre, le procès est ajourné et il est examiné par un ou plusieurs médecins spécialisés ; si l'aliénation est établie, procès ajourné jusqu'à son rétablissement et garde (proches sous caution, ou renvoi au County Commissioner). S. 191 : accusé non aliéné mais ne comprenant pas la procédure : pas de procès. Aucun procès des faits pour l'inapte."
    },
-   "bases_legales": "Penal Code Act 2008 (Act n° 9 de 2008) s. 34 ; Code of Criminal Procedure Act 2008 (Act n° 5 de 2008), dispositions sur l'aliénation non lues",
-   "extrait": "appreciate the nature of his or her acts, or of controlling them by reason of permanent or temporary insanity or mental infirmity",
-   "note": "Seul le Penal Code Act 2008 s. 34 a été lu : n'est pas une infraction l'acte de qui ne pouvait apprécier ou maîtriser ses actes (insanité permanente ou temporaire). Le Code of Criminal Procedure Act 2008 (qui décide, à quel stade, quelle audience, quelle garde) est resté illisible (PDF binaire ; mojca.gov.ss interdit aux robots) : classement impossible, blanc.",
+   "bases_legales": "Penal Code Act 2008 (Act n° 9 de 2008) s. 34 (aliénation ou infirmité mentale) ; Code of Criminal Procedure Act 2008 (Act n° 5 de 2008) s. 191 (accusé ne comprenant pas la procédure), s. 206 (accusé incapable de se défendre pour aliénation), s. 207 (constat de l'acte commis en état d'aliénation)",
+   "extrait": "the Court shall record its finding that he or she did the act but was at the time of doing it was of unsound mind",
+   "note": "Pas de filtre préalable : au procès, s'il ressort des preuves que l'accusé a commis l'acte sans pouvoir, du fait d'une aliénation ou infirmité mentale, en apprécier la nature ni se maîtriser (PC s. 34), le tribunal consigne ce constat (CCPA 2008 s. 207) et le place sous garde, chez des proches ou sur renvoi au County Commissioner (s. 206). Texte lu via Legal Data Hunter ; pratique non vérifiée.",
    "sources": [
+    {
+     "titre": "Ministry of Justice and Constitutional Affairs : Code of Criminal Procedure Act (5 of 2008), ss. 191, 206-207, texte intégral lu via Legal Data Hunter (SS/MoJCA)",
+     "url": "https://mojca.gov.ss/wp-content/uploads/2023/03/Code-of-Criminal-Procedure-Act-5-of-2008.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "Ministry of Justice and Constitutional Affairs : Penal Code Act (9 of 2008), s. 34, via Legal Data Hunter (SS/MoJCA)",
+     "url": "https://mojca.gov.ss/wp-content/uploads/2023/03/Penal-Code-Act-9-of-2008.pdf",
+     "langue": "en"
+    },
     {
      "titre": "Penal Code Act 2008 (Act n° 9 de 2008), Soudan du Sud, s. 34 « Act of a Person Incapable of Judgment by Reason of Unsoundness of Mind » (UNODC SHERLOC)",
      "url": "https://sherloc.unodc.org/cld/uploads/res/document/ssd/South_Sudan_Penal_Code_Act.pdf",
@@ -16217,11 +16228,6 @@
      "titre": "Code of Criminal Procedure Act 2008 (Soudan du Sud) : PDF ouvert mais illisible (données binaires) lors de la vérification",
      "url": "https://policehumanrightsresources.org/content/uploads/2016/03/Criminal-Procedure-Code-South-Sudan-2008.pdf",
      "langue": "en"
-    },
-    {
-     "titre": "Ministry of Justice and Constitutional Affairs, Laws of the Republic of South Sudan (liste : Code of Criminal Procedure Act 5 of 2008 ; Penal Code Act 9 of 2008)",
-     "url": "https://mojca.gov.ss/laws/",
-     "langue": "en"
     }
    ],
    "historique": [
@@ -16230,15 +16236,21 @@
      "couleur": "blanc",
      "confiance": "faible",
      "note": "Données insuffisantes : aucun texte primaire consulté (quotas épuisés) et la base CJAD ne reproduit aucune loi sud-soudanaise. Les codes de 2008, d'inspiration soudanaise et indienne, prévoient vraisemblablement un acquittement pour aliénation prononcé au procès, suivi d'une garde ; non confirmé."
+    },
+    {
+     "fichier": "pass2/p2_04_afr_est_sud.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Seul le Penal Code Act 2008 s. 34 a été lu : n'est pas une infraction l'acte de qui ne pouvait apprécier ou maîtriser ses actes (insanité permanente ou temporaire). Le Code of Criminal Procedure Act 2008 (qui décide, à quel stade, quelle audience, quelle garde) est resté illisible (PDF binaire ; mojca.gov.ss interdit aux robots) : classement impossible, blanc."
     }
    ],
-   "fichier_source": "pass2/p2_04_afr_est_sud.json",
-   "couleur_agent": "blanc",
+   "fichier_source": "pass2/ext_82_ldh3.json",
+   "couleur_agent": "vert",
    "couleur_deduite_des_faits": "vert",
    "groupe": "Afrique",
    "ocde": false,
    "drapeaux": [
-    "confiance_faible"
+    "verification_incomplete"
    ]
   },
   {
@@ -20253,24 +20265,29 @@
    "langues_recherche": [
     "en"
    ],
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "vert",
+   "confiance": "élevée",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Hypothèse non vérifiée : verdict spécial « not guilty by reason of insanity » au procès + mesure (hospital order, supervision, absolute discharge) selon la Part 34 de la Criminal Procedure and Evidence Ordinance 2014, non lue",
+    "issue": "Verdict spécial « not guilty by reason of mental disorder » rendu par la juridiction de jugement (CPEO s. 765), puis hospital treatment order, supervision order ou absolute discharge (s. 766)",
     "qui_declenche_examen": "mixte",
     "accuse_choisit_moment": false,
     "stade_decision": "proces_ordinaire",
     "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Hypothèse non vérifiée : la Part 34 de la CPEO 2014 reprendrait le Criminal Procedure (Insanity) Act 1964 (verdict spécial rendu au procès) ; texte non lu.",
+    "procedure_remplacement_detail": "Aucune : le verdict spécial est rendu au procès, par la juridiction devant laquelle l'accusé est jugé, si les preuves montrent qu'il a commis l'acte (s. 765) ; la loi ne prévoit aucun filtre préalable.",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": true,
-    "inaptitude_a_etre_juge": "Non vérifié (hypothèse : comme le CP(I)A 1964 repris par la Part 34 de la CPEO 2014, décision du juge sur l'aptitude puis examen des faits avant toute mesure)."
+    "inaptitude_a_etre_juge": "S. 762 : la question de l'aptitude, soulevée par la défense ou autrement, est tranchée par le juge sans jury, sur l'avis d'au moins deux médecins agréés, éventuellement reportée jusqu'à l'ouverture de la défense ; si l'accusé est inapte, constat qu'il a commis l'acte (s. 764), puis mesures de la s. 766."
    },
-   "bases_legales": "Criminal Procedure and Evidence Ordinance 2014 (en vigueur le 21.04.2017), Part 34 (mentally disordered offenders), non lue ; Crimes Ordinance 2014, qui ne codifie pas l'insanité (common law, règles M'Naghten)",
-   "extrait": "",
-   "note": "Blanc : Part 34 (mentally disordered offenders) de la CPEO 2014, en vigueur depuis le 21.04.2017, non lue : legislation.gov.fk rendu en JavaScript, supplément 11/2014 de la Gazette inaccessible. Le mémoire du Crimes Bill 2014 dit l'insanité non codifiée et le CP(I)A 1964 « covered in Part 34 ». Hypothèse : verdict spécial au procès (jury de 7 ou 12, ou juge seul), donc vert.",
+   "bases_legales": "Criminal Procedure and Evidence Ordinance 2014 (CPEO, en vigueur le 21.04.2017 ; version consolidée du 29.11.2024), Part 34 (mentally disordered offenders) : s. 762 (unfitness to be tried), s. 764 (constat de l'acte), s. 765 (acquittal on ground of mental disorder), s. 766 (hospital treatment order, supervision order, absolute discharge) ; Crimes Ordinance 2014 (pas de codification de l'insanité : common law)",
+   "extrait": "if it appears to the court […] that he or she did the act […] the court must return a special verdict",
+   "note": "Pas de filtre préalable : si les preuves du procès montrent que l'accusé a commis l'acte sous l'effet d'un trouble mental exonératoire, la juridiction de jugement rend un verdict spécial « not guilty by reason of mental disorder » sur l'avis de deux médecins agréés (CPEO 2014, s. 765), puis ordonne soins, suivi ou libération (s. 766). Inapte : juge seul, puis examen des faits (ss. 762, 764).",
    "sources": [
+    {
+     "titre": "Falkland Islands Government : Criminal Procedure and Evidence Ordinance 2014 (version consolidée du 29.11.2024), ss. 762, 764-766, texte intégral lu via Legal Data Hunter (FK/Legislation)",
+     "url": "https://www.legislation.gov.fk/#/view/136e216f-887e-4ea0-8ad7-9790dc94075a",
+     "langue": "en"
+    },
     {
      "titre": "Falkland Islands Gazette Supplement, Vol. 25, No. 10 (15 août 2014) : Crimes Bill 2014 et mémoire explicatif",
      "url": "https://nationalarchives.gov.fk/jdownloads/Gazettes%20Proclamations%20Notices/2014%20Supplement%2010.pdf",
@@ -20285,31 +20302,28 @@
      "titre": "Legislative Assembly Record, 27 avril 2017 (entrée en vigueur de la CPEO 2014 le 21 avril 2017)",
      "url": "https://assembly.gov.fk/jdownloads/Assembly%20Records%20and%20Order%20Papers/Legislative%20Assembly%20Records/2017/Legislative%20Assembly%20Record%2027April%202017.pdf",
      "langue": "en"
-    },
-    {
-     "titre": "Falkland Islands Statute Law Database (consulté, contenu non lisible)",
-     "url": "https://www.legislation.gov.fk/",
-     "langue": "en"
     }
    ],
-   "couleur_hypothese": "vert",
    "historique": [
     {
      "fichier": "pass2/ext_70_fk_sh.json",
      "couleur": "blanc",
      "confiance": "faible",
      "note": "Blanc : Part 34 (mentally disordered offenders) de la CPEO 2014, en vigueur depuis le 21.04.2017, non lue : legislation.gov.fk rendu en JavaScript, supplément 11/2014 de la Gazette inaccessible. Le mémoire du Crimes Bill 2014 dit l'insanité non codifiée et le CP(I)A 1964 « covered in Part 34 ». Hypothèse : verdict spécial au procès (jury de 7 ou 12, ou juge seul), donc vert."
+    },
+    {
+     "fichier": "pass2/ext_81_iles_textes.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : Part 34 (mentally disordered offenders) de la CPEO 2014, en vigueur depuis le 21.04.2017, non lue : legislation.gov.fk rendu en JavaScript, supplément 11/2014 de la Gazette inaccessible. Le mémoire du Crimes Bill 2014 dit l'insanité non codifiée et le CP(I)A 1964 « covered in Part 34 ». Hypothèse : verdict spécial au procès (jury de 7 ou 12, ou juge seul), donc vert."
     }
    ],
-   "fichier_source": "pass2/ext_81_iles_textes.json",
-   "couleur_agent": "blanc",
+   "fichier_source": "pass2/ext_82_ldh3.json",
+   "couleur_agent": "vert",
    "couleur_deduite_des_faits": "vert",
    "groupe": "Territoires insulaires",
    "ocde": true,
-   "drapeaux": [
-    "confiance_faible",
-    "verification_incomplete"
-   ]
+   "drapeaux": []
   },
   {
    "code": "SH",
