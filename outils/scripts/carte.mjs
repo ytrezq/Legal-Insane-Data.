@@ -201,7 +201,7 @@ t('  </g>');
 t('  <g id="pays">');
 for (const s of formes) {
   if (!s.d) continue;
-  const cls = `${s.sub ? 'sub' : 'pays'} ${s.couleur}`;
+  const cls = `${s.sub ? 'sub' : 'pays'} ${s.couleur}${exclus.has(s.code) && s.code.includes('-') ? ' zone-exclue' : ''}`;
   t(`    <path id="${esc(s.code)}${s.fond ? '-fond' : ''}" data-code="${esc(s.code)}" class="${cls}" d="${s.d}"><title>${esc(infobulle(s.code, s.nom, s.parent))}</title></path>`);
 }
 t('  </g>');

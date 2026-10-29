@@ -2,7 +2,7 @@
  "titre": "Abolition totale du discernement : juger d'abord, ou établir l'irresponsabilité d'abord ?",
  "description": "Carte du monde en projection de Mollweide classant les droits pénaux selon le sort procédural d'un accusé dont le discernement était totalement aboli par un trouble mental au moment des faits : on juge d'abord (vert), irresponsabilité établie d'abord sans vrai procès (jaune), irresponsabilité établie d'abord mais jugement (violet), l'accusé choisit le moment de l'examen (bleu), aucune irresponsabilité reconnue (noir), pas de données ou hors cadrage (blanc).",
  "sous_titre": "Crime grave (ex. homicide), discernement totalement aboli au moment des faits · altération partielle et plaider-coupable ignorés · droit en vigueur au 28 octobre 2026",
- "sous_titre_2": "OCDE (hors Turquie), Amériques (hors Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée, Sahel sauf Sénégal et Mauritanie), Balkans (hors Serbie), Ukraine et Moldavie (zones contrôlées), Asie (sélection, dont EAU)",
+ "sous_titre_2": "OCDE et UE (hors Turquie, Chypre du Nord), Amériques (hors Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée, Sahel sauf Sénégal, Mauritanie), Balkans (hors Serbie), Ukraine, Moldavie (zones contrôlées), Asie (sélection)",
  "legende_reperes": "Cercle : État trop petit pour être visible à cette échelle (même couleur que sur la carte). Passez la souris sur un pays : base légale, nuance et niveau de confiance.",
  "pied": [
   "Méthode : recherche juridique dans la langue officielle de chaque pays (codes pénaux, codes de procédure, jurisprudence) par 24 agents, seconde passe de vérification des entrées faibles, puis contrôle indépendant des entrées à fort enjeu. Sources, extraits et confiance de chaque entrée : fichier JSON associé.",
@@ -18,7 +18,7 @@
     "constate l'irresponsabilité et ordonne elle-même la mesure de soins ou de sûreté."
    ],
    "definition": "Aucune porte d'entrée préalable : l'affaire va à un procès ordinaire ; la juridiction de jugement établit d'abord les faits, puis statue sur l'irresponsabilité (acquittement, exemption, verdict spécial) et ordonne elle-même la mesure. L'expertise psychiatrique est ordonnée par les autorités ou le tribunal, non au choix de l'accusé.",
-   "n_pays": 83,
+   "n_pays": 86,
    "n_subdivisions": 23
   },
   "jaune": {
@@ -29,7 +29,7 @@
     "(France depuis 2008 : audience devant la chambre de l'instruction). Procès seulement si l'accusé est jugé responsable."
    ],
    "definition": "L'état mental au moment des faits est examiné pendant la phase préparatoire ; si le discernement était aboli, l'affaire se termine sans vrai procès, soit par un non-lieu ou une décision de non-renvoi, soit par une procédure amoindrie qui remplace le procès (audience devant une juridiction d'instruction, chambre du conseil, tribunal de soins non public, procédure écrite ou simplifiée, standard de preuve réduit, absence de l'accusé comme règle). La personne peut néanmoins être internée. Un procès n'a lieu que si elle est jugée responsable.",
-   "n_pays": 22,
+   "n_pays": 23,
    "n_subdivisions": 23
   },
   "violet": {
@@ -69,8 +69,8 @@
    "libelle": "Pas de données / hors cadrage",
    "couleur": "#ffffff",
    "legende": [
-    "Données insuffisantes (texte de procédure introuvable ou illisible), pays et zones écartés du cadrage (Maghreb, Égypte, Sahel",
-    "hors Sénégal et Mauritanie, Érythrée, Cuba, Turquie, Serbie, Ukraine occupée, Transnistrie : tirets), pays non étudiés."
+    "Données insuffisantes (texte de procédure introuvable ou illisible), pays et zones écartés du cadrage (Maghreb, Égypte, Sahel hors Sénégal",
+    "et Mauritanie, Érythrée, Cuba, Turquie, Serbie ; tirets : Chypre du Nord, Ukraine occupée, Transnistrie), pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
    "n_pays": 8,
@@ -233,7 +233,9 @@
     "MO",
     "TW",
     "LK",
-    "AE"
+    "AE",
+    "SY",
+    "TL"
    ],
    "balkans_hors_serbie": [
     "HR",
@@ -256,6 +258,10 @@
    "europe_est": [
     "UA",
     "MD"
+   ],
+   "europe_ue_hors_ocde": [
+    "CY",
+    "MT"
    ]
   },
   "exclus": [
@@ -377,9 +383,14 @@
     "code": "MD-SN",
     "nom": "Transnistrie",
     "raison": "territoire hors du contrôle des autorités moldaves, écarté du périmètre"
+   },
+   {
+    "code": "CY-N",
+    "nom": "CY-N",
+    "raison": "territoire sous contrôle turc (« République turque de Chypre du Nord »), traité comme la Turquie : écarté du périmètre (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
    }
   ],
-  "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie et Philippines) sont laissés en blanc.",
+  "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie, Syrie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie, Philippines et Timor oriental) sont laissés en blanc.",
   "marqueurs": {
    "TV": [
     179.2,
@@ -567,16 +578,17 @@
     "Textes fournis par l'utilisateur (28/10, 22 h 38) : code de procédure pénale macédonien de 2010 (traduction OSCE), code malgache (copie ONUDC) et loi 2016-017, codes d'Entre Ríos (loi 9754 consolidée), de La Pampa (loi 3192, éd. STJ 2021) et de La Rioja (loi 1574) ; ils ont permis de classer la Macédoine du Nord (violet), Madagascar, Entre Ríos, La Pampa et La Rioja (jaune)."
    ],
    "critere_du_blanc": "Une couleur n'est retenue que si le mécanisme procédural décisif (qui statue, à quel stade, dans quel type d'audience) a été lu dans une source primaire (loi, décision) ou une doctrine fiable qui la cite ; sinon l'entrée reste blanche et l'hypothèse est conservée (champ couleur_hypothese).",
-   "perimetre_asie": "Asie (sélection) : Inde (et Kerala), Bangladesh, Pakistan, Sri Lanka, Népal, Bhoutan, Indonésie, Thaïlande, Malaisie, Philippines, Taïwan, Hong Kong, Macao, Mongolie, Kazakhstan, Jordanie, Émirats arabes unis, ainsi que le Japon, la Corée du Sud et Israël (OCDE).",
+   "perimetre_asie": "Asie (sélection) : Inde (et Kerala), Bangladesh, Pakistan, Sri Lanka, Népal, Bhoutan, Indonésie, Thaïlande, Malaisie, Philippines, Taïwan, Hong Kong, Macao, Mongolie, Kazakhstan, Jordanie, Syrie, Émirats arabes unis, Timor oriental, ainsi que le Japon, la Corée du Sud et Israël (OCDE).",
    "extension_28_10": "Extension du 28/10/2026 (21 h) : Égypte retirée (procédure pénale jugée indicative plutôt que contraignante) ; ajout de 13 pays ou territoires d'Asie, de la Mauritanie, des Balkans hors Serbie et des territoires insulaires du Pacifique encore non couverts ; Sénégal revérifié.",
    "extension_28_10_bis": "Extension du 28/10/2026 (22 h) : Sri Lanka, Madagascar (seconde tentative), Ukraine (territoire contrôlé par le gouvernement) et Moldavie (hors Transnistrie), un agent par pays ; Albanie et Macédoine du Nord relancées séparément. Territoires ukrainiens occupés (ligne de contrôle du 28/10/2026 d'après les données quotidiennes DeepStateMap, dépôt cyterat/deepstate-map-data) et Transnistrie (unités administratives Natural Earth) dessinés en blanc à tirets.",
    "extension_28_10_ter": "Compléments du 28/10/2026 (23 h) : textes fournis par l'utilisateur (Macédoine du Nord, Madagascar, Entre Ríos, La Pampa, La Rioja) ; 9 requêtes Legal Data Hunter menées une à une, sans agent, sur les juridictions restées blanches (Albanie et Mauritanie classées, Guinée, Rwanda, Zanzibar et Brčko toujours blancs, quota journalier atteint) ; Émirats arabes unis ajoutés par recherche web, sans Legal Data Hunter (décrets-lois fédéraux n° 31 de 2021 et n° 38 de 2022, portail officiel).",
    "critere_du_perimetre": "Un régime autoritaire n'est pas exclu en tant que tel : certains pays autoritaires conservent, pour les affaires de droit commun, une justice où la loi sur les droits de la défense reste suivie (hors corruption) ; ils sont inclus. Sont écartés ceux où l'absence d'État de droit fait que la loi n'est qu'indicative (« hint »), pas une obligation à suivre.",
+   "extension_29_10": "Extension du 29/10/2026 (0 h 40) : Chypre (zones contrôlées par la République de Chypre), Malte, Timor oriental et Syrie, un agent par pays ; Chypre du Nord (sous contrôle turc) traitée comme la Turquie et dessinée en blanc à tirets.",
    "edition_anglaise": "Une édition anglaise, traduite le 28/10/2026 à partir de celle-ci, est tenue sur la branche main du dépôt pour les contributions internationales ; les deux éditions évoluent séparément."
   },
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "nb_entrees": 253,
+  "nb_entrees": 257,
   "contribuer": [
    "Voir CONTRIBUTING.md. Les pull requests ne modifient que le JSON (donnees/irresponsabilite_penale.json) ; les cartes en sont régénérées.",
    "Une couleur autre que blanc suppose d'avoir lu le mécanisme procédural décisif (qui statue, à quel stade, dans quel type d'audience) dans une source primaire (loi, décision) ou une doctrine qui la cite ; sinon l'entrée reste blanche avec une couleur_hypothese.",
@@ -617,8 +629,8 @@
  },
  "synthese": {
   "pays": {
-   "vert": 83,
-   "jaune": 22,
+   "vert": 86,
+   "jaune": 23,
    "violet": 25,
    "bleu": 3,
    "noir": 0,
@@ -668,6 +680,7 @@
     "CM",
     "CO",
     "CV",
+    "CY",
     "DK",
     "DM",
     "ES",
@@ -734,9 +747,11 @@
     "SN",
     "SR",
     "ST",
+    "SY",
     "SZ",
     "TH",
     "TK",
+    "TL",
     "TO",
     "TT",
     "TV",
@@ -791,6 +806,7 @@
     "LV",
     "MG",
     "MR",
+    "MT",
     "NC",
     "PF",
     "PM",
@@ -909,7 +925,7 @@
   },
   "confiance": {
    "élevée": 76,
-   "moyenne": 137,
+   "moyenne": 141,
    "faible": 40
   }
  },
@@ -1738,6 +1754,15 @@
    "code": "MK",
    "nom": "Macédoine du Nord",
    "couleur": "violet",
+   "confiance": "moyenne",
+   "drapeaux": [
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "CY",
+   "nom": "Chypre",
+   "couleur": "vert",
    "confiance": "moyenne",
    "drapeaux": [
     "verification_incomplete"
@@ -19076,6 +19101,279 @@
    "fichier_source": "pass2/ext_40_ldh.json",
    "couleur_agent": "jaune",
    "couleur_deduite_des_faits": "jaune",
+   "groupe": "Asie",
+   "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "CY",
+   "nom": "Chypre",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "el",
+    "tr"
+   ],
+   "langues_recherche": [
+    "el",
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "acquittement pour trouble mental (art. 12 ΚΕΦ.154) avec mention dans le jugement que l'accusé a commis l'acte + détention en centre psychiatrique public, ordinaire ou sécurisé (art. 70(4) ΚΕΦ.155)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : l'acquittement pour trouble mental n'est prononcé qu'« après procès » (κατόπιν δίκης) par la juridiction de jugement (Κακουργιοδικείο pour les crimes graves), qui constate l'acte puis ordonne la détention.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Art. 70(1)-(3) ΚΕΦ.155 : question soulevée en cours de procès par la défense, une autre partie ou d'office ; le tribunal vérifie d'abord que les dépositions étayent raisonnablement l'accusation (sinon libération comme en cas de retrait, art. 92) ; si inapte : détention en centre psychiatrique public, ou suivi psychiatrique avec ajournements de 4 mois au total puis détention ; pas de procès des faits, reprise du procès non réglée expressément."
+   },
+   "bases_legales": "ΚΕΦ.154 (Ο περί Ποινικού Κώδικα Νόμος) άρθρα 11 (Τεκμήριο εχεφροσύνης) et 12 (Φρενοπάθεια) ; ΚΕΦ.155 (Ο περί Ποινικής Δικονομίας Νόμος) άρθρο 70 (Ψυχική διαταραχή κατηγορουμένου, rédaction Ν. 89(Ι)/1997) et άρθρο 77(4) ; Ν. 77(Ι)/1997 (Ο περί Ψυχιατρικής Νοσηλείας Νόμος) άρθρα 10-11, 15, applicables à la durée de la détention par renvoi de l'art. 70(5) ΚΕΦ.155",
+   "extrait": "πρόσωπο αθωώνεται κατόπιν δίκης δυνάμει του άρθρου 12 του Ποινικού Κώδικα, το δικαστήριο καταγράφει στην απόφαση του ότι ο κατηγορούμενος έχει τελέσει την πράξη",
+   "note": "Pas de filtre préalable : l'irresponsabilité (art. 12 ΚΕΦ.154, non 13 ; présomption de santé art. 11) se juge au procès ordinaire ; l'art. 70(4) ΚΕΦ.155 (Ν. 89(Ι)/1997, inchangé) impose acquittement « κατόπιν δίκης », constat de l'acte et détention psychiatrique. Nuance : l'inapte est détenu sans procès des faits (art. 70(1)-(3)). Jurisprudence illisible (robots) : rôle de la défense non vérifié.",
+   "sources": [
+    {
+     "titre": "Ο περί Ποινικής Δικονομίας Νόμος - ΚΕΦ.155, άρθρο 70 «Ψυχική διαταραχή κατηγορουμένου» (version indexée, réf. 89(I)/1997)",
+     "url": "https://www.cylaw.org/nomoi/enop/ind/0_155/section-scbfcdd520-41c9-4891-a331-38ae9eb30682.html",
+     "langue": "el"
+    },
+    {
+     "titre": "Ο περί Ποινικής Δικονομίας Νόμος - ΚΕΦ.155, άρθρα 62-87 (dont 70 et 77(4))",
+     "url": "http://www.cylaw.org/nomoi/enop/non-ind/0_155/sub-division-sd282d586a-ce8c-4611-b9d2-1f3cb7972ae3.html",
+     "langue": "el"
+    },
+    {
+     "titre": "Ο περί Ποινικής Δικονομίας Νόμος - ΚΕΦ.155, index et liste des lois modificatives (dernière : 235(I)/2025)",
+     "url": "https://www.cylaw.org/nomoi/enop/non-ind/0_155/index.html",
+     "langue": "el"
+    },
+    {
+     "titre": "Ο περί Ποινικού Κώδικα Νόμος - ΚΕΦ.154 (άρθρα 11 Τεκμήριο εχεφροσύνης, 12 Φρενοπάθεια)",
+     "url": "https://www.cylaw.org/nomoi/enop/non-ind/0_154/full.html",
+     "langue": "el"
+    },
+    {
+     "titre": "Ο Περί Ψυχιατρικής Νοσηλείας Νόμος του 1997 - 77(I)/1997 (mod. 49(I)/2003, 26(I)/2007)",
+     "url": "http://www.cylaw.org/nomoi/enop/non-ind/1997_1_77/full.html",
+     "langue": "el"
+    }
+   ],
+   "fichier_source": "pass2/ext_51_cy.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Europe (UE hors OCDE)",
+   "ocde": false,
+   "drapeaux": [
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "MT",
+   "nom": "Malte",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "mt",
+    "en"
+   ],
+   "langues_recherche": [
+    "en",
+    "mt"
+   ],
+   "couleur": "jaune",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Ordonnance de garde à l'hôpital Mount Carmel (art. 623 CC, détention selon le Mental Health Act) sans procès au fond ; si l'AG conteste, verdict de démence d'un jury spécial (ġurin) puis même garde",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "procedure_amoindrie",
+    "procedure_remplacement_detail": "Pendant la compilation of evidence suspendue, ordonnance de la cour d'enquête sur rapport d'experts ou, si l'AG conteste, jury spécial de la Criminal Court statuant sur la seule démence (art. 620-628), sans procès au fond.",
+    "internement_sans_proces": true,
+    "proces_toujours_ou_sur_demande": false,
+    "inaptitude_a_etre_juge": "Démence actuelle : délais suspendus et experts nommés pendant l'enquête (art. 402) ; devant la Criminal Court, la question est tranchée d'abord par un jury (art. 620-628) ; si inapte, garde à Mount Carmel (art. 623) et reprise du procès à la guérison (art. 626)."
+   },
+   "bases_legales": "Criminal Code (Kodiċi Kriminali), Cap. 9 : art. 33(a) ; art. 402(1)(a), (3), (4) et (5) (sous-art. (4)-(5) remplacés par l'Act No. V of 2022) ; art. 432(1) ; arts. 620-628 (spéc. 620(1) et (3), 621, 622, 623, 625, 626, 627, 628) ; art. 623(4) (renvoi aux ordonnances de la Court of Magistrates sous arts. 402 et 525) ; Mental Health Act, Cap. 525.",
+   "extrait": "the Attorney General decides to contest the finding of the experts that the accused was insane, he may, within the term prescribed in article 432(1)",
+   "note": "Si les experts nommés pendant la compilation of evidence concluent à la démence au moment des faits, la Court of Magistrates (enquête) ordonne la garde à Mount Carmel (art. 402(4), 623). L'AG peut contester (délai art. 432(1)) : poursuite de l'enquête au fond puis procès ordinaire, ou jury spécial (ġurin) sur la seule démence, que l'accusé peut imposer. Sans contestation, pas de procès.",
+   "sources": [
+    {
+     "titre": "Act No. V of 2022, Criminal Code (Amendment No. 2) Act, 2022 (art. 5 : art. 402(4)-(5) Cap. 9) — Parlament ta' Malta",
+     "url": "https://www.parlament.mt/media/115738/act-v-criminal-code-2.pdf",
+     "langue": "en"
+    },
+    {
+     "titre": "CJAD (Univ. of Nottingham), Malta — Insanity: national proceedings (extraits Criminal Code 2023 : arts. 33, 402, 620-628)",
+     "url": "https://cjad.nottingham.ac.uk/en/state/85/keyword/585/",
+     "langue": "en"
+    },
+    {
+     "titre": "MaltaToday — Man accused of Maria Lourdes Agius's murder pleads insanity",
+     "url": "https://maltatoday.com.mt/news/court_and_police/94103/man_accused_of_maria_lourdes_agius_murder_pleads_insanity",
+     "langue": "en"
+    },
+    {
+     "titre": "MaltaToday — Jury throws out Michael Emmanuel's insanity plea",
+     "url": "https://www.maltatoday.com.mt/news/court_and_police/96100/jury_throws_out_michael_emmanuels_insanity",
+     "langue": "en"
+    },
+    {
+     "titre": "MaltaToday — Abner Aquilina not fit to stand trial for murder of Paulina Dembska, court rules",
+     "url": "https://www.maltatoday.com.mt/news/court_and_police/117120/abner_aquilina_not_fit_to_stand_trial_for_murder_of_paulina_dembska_court_rules",
+     "langue": "en"
+    },
+    {
+     "titre": "MaltaToday — Psychiatrists find Noel Azzopardi incapable of forming criminal intent, AG may contest findings",
+     "url": "https://maltatoday.com.mt/news/court_and_police/131062/psychiatrists_find_noel_azzopardi_incapable_of_forming_criminal_intent_ag_may_contest_findings",
+     "langue": "en"
+    }
+   ],
+   "fichier_source": "pass2/ext_52_mt.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
+   "groupe": "Europe (UE hors OCDE)",
+   "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "TL",
+   "nom": "Timor oriental",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "pt",
+    "tet"
+   ],
+   "langues_recherche": [
+    "pt",
+    "tet",
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Constat d'inimputabilité (CP art. 21.º n.º 1) par le tribunal de jugement à l'issue du procès commun, et internement comme mesure de sûreté (CP arts. 93.º-95.º ; minimum 3 ans pour les crimes graves contre les personnes, art. 94.º n.º 2) ; en pratique exécuté en prison faute d'établissement adapté (JSMP 2019)",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : seuls les procès commun et sommaire existent et la phase préparatoire se réduit à l'inquérito du MP (Lei 15/2005, art. 2.º n.º 2 qq) ; l'index officiel du CPP ne comporte aucune procédure spéciale pour inimputables.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Aucune règle spécifique repérée : l'index officiel du CPP ne prévoit ni suspension du procès pour anomalie psychique survenue après les faits ni audience sur les faits, et le CP (lu jusqu'à l'art. 131.º) n'a pas d'article « anomalia psíquica posterior » ; le jugement en l'absence de l'arguido est en principe exclu (Lei 15/2005, art. 2.º n.º 2 ww). Précédent de l'époque UNTAET : affaire Nahak (01A/2004), arguido déclaré inapte à être jugé (« mental disturbance »). Pratique actuelle non vérifiée."
+   },
+   "bases_legales": "CP (DL n.º 19/2009) arts. 21.º, 65.º, 93.º-99.º ; CPP (DL n.º 13/2005) arts. 1.º a), 48.º n.º 2 d), 150.º n.º 1, 151.º n.º 2 b), 155.º n.º 2, 235.º-240.º, 279.º-283.º, 343.º-344.º (texte des arts. 235.º et suivants non lu) ; Lei n.º 15/2005, art. 2.º n.º 2 qq), ww), xx), ccc) ; Lei n.º 13/2008, art. 2.º n.º 2 kk)",
+   "extrait": "Quando um facto descrito num tipo legal de crime for praticado por inimputável nos termos do disposto no artigo 21º, pode este ser mandado internar",
+   "note": "Pas de filtre préalable : l'inquérito du MP est la seule phase préparatoire et seuls existent les procès commun et sommaire (Lei 15/2005). En pratique (JSMP 2019, homicide aggravé, TD Dili), le tribunal de jugement retient l'anomalie psychique au prononcé et renvoie l'arguido 3 ans en prison « pour traitement », faute d'établissement. Arts. 235-236 et 283 CPP non lus (PDF tronqués).",
+   "sources": [
+    {
+     "titre": "Código Penal de Timor-Leste (DL n.º 19/2009), texte portugais : arts. 21.º, 93.º-101.º (base CJAD, Univ. de Nottingham)",
+     "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/TimorLesteCriminalCode.pdf",
+     "langue": "pt"
+    },
+    {
+     "titre": "Código de Processo Penal (DL n.º 13/2005), texte portugais et index (titres des arts. 235.º-283.º, 343.º-344.º) ; PDF tronqué à l'art. 118.º",
+     "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/TimorLesteCriminalProcedureCode.pdf",
+     "langue": "pt"
+    },
+    {
+     "titre": "Kódigu Prosesu Penál, édition en tetum du Ministério da Justiça (2006) : index complet, arts. 1.º, 48.º, 92.º",
+     "url": "https://www.mj.gov.tl/jornal/files/Codigo_Processo_Penal.pdf",
+     "langue": "tet"
+    },
+    {
+     "titre": "Lei n.º 15/2005, Autorização legislativa em matéria de processo penal (Jornal da República)",
+     "url": "https://www.mj.gov.tl/jornal/public/docs/2002_2005/leis_parlamento_nacional/15_2005.pdf",
+     "langue": "pt"
+    },
+    {
+     "titre": "JSMP, communiqué du 7 juin 2019 : Tribunál refere arguidu inamputavel tanba anomalia psíkika ba prizaun",
+     "url": "https://jsmp.tl/wp-content/uploads/PrTribunalRefereArguiduMorasMental_TETUM.pdf",
+     "langue": "tet"
+    },
+    {
+     "titre": "Criminal Procedure Code of Timor-Leste 2005, traduction anglaise (arts. 1, 48, 149-156)",
+     "url": "https://policehumanrightsresources.org/content/uploads/2016/07/Criminal-Procedure-Code-Timor-Leste-2005.pdf?x19059",
+     "langue": "en"
+    }
+   ],
+   "fichier_source": "pass2/ext_53_tl.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Asie",
+   "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "SY",
+   "nom": "Syrie",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "ar"
+   ],
+   "langues_recherche": [
+    "ar",
+    "en"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "jugement de la juridiction de fond (محكمة الجنايات pour un crime) constatant la commission des faits, puis exemption de peine pour démence (ق.ع art. 230) + internement en مأوى احترازي par clause spéciale du jugement (ق.ع art. 231), dans un hôpital désigné par décret avec rapports médicaux semestriels (art. 74-75)",
+    "qui_declenche_examen": "mixte",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune : selon l'Assemblée générale de la Cour de cassation (déc. 16 du 23/12/1985), le juge d'instruction et le juge de renvoi ne peuvent rendre de منع المحاكمة pour démence ; l'affaire va devant la juridiction de fond.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Non vérifié : aucune règle du ق.أ.م.ج sur la démence survenue après les faits n'a pu être lue ; seul l'art. 76 ق.ع (lu) prévoit l'internement en مأوى احترازي de la personne devenue démente pendant l'exécution de sa peine ou mesure, le juge décidant à la sortie de l'imputation de cette durée."
+   },
+   "bases_legales": "ق.ع (المرسوم التشريعي 148/1949) art. 230 (exemption de peine du dément), 231 (internement en مأوى احترازي ; texte non lu), 70, 74-76 (mesures de sûreté) ; ق.أ.م.ج (المرسوم التشريعي 112/1950) art. 132 (منع المحاكمة), 162 (réouverture) ; محكمة النقض، الهيئة العامة، قرار 16 تاريخ 23/12/1985 ; الإعلان الدستوري du 13/3/2025 (aucune modification des codes relevée en 2025-2026)",
+   "extrait": "محاكم الأساس هي وحدها صاحبة الاختصاص … ولا يملك قاضيا التحقيق والإحالة منع المحاكمة لمن يثبت اقترافه الجريمة وهو بحالة جنون",
+   "note": "Pas de filtre préalable : l'AG de la Cassation (déc. 16, 23/12/1985, citée en doctrine) réserve aux juges du fond les art. 230-231 ق.ع ; juges d'instruction et de renvoi ne peuvent rendre de منع المحاكمة pour démence. La محكمة الجنايات juge, exempte et interne. Art. 231 non lu. Codes inchangés 2025-26. Hors contrôle de Damas (oct. 2026) : Golan et zone tampon (Israël), Soueïda ; Hassaké incertain.",
+   "sources": [
+    {
+     "titre": "ايثار موسى، « قرارات قاضي التحقيق والطعن بها (قرار منع محاكمة المدعى عليه) », mohamah.net, 10/01/2017 – cite نقض هيئة عامة 16 تاريخ 23/12/1985 et art. 132, 162 ق.أ.م.ج",
+     "url": "https://www.mohamah.net/law/?p=23768",
+     "langue": "ar"
+    },
+    {
+     "titre": "قانون العقوبات السوري، المرسوم التشريعي 148 لعام 1949 (texte arabe, Alkarama) – art. 70, 74-76 lus (texte extrait jusqu'à l'art. 157)",
+     "url": "https://www.alkarama.org/sites/default/files/2016-11/SYR_PenalCode148-1949_AR.pdf",
+     "langue": "ar"
+    },
+    {
+     "titre": "Noon Post (trad. Just Security), « فجوة العدالة الانتقالية في سوريا بين القوانين المحلية والولاية القضائية الدولية », 05/06/2026 – procès Atef Najib ouvert le 26/04/2026 devant la 4e محكمة الجنايات de Damas sous le CP et le CPP",
+     "url": "https://www.noonpost.com/375853/amp/",
+     "langue": "ar"
+    },
+    {
+     "titre": "Asharq Al-Awsat, « دمج ملف القضاء في الحسكة مستمر رغم عدم تسلم القصر العدلي », 11/05/2026",
+     "url": "https://aawsat.com/node/5272051",
+     "langue": "ar"
+    },
+    {
+     "titre": "Political Geography Now, « Syria Control Map & Timeline: The End of the SDF », 30/08/2026",
+     "url": "https://www.polgeonow.com/2026/08/map-report-syria-situation-2026-update-kurdish-sdf-integration.html",
+     "langue": "en"
+    },
+    {
+     "titre": "ABC News, « How Israel has redrawn the map in Gaza, Lebanon, Syria and the West Bank », 22/10/2026",
+     "url": "https://www.abc.net.au/news/2026-10-22/israel-redraws-the-map-in-gaza-lebanon-syria-and-the-west-bank/107180346",
+     "langue": "en"
+    }
+   ],
+   "fichier_source": "pass2/ext_54_sy.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
    "groupe": "Asie",
    "ocde": false,
    "drapeaux": []

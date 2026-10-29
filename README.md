@@ -16,8 +16,8 @@ fédérée : la règle, sa base légale, les nuances et le niveau de confiance.
 
 | Couleur | Signification | Pays | Subdivisions ou territoires |
 |---|---|---:|---:|
-| Vert | **On juge d'abord** : pas de filtre préalable ; le procès ordinaire établit les faits, puis la juridiction de jugement constate l'irresponsabilité et ordonne elle-même la mesure. | 83 | 23 |
-| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 22 | 23 |
+| Vert | **On juge d'abord** : pas de filtre préalable ; le procès ordinaire établit les faits, puis la juridiction de jugement constate l'irresponsabilité et ordonne elle-même la mesure. | 86 | 23 |
+| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 23 | 23 |
 | Violet | **Irresponsabilité d'abord, mais jugement** : voie spéciale, mais un vrai procès précède toujours la mesure, ou a lieu à la demande de l'accusé. | 25 | 5 |
 | Bleu | **L'accusé choisit le moment** : la défense décide si et quand l'état mental est examiné (ex. Canada, arrêt Swain). | 3 | 53 |
 | Noir | **Aucune irresponsabilité reconnue** : toute personne condamnée va en prison. | 0 | 1 |
@@ -28,9 +28,10 @@ et le plaider-coupable sont ignorés ; l'aptitude à être jugé est décrite ma
 États fédéraux sont découpés par entité quand la règle est infranationale (États-Unis, Australie, Royaume-Uni,
 Argentine, Inde/Kerala, Tanzanie/Zanzibar, Bosnie-Herzégovine).
 
-**Périmètre.** OCDE (hors Turquie), Amériques (hors Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée et
-Sahel sauf Sénégal et Mauritanie), Balkans (hors Serbie), Ukraine et Moldavie (zones contrôlées), et une
-sélection de pays d'Asie dont les Émirats arabes unis. Un régime autoritaire n'est pas exclu en tant que tel :
+**Périmètre.** Pays de l'OCDE et de l'UE (hors Turquie et Chypre du Nord, sous contrôle turc), Amériques (hors
+Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée et Sahel sauf Sénégal et Mauritanie), Balkans (hors
+Serbie), Ukraine et Moldavie (zones contrôlées), et une sélection de pays d'Asie dont la Syrie, le Timor
+oriental et les Émirats arabes unis. Un régime autoritaire n'est pas exclu en tant que tel :
 ce qui compte est que, pour le droit commun, la loi sur les droits de la défense reste suivie (hors
 corruption). Là où l'absence d'État de droit fait que la loi n'est qu'indicative, pas une obligation, la
 juridiction est écartée (voir [CONTRIBUTING.md](CONTRIBUTING.md)).
@@ -43,7 +44,7 @@ l'hypothèse non vérifiée quand il y en a une. Les contributions sont particul
 
 | Chemin | Contenu |
 |---|---|
-| `donnees/irresponsabilite_penale.json` | **Le jeu de données** : 253 entrées avec les faits, les bases légales, un extrait verbatim, des notes, les sources, la confiance, l'historique et les contrôles indépendants ; méthodologie, périmètre, description des champs (`meta.schema`) et règles de contribution. |
+| `donnees/irresponsabilite_penale.json` | **Le jeu de données** : 257 entrées avec les faits, les bases légales, un extrait verbatim, des notes, les sources, la confiance, l'historique et les contrôles indépendants ; méthodologie, périmètre, description des champs (`meta.schema`) et règles de contribution. |
 | `cartes/irresponsabilite_penale.svg` / `.jpg` | Carte : SVG interactif et JPG de 3740 × 2680 pixels (10 mégapixels). |
 | `outils/` | Validation (`donnees.py`) et génération de la carte (`construire.sh`, Node.js + Python). |
 
