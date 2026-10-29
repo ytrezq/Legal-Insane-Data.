@@ -210,7 +210,7 @@ t('  </g>');
 t('  <g id="countries">');
 for (const s of shapes) {
   if (!s.d) continue;
-  const cls = `${s.sub ? 'sub' : 'country'} ${s.colour}`;
+  const cls = `${s.sub ? 'sub' : 'country'} ${s.colour}${excluded.has(s.code) && s.code.includes('-') ? ' excluded-zone' : ''}`;
   t(`    <path id="${esc(s.code)}${s.background ? '-background' : ''}" data-code="${esc(s.code)}" class="${cls}" d="${s.d}"><title>${esc(tooltip(s.code, s.name, s.parent))}</title></path>`);
 }
 t('  </g>');

@@ -2,7 +2,7 @@
  "title": "Totally abolished discernment: judge first, or establish non-responsibility first?",
  "description": "World map in Mollweide projection classifying criminal-law systems by the procedural fate of an accused whose discernment was totally abolished by a mental disorder at the time of the act: the trial comes first (green), non-responsibility is established first without a real trial (yellow), non-responsibility is established first but a trial still takes place (purple), the accused chooses when the mental state is examined (blue), no non-responsibility is recognised (black), no data or outside the scope (white).",
  "subtitle": "Serious crime (e.g. homicide), discernment totally abolished at the time of the act · partial impairment and plea bargaining ignored · law in force on 28 October 2026",
- "subtitle_2": "OECD (excl. Turkey), Americas (excl. Cuba), Oceania, Africa (excl. Maghreb, Egypt, Eritrea, Sahel other than Senegal, Mauritania), Balkans (excl. Serbia), Ukraine, Moldova (controlled areas), Asia (selection, incl. UAE)",
+ "subtitle_2": "OECD and EU (excl. Turkey, N. Cyprus), Americas (excl. Cuba), Oceania, Africa (excl. Maghreb, Egypt, Eritrea, Sahel except Senegal, Mauritania), Balkans (excl. Serbia), Ukraine, Moldova (controlled areas), Asia (selection)",
  "marker_note": "Circle: state too small to be visible at this scale (same colour as on the map). Hover over a country: legal basis, nuances and confidence level.",
  "footer": [
   "Method: legal research in each country's official language(s) (penal codes, codes of criminal procedure, case law) by 24 agents, a second verification pass on weak entries, then an independent check of high-stakes entries. Sources, excerpts and confidence of each entry: accompanying JSON file.",
@@ -18,7 +18,7 @@
     "the accused not responsible and itself orders the treatment or security measure."
    ],
    "definition": "No prior gateway: the case goes to an ordinary trial; the trial court first establishes the facts, then rules on non-responsibility (acquittal, exemption, special verdict) and itself orders the measure. The psychiatric examination is ordered by the authorities or the court, not at the accused's choice.",
-   "n_countries": 83,
+   "n_countries": 86,
    "n_subdivisions": 23
   },
   "yellow": {
@@ -29,7 +29,7 @@
     "(France since 2008: hearing before the investigating chamber). Trial only if the accused is found responsible."
    ],
    "definition": "The mental state at the time of the act is examined during the pretrial phase; if discernment was abolished, the case ends without a real trial, either through a dismissal or a decision not to commit for trial, or through a reduced procedure that replaces the trial (hearing before an investigating court, in chambers, a non-public care tribunal, a written or simplified procedure, a lower standard of proof, absence of the accused as the rule). The person may nonetheless be committed. A trial only takes place if the person is found responsible.",
-   "n_countries": 22,
+   "n_countries": 23,
    "n_subdivisions": 23
   },
   "purple": {
@@ -69,8 +69,8 @@
    "label": "No data / outside the scope",
    "colour": "#ffffff",
    "legend": [
-    "Insufficient data (procedural text not found or unreadable), countries and areas excluded from the scope (Maghreb, Egypt,",
-    "Sahel except Senegal and Mauritania, Eritrea, Cuba, Turkey, Serbia, occupied Ukraine, Transnistria: dashed), countries not studied."
+    "Insufficient data (procedural text not found or unreadable), countries and areas excluded from the scope (Maghreb, Egypt, Sahel except",
+    "Senegal and Mauritania, Eritrea, Cuba, Turkey, Serbia; dashed: Northern Cyprus, occupied Ukraine, Transnistria), countries not studied."
    ],
    "definition": "Insufficient reliable data to classify, countries excluded from the scope by choice (lack of rule of law: the law there is only a hint, not a requirement to follow), or countries and territories not studied.",
    "n_countries": 8,
@@ -233,7 +233,9 @@
     "MO",
     "TW",
     "LK",
-    "AE"
+    "AE",
+    "SY",
+    "TL"
    ],
    "balkans_except_serbia": [
     "HR",
@@ -256,6 +258,10 @@
    "eastern_europe": [
     "UA",
     "MD"
+   ],
+   "europe_eu_non_oecd": [
+    "CY",
+    "MT"
    ]
   },
   "excluded": [
@@ -338,9 +344,14 @@
     "code": "MD-SN",
     "name": "Transnistria",
     "reason": "territory outside the control of the Moldovan authorities, excluded from the scope"
+   },
+   {
+    "code": "CY-N",
+    "name": "Northern Cyprus",
+    "reason": "area under Turkish control (“Turkish Republic of Northern Cyprus”), treated like Turkey: excluded from the scope (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
    }
   ],
-  "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia and the Philippines) are left white.",
+  "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan, Syria and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia, the Philippines and Timor-Leste) are left white.",
   "markers": {
    "TV": [
     179.2,
@@ -499,7 +510,7 @@
  "meta": {
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "n_entries": 253,
+  "n_entries": 257,
   "edition": "English",
   "translated_from": "irresponsabilite_penale.json (French working edition, kept on the francais branch of this repository)",
   "methodology": {
@@ -533,11 +544,12 @@
     "Texts supplied by the user (28/10, 22:38): Macedonian Code of Criminal Procedure of 2010 (OSCE translation), Malagasy code (UNODC copy) and Act 2016-017, codes of Entre Ríos (consolidated Act 9754), La Pampa (Act 3192, STJ 2021 edition) and La Rioja (Act 1574); they made it possible to classify North Macedonia (purple), Madagascar, Entre Ríos, La Pampa and La Rioja (yellow)."
    ],
    "white_criterion": "A colour is only assigned if the decisive procedural mechanism (who decides, at what stage, in what kind of hearing) was read in a primary source (statute, decision) or in reliable scholarship quoting it; otherwise the entry stays white and the hypothesis is kept (hypothetical_colour field).",
-   "asia_scope": "Asia (selection): India (and Kerala), Bangladesh, Pakistan, Sri Lanka, Nepal, Bhutan, Indonesia, Thailand, Malaysia, the Philippines, Taiwan, Hong Kong, Macao, Mongolia, Kazakhstan, Jordan, the United Arab Emirates, as well as Japan, South Korea and Israel (OECD).",
+   "asia_scope": "Asia (selection): India (and Kerala), Bangladesh, Pakistan, Sri Lanka, Nepal, Bhutan, Indonesia, Thailand, Malaysia, the Philippines, Taiwan, Hong Kong, Macao, Mongolia, Kazakhstan, Jordan, Syria, the United Arab Emirates, Timor-Leste, as well as Japan, South Korea and Israel (OECD).",
    "extension_28_10": "Extension of 28/10/2026 (21:00): Egypt removed (criminal procedure deemed a hint rather than a requirement); 13 Asian countries or territories, Mauritania, the Balkans except Serbia and the remaining Pacific island territories added; Senegal re-checked.",
    "extension_28_10_bis": "Extension of 28/10/2026 (22:00): Sri Lanka, Madagascar (second attempt), Ukraine (government-controlled territory) and Moldova (except Transnistria), one agent per country; Albania and North Macedonia relaunched separately. Occupied Ukrainian territories (line of control on 28/10/2026 according to the daily DeepStateMap data, cyterat/deepstate-map-data repository) and Transnistria (Natural Earth administrative units) drawn white with dashes.",
    "extension_28_10_ter": "Additions of 28/10/2026 (23:00): texts supplied by the user (North Macedonia, Madagascar, Entre Ríos, La Pampa, La Rioja); 9 Legal Data Hunter queries run one at a time, without agents, on the jurisdictions still white (Albania and Mauritania classified; Guinea, Rwanda, Zanzibar and Brčko still white; daily quota reached); United Arab Emirates added through web research, without Legal Data Hunter (Federal Decree-Laws No. 31 of 2021 and No. 38 of 2022, official portal).",
    "scope_criterion": "An authoritarian regime is not excluded as such: some authoritarian countries keep, for ordinary criminal cases, a justice system in which the law on defence rights is still followed (corruption aside); they are included. Excluded are those where the lack of rule of law means that the law is only a hint, not a requirement to follow.",
+   "extension_29_10": "Extension of 29/10/2026 (00:40): Cyprus (areas controlled by the Republic of Cyprus), Malta, Timor-Leste and Syria, one agent per country; Northern Cyprus (under Turkish control) treated like Turkey and drawn white with dashes.",
    "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This file is the dataset maintained on the main branch; the French edition is kept on the francais branch of the repository and prevails for 28/10/2026 in case of a translation discrepancy."
   },
   "contributing": [
@@ -580,8 +592,8 @@
  },
  "summary": {
   "countries": {
-   "green": 83,
-   "yellow": 22,
+   "green": 86,
+   "yellow": 23,
    "purple": 25,
    "blue": 3,
    "black": 0,
@@ -631,6 +643,7 @@
     "CM",
     "CO",
     "CV",
+    "CY",
     "DK",
     "DM",
     "ES",
@@ -697,9 +710,11 @@
     "SN",
     "SR",
     "ST",
+    "SY",
     "SZ",
     "TH",
     "TK",
+    "TL",
     "TO",
     "TT",
     "TV",
@@ -754,6 +769,7 @@
     "LV",
     "MG",
     "MR",
+    "MT",
     "NC",
     "PF",
     "PM",
@@ -872,7 +888,7 @@
   },
   "confidence": {
    "high": 76,
-   "medium": 137,
+   "medium": 141,
    "low": 40
   }
  },
@@ -1701,6 +1717,15 @@
    "code": "MK",
    "name": "North Macedonia",
    "colour": "purple",
+   "confidence": "medium",
+   "flags": [
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "CY",
+   "name": "Cyprus",
+   "colour": "green",
    "confidence": "medium",
    "flags": [
     "incomplete_verification"
@@ -19041,6 +19066,279 @@
    "source_file": "pass2/ext_40_ldh.json",
    "colour_from_agent": "yellow",
    "colour_derived_from_facts": "yellow",
+   "flags": []
+  },
+  {
+   "code": "CY",
+   "name": "Cyprus",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "el",
+    "tr"
+   ],
+   "research_languages": [
+    "el",
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Acquittal for mental disorder (art. 12 ΚΕΦ.154), the judgment recording that the accused committed the act, + detention in a public psychiatric centre, ordinary or secure (art. 70(4) ΚΕΦ.155)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: the acquittal for mental disorder is only pronounced “after trial” (κατόπιν δίκης) by the trial court (Κακουργιοδικείο for serious crimes), which finds that the act was committed and then orders detention.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Art. 70(1)-(3) ΚΕΦ.155: the question is raised during the trial by the defence, another party or by the court of its own motion; the court first checks that the depositions reasonably support the charge (otherwise release as in a withdrawal, art. 92); if unfit: detention in a public psychiatric centre, or psychiatric follow-up with adjournments of 4 months in total, then detention; no trial of the facts, resumption of the trial not expressly regulated."
+   },
+   "legal_bases": "ΚΕΦ.154 (Ο περί Ποινικού Κώδικα Νόμος) άρθρα 11 (Τεκμήριο εχεφροσύνης) and 12 (Φρενοπάθεια); ΚΕΦ.155 (Ο περί Ποινικής Δικονομίας Νόμος) άρθρο 70 (Ψυχική διαταραχή κατηγορουμένου, as worded by Ν. 89(Ι)/1997) and άρθρο 77(4); Ν. 77(Ι)/1997 (Ο περί Ψυχιατρικής Νοσηλείας Νόμος) άρθρα 10-11, 15, applicable to the length of detention by reference from art. 70(5) ΚΕΦ.155",
+   "excerpt": "πρόσωπο αθωώνεται κατόπιν δίκης δυνάμει του άρθρου 12 του Ποινικού Κώδικα, το δικαστήριο καταγράφει στην απόφαση του ότι ο κατηγορούμενος έχει τελέσει την πράξη",
+   "note": "No pretrial gate: non-responsibility (art. 12 ΚΕΦ.154, not 13; presumption of sanity, art. 11) is decided at the ordinary trial; art. 70(4) ΚΕΦ.155 (Ν. 89(Ι)/1997, unchanged) requires an acquittal “κατόπιν δίκης” (after trial), a finding that the act was committed and psychiatric detention. Nuance: an unfit accused is detained without a trial of the facts (art. 70(1)-(3)). Case law unreadable (blocked to automated access): the role of the defence is not verified.",
+   "sources": [
+    {
+     "title": "Ο περί Ποινικής Δικονομίας Νόμος - ΚΕΦ.155, άρθρο 70 «Ψυχική διαταραχή κατηγορουμένου» (indexed version, ref. 89(I)/1997)",
+     "url": "https://www.cylaw.org/nomoi/enop/ind/0_155/section-scbfcdd520-41c9-4891-a331-38ae9eb30682.html",
+     "language": "el"
+    },
+    {
+     "title": "Ο περί Ποινικής Δικονομίας Νόμος - ΚΕΦ.155, άρθρα 62-87 (including 70 and 77(4))",
+     "url": "http://www.cylaw.org/nomoi/enop/non-ind/0_155/sub-division-sd282d586a-ce8c-4611-b9d2-1f3cb7972ae3.html",
+     "language": "el"
+    },
+    {
+     "title": "Ο περί Ποινικής Δικονομίας Νόμος - ΚΕΦ.155, index and list of amending laws (latest: 235(I)/2025)",
+     "url": "https://www.cylaw.org/nomoi/enop/non-ind/0_155/index.html",
+     "language": "el"
+    },
+    {
+     "title": "Ο περί Ποινικού Κώδικα Νόμος - ΚΕΦ.154 (άρθρα 11 Τεκμήριο εχεφροσύνης, 12 Φρενοπάθεια)",
+     "url": "https://www.cylaw.org/nomoi/enop/non-ind/0_154/full.html",
+     "language": "el"
+    },
+    {
+     "title": "Ο Περί Ψυχιατρικής Νοσηλείας Νόμος του 1997 - 77(I)/1997 (amended 49(I)/2003, 26(I)/2007)",
+     "url": "http://www.cylaw.org/nomoi/enop/non-ind/1997_1_77/full.html",
+     "language": "el"
+    }
+   ],
+   "group": "Europe (EU, non-OECD)",
+   "oecd": false,
+   "source_file": "pass2/ext_51_cy.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "MT",
+   "name": "Malta",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "mt",
+    "en"
+   ],
+   "research_languages": [
+    "en",
+    "mt"
+   ],
+   "colour": "yellow",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Custody order at Mount Carmel Hospital (art. 623 CC, detention under the Mental Health Act) without a trial on the merits; if the AG contests, insanity verdict of a special jury (ġurin), then the same custody",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "pretrial_phase",
+    "replacement_procedure": "reduced_procedure",
+    "replacement_procedure_detail": "During the suspended compilation of evidence, an order of the court of inquiry on the experts' report or, if the AG contests, a special jury of the Criminal Court ruling on insanity alone (arts. 620-628), without a trial on the merits.",
+    "committal_without_trial": true,
+    "trial_always_or_on_request": false,
+    "unfitness_to_stand_trial": "Present insanity: time limits suspended and experts appointed during the inquiry (art. 402); before the Criminal Court, the question is first decided by a jury (arts. 620-628); if unfit, custody at Mount Carmel (art. 623) and resumption of the trial on recovery (art. 626)."
+   },
+   "legal_bases": "Criminal Code (Kodiċi Kriminali), Cap. 9: art. 33(a); art. 402(1)(a), (3), (4) and (5) (sub-arts. (4)-(5) replaced by Act No. V of 2022); art. 432(1); arts. 620-628 (in particular 620(1) and (3), 621, 622, 623, 625, 626, 627, 628); art. 623(4) (reference to orders of the Court of Magistrates under arts. 402 and 525); Mental Health Act, Cap. 525.",
+   "excerpt": "the Attorney General decides to contest the finding of the experts that the accused was insane, he may, within the term prescribed in article 432(1)",
+   "note": "If the experts appointed during the compilation of evidence find insanity at the time of the act, the Court of Magistrates (court of inquiry) orders custody at Mount Carmel (arts. 402(4), 623). The AG may contest (time limit of art. 432(1)): the inquiry on the merits then continues towards an ordinary trial, or a special jury (ġurin) decides on insanity alone, which the accused can insist on. Without a challenge, there is no trial.",
+   "sources": [
+    {
+     "title": "Act No. V of 2022, Criminal Code (Amendment No. 2) Act, 2022 (art. 5: art. 402(4)-(5) Cap. 9) — Parlament ta' Malta",
+     "url": "https://www.parlament.mt/media/115738/act-v-criminal-code-2.pdf",
+     "language": "en"
+    },
+    {
+     "title": "CJAD (Univ. of Nottingham), Malta — Insanity: national proceedings (extracts of the Criminal Code 2023: arts. 33, 402, 620-628)",
+     "url": "https://cjad.nottingham.ac.uk/en/state/85/keyword/585/",
+     "language": "en"
+    },
+    {
+     "title": "MaltaToday — Man accused of Maria Lourdes Agius's murder pleads insanity",
+     "url": "https://maltatoday.com.mt/news/court_and_police/94103/man_accused_of_maria_lourdes_agius_murder_pleads_insanity",
+     "language": "en"
+    },
+    {
+     "title": "MaltaToday — Jury throws out Michael Emmanuel's insanity plea",
+     "url": "https://www.maltatoday.com.mt/news/court_and_police/96100/jury_throws_out_michael_emmanuels_insanity",
+     "language": "en"
+    },
+    {
+     "title": "MaltaToday — Abner Aquilina not fit to stand trial for murder of Paulina Dembska, court rules",
+     "url": "https://www.maltatoday.com.mt/news/court_and_police/117120/abner_aquilina_not_fit_to_stand_trial_for_murder_of_paulina_dembska_court_rules",
+     "language": "en"
+    },
+    {
+     "title": "MaltaToday — Psychiatrists find Noel Azzopardi incapable of forming criminal intent, AG may contest findings",
+     "url": "https://maltatoday.com.mt/news/court_and_police/131062/psychiatrists_find_noel_azzopardi_incapable_of_forming_criminal_intent_ag_may_contest_findings",
+     "language": "en"
+    }
+   ],
+   "group": "Europe (EU, non-OECD)",
+   "oecd": false,
+   "source_file": "pass2/ext_52_mt.json",
+   "colour_from_agent": "yellow",
+   "colour_derived_from_facts": "yellow",
+   "flags": []
+  },
+  {
+   "code": "TL",
+   "name": "Timor-Leste",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "pt",
+    "tet"
+   ],
+   "research_languages": [
+    "pt",
+    "tet",
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Finding of inimputabilidade (CP art. 21.º n.º 1) by the trial court at the end of the common procedure, and committal as a security measure (CP arts. 93.º-95.º; minimum 3 years for serious crimes against persons, art. 94.º n.º 2); in practice served in prison for lack of a suitable facility (JSMP 2019)",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: only the common and summary procedures exist and the pretrial phase is limited to the prosecution's inquérito (Lei 15/2005, art. 2.º n.º 2 qq); the official index of the CPP contains no special procedure for inimputáveis.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "No specific rule found: the official index of the CPP provides neither a stay of proceedings for a mental anomaly arising after the act nor a hearing on the facts, and the CP (read up to art. 131.º) has no article on “anomalia psíquica posterior”; trial in the absence of the arguido is in principle excluded (Lei 15/2005, art. 2.º n.º 2 ww). Precedent from the UNTAET era: Nahak case (01A/2004), arguido found unfit to stand trial (“mental disturbance”). Current practice not verified."
+   },
+   "legal_bases": "CP (DL n.º 19/2009) arts. 21.º, 65.º, 93.º-99.º; CPP (DL n.º 13/2005) arts. 1.º a), 48.º n.º 2 d), 150.º n.º 1, 151.º n.º 2 b), 155.º n.º 2, 235.º-240.º, 279.º-283.º, 343.º-344.º (text of arts. 235.º et seq. not read); Lei n.º 15/2005, art. 2.º n.º 2 qq), ww), xx), ccc); Lei n.º 13/2008, art. 2.º n.º 2 kk)",
+   "excerpt": "Quando um facto descrito num tipo legal de crime for praticado por inimputável nos termos do disposto no artigo 21º, pode este ser mandado internar",
+   "note": "No pretrial gate: the prosecution's inquérito is the only pretrial phase and only the common and summary procedures exist (Lei 15/2005). In practice (JSMP 2019, aggravated homicide, Dili district court), the trial court found the mental anomaly when delivering judgment and sent the arguido to prison for 3 years “for treatment”, for lack of a facility. CPP arts. 235-236 and 283 not read (truncated PDFs).",
+   "sources": [
+    {
+     "title": "Código Penal de Timor-Leste (DL n.º 19/2009), Portuguese text: arts. 21.º, 93.º-101.º (CJAD database, Univ. of Nottingham)",
+     "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/TimorLesteCriminalCode.pdf",
+     "language": "pt"
+    },
+    {
+     "title": "Código de Processo Penal (DL n.º 13/2005), Portuguese text and index (titles of arts. 235.º-283.º, 343.º-344.º); PDF truncated at art. 118.º",
+     "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/TimorLesteCriminalProcedureCode.pdf",
+     "language": "pt"
+    },
+    {
+     "title": "Kódigu Prosesu Penál, Tetum edition of the Ministério da Justiça (2006): full index, arts. 1.º, 48.º, 92.º",
+     "url": "https://www.mj.gov.tl/jornal/files/Codigo_Processo_Penal.pdf",
+     "language": "tet"
+    },
+    {
+     "title": "Lei n.º 15/2005, Autorização legislativa em matéria de processo penal (Jornal da República)",
+     "url": "https://www.mj.gov.tl/jornal/public/docs/2002_2005/leis_parlamento_nacional/15_2005.pdf",
+     "language": "pt"
+    },
+    {
+     "title": "JSMP, press release of 7 June 2019: Tribunál refere arguidu inamputavel tanba anomalia psíkika ba prizaun",
+     "url": "https://jsmp.tl/wp-content/uploads/PrTribunalRefereArguiduMorasMental_TETUM.pdf",
+     "language": "tet"
+    },
+    {
+     "title": "Criminal Procedure Code of Timor-Leste 2005, English translation (arts. 1, 48, 149-156)",
+     "url": "https://policehumanrightsresources.org/content/uploads/2016/07/Criminal-Procedure-Code-Timor-Leste-2005.pdf?x19059",
+     "language": "en"
+    }
+   ],
+   "group": "Asia",
+   "oecd": false,
+   "source_file": "pass2/ext_53_tl.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": []
+  },
+  {
+   "code": "SY",
+   "name": "Syria",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "ar"
+   ],
+   "research_languages": [
+    "ar",
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment of the trial court (محكمة الجنايات for a felony) finding that the acts were committed, then exemption from punishment for insanity (ق.ع art. 230) + committal to a مأوى احترازي by a special clause of the judgment (ق.ع art. 231), in a hospital designated by decree with six-monthly medical reports (arts. 74-75)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: according to the General Assembly of the Court of Cassation (dec. 16 of 23/12/1985), the investigating judge and the indictment judge cannot issue a منع المحاكمة (dismissal) for insanity; the case goes to the trial court.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Not verified: no rule of the ق.أ.م.ج on insanity arising after the act could be read; only art. 76 ق.ع (read) provides for committal to a مأوى احترازي of a person who becomes insane while serving a sentence or measure, the judge deciding on release whether that time is credited."
+   },
+   "legal_bases": "ق.ع (المرسوم التشريعي 148/1949) art. 230 (exemption from punishment of the insane person), 231 (committal to a مأوى احترازي; text not read), 70, 74-76 (security measures); ق.أ.م.ج (المرسوم التشريعي 112/1950) art. 132 (منع المحاكمة), 162 (reopening); محكمة النقض، الهيئة العامة، قرار 16 تاريخ 23/12/1985; الإعلان الدستوري of 13/3/2025 (no amendment of the codes found in 2025-2026)",
+   "excerpt": "محاكم الأساس هي وحدها صاحبة الاختصاص … ولا يملك قاضيا التحقيق والإحالة منع المحاكمة لمن يثبت اقترافه الجريمة وهو بحالة جنون",
+   "note": "No pretrial gate: the General Assembly of the Court of Cassation (dec. 16, 23/12/1985, quoted in scholarship) reserves arts. 230-231 ق.ع to the trial courts; investigating and indictment judges cannot issue a منع المحاكمة (dismissal) for insanity. The محكمة الجنايات tries, exempts and commits. Art. 231 not read. Codes unchanged in 2025-26. Outside Damascus's control (Oct. 2026): Golan and buffer zone (Israel), Suwayda; Hasakah uncertain.",
+   "sources": [
+    {
+     "title": "ايثار موسى، “قرارات قاضي التحقيق والطعن بها (قرار منع محاكمة المدعى عليه)”, mohamah.net, 10/01/2017 – quotes نقض هيئة عامة 16 تاريخ 23/12/1985 and arts. 132, 162 ق.أ.م.ج",
+     "url": "https://www.mohamah.net/law/?p=23768",
+     "language": "ar"
+    },
+    {
+     "title": "قانون العقوبات السوري، المرسوم التشريعي 148 لعام 1949 (Arabic text, Alkarama) – arts. 70, 74-76 read (text extracted up to art. 157)",
+     "url": "https://www.alkarama.org/sites/default/files/2016-11/SYR_PenalCode148-1949_AR.pdf",
+     "language": "ar"
+    },
+    {
+     "title": "Noon Post (transl. Just Security), “فجوة العدالة الانتقالية في سوريا بين القوانين المحلية والولاية القضائية الدولية”, 05/06/2026 – trial of Atef Najib opened on 26/04/2026 before the 4th محكمة الجنايات of Damascus under the CP and the CPP",
+     "url": "https://www.noonpost.com/375853/amp/",
+     "language": "ar"
+    },
+    {
+     "title": "Asharq Al-Awsat, “دمج ملف القضاء في الحسكة مستمر رغم عدم تسلم القصر العدلي”, 11/05/2026",
+     "url": "https://aawsat.com/node/5272051",
+     "language": "ar"
+    },
+    {
+     "title": "Political Geography Now, “Syria Control Map & Timeline: The End of the SDF”, 30/08/2026",
+     "url": "https://www.polgeonow.com/2026/08/map-report-syria-situation-2026-update-kurdish-sdf-integration.html",
+     "language": "en"
+    },
+    {
+     "title": "ABC News, “How Israel has redrawn the map in Gaza, Lebanon, Syria and the West Bank”, 22/10/2026",
+     "url": "https://www.abc.net.au/news/2026-10-22/israel-redraws-the-map-in-gaza-lebanon-syria-and-the-west-bank/107180346",
+     "language": "en"
+    }
+   ],
+   "group": "Asia",
+   "oecd": false,
+   "source_file": "pass2/ext_54_sy.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
    "flags": []
   }
  ]

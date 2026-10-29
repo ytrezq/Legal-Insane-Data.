@@ -17,8 +17,8 @@ the rule, its legal basis, nuances and the confidence level.
 
 | Colour | Meaning | Countries | Subdivisions or territories |
 |---|---|---:|---:|
-| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 83 | 23 |
-| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 22 | 23 |
+| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 86 | 23 |
+| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 23 | 23 |
 | Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 25 | 5 |
 | Blue | **The accused chooses the timing**: the defence decides whether and when mental state is examined (e.g. Canada, R. v. Swain). | 3 | 53 |
 | Black | **No non-responsibility recognised**: every convicted person goes to prison. | 0 | 1 |
@@ -29,9 +29,10 @@ bargaining are ignored; fitness to stand trial is described but never decides th
 split by unit when the rule is sub-national (United States, Australia, United Kingdom, Argentina, India/Kerala,
 Tanzania/Zanzibar, Bosnia and Herzegovina).
 
-**Scope.** OECD (except Turkey), the Americas (except Cuba), Oceania, Africa (except the Maghreb, Egypt,
-Eritrea and the Sahel other than Senegal and Mauritania), the Balkans (except Serbia), Ukraine and Moldova
-(government-controlled areas), and a selection of Asian countries including the United Arab Emirates. An
+**Scope.** OECD and EU countries (except Turkey, and Northern Cyprus, which is under Turkish control), the
+Americas (except Cuba), Oceania, Africa (except the Maghreb, Egypt, Eritrea and the Sahel other than Senegal
+and Mauritania), the Balkans (except Serbia), Ukraine and Moldova (government-controlled areas), and a
+selection of Asian countries including Syria, Timor-Leste and the United Arab Emirates. An
 authoritarian regime is not excluded as such: what matters is whether, in ordinary criminal cases, the law on
 the rights of the defence is still followed (corruption aside). Where the lack of rule of law makes the law
 only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)).
@@ -44,7 +45,7 @@ unverified hypothesis when there is one. Contributions are especially welcome th
 
 | Path | Content |
 |---|---|
-| `data/insanity_procedure_map.json` | **The dataset** (English): 253 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
+| `data/insanity_procedure_map.json` | **The dataset** (English): 257 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
 | `maps/insanity_procedure_map.svg` / `.jpg` | English map: interactive SVG and 3740 × 2680 JPG (10 megapixels). |
 | `tools/` | Validation (`dataset.py`) and map generation (`build.sh`, Node.js + Python). |
 
