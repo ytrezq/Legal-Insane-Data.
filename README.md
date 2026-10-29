@@ -17,12 +17,12 @@ the rule, its legal basis, nuances and the confidence level.
 
 | Colour | Meaning | Countries | Subdivisions or territories |
 |---|---|---:|---:|
-| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 87 | 35 |
-| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 24 | 23 |
+| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 88 | 36 |
+| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 25 | 23 |
 | Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 26 | 3 |
 | Blue | **The accused chooses the timing**: the defence decides whether and when mental state is examined (e.g. Canada, R. v. Swain). | 4 | 54 |
 | Black | **No non-responsibility recognised**: every convicted person goes to prison. | 0 | 1 |
-| White | **No data / outside the scope**. | 6 | 3 |
+| White | **No data / outside the scope**. | 4 | 2 |
 
 Colours are applied in the order black, blue, yellow, purple, green; diminished responsibility and plea
 bargaining are ignored; fitness to stand trial is described but never decides the colour. Federal countries are
@@ -41,8 +41,8 @@ authoritarian regime is not excluded as such: what matters is whether, in ordina
 the rights of the defence is still followed (corruption aside). Where the lack of rule of law makes the law
 only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
-**Still white for lack of a readable procedural text:** Benin, Djibouti, Equatorial Guinea, Guinea, Somalia,
-South Sudan, Zanzibar, Guernsey and the Falkland Islands. The tooltips and the JSON give the
+**Still white for lack of a readable procedural text:** Benin, Equatorial Guinea, Guinea, Somalia, Zanzibar
+and Guernsey. The tooltips and the JSON give the
 unverified hypothesis when there is one. Contributions are especially welcome there.
 
 ## Files

@@ -18,8 +18,8 @@
     "the accused not responsible and itself orders the treatment or security measure."
    ],
    "definition": "No prior gateway: the case goes to an ordinary trial; the trial court first establishes the facts, then rules on non-responsibility (acquittal, exemption, special verdict) and itself orders the measure. The psychiatric examination is ordered by the authorities or the court, not at the accused's choice.",
-   "n_countries": 87,
-   "n_subdivisions": 35
+   "n_countries": 88,
+   "n_subdivisions": 36
   },
   "yellow": {
    "label": "Non-responsibility first, no real trial",
@@ -29,7 +29,7 @@
     "(France since 2008: hearing before the investigating chamber). Trial only if the accused is found responsible."
    ],
    "definition": "The mental state at the time of the act is examined during the pretrial phase; if discernment was abolished, the case ends without a real trial, either through a dismissal or a decision not to commit for trial, or through a reduced procedure that replaces the trial (hearing before an investigating court, in chambers, a non-public care tribunal, a written or simplified procedure, a lower standard of proof, absence of the accused as the rule). The person may nonetheless be committed. A trial only takes place if the person is found responsible.",
-   "n_countries": 24,
+   "n_countries": 25,
    "n_subdivisions": 23
   },
   "purple": {
@@ -74,8 +74,8 @@
     "countries not studied."
    ],
    "definition": "Insufficient reliable data to classify, countries excluded from the scope by choice (lack of rule of law: the law there is only a hint, not a requirement to follow), or countries and territories not studied.",
-   "n_countries": 6,
-   "n_subdivisions": 3
+   "n_countries": 4,
+   "n_subdivisions": 2
   }
  },
  "scope": {
@@ -602,6 +602,7 @@
    "extension_29_10": "Extension of 29/10/2026 (00:40): Cyprus (areas controlled by the Republic of Cyprus), Malta, Timor-Leste and Syria, one agent per country; Northern Cyprus (under Turkish control) treated like Turkey and drawn white with dashes.",
    "extension_29_10_bis": "Extension of 29/10/2026 (18:20): all island states and territories except Cuba, Bahrain (Persian Gulf), Singapore and Brunei (regimes deemed dictatorships): the Maldives added, Comoros re-checked, and island territories with their own criminal law (Jersey, Guernsey, Isle of Man, Bermuda, Cayman Islands, British Virgin Islands, Anguilla, Montserrat, Turks and Caicos Islands, Falkland Islands, Saint Helena, Aruba, Curaçao, Sint Maarten, United States Virgin Islands).",
    "extension_29_10_ter": "Additions of 29/10/2026 (19:00): where the agents' reading tool cut an official text short, the full PDF or page was downloaded and read in full (Jersey, Bermuda, British Virgin Islands, Anguilla, Aruba, Cayman Islands, Montserrat, Comoros, and the Maldives, including the Criminal Procedure Code in Dhivehi); Sint Maarten classified from a judgment of the Court of First Instance (rechtspraak.nl open data). Guernsey and the Falkland Islands stay white: the decisive texts could not be reached (site refused to the tool, JavaScript-only application).",
+   "extension_29_10_quater": "Additions of 29/10/2026 (23:00): the last 9 Legal Data Hunter queries granted by the user (20 in all) were used one at a time, without agents, on the jurisdictions still white: the Falkland Islands (green, CPEO 2014 ss. 765-766), Djibouti (yellow, CPP arts. 72, 74, 184 and 220) and South Sudan (green, CCPA 2008 ss. 206-207) classified; for Benin and Somalia, the decisive texts are not in Legal Data Hunter.",
    "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This file is the dataset maintained on the main branch; the French edition is kept on the francais branch of the repository and prevails for 28/10/2026 in case of a translation discrepancy."
   },
   "contributing": [
@@ -644,20 +645,20 @@
  },
  "summary": {
   "countries": {
-   "green": 87,
-   "yellow": 24,
+   "green": 88,
+   "yellow": 25,
    "purple": 26,
    "blue": 4,
    "black": 0,
-   "white": 6
+   "white": 4
   },
   "subdivisions": {
-   "green": 35,
+   "green": 36,
    "yellow": 23,
    "purple": 3,
    "blue": 54,
    "black": 1,
-   "white": 3
+   "white": 2
   },
   "federal_countries_with_differing_rules": [
    "AR",
@@ -705,6 +706,7 @@
     "ET",
     "FI",
     "FJ",
+    "FK",
     "FM",
     "FO",
     "GB",
@@ -770,6 +772,7 @@
     "SL",
     "SN",
     "SR",
+    "SS",
     "ST",
     "SX",
     "SY",
@@ -823,6 +826,7 @@
     "CG",
     "CI",
     "CZ",
+    "DJ",
     "EC",
     "EE",
     "FR",
@@ -943,20 +947,17 @@
    ],
    "white": [
     "BJ",
-    "DJ",
-    "FK",
     "GG",
     "GN",
     "GQ",
     "SO",
-    "SS",
     "TZ-ZAN"
    ]
   },
   "confidence": {
-   "high": 80,
-   "medium": 153,
-   "low": 40
+   "high": 81,
+   "medium": 154,
+   "low": 38
   }
  },
  "cases_to_check": [
@@ -1460,7 +1461,7 @@
   {
    "code": "DJ",
    "name": "Djibouti",
-   "colour": "white",
+   "colour": "yellow",
    "confidence": "low",
    "flags": [
     "low_confidence",
@@ -1573,10 +1574,10 @@
   {
    "code": "SS",
    "name": "South Sudan",
-   "colour": "white",
-   "confidence": "low",
+   "colour": "green",
+   "confidence": "medium",
    "flags": [
-    "low_confidence"
+    "incomplete_verification"
    ]
   },
   {
@@ -1790,16 +1791,6 @@
   {
    "code": "GG",
    "name": "Guernsey",
-   "colour": "white",
-   "confidence": "low",
-   "flags": [
-    "low_confidence",
-    "incomplete_verification"
-   ]
-  },
-  {
-   "code": "FK",
-   "name": "Falkland Islands",
    "colour": "white",
    "confidence": "low",
    "flags": [
@@ -14569,31 +14560,36 @@
     "ar",
     "en"
    ],
-   "colour": "white",
+   "colour": "yellow",
    "confidence": "low",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Non-responsibility recognised (CP art. 27 para. 1: disorder that abolished discernment); procedural outcome unverified (hypothesis: dismissal [non-lieu] by the investigating judge [juge d'instruction]); no committal in the CP (arts. 1-177); possible treatment outside criminal proceedings, unverified",
+    "outcome": "Dismissal (non-lieu) by the investigating judge (CPP art. 184) or the indictment chamber (art. 220), since a person whose discernment was abolished is not criminally responsible (CP art. 27); no criminal committal, possible treatment outside the proceedings (not verified)",
     "who_triggers_examination": "authorities",
     "accused_chooses_timing": false,
-    "decision_stage": "not_applicable",
-    "replacement_procedure": "none",
-    "replacement_procedure_detail": "Unknown: 1995 CPP not read (ACJR copy unreadable); the hypothesis of a simple dismissal (non-lieu) by the investigating judge (juge d'instruction) remains unverified (default values with no probative value).",
+    "decision_stage": "pretrial_phase",
+    "replacement_procedure": "simple_dismissal",
+    "replacement_procedure_detail": "Judicial investigation is mandatory in felony cases (art. 72) and the medico-psychological examination is mandatory there (art. 74); at the close, the investigating judge examines whether there are charges constituting an offence (art. 183) and declares that there are no grounds to prosecute (art. 184), as does the indictment chamber (arts. 219-220).",
     "committal_without_trial": false,
     "trial_always_or_on_request": false,
-    "unfitness_to_stand_trial": "Unverified (CPP not read)."
+    "unfitness_to_stand_trial": "No provision on the accused's mental state at the time of trial found in the CPP (keyword search of the full text)."
    },
-   "legal_bases": "CP (Law No. 59/AN/94 of 5 January 1995) art. 27 para. 1; CPP (Law No. 99/AN/95/4ème L, amended by Law No. 192/AN/12/6ème L): ACJR copy located but unreadable (scan); articles on the judicial investigation, dismissal (non-lieu), expert examination and committal not read",
-   "excerpt": "N'est pas pénalement responsable la personne qui était atteinte, au moment des faits, d'un trouble psychique ou neuropsychique ayant aboli son discernement",
-   "note": "White: no readable procedural text. 1995 CPP located (ACJR) but scan unreadable; online Official Gazette (PresidenceOld), NATLEX, SHERLOC, droit-afrique inaccessible. Only CP art. 27 para. 1 was read (no criminal-law committal). Unverified hypothesis: dismissal (non-lieu) by the investigating judge (juge d'instruction; pre-2008 French model), treatment outside any trial. CP/CPP reform debated in 2023, adoption not observed.",
+   "legal_bases": "CP (Law No. 59/AN/94 of 5 January 1995) art. 27 para. 1 (disorder having abolished discernment: no criminal responsibility); CPP (version published by the Ministry of the Budget in 2022) arts. 72 (judicial investigation mandatory for felonies), 74 (medico-psychological examination mandatory in felony cases), 183-184 (closing of the investigation, dismissal (non-lieu)), 187 (transmission to the indictment chamber), 219-220 (indictment chamber, dismissal)",
+   "excerpt": "s'il n'existe pas de charges suffisantes contre l'inculpé, il déclare, par une ordonnance, qu'il n'y a lieu à suivre",
+   "note": "Combined reading: judicial investigation is mandatory for felonies (CPP art. 72), with a mandatory medico-psychological examination (art. 74); abolished discernment excludes criminal responsibility (CP art. 27); for lack of charges constituting an offence, the investigating judge (juge d'instruction, arts. 183-184) or the indictment chamber (chambre d'accusation, art. 220) declares that there are no grounds to prosecute. No criminal committal; practice not verified.",
    "sources": [
+    {
+     "title": "Code de procédure pénale de Djibouti (PDF published by the Ministry of the Budget, 2022), arts. 72, 74, 183-184, 187, 219-220, full text read via Legal Data Hunter (DJ/DGI-TaxCode)",
+     "url": "https://budget.gouv.dj/wp-content/uploads/2022/07/Code-on-Penal-Procedure.pdf",
+     "language": "fr"
+    },
     {
      "title": "Equipo Nizkor: Code pénal de Djibouti (text, arts. 1-177)",
      "url": "https://www.derechos.org/intlaw/doc/dji1.html",
      "language": "fr"
     },
     {
-     "title": "ACJR (Dullah Omar Institute): Code de procédure pénale de Djibouti (1995), file not readable by the tool (scan)",
+     "title": "ACJR (Dullah Omar Institute): Code de procédure pénale de Djibouti (1995), file unreadable by the tool (scan)",
      "url": "https://dullahomarinstitute.org.za/acjr/resource-centre/penal-procedure-code-of-djibouti-1995/view",
      "language": "fr"
     },
@@ -14603,7 +14599,7 @@
      "language": "fr"
     },
     {
-     "title": "Policinglaw, Djibouti: available texts (Code pénal, no CPP)",
+     "title": "Policinglaw, Djibouti: available texts (Penal Code, no CPP)",
      "url": "https://www.policinglaw.info/country/djibouti",
      "language": "en"
     },
@@ -14615,10 +14611,9 @@
    ],
    "group": "Africa",
    "oecd": false,
-   "source_file": "pass2/p2_26_afr_franco_proc_b.json",
-   "colour_from_agent": "white",
-   "colour_derived_from_facts": "green",
-   "hypothetical_colour": "yellow",
+   "source_file": "pass2/ext_82_ldh3.json",
+   "colour_from_agent": "yellow",
+   "colour_derived_from_facts": "yellow",
    "flags": [
     "low_confidence",
     "incomplete_verification"
@@ -14628,13 +14623,19 @@
      "file": "pass1/21_afr_franco.json",
      "colour": "yellow",
      "confidence": "low",
-     "note": "1995 Penal Code (inspired by the 1992 French CP) and CPP not read: PDF unreadable and web research exhausted. French model: expert examination and dismissal (non-lieu) by the investigating judge (juge d'instruction), review by the indictment chamber (chambre d'accusation), hospitalisation outside any trial. 2008-type procedure unverified; the colour would remain yellow."
+     "note": "1995 Penal Code (inspired by the 1992 French Penal Code) and CPP not read: unreadable PDF and web search exhausted. French model: expert examination and dismissal (non-lieu) by the investigating judge, review by the indictment chamber, hospitalisation outside the trial. 2008-type procedure not verified; the colour would remain yellow."
     },
     {
      "file": "pass2/p2_09_afr_franco_b.json",
      "colour": "yellow",
      "confidence": "low",
-     "note": "CP art. 27 para. 1 verified (wording of French art. 122-1); no committal in arts. 1-177. 1995 CPP unreadable (scans, blocked hosts); a wiki confirms an investigating judge (juge d'instruction). Yellow by inference from the French model (dismissal [non-lieu]), unverified; reform of the codes under debate in 2023, adoption unverified. Low confidence."
+     "note": "CP art. 27 para. 1 verified (wording of French art. 122-1); no committal in arts. 1-177. 1995 CPP unreadable (scans, hosts blocked); a wiki confirms an investigating judge. Yellow by inference from the French model (dismissal), not verified; reform of the codes under debate in 2023, adoption not verified. Low confidence."
+    },
+    {
+     "file": "pass2/p2_26_afr_franco_proc_b.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: no readable procedural text. 1995 CPP located (ACJR) but unreadable scan; online Official Journal (PresidenceOld), NATLEX, SHERLOC, droit-afrique inaccessible. Only CP art. 27 para. 1 read (no criminal committal). Unverified hypothesis: dismissal (non-lieu) by the investigating judge (French model before 2008), treatment outside the trial. Reform of the CP/CPP debated in 2023, adoption not ascertained."
     }
    ]
   },
@@ -16153,54 +16154,65 @@
    "research_languages": [
     "en"
    ],
-   "colour": "white",
-   "confidence": "low",
+   "colour": "green",
+   "confidence": "medium",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Non-responsibility recognised by the Penal Code Act 2008, s. 34 (“unsoundness of mind”, permanent or temporary insanity); the procedural outcome (acquittal or special finding, custody) could not be verified for lack of access to the Code of Criminal Procedure Act 2008.",
+    "outcome": "Finding by the court, at trial, that the accused did the act but was insane (CCPA s. 207), then custody: by relatives on security, or reference to the County Commissioner (s. 206(2)-(4))",
     "who_triggers_examination": "mixed",
     "accused_chooses_timing": false,
     "decision_stage": "ordinary_trial",
     "replacement_procedure": "none",
-    "replacement_procedure_detail": "Not verified: the Code of Criminal Procedure Act 2008 (Act No. 5 of 2008) could not be read (unreadable PDF, Ministry of Justice portal blocked to automated access); default values with no probative value.",
+    "replacement_procedure_detail": "None: the finding is made by the trial court on the evidence (s. 207); the Act provides for no pretrial gate specific to insanity.",
     "committal_without_trial": false,
     "trial_always_or_on_request": true,
-    "unfitness_to_stand_trial": "Not verified."
+    "unfitness_to_stand_trial": "S. 206: if the accused appears, during the trial, to be of unsound mind and incapable of making a defence, the trial is adjourned and the accused is examined by one or more specialised physicians; if unsoundness of mind is established, the trial is adjourned until recovery, with custody (relatives on security, or reference to the County Commissioner). S. 191: an accused who is not insane but does not understand the proceedings: no trial. No trial of the facts for an unfit accused."
    },
-   "legal_bases": "Penal Code Act 2008 (Act No. 9 of 2008) s. 34; Code of Criminal Procedure Act 2008 (Act No. 5 of 2008), insanity provisions not read",
-   "excerpt": "appreciate the nature of his or her acts, or of controlling them by reason of permanent or temporary insanity or mental infirmity",
-   "note": "Only the Penal Code Act 2008 s. 34 was read: an act is not an offence when done by a person who could not appreciate or control their acts (permanent or temporary insanity). The Code of Criminal Procedure Act 2008 (who decides, at what stage, what hearing, what custody) remained unreadable (binary PDF; mojca.gov.ss blocked to automated access): classification impossible, white.",
+   "legal_bases": "Penal Code Act 2008 (Act No. 9 of 2008) s. 34 (insanity or mental infirmity); Code of Criminal Procedure Act 2008 (Act No. 5 of 2008) s. 191 (accused who does not understand the proceedings), s. 206 (accused incapable of making a defence by reason of unsoundness of mind), s. 207 (finding of an act done in a state of unsoundness of mind)",
+   "excerpt": "the Court shall record its finding that he or she did the act but was at the time of doing it was of unsound mind",
+   "note": "No pretrial gate: at trial, if the evidence shows that the accused did the act without being able, by reason of insanity or mental infirmity, to appreciate its nature or to control himself or herself (PC s. 34), the court records that finding (CCPA 2008 s. 207) and places the accused in custody, with relatives or on reference to the County Commissioner (s. 206). Text read via Legal Data Hunter; practice not verified.",
    "sources": [
+    {
+     "title": "Ministry of Justice and Constitutional Affairs: Code of Criminal Procedure Act (5 of 2008), ss. 191, 206-207, full text read via Legal Data Hunter (SS/MoJCA)",
+     "url": "https://mojca.gov.ss/wp-content/uploads/2023/03/Code-of-Criminal-Procedure-Act-5-of-2008.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Ministry of Justice and Constitutional Affairs: Penal Code Act (9 of 2008), s. 34, via Legal Data Hunter (SS/MoJCA)",
+     "url": "https://mojca.gov.ss/wp-content/uploads/2023/03/Penal-Code-Act-9-of-2008.pdf",
+     "language": "en"
+    },
     {
      "title": "Penal Code Act 2008 (Act No. 9 of 2008), South Sudan, s. 34 “Act of a Person Incapable of Judgment by Reason of Unsoundness of Mind” (UNODC SHERLOC)",
      "url": "https://sherloc.unodc.org/cld/uploads/res/document/ssd/South_Sudan_Penal_Code_Act.pdf",
      "language": "en"
     },
     {
-     "title": "Code of Criminal Procedure Act 2008 (South Sudan): PDF opened but unreadable (binary data) during verification",
+     "title": "Code of Criminal Procedure Act 2008 (South Sudan): PDF opened but unreadable (binary data) at the time of the check",
      "url": "https://policehumanrightsresources.org/content/uploads/2016/03/Criminal-Procedure-Code-South-Sudan-2008.pdf",
-     "language": "en"
-    },
-    {
-     "title": "Ministry of Justice and Constitutional Affairs, Laws of the Republic of South Sudan (list: Code of Criminal Procedure Act 5 of 2008; Penal Code Act 9 of 2008)",
-     "url": "https://mojca.gov.ss/laws/",
      "language": "en"
     }
    ],
    "group": "Africa",
    "oecd": false,
-   "source_file": "pass2/p2_04_afr_est_sud.json",
-   "colour_from_agent": "white",
+   "source_file": "pass2/ext_82_ldh3.json",
+   "colour_from_agent": "green",
    "colour_derived_from_facts": "green",
    "flags": [
-    "low_confidence"
+    "incomplete_verification"
    ],
    "history": [
     {
      "file": "pass1/23_afr_anglo_ouest_est.json",
      "colour": "white",
      "confidence": "low",
-     "note": "Insufficient data: no primary text consulted (quotas exhausted) and the CJAD database reproduces no South Sudanese law. The 2008 codes, inspired by Sudanese and Indian law, probably provide for an acquittal on grounds of insanity pronounced at trial, followed by custody; not confirmed."
+     "note": "Insufficient data: no primary text consulted (quotas exhausted) and the CJAD database reproduces no South Sudanese law. The 2008 codes, of Sudanese and Indian inspiration, probably provide for an acquittal on the ground of insanity pronounced at trial, followed by custody; not confirmed."
+    },
+    {
+     "file": "pass2/p2_04_afr_est_sud.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "Only the Penal Code Act 2008 s. 34 was read: an act is not an offence if committed by a person who could not appreciate or control his or her acts (permanent or temporary insanity). The Code of Criminal Procedure Act 2008 (who decides, at what stage, at what hearing, what custody) remained unreadable (binary PDF; mojca.gov.ss blocked to automated access): classification impossible, white."
     }
    ]
   },
@@ -20216,31 +20228,36 @@
    "research_languages": [
     "en"
    ],
-   "colour": "white",
-   "confidence": "low",
+   "colour": "green",
+   "confidence": "high",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Unverified hypothesis: special verdict “not guilty by reason of insanity” at trial + disposal (hospital order, supervision, absolute discharge) under Part 34 of the Criminal Procedure and Evidence Ordinance 2014, not read",
+    "outcome": "Special verdict “not guilty by reason of mental disorder” returned by the trial court (CPEO s. 765), then a hospital treatment order, supervision order or absolute discharge (s. 766)",
     "who_triggers_examination": "mixed",
     "accused_chooses_timing": false,
     "decision_stage": "ordinary_trial",
     "replacement_procedure": "none",
-    "replacement_procedure_detail": "Unverified hypothesis: Part 34 of the CPEO 2014 presumably re-enacts the Criminal Procedure (Insanity) Act 1964 (special verdict returned at trial); text not read.",
+    "replacement_procedure_detail": "None: the special verdict is returned at trial, by the court before which the accused is tried, if the evidence shows that he or she did the act (s. 765); the Ordinance provides for no pretrial gate.",
     "committal_without_trial": false,
     "trial_always_or_on_request": true,
-    "unfitness_to_stand_trial": "Not verified (hypothesis: as in the CP(I)A 1964 re-enacted by Part 34 of the CPEO 2014, judge's decision on fitness, then examination of the facts before any disposal)."
+    "unfitness_to_stand_trial": "S. 762: the question of fitness, raised by the defence or otherwise, is decided by the judge without a jury, on the evidence of at least two approved doctors, and may be postponed until the opening of the case for the defence; if the accused is unfit, a finding that he or she did the act (s. 764), then the measures of s. 766."
    },
-   "legal_bases": "Criminal Procedure and Evidence Ordinance 2014 (in force on 21.04.2017), Part 34 (mentally disordered offenders), not read; Crimes Ordinance 2014, which does not codify insanity (common law, M'Naghten Rules)",
-   "excerpt": "",
-   "note": "White: Part 34 (mentally disordered offenders) of the CPEO 2014, in force since 21.04.2017, not read: legislation.gov.fk rendered in JavaScript, Gazette supplement 11/2014 inaccessible. The Crimes Bill 2014 memorandum says insanity is not codified and the CP(I)A 1964 is “covered in Part 34”. Hypothesis: special verdict at trial (jury of 7 or 12, or judge alone), hence green.",
+   "legal_bases": "Criminal Procedure and Evidence Ordinance 2014 (CPEO, in force on 21.04.2017; consolidated version of 29.11.2024), Part 34 (mentally disordered offenders): s. 762 (unfitness to be tried), s. 764 (finding that the act was done), s. 765 (acquittal on ground of mental disorder), s. 766 (hospital treatment order, supervision order, absolute discharge); Crimes Ordinance 2014 (insanity not codified: common law)",
+   "excerpt": "if it appears to the court […] that he or she did the act […] the court must return a special verdict",
+   "note": "No pretrial gate: if the evidence at trial shows that the accused committed the act under the effect of an exculpatory mental disorder, the trial court returns a special verdict “not guilty by reason of mental disorder” on the evidence of two approved doctors (CPEO 2014, s. 765), then orders treatment, supervision or discharge (s. 766). Unfit: judge alone, then examination of the facts (ss. 762, 764).",
    "sources": [
+    {
+     "title": "Falkland Islands Government: Criminal Procedure and Evidence Ordinance 2014 (consolidated version of 29.11.2024), ss. 762, 764-766, full text read via Legal Data Hunter (FK/Legislation)",
+     "url": "https://www.legislation.gov.fk/#/view/136e216f-887e-4ea0-8ad7-9790dc94075a",
+     "language": "en"
+    },
     {
      "title": "Falkland Islands Gazette Supplement, Vol. 25, No. 10 (15 August 2014): Crimes Bill 2014 and explanatory memorandum",
      "url": "https://nationalarchives.gov.fk/jdownloads/Gazettes%20Proclamations%20Notices/2014%20Supplement%2010.pdf",
      "language": "en"
     },
     {
-     "title": "Falkland Islands Courts – Criminal Proceedings: Trial (jury of 7, 12 for murder, or judge alone at the accused's election)",
+     "title": "Falkland Islands Courts – Criminal Proceedings: Trial (jury of 7, 12 for murder, or judge alone at the accused's choice)",
      "url": "https://www.gov.fk/courts/courts/criminal/trial/",
      "language": "en"
     },
@@ -20248,26 +20265,23 @@
      "title": "Legislative Assembly Record, 27 April 2017 (entry into force of the CPEO 2014 on 21 April 2017)",
      "url": "https://assembly.gov.fk/jdownloads/Assembly%20Records%20and%20Order%20Papers/Legislative%20Assembly%20Records/2017/Legislative%20Assembly%20Record%2027April%202017.pdf",
      "language": "en"
-    },
-    {
-     "title": "Falkland Islands Statute Law Database (consulted, content unreadable)",
-     "url": "https://www.legislation.gov.fk/",
-     "language": "en"
     }
    ],
    "group": "Island territories",
    "oecd": true,
-   "source_file": "pass2/ext_81_iles_textes.json",
-   "colour_from_agent": "white",
+   "source_file": "pass2/ext_82_ldh3.json",
+   "colour_from_agent": "green",
    "colour_derived_from_facts": "green",
-   "hypothetical_colour": "green",
-   "flags": [
-    "low_confidence",
-    "incomplete_verification"
-   ],
+   "flags": [],
    "history": [
     {
      "file": "pass2/ext_70_fk_sh.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: Part 34 (mentally disordered offenders) of the CPEO 2014, in force since 21.04.2017, not read: legislation.gov.fk rendered in JavaScript, Gazette supplement 11/2014 inaccessible. The Crimes Bill 2014 memorandum says insanity is not codified and the CP(I)A 1964 is “covered in Part 34”. Hypothesis: special verdict at trial (jury of 7 or 12, or judge alone), hence green."
+    },
+    {
+     "file": "pass2/ext_81_iles_textes.json",
      "colour": "white",
      "confidence": "low",
      "note": "White: Part 34 (mentally disordered offenders) of the CPEO 2014, in force since 21.04.2017, not read: legislation.gov.fk rendered in JavaScript, Gazette supplement 11/2014 inaccessible. The Crimes Bill 2014 memorandum says insanity is not codified and the CP(I)A 1964 is “covered in Part 34”. Hypothesis: special verdict at trial (jury of 7 or 12, or judge alone), hence green."
