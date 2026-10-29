@@ -2,10 +2,10 @@
  "title": "Totally abolished discernment: judge first, or establish non-responsibility first?",
  "description": "World map in Mollweide projection classifying criminal-law systems by the procedural fate of an accused whose discernment was totally abolished by a mental disorder at the time of the act: the trial comes first (green), non-responsibility is established first without a real trial (yellow), non-responsibility is established first but a trial still takes place (purple), the accused chooses when the mental state is examined (blue), no non-responsibility is recognised (black), no data or outside the scope (white).",
  "subtitle": "Serious crime (e.g. homicide), discernment totally abolished at the time of the act · partial impairment and plea bargaining ignored · law in force on 28 October 2026",
- "subtitle_2": "OECD and EU (excl. Turkey, N. Cyprus), Americas (excl. Cuba), Oceania, Africa (excl. Maghreb, Egypt, Eritrea, Sahel except Senegal, Mauritania), Balkans (excl. Serbia), Ukraine, Moldova (controlled areas), Asia (selection)",
+ "subtitle_2": "Scope: OECD and EU, the Americas, Oceania, Africa, the Balkans, Ukraine and Moldova (controlled areas), Asia (selection), island states and territories; exclusions in white (see the legend)",
  "marker_note": "Circle: state too small to be visible at this scale (same colour as on the map). Hover over a country: legal basis, nuances and confidence level.",
  "footer": [
-  "Method: legal research in each country's official language(s) (penal codes, codes of criminal procedure, case law) by 24 agents, a second verification pass on weak entries, then an independent check of high-stakes entries. Sources, excerpts and confidence of each entry: accompanying JSON file.",
+  "Method: legal research in each country's official language(s) (penal codes, codes of criminal procedure, case law) by agents, a second verification pass on weak entries, then an independent check of high-stakes entries. Sources, excerpts and confidence of each entry: accompanying JSON file.",
   "White: procedural text not found or unreadable (hypothesis in the tooltip), countries excluded from the scope, countries and territories not studied. Where two routes coexist, the ordinary route of the reference scenario is used; routes based on agreement of the parties are treated like a plea.",
   "Line of control in Ukraine on 28/10/2026: DeepStateMap (daily data, cyterat/deepstate-map-data repository); Transnistria: Natural Earth administrative units; base map: Natural Earth (world-atlas)."
  ],
@@ -19,7 +19,7 @@
    ],
    "definition": "No prior gateway: the case goes to an ordinary trial; the trial court first establishes the facts, then rules on non-responsibility (acquittal, exemption, special verdict) and itself orders the measure. The psychiatric examination is ordered by the authorities or the court, not at the accused's choice.",
    "n_countries": 87,
-   "n_subdivisions": 23
+   "n_subdivisions": 35
   },
   "yellow": {
    "label": "Non-responsibility first, no real trial",
@@ -29,7 +29,7 @@
     "(France since 2008: hearing before the investigating chamber). Trial only if the accused is found responsible."
    ],
    "definition": "The mental state at the time of the act is examined during the pretrial phase; if discernment was abolished, the case ends without a real trial, either through a dismissal or a decision not to commit for trial, or through a reduced procedure that replaces the trial (hearing before an investigating court, in chambers, a non-public care tribunal, a written or simplified procedure, a lower standard of proof, absence of the accused as the rule). The person may nonetheless be committed. A trial only takes place if the person is found responsible.",
-   "n_countries": 23,
+   "n_countries": 24,
    "n_subdivisions": 23
   },
   "purple": {
@@ -51,8 +51,8 @@
     "the prosecution or the judge cannot impose it on a fit accused (e.g. Canada, R. v. Swain)."
    ],
    "definition": "The defence controls whether and when the mental state at the time of the act is examined: before trial, at its end (e.g. a mental-health phase that the defence chooses to open) or after the verdict. The prosecution or the court cannot impose the examination or the non-responsibility defence on a fit accused, or only after a guilty verdict.",
-   "n_countries": 3,
-   "n_subdivisions": 53
+   "n_countries": 4,
+   "n_subdivisions": 54
   },
   "black": {
    "label": "No non-responsibility recognised",
@@ -70,11 +70,12 @@
    "colour": "#ffffff",
    "legend": [
     "Insufficient data (procedural text not found or unreadable), countries and areas excluded from the scope (Maghreb, Egypt, Sahel except",
-    "Senegal and Mauritania, Eritrea, Cuba, Turkey, Serbia; dashed: Northern Cyprus, occupied Ukraine, Transnistria), countries not studied."
+    "Senegal and Mauritania, Eritrea, Cuba, Turkey, Serbia, Bahrain, Singapore, Brunei; dashed: Northern Cyprus, occupied Ukraine, Transnistria),",
+    "countries not studied."
    ],
    "definition": "Insufficient reliable data to classify, countries excluded from the scope by choice (lack of rule of law: the law there is only a hint, not a requirement to follow), or countries and territories not studied.",
-   "n_countries": 7,
-   "n_subdivisions": 1
+   "n_countries": 6,
+   "n_subdivisions": 3
   }
  },
  "scope": {
@@ -235,7 +236,8 @@
     "LK",
     "AE",
     "SY",
-    "TL"
+    "TL",
+    "MV"
    ],
    "balkans_except_serbia": [
     "HR",
@@ -262,6 +264,23 @@
    "europe_eu_non_oecd": [
     "CY",
     "MT"
+   ],
+   "island_territories": [
+    "JE",
+    "GG",
+    "IM",
+    "BM",
+    "KY",
+    "VG",
+    "AI",
+    "MS",
+    "TC",
+    "FK",
+    "SH",
+    "AW",
+    "CW",
+    "SX",
+    "VI"
    ]
   },
   "excluded": [
@@ -349,9 +368,24 @@
     "code": "CY-N",
     "name": "Northern Cyprus",
     "reason": "area under Turkish control (“Turkish Republic of Northern Cyprus”), treated like Turkey: excluded from the scope (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
+   },
+   {
+    "code": "BH",
+    "name": "Bahrain",
+    "reason": "Persian Gulf island state: excluded from the scope by choice"
+   },
+   {
+    "code": "SG",
+    "name": "Singapore",
+    "reason": "excluded from the scope by choice (regime deemed a dictatorship)"
+   },
+   {
+    "code": "BN",
+    "name": "Brunei",
+    "reason": "excluded from the scope by choice (regime deemed a dictatorship)"
    }
   ],
-  "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan, Syria and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia, the Philippines and Timor-Leste) are left white.",
+  "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan, Syria and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia, the Philippines and Timor-Leste; all island states and territories are included except Cuba, Bahrain, Singapore and Brunei, which are excluded) are left white.",
   "markers": {
    "TV": [
     179.2,
@@ -492,6 +526,22 @@
    "MO": [
     112.9,
     21.4
+   ],
+   "VI": [
+    -65.0,
+    17.45
+   ],
+   "VG": [
+    -64.35,
+    18.75
+   ],
+   "AI": [
+    -62.85,
+    18.55
+   ],
+   "SX": [
+    -63.2,
+    17.9
    ]
   },
   "attached_territories": {
@@ -510,7 +560,7 @@
  "meta": {
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "n_entries": 257,
+  "n_entries": 273,
   "edition": "English",
   "translated_from": "irresponsabilite_penale.json (French working edition, kept on the francais branch of this repository)",
   "methodology": {
@@ -544,12 +594,14 @@
     "Texts supplied by the user (28/10, 22:38): Macedonian Code of Criminal Procedure of 2010 (OSCE translation), Malagasy code (UNODC copy) and Act 2016-017, codes of Entre Ríos (consolidated Act 9754), La Pampa (Act 3192, STJ 2021 edition) and La Rioja (Act 1574); they made it possible to classify North Macedonia (purple), Madagascar, Entre Ríos, La Pampa and La Rioja (yellow)."
    ],
    "white_criterion": "A colour is only assigned if the decisive procedural mechanism (who decides, at what stage, in what kind of hearing) was read in a primary source (statute, decision) or in reliable scholarship quoting it; otherwise the entry stays white and the hypothesis is kept (hypothetical_colour field).",
-   "asia_scope": "Asia (selection): India (and Kerala), Bangladesh, Pakistan, Sri Lanka, Nepal, Bhutan, Indonesia, Thailand, Malaysia, the Philippines, Taiwan, Hong Kong, Macao, Mongolia, Kazakhstan, Jordan, Syria, the United Arab Emirates, Timor-Leste, as well as Japan, South Korea and Israel (OECD).",
+   "asia_scope": "Asia (selection): India (and Kerala), Bangladesh, Pakistan, Sri Lanka, Nepal, Bhutan, Indonesia, Thailand, Malaysia, the Philippines, Taiwan, Hong Kong, Macao, Mongolia, Kazakhstan, Jordan, Syria, the United Arab Emirates, Timor-Leste, the Maldives, as well as Japan, South Korea and Israel (OECD).",
    "extension_28_10": "Extension of 28/10/2026 (21:00): Egypt removed (criminal procedure deemed a hint rather than a requirement); 13 Asian countries or territories, Mauritania, the Balkans except Serbia and the remaining Pacific island territories added; Senegal re-checked.",
    "extension_28_10_bis": "Extension of 28/10/2026 (22:00): Sri Lanka, Madagascar (second attempt), Ukraine (government-controlled territory) and Moldova (except Transnistria), one agent per country; Albania and North Macedonia relaunched separately. Occupied Ukrainian territories (line of control on 28/10/2026 according to the daily DeepStateMap data, cyterat/deepstate-map-data repository) and Transnistria (Natural Earth administrative units) drawn white with dashes.",
    "extension_28_10_ter": "Additions of 28/10/2026 (23:00): texts supplied by the user (North Macedonia, Madagascar, Entre Ríos, La Pampa, La Rioja); 9 Legal Data Hunter queries run one at a time, without agents, on the jurisdictions still white (Albania and Mauritania classified; Guinea, Rwanda, Zanzibar and Brčko still white; daily quota reached); United Arab Emirates added through web research, without Legal Data Hunter (Federal Decree-Laws No. 31 of 2021 and No. 38 of 2022, official portal).",
    "scope_criterion": "An authoritarian regime is not excluded as such: some authoritarian countries keep, for ordinary criminal cases, a justice system in which the law on defence rights is still followed (corruption aside); they are included. Excluded are those where the lack of rule of law means that the law is only a hint, not a requirement to follow.",
    "extension_29_10": "Extension of 29/10/2026 (00:40): Cyprus (areas controlled by the Republic of Cyprus), Malta, Timor-Leste and Syria, one agent per country; Northern Cyprus (under Turkish control) treated like Turkey and drawn white with dashes.",
+   "extension_29_10_bis": "Extension of 29/10/2026 (18:20): all island states and territories except Cuba, Bahrain (Persian Gulf), Singapore and Brunei (regimes deemed dictatorships): the Maldives added, Comoros re-checked, and island territories with their own criminal law (Jersey, Guernsey, Isle of Man, Bermuda, Cayman Islands, British Virgin Islands, Anguilla, Montserrat, Turks and Caicos Islands, Falkland Islands, Saint Helena, Aruba, Curaçao, Sint Maarten, United States Virgin Islands).",
+   "extension_29_10_ter": "Additions of 29/10/2026 (19:00): where the agents' reading tool cut an official text short, the full PDF or page was downloaded and read in full (Jersey, Bermuda, British Virgin Islands, Anguilla, Aruba, Cayman Islands, Montserrat, Comoros, and the Maldives, including the Criminal Procedure Code in Dhivehi); Sint Maarten classified from a judgment of the Court of First Instance (rechtspraak.nl open data). Guernsey and the Falkland Islands stay white: the decisive texts could not be reached (site refused to the tool, JavaScript-only application).",
    "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This file is the dataset maintained on the main branch; the French edition is kept on the francais branch of the repository and prevails for 28/10/2026 in case of a translation discrepancy."
   },
   "contributing": [
@@ -593,19 +645,19 @@
  "summary": {
   "countries": {
    "green": 87,
-   "yellow": 23,
+   "yellow": 24,
    "purple": 26,
-   "blue": 3,
+   "blue": 4,
    "black": 0,
-   "white": 7
+   "white": 6
   },
   "subdivisions": {
-   "green": 23,
+   "green": 35,
    "yellow": 23,
    "purple": 3,
-   "blue": 53,
+   "blue": 54,
    "black": 1,
-   "white": 1
+   "white": 3
   },
   "federal_countries_with_differing_rules": [
    "AR",
@@ -617,6 +669,7 @@
   "codes_by_colour": {
    "green": [
     "AG",
+    "AI",
     "AO",
     "AR-B",
     "AR-J",
@@ -629,9 +682,11 @@
     "AU-TAS",
     "AU-VIC",
     "AU-WA",
+    "AW",
     "BB",
     "BD",
     "BI",
+    "BM",
     "BO",
     "BS",
     "BT",
@@ -642,6 +697,7 @@
     "CM",
     "CO",
     "CV",
+    "CW",
     "CY",
     "DK",
     "DM",
@@ -667,22 +723,26 @@
     "ID",
     "IE",
     "IL",
+    "IM",
     "IN",
     "IN-KL",
     "IS",
     "IT",
+    "JE",
     "JM",
     "JO",
     "KE",
     "KI",
     "KN",
     "KR",
+    "KY",
     "LC",
     "LK",
     "LR",
     "LS",
     "MN",
     "MO",
+    "MS",
     "MU",
     "MW",
     "MY",
@@ -706,12 +766,15 @@
     "SB",
     "SC",
     "SE",
+    "SH",
     "SL",
     "SN",
     "SR",
     "ST",
+    "SX",
     "SY",
     "SZ",
+    "TC",
     "TH",
     "TK",
     "TL",
@@ -724,6 +787,7 @@
     "US-HI",
     "UY",
     "VC",
+    "VG",
     "VU",
     "WS",
     "ZA",
@@ -765,6 +829,7 @@
     "GA",
     "HT",
     "JP",
+    "KM",
     "LU",
     "LV",
     "MG",
@@ -819,6 +884,7 @@
     "GU",
     "MH",
     "MP",
+    "MV",
     "PH",
     "PR",
     "US",
@@ -869,7 +935,8 @@
     "US-WA",
     "US-WI",
     "US-WV",
-    "US-WY"
+    "US-WY",
+    "VI"
    ],
    "black": [
     "US-ID"
@@ -877,18 +944,19 @@
    "white": [
     "BJ",
     "DJ",
+    "FK",
+    "GG",
     "GN",
     "GQ",
-    "KM",
     "SO",
     "SS",
     "TZ-ZAN"
    ]
   },
   "confidence": {
-   "high": 76,
-   "medium": 142,
-   "low": 39
+   "high": 80,
+   "medium": 153,
+   "low": 40
   }
  },
  "cases_to_check": [
@@ -1400,16 +1468,6 @@
    ]
   },
   {
-   "code": "KM",
-   "name": "Comoros",
-   "colour": "white",
-   "confidence": "low",
-   "flags": [
-    "low_confidence",
-    "incomplete_verification"
-   ]
-  },
-  {
    "code": "MZ",
    "name": "Mozambique",
    "colour": "green",
@@ -1725,6 +1783,35 @@
    "name": "Cyprus",
    "colour": "green",
    "confidence": "medium",
+   "flags": [
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "GG",
+   "name": "Guernsey",
+   "colour": "white",
+   "confidence": "low",
+   "flags": [
+    "low_confidence",
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "FK",
+   "name": "Falkland Islands",
+   "colour": "white",
+   "confidence": "low",
+   "flags": [
+    "low_confidence",
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "SH",
+   "name": "Saint Helena",
+   "colour": "green",
+   "confidence": "high",
    "flags": [
     "incomplete_verification"
    ]
@@ -14565,60 +14652,61 @@
     "ar",
     "en"
    ],
-   "colour": "white",
-   "confidence": "low",
+   "colour": "yellow",
+   "confidence": "medium",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Non-responsibility recognised (CP 2020 art. 27, 1°: “ni crime ni délit” [neither felony nor misdemeanour] in case of insanity); procedural outcome unverified (hypothesis: dismissal [non-lieu] by the investigating judge [juge d'instruction]); no committal in the CP; treatment outside criminal proceedings, unverified",
+    "outcome": "Dismissal (non-lieu) by order of the investigating judge (juge d'instruction, art. 176 CPP) or by decision of the indictment chamber (chambre d'accusation, art. 211), an act committed in a state of insanity being “ni crime ni délit” (neither felony nor misdemeanour; CP 2020, art. 27, 1°); treatment possible outside any trial through compulsory hospitalisation “sur réquisition administrative ou judiciaire” (on administrative or judicial requisition; CSP 2011, arts. 141-142).",
     "who_triggers_examination": "authorities",
     "accused_chooses_timing": false,
-    "decision_stage": "not_applicable",
-    "replacement_procedure": "none",
-    "replacement_procedure_detail": "Unknown: 2014 CPP unreadable (scan); judicial investigation mandatory in felony cases and closure by dismissal (non-lieu) attested by a lawyer, with no link to insanity (default values with no probative value).",
-    "committal_without_trial": false,
+    "decision_stage": "pretrial_phase",
+    "replacement_procedure": "simple_dismissal",
+    "replacement_procedure_detail": "Judicial investigation is mandatory in felony cases (art. 71); the investigating judge (juge d'instruction) orders the medico-psychological examination (art. 73) and declares that there are no grounds to prosecute if the facts constitute neither felony nor misdemeanour (art. 176), as does the indictment chamber (chambre d'accusation, art. 211).",
+    "committal_without_trial": true,
     "trial_always_or_on_request": false,
-    "unfitness_to_stand_trial": "Unverified (CPP not read)."
+    "unfitness_to_stand_trial": "No specific provision found in the CPP; under judicial supervision (contrôle judiciaire), treatment may be imposed “même sous le régime de l'hospitalisation” (even under the hospitalisation regime; art. 130, 10°)."
    },
-   "legal_bases": "CP (Law No. 20-038/AU of 29 December 2020, promulgated by Decree No. 21-018/PR) art. 27, 1°; CPP (Law of 22 December 2014): Ministry of Justice PDF = unreadable scan; articles on dismissal (non-lieu), expert examination and committal not read",
-   "excerpt": "Il n'y a ni crime ni délit : 1° lorsque le prévenu était en état de démence au temps de l'action",
-   "note": "White: 2014 CPP not read (justice.gouv.km PDF = scan; neither another copy nor a new CPP found). Read: CP 2020 art. 27, 1° (“ni crime ni délit” [neither felony nor misdemeanour] in case of insanity; no criminal-law committal); a lawyer (Masiwa) cites the CPP: judicial investigation mandatory in felony cases, closure by reasoned dismissal (non-lieu). Unverified hypothesis: dismissal by the investigating judge (juge d'instruction) for insanity, treatment outside any trial.",
+   "legal_bases": "CP (Law No. 20-038/AU of 29 December 2020) art. 27, 1° (insanity: “ni crime ni délit” [neither felony nor misdemeanour]); CPP (Law of 22 December 2014) arts. 71 (judicial investigation mandatory in felony cases), 73 (medico-psychological examination), 130, 10°, 174-176 (closing of the judicial investigation, dismissal [non-lieu]), 210-211 (indictment chamber [chambre d'accusation], dismissal), 341 (assize court [cour d'assises]: vote on the grounds of criminal non-responsibility), 459 (acquittal [relaxe] for insanity); Code de la santé publique (Law No. 11-001/AU of 26 March 2011) arts. 141-142.",
+   "excerpt": "ne constituent ni crime, ni délit, ni contravention [...] il déclare, par une ordonnance, qu'il n'y a lieu à suivre",
+   "note": "Combined reading: insanity = “ni crime ni délit” (neither felony nor misdemeanour; CP art. 27, 1°); since judicial investigation is mandatory for felonies (CPP art. 71), the investigating judge (juge d'instruction, art. 176) or the indictment chamber (chambre d'accusation, art. 211) declares that there are no grounds to prosecute. If the case goes to the assize court (cour d'assises), the court votes on non-responsibility (art. 341). Articles read in the official PDF of the CPP, whose text layer is complete.",
    "sources": [
     {
-     "title": "Ministry of Justice of the Comoros: Code pénal 2020 (décret n° 21-018/PR portant promulgation de la loi n° 20-038/AU)",
-     "url": "https://justice.gouv.km/texte/code-penal-2020/",
-     "language": "fr"
-    },
-    {
-     "title": "Comoros, Code pénal 2020 (readable text, droit-afrique), art. 27",
-     "url": "https://www.droit-afrique.com/uploads/Comores-Code-2020-penal.pdf",
-     "language": "fr"
-    },
-    {
-     "title": "Loi du 22 décembre 2014 portant Code de procédure pénale (Ministry PDF, scan not readable by the tool)",
+     "title": "Ministry of Justice: loi du 22 décembre 2014 portant Code de procédure pénale, arts. 71, 73, 130, 174-176, 210-211, 341, 459 (official PDF, text extracted in full)",
      "url": "https://justice.gouv.km/wp-content/uploads/2025/03/loi-du-22-decembre-2014-portant-code-de-procedure-penale.pdf",
      "language": "fr"
     },
     {
-     "title": "Masiwa: interview with Maître Gérard Youssouf (CPP: judicial investigation mandatory in felony cases, dismissal)",
-     "url": "https://masiwa-comores.com/?p=11013",
+     "title": "Loi n° 20-038/AU du 29 décembre 2020 portant Code pénal (readable text, droit-afrique), art. 27",
+     "url": "https://www.droit-afrique.com/uploads/Comores-Code-2020-penal.pdf",
      "language": "fr"
     },
     {
-     "title": "Criminal Defense Wiki (IBJ): Comoros (judicial investigation, indictment chamber, assize court)",
-     "url": "https://defensewiki.ibj.org/index.php?title=Comoros",
-     "language": "en"
+     "title": "Ministry of Justice: loi n° 11-001/AU du 26 mars 2011 portant Code de la santé publique (chap. VI, mental health, arts. 138-143)",
+     "url": "https://justice.gouv.km/wp-content/uploads/2025/03/loi-n-11-001au-du-26-mars-2011-portant-code-de-la-sante-2011.pdf",
+     "language": "fr"
+    },
+    {
+     "title": "Mayotte Hebdo, 16 January 2026: 25 people committed for trial before the assize court by the Moroni indictment chamber",
+     "url": "https://www.mayottehebdo.com/actualite/justice/comores-25-personnes-renvoyees-devant-la-cour-dassises-pour-assassinat/",
+     "language": "fr"
+    },
+    {
+     "title": "Mayotte Hebdo, 23 June 2025: nearly 21 cases committed for trial before the assize court (art. 232 CPP)",
+     "url": "https://www.mayottehebdo.com/actualite/justice/comores-pres-de-21-dossiers-renvoyes-devant-la-cour-dassises/",
+     "language": "fr"
+    },
+    {
+     "title": "Masiwa: interview with Maître Gérard Youssouf (judicial investigation mandatory in felony cases; reasoned dismissal order)",
+     "url": "https://masiwa-comores.com/?p=11013",
+     "language": "fr"
     }
    ],
    "group": "Africa",
    "oecd": false,
-   "source_file": "pass2/p2_26_afr_franco_proc_b.json",
-   "colour_from_agent": "white",
-   "colour_derived_from_facts": "green",
-   "hypothetical_colour": "yellow",
-   "flags": [
-    "low_confidence",
-    "incomplete_verification"
-   ],
+   "source_file": "pass2/ext_80_km_texte.json",
+   "colour_from_agent": "yellow",
+   "colour_derived_from_facts": "yellow",
+   "flags": [],
    "history": [
     {
      "file": "pass1/21_afr_franco.json",
@@ -14631,6 +14719,18 @@
      "colour": "yellow",
      "confidence": "low",
      "note": "The new CP (Law 20-038/AU of 29/12/2020) retains in art. 27, 1°: “ni crime ni délit” (neither felony nor misdemeanour) in case of insanity; no committal in arts. 1-143. 2014 CPP unreadable; a wiki (earlier state of the law) describes mandatory judicial investigation for felonies, indictment chamber (chambre d'accusation), assize court (cour d'assises). Yellow inferred, unverified; no results in Arabic. Low confidence."
+    },
+    {
+     "file": "pass2/p2_26_afr_franco_proc_b.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: 2014 CPP not read (justice.gouv.km PDF = scan; neither another copy nor a new CPP found). Read: CP 2020 art. 27, 1° (“ni crime ni délit” [neither felony nor misdemeanour] in case of insanity; no criminal-law committal); a lawyer (Masiwa) cites the CPP: judicial investigation mandatory in felony cases, closure by reasoned dismissal (non-lieu). Unverified hypothesis: dismissal by the investigating judge (juge d'instruction) for insanity, treatment outside any trial."
+    },
+    {
+     "file": "pass2/ext_62_km.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: 2014 CPP readable only up to art. 154 (following pages without text); closing of the judicial investigation, indictment chamber (chambre d'accusation), assize court (cour d'assises) not read; no other copy (ACJR, Policinglaw, FAOLEX, LEAP), no insanity case in the press, no Arabic source. Read: CP art. 27, 1°; CPP arts. 71, 73; committal for trial at the assize court by the indictment chamber (press). Hypothesis: dismissal (non-lieu), treatment via CSP art. 141."
     }
    ]
   },
@@ -19337,6 +19437,1078 @@
    "colour_from_agent": "green",
    "colour_derived_from_facts": "green",
    "flags": []
+  },
+  {
+   "code": "GG",
+   "name": "Guernsey",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en",
+    "fr"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "white",
+   "confidence": "low",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "special verdict of not guilty by reason of insanity returned by the Royal Court (Jurats), then a measure (probably hospitalisation) — not verified in the text",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "Unverified hypothesis: no replacement procedure, the Royal Court first establishes the facts then rules on insanity by a special verdict.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Unverified: the Mental Health Law 2010 reportedly deals with unfitness to stand trial (lead from the file), but neither the procedure (examination of the facts, adjournment) nor the outcome could be read."
+   },
+   "legal_bases": "Mental Health (Bailiwick of Guernsey) Law, 2010 (part on persons involved in criminal proceedings; text not consulted); common law of insanity and of the special verdict before the Royal Court (unverified)",
+   "excerpt": "",
+   "note": "White: decisive text not read (guernseylegalresources.gg: client_error; gov.gg: blocked to automated access). “Green” hypothesis: Clancy case (2012, press), the Royal Court first found that the accused had committed the acts, then held a special verdict hearing at which the Jurats rule on insanity in the light of the expert evidence; minor offences tried in the Royal Court. Initiative and unfitness unverified.",
+   "sources": [
+    {
+     "title": "Guernsey Press, 21 June 2012: special verdict hearing before the Royal Court (Brian Clancy case)",
+     "url": "https://guernseypress.com/news/2012/06/21/goose-stepping-growler-who-split-officers-lip-may-have-been-insane",
+     "language": "en"
+    },
+    {
+     "title": "Guernsey Legal Resources (official portal; pages of laws and judgments inaccessible via fetch)",
+     "url": "https://www.guernseylegalresources.gg",
+     "language": "en"
+    },
+    {
+     "title": "Projet de Loi entitled The Mental Health (Bailiwick of Guernsey) Law, 2010 (Billet d'État; unreadable, blocked to automated access)",
+     "url": "https://www.gov.gg/CHttpHandler.ashx?id=4488&p=0",
+     "language": "en"
+    },
+    {
+     "title": "Jersey & Guernsey Law Review, Summary of Legislation (Guernsey): approval of the Mental Health Law 2010",
+     "url": "https://www.jerseylaw.je/publications/jglr/Pages/JLR1102_Legislation_Gsy.aspx",
+     "language": "en"
+    },
+    {
+     "title": "States of Guernsey: Mental Health and Capacity Review Tribunal (2010 Law in force)",
+     "url": "https://gov.gg/mhrt",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "white",
+   "colour_derived_from_facts": "green",
+   "hypothetical_colour": "green",
+   "flags": [
+    "low_confidence",
+    "incomplete_verification"
+   ],
+   "history": [
+    {
+     "file": "pass2/ext_64_gg.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: decisive text not read (guernseylegalresources.gg: client_error; gov.gg: blocked to automated access). “Green” hypothesis: Clancy case (2012, press), the Royal Court first found that the accused had committed the acts, then held a special verdict hearing at which the Jurats rule on insanity in the light of the expert evidence; minor offences tried in the Royal Court. Initiative and unfitness unverified."
+    }
+   ]
+  },
+  {
+   "code": "IM",
+   "name": "Isle of Man",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en",
+    "gv"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "special verdict “not guilty by reason of insanity” (s. 21 CJA 1993) then a measure ordered by the court under s. 54 (hospital order with or without a restriction order, guardianship order, supervision and treatment order, according to the cross-references in ss. 45(1) and 54B)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "No replacement procedure: the jury (or the Deemster alone) decides non-responsibility at the ordinary trial, after finding the act proved.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Raised by the defence or otherwise, decided as soon as it arises by a jury (Deemster alone if trial without a jury) on the opinion of two doctors (ss. 9, 19); the trial stops and a jury or the court determines, on the evidence of the prosecution and of an appointed defender, whether the accused committed the act: if not, acquittal; if so, a measure under s. 54 (s. 9(6)-(9)); resumption of the trial upon recovery not verified."
+   },
+   "legal_bases": "Criminal Jurisdiction Act 1993 (IoM) ss. 1, 8A-8C, 9, 19, 21, 24(2), 30(2)-(3), 35-36, 45(1), 54-54B; Mental Health Act 1998 (IoM) s. 12 (approved doctors)",
+   "excerpt": "the jury shall return or, in the case where the trial is being conducted without a jury, the court shall return, a special verdict",
+   "note": "No pretrial gate: at trial before the Court of General Gaol Delivery, the jury (or the Deemster alone, ss. 8A-8C) finds the act proved and then returns the special verdict (s. 21) on the opinion of two doctors (s. 19); the court orders the measure (s. 54, not read). Text neutral as to who raises insanity (“given in evidence”); no Manx case law found. No “Criminal Procedure Act 2023”.",
+   "sources": [
+    {
+     "title": "Criminal Jurisdiction Act 1993 (IoM), consolidated text (Justice Reform Act 2021 and 2025 bill), ss. 9, 19, 21 — Department of Home Affairs consultation",
+     "url": "https://consult.gov.im/home-affairs/justice-reform-amend-and-contempt-of-court-bills/user_uploads/criminal-jurisdiction-act-1993-v7---as-amended-by-jra-2021-as-amended-by-jha-rma-bill--introduced-_compressed.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Justice Reform (Amendment) Bill 2025 and Contempt of Court Bill 2025 — consultation (glossary: CJA 1993 and Courts of General Gaol Delivery)",
+     "url": "https://consult.gov.im/home-affairs/justice-reform-amend-and-contempt-of-court-bills/consultation/subpage.2025-09-09.0780249125",
+     "language": "en"
+    },
+    {
+     "title": "IOM Today, “The six big changes proposed for the Isle of Man's court system under new bill” (12 February 2026)",
+     "url": "https://www.iomtoday.co.im/news/the-six-big-changes-proposed-for-the-isle-of-mans-court-system-under-new-bill-878049",
+     "language": "en"
+    },
+    {
+     "title": "Anderson v HM Attorney General for the Isle of Man [2021] UKPC 20 (murder trial before a jury; English authorities applied)",
+     "url": "https://caselaw.nationalarchives.gov.uk/ukpc/2021/20",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_65_im.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": []
+  },
+  {
+   "code": "KY",
+   "name": "Cayman Islands",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "high",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Special verdict “not guilty of the act or omission by reason of insanity” returned at trial before the Grand Court (CPC s. 158), then a measure chosen by the court since the 2025 reform: supervision order (committal), treatment order (outpatient treatment), a measure under the Alternative Sentencing Act, conditional or absolute discharge (s. 159)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: insanity at the time of the offence does not halt the preliminary investigation (CPC s. 49) and is decided at trial on indictment before the Grand Court, by a special verdict.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "If the court suspects that the accused is incapable of making a defence, it inquires and may order a medical report (CPC s. 47); if it finds the accused unfit, it adjourns the proceedings: bail, or detention in a hospital, prison or place of safety (s. 48); resumption once fitness is recovered (s. 50). On arraignment, a jury may decide on fitness (s. 122(2)); the unfit accused then falls under the s. 159 measures, without a finding on the facts."
+   },
+   "legal_bases": "Penal Code (2022 Revision) s. 9 (presumption of sanity), s. 10 (insanity), s. 11 (intoxication); Criminal Procedure Code (2026 Revision, current to 31.12.2025) ss. 47-50 (unsoundness of mind; defence of insanity at preliminary investigation), s. 122 (refusal or incapacity to plead), s. 129 (election of trial by Judge alone), Part 7: s. 158 (special verdict), ss. 159-159B (measures, Act 6 of 2025); Mental Health Act (2023 Revision)",
+   "excerpt": "the jury shall return a special verdict that the accused is not guilty of the act or omission by reason of insanity",
+   "note": "No pretrial gate: an allegation of insanity does not halt the preliminary investigation (CPC s. 49). At trial before the Grand Court, the jury that finds the act proved returns a special verdict of not guilty by reason of insanity (s. 158); trial by judge alone possible on election (s. 129). Since 2025, the court chooses the measure: committal, outpatient treatment or release (s. 159).",
+   "sources": [
+    {
+     "title": "GOV.KY: Criminal Procedure Code (2026 Revision), full official PDF (ss. 47-50, 122, 158-159B read)",
+     "url": "https://gov.ky/documents/35692/0/Criminal+Procedure+Code+%282026+Revision%29%2C.pdf/4cddd7cf-4cc9-6e68-1657-2d39776450a1?t=1770147240921",
+     "language": "en"
+    },
+    {
+     "title": "Penal Code (2022 Revision) – Cayman Islands Law School",
+     "url": "https://caymanlawschool.ky/n0c-storage/legislation3/penal-code-2022-revision.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Cayman Compass, 12 Jan. 2020: Bodden Town man meets test of insanity (cites CPC ss. 158-159)",
+     "url": "https://www.caymancompass.com/2020/01/12/bodden-town-man-meets-test-of-insanity/",
+     "language": "en"
+    },
+    {
+     "title": "Cayman News Service: Docs agree Webb insane but court to decide verdict",
+     "url": "https://caymannewsservice.com/?p=70592",
+     "language": "en"
+    },
+    {
+     "title": "Cayman Compass, 11 May 2023: Lawyer warns over indefinite detention of mentally ill prisoners",
+     "url": "https://www.caymancompass.com/2023/05/11/lawyer-warns-over-indefinite-detention-of-mentally-ill-prisoners/",
+     "language": "en"
+    },
+    {
+     "title": "Radio Cayman: In Parliament summary for 5 February (2025) – Criminal Procedure (Amendment) Bill, 2025",
+     "url": "https://radiocayman.gov.ky/news/in-parliament-summary-for-5-february",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_67_ky.json",
+     "colour": "green",
+     "confidence": "medium",
+     "note": "No pretrial gate: an allegation of insanity does not halt the preliminary investigation (CPC s. 49). At trial before the Grand Court, the jury returns a special verdict (s. 158, read via the press: official PDF truncated); trial by judge alone possible on election (s. 129). Insanity raised mainly by the defence (PC s. 9), experts also instructed by the prosecution (Webb). Act 6/2025 reform (ss. 159-159B) not read."
+    }
+   ]
+  },
+  {
+   "code": "MS",
+   "name": "Montserrat",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Special verdict at trial on indictment: the accused “was guilty of the act or omission charged against him, but was insane” (CPC s. 177), no sentence: committal until release on the Governor's order (s. 188)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: at the Sufficiency Hearing, the High Court commits for trial despite the alleged insanity (s. 73 CPC); the special verdict is returned at the end of the trial on indictment.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "The High Court inquires into incapacity to make a defence (Sufficiency Hearing, arraignment or trial: ss. 72, 120, 153 CPC) and may remand for a medical report; if the accused is incapable, proceedings adjourned, bail or detention on the Governor's order (s. 154), resumed if the accused becomes capable again (s. 155); no trial of the facts provided for."
+   },
+   "legal_bases": "Penal Code (Cap. 4.02, Act 12 of 1983, revised edition as at 1.1.2025) ss. 9, 10, 11(3)(b); Criminal Procedure Code (Cap. 4.01, Act 9 of 2010; Parts 1-22 and ss. 184-192 in force on 1.3.2016, SRO 8/2016) ss. 72, 73, 120, 153-156, 177, 188, 210-211; Criminal Procedure Rules 2026 (SRO 3/2026) r. 1.2, 13.2; Mental Treatment Act (Cap. 14.03) ss. 2, 10, 32",
+   "excerpt": "it is alleged that, at the time when the act was committed […] he was insane […], the High Court shall proceed with the case",
+   "note": "No pretrial filter: at the Sufficiency Hearing, the High Court commits for trial despite insanity (CPC s. 73). Insanity (PC s. 10) is a “special defence” notified by the accused (CPR 2026, r. 13.2); if established at trial, it leads the jury (or the court), on finding the act proven, to a special verdict of “guilty but insane” (s. 177), then to committal on the Governor's order (s. 188).",
+   "sources": [
+    {
+     "title": "Montserrat: Criminal Procedure Code, Cap. 4.01 (revised edition as at 1.1.2019), full PDF (ss. 73, 120, 154-155, 177, 188 read)",
+     "url": "https://www.gov.ms/wp-content/uploads/2020/06/Criminal-Procedure-Code-1.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Montserrat — Penal Code, Cap. 4.02 (Revised Edition 1 Jan 2025)",
+     "url": "https://www.gov.ms/wp-content/uploads/2026/02/4.02-Penal-Code.pdf",
+     "language": "en"
+    },
+    {
+     "title": "S.R.O. 8 of 2016 — Criminal Procedure (No. 2) Code (Cap. 4.01) (Commencement) Order",
+     "url": "https://www.gov.ms/wp-content/uploads/2020/11/SRO.-No.-8-of-2016-Criminal-Procedure-No.-2-Code-Cap.-4.-01-Commencement-Order-2016.pdf",
+     "language": "en"
+    },
+    {
+     "title": "S.R.O. 3 of 2026 — Criminal Procedure Rules 2026",
+     "url": "https://parliament.ms/wp-content/uploads/2026/04/SRO-No.-3-of-2026-Criminal-Procedure-Rules-2026.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Montserrat — Mental Treatment Act, Cap. 14.03",
+     "url": "https://parliament.ms/wp-content/uploads/2026/05/14.03-Mental-Treatment-Act-.pdf",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_69_ms_tc.json",
+     "colour": "green",
+     "confidence": "medium",
+     "note": "No pretrial filter: at the Sufficiency Hearing, the High Court commits for trial despite the alleged insanity (s. 73 CPC). Insanity (s. 10 PC) is a “special defence” notified by the accused (CPR 2026, r. 13.2); the jury returns a special verdict of “guilty but insane” (s. 177), then custody (s. 188). Text of ss. 154, 177 and 188 not read (PDF truncated at s. 127): headings only."
+    }
+   ]
+  },
+  {
+   "code": "TC",
+   "name": "Turks and Caicos Islands",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "high",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "special verdict of the jury (or of the judge alone) “guilty of the act or omission but insane” + placement in a mental health facility, custody until release on the Governor's order (s. 65 CPO)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: the sufficiency hearing (Part II CPO) does not deal with insanity, which is raised under the plea of not guilty and decided by the special verdict at trial (s. 64 CPO).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "If the accused appears insane before or at arraignment, the court may have a special jury rule on the accused's sanity (s. 24(2) CPO); if found insane and unfit, placement in a mental health facility until release by the Governor (s. 65); neither a trial of the facts nor a resumption of the trial is provided for by the text."
+   },
+   "legal_bases": "Criminal Procedure Ordinance (Cap. 3.03, Ord. 26 of 1968, revised edition as at 31.3.2021) ss. 9(7), 11, 24, 26, 58, 62, 64, 65 (am. Ord. 25 of 2016, in force 1.12.2017); Mental Health Ordinance (Cap. 8.08, Ord. 25 of 2016) ss. 15, 18, 21-25 (Part III excluded from the entry into force of 1.12.2017); substantive test: common law (Criminal Law Ordinance, Cap. 3.01, silent)",
+   "excerpt": "the jury shall return a special verdict that the accused was guilty of the act or omission charged against him",
+   "note": "No pretrial filter: insanity (common-law test, no local statutory provision) is raised under the plea of not guilty, announced at the plea and directions hearing (s. 9(7)); at trial, the jury (or judge alone, s. 62) returns the special verdict (s. 64), then placement until the Governor's decision (s. 65). E.g. the Randy Harvey case, 2011. Unfit: special jury, committal without trial.",
+   "sources": [
+    {
+     "title": "TCI — Criminal Procedure Ordinance, Cap. 3.03 (Revised Edition, law as at 31 March 2021)",
+     "url": "https://www.gov.tc/agc/component/edocman/03-03-criminal-procedure-ordinance-2/fdocument?Itemid=9999",
+     "language": "en"
+    },
+    {
+     "title": "TCI — Mental Health Ordinance, Cap. 8.08 (Revised Edition, law as at 31 March 2021)",
+     "url": "https://www.gov.tc/agc/component/edocman/08-08-mental-health-ordinance-2/fdocument?Itemid=9999",
+     "language": "en"
+    },
+    {
+     "title": "TCI — Criminal Law Ordinance, Cap. 3.01 (Revised Edition, law as at 31 March 2018)",
+     "url": "https://www.gov.tc/agc/component/edocman/03-01-criminal-law-ordinance-2/fdocument?Itemid=9999",
+     "language": "en"
+    },
+    {
+     "title": "Attorney General's Chambers TCI — 2021 Revised Laws",
+     "url": "https://www.gov.tc/agc/2021-revised-laws",
+     "language": "en"
+    },
+    {
+     "title": "RTC 89 FM — Randy Harvey found guilty of murder but insane (Supreme Court, 28 Oct 2011)",
+     "url": "https://www.rtc89fm.com/?p=2747",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_69_ms_tc.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": []
+  },
+  {
+   "code": "VG",
+   "name": "British Virgin Islands",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Special verdict of the jury “not guilty by reason of insanity” (Criminal Procedure Act, s. 56), detention “until Her Majesty's pleasure shall be known” (s. 57), then a report to the Governor, who orders treatment as a “criminal of unsound mind” (s. 58)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: if insanity is established by the evidence at trial on indictment, the jury that finds that the accused committed the act returns the special verdict (s. 56); the Act provides for no pretrial gate.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "S. 54: if the accused appears insane on arraignment, a jury decides on the accused's fitness; s. 55: if the accused appears insane during the trial, the jury returns a verdict of insanity instead of the verdict on the indictment, without prejudice to a subsequent trial; detention then decision by the Governor (ss. 57-58); no trial of the facts."
+   },
+   "legal_bases": "Criminal Procedure Act, Cap. 18 (revised edition current to 30 June 2013; Act 3 of 1873, amended 1991, 1997 and 2006), Part VII, ss. 54-58; Criminal Code 1997 (No. 1 of 1997); Mental Health Act 2014 and ECSC Criminal Procedure Rules 2026 (not read)",
+   "excerpt": "it appears to the jury […] that he or she did the act or made the omission charged, but was insane at the time",
+   "note": "No pretrial gate: if insanity is established at trial on indictment, the jury that finds that the accused committed the act returns a special verdict “not guilty by reason of insanity” (Criminal Procedure Act, s. 56), then detention and decision by the Governor (ss. 57-58). Text read in the 2013 revised edition; Mental Health Act 2014 and 2026 procedure rules not read.",
+   "sources": [
+    {
+     "title": "Attorney General's Chambers (laws.gov.vg): Criminal Procedure Act, revised edition as at 30 June 2013 (PDF; ss. 54-58 read)",
+     "url": "https://laws.gov.vg/sites/default/files/consolidated_laws/2013/Criminial%20%26%20Elections%20Legislation/Criminal%20Procedure%20Act%20.pdf",
+     "language": "en"
+    },
+    {
+     "title": "laws.gov.vg: page for the Criminal Procedure Act",
+     "url": "https://laws.gov.vg/Laws/criminal-procedure-act",
+     "language": "en"
+    },
+    {
+     "title": "High Court (ECSC), The Queen v. Elrys Todman (2014)",
+     "url": "https://www.eccourts.org/wp-content/files_mf/thequeenvelrystodman.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Court of Appeal (ECSC), Sylvester Gaston v. The Queen (1977), via vLex",
+     "url": "https://vg.vlex.com/vid/sylvester-gaston-appellant-v-805344697",
+     "language": "en"
+    },
+    {
+     "title": "laws.gov.vg: Mental Health Act 2014 (page)",
+     "url": "https://laws.gov.vg/laws/mental-health-act-2014",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_68_vg_ai.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: decisive texts not read (laws.gov.vg does not provide the text of the Criminal Procedure Act Cap. 18, the MHA 2014 or the ECSC Criminal Procedure Rules 2026). Indications: Todman (2014) concerns persons unfit “at trial” or “found not guilty by reason of insanity” (MHA Cap. 191 s. 11); Gaston (CA 1977): ground of appeal that insanity was withdrawn from the jury. Hypothesis: green."
+    }
+   ]
+  },
+  {
+   "code": "AI",
+   "name": "Anguilla",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Special verdict of the jury: the accused “was guilty of the act or omission charged against him, but was insane” (Criminal Procedure Act, s. 53), without penalty: detention “until His Majesty's pleasure shall be known” (s. 54), then a report to the Governor, who orders treatment as a “criminal of unsound mind” (s. 55)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: if insanity is established by the evidence at trial on indictment, the jury that finds that the accused committed the act returns the special verdict (s. 53); the Act provides for no pretrial gate.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "S. 51: if the accused appears insane on arraignment, a jury decides on the accused's fitness; s. 52: if the accused appears insane during the trial, the jury returns a verdict of insanity instead of the verdict on the indictment, without prejudice to a subsequent trial; detention then decision by the Governor (ss. 54-55); no trial of the facts."
+   },
+   "legal_bases": "Criminal Procedure Act, R.S.A. c. C150 (Revised Statutes, current to 31 December 2022; Act 16/2022), Part 8, ss. 51-55; Criminal Code, R.S.A. c. C140, and Mental Health Act, c. M072 (not read)",
+   "excerpt": "it appears to the jury […] that he did the act or made the omission charged, but was insane as aforesaid",
+   "note": "No pretrial gate: if insanity is established at trial on indictment, the jury that finds that the accused committed the act returns a special verdict “guilty of the act […] but was insane” (Criminal Procedure Act, s. 53), without penalty: detention, then decision by the Governor (ss. 54-55). Text read in the Revised Statutes current to 31 December 2022.",
+   "sources": [
+    {
+     "title": "Government of Anguilla: Revised Statutes, Criminal Procedure Act, R.S.A. c. C150, current to 31.12.2022 (PDF; ss. 51-55 read)",
+     "url": "https://www.gov.ai/Legislation/Acts/C150-Criminal%20Procedure%20Act.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Government of Anguilla: index of the Revised Statutes and Regulations 2022",
+     "url": "https://gov.ai/index.php/service/2022-revised-statutes-and-regulations",
+     "language": "en"
+    },
+    {
+     "title": "Attorney General's Chambers: draft Criminal Justice Reform Act (2018)",
+     "url": "https://www.gov.ai/document/ag/CJRBFinal.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Government of Anguilla: Acts of 2025",
+     "url": "https://gov.ai/laws/acts-2025",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_68_vg_ai.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: no decisive text read. The gov.ai links to the Criminal Code C140, the Criminal Procedure Act C150 and the Mental Health Act M072 return an error; laws.gov.ai only displays tables without links; no Anguillan decision found. The draft Criminal Justice Reform Act 2018 does not deal with insanity; no relevant reform in the 2025 Acts. Unverified hypothesis: green."
+    }
+   ]
+  },
+  {
+   "code": "BM",
+   "name": "Bermuda",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "high",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Special verdict of the jury: acquittal on the ground of insanity (CC s. 546(1)), strict custody then hospitalisation by order of the Governor after advice from the Advisory Committee on the Prerogative of Mercy (s. 546(2)); since 2016, possible enrolment in the community treatment programme (s. 68A(5)(c))",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: if it “is alleged or appears” at trial on indictment that the accused was insane, the jury decides by a special verdict (s. 546(1)); the s. 68A programme only comes into play after a conviction or an acquittal.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "S. 514: if the accused's ability to understand the trial is in doubt on arraignment, a jury decides; if unfit, strict custody until the Governor's decision, then hospitalisation (s. 545(4)), and the accused may be tried again (s. 514(4)); same regime for an accused found insane during the trial (s. 545); no trial of the facts."
+   },
+   "legal_bases": "Criminal Code Act 1907 (CC, consolidated text) s. 40 (presumption of sanity), s. 41 (insanity), s. 68A (Mental Health Treatment Programme, 2016:30), s. 514 (unfitness), ss. 544-546 (Part XXVII: discharge of persons acquitted; accused person insane at trial; acquittal on ground of insanity; amended 1998:32); Mental Health Act 1968 ss. 33, 38, 39, 43, 44",
+   "excerpt": "the jury are to be required to find specially, if they find that he is not guilty, whether he was insane at the time",
+   "note": "No pretrial gate: if it “is alleged or appears” at trial on indictment that the accused was insane (CC s. 41; presumption of sanity, s. 40), the jury returns a special verdict of acquittal on the ground of insanity (s. 546(1)); custody then hospitalisation by order of the Governor (s. 546(2)). Since 2016, a community treatment programme is possible after acquittal (s. 68A(5)).",
+   "sources": [
+    {
+     "title": "Bermuda Laws Online: Criminal Code Act 1907, consolidated version (full PDF; ss. 40-41, 68A, 514, 544-546 read)",
+     "url": "https://www.bermudalaws.bm/Laws/Consolidated%20Law/1907/Criminal%20Code%20Act%201907",
+     "language": "en"
+    },
+    {
+     "title": "Criminal Code Amendment Act 2016 (2016:30): Mental Health Treatment Programme, s. 68A(5)",
+     "url": "https://bermudalaws.bm/Laws/Annual%20Law/Acts/2016/Criminal%20Code%20Amendment%20Act%202016",
+     "language": "en"
+    },
+    {
+     "title": "Mental Health Act 1968 (consolidated): Part III, ss. 33, 38, 39, 43, 44",
+     "url": "https://bermudalaws.bm/Laws/Consolidated%20Law/1968/Mental%20Health%20Act%201968",
+     "language": "en"
+    },
+    {
+     "title": "Mental Health Amendment Act 1998 (1998:32): Governor replaced by Minister (MHA s. 43), amendment of CC ss. 545(4), 546(2)",
+     "url": "https://bermudalaws.bm/Laws/Annual%20Law/Acts/1998/Mental%20Health%20Amendment%20Act%201998",
+     "language": "en"
+    },
+    {
+     "title": "Criminal Jurisdiction and Procedure Act 2015: s. 50 (remand for medical examination)",
+     "url": "https://www.bermudalaws.bm/Laws/Annual%20Law/Acts/2015/Criminal%20Jurisdiction%20and%20Procedure%20Act%202015",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_66_bm.json",
+     "colour": "green",
+     "confidence": "medium",
+     "note": "No pretrial gate: non-responsibility (CC s. 41; presumption of sanity s. 40) is decided at trial on indictment, which “acquits” (s. 546, cited by s. 68A(5)(c)); custody then committal by order of the Minister (MHA s. 43). Text of s. 546 not read (truncated PDF): role of the jury and initiative (defence/Crown) unverified. 2016 reform: s. 68A option for community treatment."
+    }
+   ]
+  },
+  {
+   "code": "MV",
+   "name": "Maldives",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "dv"
+   ],
+   "research_languages": [
+    "dv",
+    "en"
+   ],
+   "colour": "blue",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment at trial: the judge may conclude that the accused is not criminally liable (CPC s. 154(b)); a person acquitted on grounds of insanity is automatically placed for examination (60 days at most) with a view to civil committal (CP s. 52(c))",
+    "who_triggers_examination": "defence",
+    "accused_chooses_timing": true,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: insanity is an excuse (chapter 50 CP) decided at trial; only the “non-exculpatory” defences of chapter 60 (limitation, unfitness, immunity…) are examined as early as the preliminary hearing (CPC s. 110(c)).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "CP s. 62 and CPC s. 121: the accused may invoke at any stage their inability to understand the proceedings or to defend themselves; the court, of its own motion or at the State's request, orders a medical examination; if unfit, the trial is postponed or abandoned and the accused is automatically placed for examination (60 days at most) with a view to civil committal; no trial of the facts."
+   },
+   "legal_bases": "Penal Code / ޤާނޫނުލްޢުޤޫބާތު (Law of 2014, in force from 16.07.2015) ss. 15(b)(3) and 15(d) (burden of proof for “general defenses”), 50, 52 (insanity), 60, 62 (unfitness); Criminal Procedure Code / ޖިނާއީ އިޖުރާއަތުގެ ޤާނޫނު (Law No. 12/2016, Gazette vol. 45 No. 67 of 2 May 2016) ss. 110(c), 120, 121, 138, 154, 155(b)(3), 199",
+   "excerpt": "ޖިނާއީ މަސްއޫލިއްޔަތު އުފުލަން ނުޖެހޭކަމަށް ކަމުގައިވާނަމަ، އެކަން ސާބިތުކުރުމަށްޓަކައި ދަޢުވާ ލިބޭ ފަރާތުން ނަގާފައިވާ ދިފާޢެއް އޭނާއަށް ސާބިތުކޮށްދެވުނު",
+   "note": "Insanity (CP s. 52) is an excuse that the accused must raise and prove by a preponderance of the evidence (s. 15(b)(3)). It is decided at trial: the judge may find an absence of criminal responsibility by giving reasons why the defence raised by the accused is established (CPC 12/2016, ss. 154(b), 155(b)(3)). Only the defences in chapter 60 CP (limitation, unfitness…) are dealt with at the preliminary hearing.",
+   "sources": [
+    {
+     "title": "Maldives Government Gazette, vol. 45 No. 67 (2 May 2016): Law No. 12/2016, Criminal Procedure Code (official PDF in Dhivehi; ss. 110, 120-121, 138, 154-155, 199 read)",
+     "url": "https://storage.googleapis.com/gazette.gov.mv/docs/gazette/4046.pdf",
+     "language": "dv"
+    },
+    {
+     "title": "CJAD (University of Nottingham): Penal Code of the Maldives 2014, English translation (ss. 15, 50, 52, 60, 62 read)",
+     "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/Maldives-penal-code_2014_EN.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Maldives Government Gazette: publication No. 3938",
+     "url": "https://www.gazette.gov.mv/gazette/3938",
+     "language": "dv"
+    },
+    {
+     "title": "CJAD: Maldives, entry on insanity",
+     "url": "https://cjad.nottingham.ac.uk/en/state/170/keyword/585",
+     "language": "en"
+    },
+    {
+     "title": "Raajje.mv: fitness assessment ordered by the Criminal Court (2023)",
+     "url": "https://raajje.mv/138115",
+     "language": "en"
+    }
+   ],
+   "group": "Asia",
+   "oecd": false,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "blue",
+   "colour_derived_from_facts": "blue",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_61_mv.json",
+     "colour": "green",
+     "confidence": "low",
+     "note": "The Criminal Court decides at the ordinary trial: insanity (s. 52 CP) is a “general defense” that the accused must prove by a preponderance of the evidence (s. 15(b)(3)); the acquitted person is automatically placed for examination (≤ 60 days) before civil committal. No pretrial gate seen. CPC 12/2016 not read beyond art. 32 (truncated PDF, lethun.pgo.mv blocked): if only the defence controls the examination, classify as “blue”."
+    }
+   ]
+  },
+  {
+   "code": "VI",
+   "name": "United States Virgin Islands",
+   "level": "subdivision",
+   "parent": "US",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "blue",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "special verdict of the jury “not guilty by reason of insanity” + committal to a forensic unit until the court finds that capacity has been restored and that the person is not dangerous",
+    "who_triggers_examination": "defence",
+    "accused_chooses_timing": true,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: insanity is decided at the ordinary jury trial (or by a judge if the accused waives a jury), by a special verdict after a full hearing on the facts.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "19 V.I.C. § 1028 (2023): hearing on motion of the defence, of the Attorney General or of the court's own motion; if unfit (preponderance), placement with the Department of Health for restoration (12 months max.), trial suspended; failing that, civil committal (§§ 1026, 1039); no trial of the facts. In 2026, the Superior Court refused dismissal without a prior application for civil committal."
+   },
+   "legal_bases": "14 V.I.C. § 14(4) (test of the “product” of mental illness); 19 V.I.C. §§ 1028-1029 (Behavioral Health Act, Act No. 8688, in force on 19 Jan. 2023); 5 V.I.C. § 3637 (parallel provision on the verdict and committal); V.I. R. Crim. P. 12.2 (Promulgation Order 2017-010, in force on 1 Dec. 2017); Petric v. People, S. Ct. Crim. No. 2013-0067 (V.I. 2014); Rouse v. People, 2024 VI 4; People v. Cruz-Santiago, 2026 VI Super 34U",
+   "excerpt": "Upon the filing of a notice […] that the defendant intends to rely on the defense of insanity, the court […] shall order",
+   "note": "The accused's defence: without notice (V.I. R. Crim. P. 12.2(a)) the accused cannot raise insanity; the expert examination is ordered after that notice (19 V.I.C. § 1029(a), 2023). The jury decides at the ordinary trial (special verdict NGRI; sanity to be proved by the prosecution), then forensic committal. Caveat: R. 12.2(c)(1) allows examinations ordered by the court of its own motion; no case law read on an imposed defence.",
+   "sources": [
+    {
+     "title": "19 V.I.C. § 1029 — Insanity as a Defense (Behavioral Health Act, Act No. 8688; Justia, Code 2025)",
+     "url": "https://law.justia.com/codes/virgin-islands/title-19/part-v/chapter-45/subchapter-ix/1029/",
+     "language": "en"
+    },
+    {
+     "title": "19 V.I.C. § 1028 — Determination of mental competency to stand trial (Justia, Code 2025)",
+     "url": "https://law.justia.com/codes/virgin-islands/title-19/part-v/chapter-45/subchapter-ix/1028/",
+     "language": "en"
+    },
+    {
+     "title": "Virgin Islands Rules of Criminal Procedure (Supreme Court of the Virgin Islands), Rule 12.2 — Notice of an Insanity Defense; Mental Examination",
+     "url": "https://www.vicourts.org//UserFiles/DBFiles/server_9784218/201911/16185775/vi_rules_of_criminal_procedure.pdf",
+     "language": "en"
+    },
+    {
+     "title": "14 V.I.C. § 14 — Capacity to commit crimes or offenses (Justia)",
+     "url": "https://law.justia.com/codes/virgin-islands/title-14/chapter-1/subchapter-ii/14/",
+     "language": "en"
+    },
+    {
+     "title": "Rouse v. People of the Virgin Islands, 2024 VI 4 (Supreme Court of the Virgin Islands, 17 Jan. 2024)",
+     "url": "https://supreme.vicourts.org/court_opinions/published_opinions/2024_published_opinions/rouse_v__people_of_the_virgin_islands",
+     "language": "en"
+    },
+    {
+     "title": "People v. Cruz-Santiago; People v. Rivera, 2026 VI Super 34U (Superior Court, St. Croix, 28 July 2026) — application of 19 V.I.C. § 1028",
+     "url": "https://usvipublicportal-api.vicourts.org/courts/87edff36-c02b-4073-aea4-c0652bc123d9/cms/case/5AC0A5E2-50C2-4ED1-A49A-5A946A15958D/docketentrydocuments/5E0B839A-2D27-45BD-8A45-2F003AD0DDCA",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "blue",
+   "colour_derived_from_facts": "blue",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_72_vi.json",
+     "colour": "blue",
+     "confidence": "medium",
+     "note": "The accused's defence: without notice (V.I. R. Crim. P. 12.2(a)) the accused cannot raise insanity; the expert examination is ordered after that notice (19 V.I.C. § 1029(a), 2023). The jury decides at the ordinary trial (special verdict NGRI; sanity to be proved by the prosecution), then forensic committal. Caveat: R. 12.2(c)(1) allows examinations ordered by the court of its own motion; no case law read on an imposed defence."
+    }
+   ]
+  },
+  {
+   "code": "JE",
+   "name": "Jersey",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en",
+    "fr"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Special verdict “not criminally responsible” recorded by the trial court after finding that the accused committed the act (art. 72 MHL 2016), then acquittal or a measure under art. 59 (treatment order with or without restrictions, guardianship order)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: art. 72 applies “in any proceedings”; the trial court first finds that the accused committed the act, then non-responsibility (jury in the Moon case, 2021); the hearing without a jury before the Inferior Number concerns only the unfit accused (arts. 58-59).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Read (arts. 55-59 MHL 2016): if the accused appears unable to participate effectively (mental disorder or inability to communicate), the trial court (Magistrate's Court, Youth Court or Royal Court) adjourns and decides alone, on the balance of probabilities, on the basis of the mandatory opinion of two doctors, possibly in the accused's absence; special measures if they suffice; otherwise adjournment for treatment (6 months at most) then, if the accused is to remain unable, “the proceedings ... shall not proceed further”: unconditional release or, after examining the evidence and finding that the accused committed the act, a treatment order (with or without restrictions) or a guardianship order. Nicolle case (2023, press): hearing before the Inferior Number without a jury (“not a conventional trial”), finding of the facts then “not criminally responsible” and acquittal. Before 1 October 2018 (1964 Law, art. 1): question decided by the Superior Number (until the 2015 reform), then detention “during Her Majesty's pleasure”, with no hearing on the facts provided for by the text."
+   },
+   "legal_bases": "Mental Health (Jersey) Law 2016 (L.29/2016, consolidated version of 24 Nov. 2025), arts. 55-59 (Part 8), 60(5), 65, 66, 68 and 72 (special verdicts); Mental Health (Jersey) Law 2016 (Appointed Day) Act 2018 (entry into force on 1 Oct. 2018); Criminal Justice (Insane Persons) (Jersey) Law 1964 (repealed); Mental Health, Capacity and Self-Determination (Jersey) Amendment Law 2026 (adopted on 26 March 2026; amends neither Part 8 nor art. 72)",
+   "excerpt": "Where the court finds that […] the defendant carried out the act alleged; but […] ought not to be held criminally responsible",
+   "note": "No pretrial gate: in any proceedings, the trial court first finds that the accused committed the act, then records a special verdict of non-responsibility and acquits or orders treatment or guardianship (arts. 72 and 59 MHL 2016); jury in the Moon case (2021). Unfit: the court decides on the basis of two medical opinions, then a hearing on the facts without a jury (arts. 55-59). Initiative not specified.",
+   "sources": [
+    {
+     "title": "Jersey Legal Information Board: Mental Health (Jersey) Law 2016, consolidated version (full text; arts. 55-59 and 72 read)",
+     "url": "https://www.jerseylaw.je/laws/current/l_29_2016",
+     "language": "en"
+    },
+    {
+     "title": "Criminal Justice (Insane Persons) (Jersey) Law 1964, superseded revised edition (31 August 2004) – jerseylaw.je",
+     "url": "https://jerseylaw.je/laws/superseded/Pages/2004/08.280.aspx",
+     "language": "en"
+    },
+    {
+     "title": "P.78/2016 – Draft Mental Health (Jersey) Law 201-: Minister's report (paras 64-66, special verdict and unfitness) – States Assembly",
+     "url": "https://statesassembly.je/getmedia/707256ab-6235-4aa4-bd36-e0cdf2fb6157/P.78-2016.pdf?ext=.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Bailiwick Express, 12 Feb. 2021 – Moon trial: the jury considers criminal responsibility (special verdict)",
+     "url": "https://www.bailiwickexpress.com/news/trial-jury-still-considering-if-man-was-criminally-responsible-armed-stand/",
+     "language": "en"
+    },
+    {
+     "title": "Bailiwick Express, 15 Feb. 2023 – Nicolle case: unfitness, hearing before the Inferior Number, “not criminally responsible”",
+     "url": "https://www.bailiwickexpress.com/news/former-chief-ministers-private-secretary-not-criminally-responsible-spate-attacks/",
+     "language": "en"
+    },
+    {
+     "title": "Mental Health, Capacity and Self-Determination (Jersey) Amendment Law 202- (adopted text) – jerseylaw.je",
+     "url": "https://www.jerseylaw.je/laws/pending/PDFs/MentalHealth,CapacityandSelf-DeterminationAmendmentLaw202-_ADOPTED.pdf",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_63_je.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: art. 72 MHL 2016 (special verdict) not read, consolidated texts truncated by the tool after art. 68, no judgment found. Green hypothesis: no pretrial gate; according to the press (Moon, 2021), the jury must be sure of the facts and may then find “not criminally responsible” (more likely than not); the court acquits or orders treatment/guardianship. Unfit: hearing on the facts without a jury (art. 59)."
+    }
+   ]
+  },
+  {
+   "code": "FK",
+   "name": "Falkland Islands",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "white",
+   "confidence": "low",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Unverified hypothesis: special verdict “not guilty by reason of insanity” at trial + disposal (hospital order, supervision, absolute discharge) under Part 34 of the Criminal Procedure and Evidence Ordinance 2014, not read",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "Unverified hypothesis: Part 34 of the CPEO 2014 presumably re-enacts the Criminal Procedure (Insanity) Act 1964 (special verdict returned at trial); text not read.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Not verified (hypothesis: as in the CP(I)A 1964 re-enacted by Part 34 of the CPEO 2014, judge's decision on fitness, then examination of the facts before any disposal)."
+   },
+   "legal_bases": "Criminal Procedure and Evidence Ordinance 2014 (in force on 21.04.2017), Part 34 (mentally disordered offenders), not read; Crimes Ordinance 2014, which does not codify insanity (common law, M'Naghten Rules)",
+   "excerpt": "",
+   "note": "White: Part 34 (mentally disordered offenders) of the CPEO 2014, in force since 21.04.2017, not read: legislation.gov.fk rendered in JavaScript, Gazette supplement 11/2014 inaccessible. The Crimes Bill 2014 memorandum says insanity is not codified and the CP(I)A 1964 is “covered in Part 34”. Hypothesis: special verdict at trial (jury of 7 or 12, or judge alone), hence green.",
+   "sources": [
+    {
+     "title": "Falkland Islands Gazette Supplement, Vol. 25, No. 10 (15 August 2014): Crimes Bill 2014 and explanatory memorandum",
+     "url": "https://nationalarchives.gov.fk/jdownloads/Gazettes%20Proclamations%20Notices/2014%20Supplement%2010.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Falkland Islands Courts – Criminal Proceedings: Trial (jury of 7, 12 for murder, or judge alone at the accused's election)",
+     "url": "https://www.gov.fk/courts/courts/criminal/trial/",
+     "language": "en"
+    },
+    {
+     "title": "Legislative Assembly Record, 27 April 2017 (entry into force of the CPEO 2014 on 21 April 2017)",
+     "url": "https://assembly.gov.fk/jdownloads/Assembly%20Records%20and%20Order%20Papers/Legislative%20Assembly%20Records/2017/Legislative%20Assembly%20Record%2027April%202017.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Falkland Islands Statute Law Database (consulted, content unreadable)",
+     "url": "https://www.legislation.gov.fk/",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "white",
+   "colour_derived_from_facts": "green",
+   "hypothetical_colour": "green",
+   "flags": [
+    "low_confidence",
+    "incomplete_verification"
+   ],
+   "history": [
+    {
+     "file": "pass2/ext_70_fk_sh.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: Part 34 (mentally disordered offenders) of the CPEO 2014, in force since 21.04.2017, not read: legislation.gov.fk rendered in JavaScript, Gazette supplement 11/2014 inaccessible. The Crimes Bill 2014 memorandum says insanity is not codified and the CP(I)A 1964 is “covered in Part 34”. Hypothesis: special verdict at trial (jury of 7 or 12, or judge alone), hence green."
+    }
+   ]
+  },
+  {
+   "code": "SH",
+   "name": "Saint Helena",
+   "level": "subdivision",
+   "parent": "GB",
+   "official_languages": [
+    "en"
+   ],
+   "research_languages": [
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "high",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "special verdict “not guilty by reason of insanity” + report to the Governor, who orders detention (psychiatric hospital, prison or other safe place, on Saint Helena or elsewhere), with periodic reports and release by decision of the Governor",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: the allegation of insanity does not prevent committal for trial (s. 120); the special verdict is returned at trial by the jury, the judge alone or the Magistrates' Court.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "S. 117: if the accused appears insane and incapable of making a defence, the court inquires; if so, the proceedings are suspended and the Governor may order committal, without a trial of the facts; resumption on a certificate of fitness (ss. 118-119). S. 122: accused not insane but not understanding the proceedings: representative appointed, evidence heard, finding of the act without conviction, measures by the Governor."
+   },
+   "legal_bases": "Criminal Procedure Ordinance 1975 (Ord. No. 9 of 1975, Rev. Ed. 2017, text up to date as at 30.08.2022), ss. 3(2), 117-122 (in particular ss. 120, 121(1)-(6), 122(1)-(12)); English Law (Application) Ordinance 2005 (substantive criminal law)",
+   "excerpt": "must make a special finding or return a special verdict to the effect that the defendant is not guilty by reason of insanity",
+   "note": "No pretrial filter: the court must commit for trial despite the allegation of insanity (s. 120). At trial, the jury (or judge alone, or the Magistrates' Court), on finding the act proven, returns the special verdict (s. 121(1)); detention is a matter for the Governor. English substantive law (2005 Ordinance). An insane accused who is unfit may be committed without a trial of the facts (s. 117). Ascension/Tristan not verified.",
+   "sources": [
+    {
+     "title": "Criminal Procedure Ordinance 1975, consolidated text up to date as at 30 August 2022 (St Helena Government)",
+     "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2022/09/Criminal-Procedure-Ord-Updated-300822.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Criminal Procedure Ordinance, Revised Edition 2017 (St Helena Government)",
+     "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2017/11/Criminal-Procedure-Ordinance.pdf",
+     "language": "en"
+    },
+    {
+     "title": "Laws of St Helena – list of laws by category (St Helena Government, 2025)",
+     "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2025/04/20250204_STH-Laws_Category-list.pdf",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_70_fk_sh.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "AW",
+   "name": "Aruba",
+   "level": "subdivision",
+   "parent": "NL",
+   "official_languages": [
+    "nl",
+    "pap"
+   ],
+   "research_languages": [
+    "nl"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment on the merits: if the facts are proven but the offender is not punishable, ontslag van alle rechtsvervolging (Sv art. 396, para. 2) with, if necessary, one-year placement in a psychiatric hospital (WvSr art. 1:80) or TBR (art. 1:81)",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None: after the hearing, the judge deliberates on the proof of the facts, their legal characterisation, then the offender's punishability (Sv art. 394); discontinuance by the OM remains discretionary (complaint to the Hof, art. 15 Sv).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Art. 33 Sv: if the defendant is no longer able to understand the significance of the proceedings, the judge suspends them at any stage (of the court's own motion or on application); the suspension is lifted as soon as the defendant recovers."
+   },
+   "legal_bases": "WvSr (AB 2012 no. 24) arts. 1:115, a (non-imputability due to mental disorder), 1:80 (plaatsing in een psychiatrisch ziekenhuis), 1:81-1:82 (terbeschikkingstelling); Sv (AB 1996 no. 75, central register as at 19 Sept. 2017) arts. 15, 33, 394, 396 para. 2",
+   "excerpt": "Acht het Hof het feit bewezen, en het feit of de verdachte niet strafbaar, dan ontslaat het hem van alle rechtsvervolging te dier zake.",
+   "note": "No pretrial filter: after the hearing, the judge deliberates on the proof of the facts, then on the offender's punishability (Sv art. 394); if the act cannot be imputed to the offender (WvSr art. 1:115, a), the judge pronounces an ontslag van alle rechtsvervolging and, if necessary, the one-year psychiatric placement (art. 1:80) or TBR (art. 1:81) (Sv art. 396, para. 2). No Aruban judgment read.",
+   "sources": [
+    {
+     "title": "Overheid Aruba: Wetboek van Strafrecht (AB 2012 no. 24), full PDF (arts. 1:80-1:82, 1:115 read)",
+     "url": "https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/1601ab12.024.pdf",
+     "language": "nl"
+    },
+    {
+     "title": "Overheid Aruba: Wetboek van Strafvordering (AB 1996 no. 75), full PDF (arts. 33, 394-396 read)",
+     "url": "https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/1603ab96.075.pdf",
+     "language": "nl"
+    },
+    {
+     "title": "R.S.T. Gaarthuis & F. Koenraadt, “Vraag en aanbod binnen het Arubaanse forensisch-psychiatrische veld”, Caribisch Juristenblad 2014 (4)",
+     "url": "https://dspace.library.uu.nl/bitstream/handle/1874/297176/Vraag_en_aanbod_binnen_het_Arubaanse_forensisch-psychiatrische_veld.pdf?sequence=1",
+     "language": "nl"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_71_aw_cw_sx.json",
+     "colour": "green",
+     "confidence": "low",
+     "note": "The WvSr (AB 2012 no. 24) reserves to the “rechter” the one-year placement in a psychiatric hospital of a non-imputable, dangerous offender (art. 1:80) and TBR (art. 1:81, para. 2: the judge assesses imputability); according to legal scholarship (CJB 2014), measures of the criminal court. Not read: the non-responsibility article, the Sv deliberation provisions (PDF truncated at art. 111), an Aruban judgment; hence low confidence."
+    }
+   ]
+  },
+  {
+   "code": "CW",
+   "name": "Curaçao",
+   "level": "subdivision",
+   "parent": "NL",
+   "official_languages": [
+    "nl",
+    "pap",
+    "en"
+   ],
+   "research_languages": [
+    "nl"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment on the merits by the Gerecht in eerste aanleg (then by the Hof on appeal) on the offender's punishability; in the event of non-imputability, expected outcome: ontslag van alle rechtsvervolging + TBR or psychiatric placement (not read in a judgment)",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "No pretrial route found: the offender's punishability is decided in the judgment delivered after the hearing and proof of the facts (ECLI:NL:OGHACMB:2013:BZ4659; 2025:338).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "New Sv (P.B. 2025, 60) art. 33: the judge suspends the proceedings at any stage if the defendant is no longer able to understand their significance; corresponding provision of the former Sv (P.B. 1996, 164) not read."
+   },
+   "legal_bases": "WvSr (P.B. 2011, 48; am. P.B. 2015, 74; 2020, 163; 2022, 90; 2024, 102): articles on ontoerekeningsvatbaarheid, TBR and placement not read; Sv (P.B. 1996, 164, in force in 1997); new Sv (P.B. 2025, 60) arts. 1 (einduitspraak), 15 and 25 (beklag), 33 (schorsing), 63 lid 5, 70i (deskundige); ECLI:NL:OGHACMB:2013:BZ4659.",
+   "excerpt": "Zowel de psychiater als de psycholoog achten de verdachte volledig toerekeningsvatbaar. […] Het Hof maakt dit oordeel tot het zijne.",
+   "note": "No pretrial filter found: in ECLI:NL:OGHACMB:2013:BZ4659 (murder), the trial court, after the hearings and proof of the facts, itself rules on imputability in the light of the psychiatrist's and psychologist's reports. Not read: WvSr (P.B. 2011, 48), the Sv deliberation provisions, a non-responsibility judgment. New Sv (P.B. 2025, 60) adopted on 26-5-2025; entry into force not ascertained.",
+   "sources": [
+    {
+     "title": "Gemeenschappelijk Hof van Justitie, 14 March 2013, H92/2012, ECLI:NL:OGHACMB:2013:BZ4659 (appeal, Curaçao)",
+     "url": "https://uitspraken.rechtspraak.nl/api/pdfdownload/ECLI_NL_OGHACMB_2013_BZ4659",
+     "language": "nl"
+    },
+    {
+     "title": "Gemeenschappelijk Hof van Justitie, 18 Dec. 2025, H-79/24, ECLI:NL:OGHACMB:2025:338 (appeal, Curaçao)",
+     "url": "https://omgevingsweb.nl/jurisprudentie/eclinloghacmb2025338-gemeenschappelijk-hof-van-justitie-van-aruba-curacao-sint-maarten-en-van-bonaire-sint-eustatius-en-saba-18-12-2025-h-79-24/",
+     "language": "nl"
+    },
+    {
+     "title": "Landsverordening houdende vaststelling van een nieuw Wetboek van Strafvordering, P.B. 2025, no. 60 (gobiernu.cw)",
+     "url": "https://gobiernu.cw/wp-content/uploads/2025/06/60.-Wetboek-van-Strafvordering-2.pdf",
+     "language": "nl"
+    },
+    {
+     "title": "Klapper P.B. Hoofdstuk XV Justitie, updated to P.B. 2025 no. 148 (gobiernu.cw)",
+     "url": "https://gobiernu.cw/wp-content/uploads/2025/09/Klapper-PB-Hoofdstuk-XV-Justitie-Update-tot-en-met-P.B-2025-no.-148.pdf",
+     "language": "nl"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_71_aw_cw_sx.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": []
+  },
+  {
+   "code": "SX",
+   "name": "Sint Maarten (Dutch part)",
+   "level": "subdivision",
+   "parent": "NL",
+   "official_languages": [
+    "nl",
+    "en"
+   ],
+   "research_languages": [
+    "nl",
+    "en"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment on the merits by the Gerecht in eerste aanleg: total non-imputability (WvSr art. 1:115) “kan leiden tot ontslag van alle rechtsvervolging”; TBR exists and has been imposed by the court for a homicide (press, 2020)",
+    "who_triggers_examination": "mixed",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None found: in ECLI:NL:OGEAM:2022:131, the Gerecht rules on the offender's punishability after declaring the facts proven, in the light of the documents produced by the defence; the procedure follows the Sv of the former Netherlands Antilles.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Not verified (applicable Sv not read on this point)."
+   },
+   "legal_bases": "Wetboek van Strafrecht of Sint Maarten, art. 1:115 (non-imputability, cited by the Gerecht); Wetboek van Strafvordering van de Nederlandse Antillen, applicable in Sint Maarten (cited in the same judgment); ECLI:NL:OGEAM:2022:131 (Gerecht in eerste aanleg van Sint Maarten, 22-12-2022)",
+   "excerpt": "volledige ontoerekeningsvatbaarheid in de zin van artikel 1:115 van het Wetboek van Strafrecht kan leiden tot ontslag van alle rechtsvervolging",
+   "note": "No pretrial filter found: in ECLI:NL:OGEAM:2022:131, the Gerecht in eerste aanleg first declares the facts proven, then examines the offender's punishability: total non-imputability (WvSr art. 1:115) would lead to ontslag van alle rechtsvervolging. TBR imposed by the court for a homicide (press, 2020). WvSr and Sv not read directly.",
+   "sources": [
+    {
+     "title": "Rechtspraak.nl (open data): Gerecht in eerste aanleg van Sint Maarten, 22-12-2022, ECLI:NL:OGEAM:2022:131",
+     "url": "https://data.rechtspraak.nl/uitspraken/content?id=ECLI:NL:OGEAM:2022:131",
+     "language": "nl"
+    },
+    {
+     "title": "Rechtspraak.nl: ECLI:NL:OGEAM:2022:131 (permanent link)",
+     "url": "http://deeplink.rechtspraak.nl/uitspraak?id=ECLI:NL:OGEAM:2022:131",
+     "language": "nl"
+    },
+    {
+     "title": "St. Maarten News: return of a person sentenced to TBR (2020)",
+     "url": "https://stmaartennews.com/judicial/netherlands-releases-tbr-convicted-prisoner-sends-back-st-maarten/",
+     "language": "en"
+    }
+   ],
+   "group": "Island territories",
+   "oecd": true,
+   "source_file": "pass2/ext_81_iles_textes.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [],
+   "history": [
+    {
+     "file": "pass2/ext_71_aw_cw_sx.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: neither the WvSr (2015) nor the Sv of Sint Maarten could be read, and the page for ECLI:NL:OGEAM:2022:131 could not be loaded. Hypothesis: green (judgment of the Gerecht in eerste aanleg in a public hearing, ontslag van alle rechtsvervolging + TBR or placement). Only the press (2020) attests to TBR imposed by the court for a 2014 homicide, with no legal basis read."
+    }
+   ]
   }
  ]
 }

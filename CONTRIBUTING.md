@@ -52,6 +52,8 @@ An authoritarian regime is not a reason for exclusion in itself. Some authoritar
 ordinary criminal cases, a justice system in which the law on the rights of the defence is still followed
 (corruption aside): they are included. In others, the absence of the rule of law means that the law is only a
 hint, not a requirement to follow: they are left out (white), listed in `scope.excluded` with the reason.
+Some jurisdictions are also left out by editorial choice (for example Bahrain, Singapore and Brunei); every
+exclusion is listed in `scope.excluded` with its reason.
 
 To propose including or excluding a jurisdiction, edit `scope.excluded` or the entity, and justify the change
 in the pull request against this criterion, with sources on how ordinary criminal cases are actually handled.
