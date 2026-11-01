@@ -2,7 +2,7 @@
  "title": "Totally abolished discernment: judge first, or establish non-responsibility first?",
  "description": "World map in Mollweide projection classifying criminal-law systems by the procedural fate of an accused whose discernment was totally abolished by a mental disorder at the time of the act: the trial comes first (green), non-responsibility is established first without a real trial (yellow), non-responsibility is established first but a trial still takes place (purple), the accused chooses when the mental state is examined (blue), no non-responsibility is recognised (black), no data or outside the scope (white).",
  "subtitle": "Serious crime (e.g. homicide), discernment totally abolished at the time of the act · partial impairment and plea bargaining ignored · law in force on 28 October 2026",
- "subtitle_2": "Scope: OECD and EU, the Americas, Oceania, Africa, the Balkans, Ukraine and Moldova (controlled areas), Asia (selection), island states and territories; exclusions in white (see the legend)",
+ "subtitle_2": "Scope: OECD and EU, the Americas, Oceania, Africa, the Balkans, Ukraine and Moldova (controlled areas), Asia (selection), island states and territories, European microstates; exclusions in white (see the legend)",
  "marker_note": "Circle: state too small to be visible at this scale (same colour as on the map). Hover over a country: legal basis, nuances and confidence level.",
  "footer": [
   "Method: legal research in each country's official language(s) (penal codes, codes of criminal procedure, case law) by agents, a second verification pass on weak entries, then an independent check of high-stakes entries. Sources, excerpts and confidence of each entry: accompanying JSON file.",
@@ -18,7 +18,7 @@
     "the accused not responsible and itself orders the treatment or security measure."
    ],
    "definition": "No prior gateway: the case goes to an ordinary trial; the trial court first establishes the facts, then rules on non-responsibility (acquittal, exemption, special verdict) and itself orders the measure. The psychiatric examination is ordered by the authorities or the court, not at the accused's choice.",
-   "n_countries": 88,
+   "n_countries": 90,
    "n_subdivisions": 36
   },
   "yellow": {
@@ -29,7 +29,7 @@
     "(France since 2008: hearing before the investigating chamber). Trial only if the accused is found responsible."
    ],
    "definition": "The mental state at the time of the act is examined during the pretrial phase; if discernment was abolished, the case ends without a real trial, either through a dismissal or a decision not to commit for trial, or through a reduced procedure that replaces the trial (hearing before an investigating court, in chambers, a non-public care tribunal, a written or simplified procedure, a lower standard of proof, absence of the accused as the rule). The person may nonetheless be committed. A trial only takes place if the person is found responsible.",
-   "n_countries": 28,
+   "n_countries": 29,
    "n_subdivisions": 23
   },
   "purple": {
@@ -40,7 +40,7 @@
     "before the trial judge, same evidence) always precedes the measure, or takes place at the accused's request."
    ],
    "definition": "Non-responsibility is examined first and diverts the case into a special procedure, but the trial court holds a genuine hearing on the merits with the guarantees of an ordinary criminal trial (oral adversarial hearing, full taking of evidence on the facts, same standard of proof) before any measure, or the accused can obtain a full trial on request despite the abolition of discernment.",
-   "n_countries": 26,
+   "n_countries": 27,
    "n_subdivisions": 3
   },
   "blue": {
@@ -70,8 +70,8 @@
    "colour": "#ffffff",
    "legend": [
     "Insufficient data (procedural text not found or unreadable), countries and areas excluded from the scope (Maghreb, Egypt, Sahel except",
-    "Senegal and Mauritania, Eritrea, Somalia, Cuba, Turkey, Serbia, South Caucasus, Bahrain, Singapore, Brunei; dashed: Northern Cyprus,",
-    "occupied Ukraine, Transnistria), countries not studied."
+    "Senegal and Mauritania, Eritrea, Somalia, Cuba, Turkey, Serbia, South Caucasus, Bahrain, Singapore, Brunei, Vatican City; dashed:",
+    "Northern Cyprus, occupied Ukraine, Transnistria), countries not studied."
    ],
    "definition": "Insufficient reliable data to classify, countries excluded from the scope by choice (lack of rule of law: the law there is only a hint, not a requirement to follow), or countries and territories not studied.",
    "n_countries": 0,
@@ -280,6 +280,12 @@
     "CW",
     "SX",
     "VI"
+   ],
+   "europe_microstates": [
+    "AD",
+    "LI",
+    "MC",
+    "SM"
    ]
   },
   "excluded": [
@@ -402,9 +408,14 @@
     "code": "GE",
     "name": "Georgia",
     "reason": "South Caucasus: excluded from the scope by choice (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
+   },
+   {
+    "code": "VA",
+    "name": "Vatican City",
+    "reason": "Europe, microstate: excluded from the scope, as criminal justice is partly in Italy's hands (no prison: convicts serve their sentences in Italy, which also prosecutes offences committed in the Vatican at the Holy See's request; Lateran Treaty, art. 22)"
    }
   ],
-  "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan, Syria and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia, the Philippines and Timor-Leste; all island states and territories are included except Cuba, Bahrain, Singapore and Brunei, which are excluded) are left white.",
+  "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan, Syria and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia, the Philippines and Timor-Leste; all island states and territories are included except Cuba, Bahrain, Singapore and Brunei, and so are all European microstates except Vatican City, these exceptions being excluded) are left white.",
   "markers": {
    "TV": [
     179.2,
@@ -579,7 +590,7 @@
  "meta": {
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "n_entries": 272,
+  "n_entries": 276,
   "edition": "English",
   "translated_from": "irresponsabilite_penale.json (French working edition, kept on the francais branch of this repository)",
   "methodology": {
@@ -624,6 +635,7 @@
    "extension_29_10_quater": "Additions of 29/10/2026 (23:00): the last 9 Legal Data Hunter queries granted by the user (20 in all) were used one at a time, without agents, on the jurisdictions still white: the Falkland Islands (green, CPEO 2014 ss. 765-766), Djibouti (yellow, CPP arts. 72, 74, 184 and 220) and South Sudan (green, CCPA 2008 ss. 206-207) classified; for Benin and Somalia, the decisive texts are not in Legal Data Hunter.",
    "extension_01_11": "Additions of 1/11/2026: Legal Data Hunter (9 queries, without agents) indexes no decisive text for the jurisdictions still white; the full official texts were then downloaded and read: Guinea (2016 CPP, Supreme Court PDF, taking over the French 2008 reform: yellow) and Benin (2012 CPP, 2018 Penal Code: dismissal, yellow, low confidence). At the user's request, Somalia, Armenia, Azerbaijan and Georgia are excluded from the scope (rule-of-law criterion).",
    "extension_01_11_bis": "Additions of 1/11/2026 (08:00): at the user's request (no coastal country left white from Mauritania to Angola), Equatorial Guinea is classified from the 2022 Penal Code (Boletín Oficial del Estado edition, scanned copy read by optical character recognition) and the Spanish Ley de Enjuiciamiento Criminal of 1882, in force through Decree-Law 4/1980 (sobreseimiento libre under art. 637.3): yellow, low confidence. Web research sufficed, without Legal Data Hunter.",
+   "extension_01_11_ter": "Additions of 1/11/2026 (09:00): at the user's request, the European microstates. Checked first: Monaco, Andorra, San Marino and Liechtenstein have their own criminal courts (Liechtenstein may place convicts in a foreign institution, a treaty with Austria providing for the accommodation of prisoners); Vatican City, which has no prison (sentences served in Italy, prosecution left to Italy at the Holy See's request, Lateran Treaty, art. 22), is excluded. Readings: Legal Data Hunter (10 queries, without agents, up to its daily limit: Monaco, the Andorran Penal Code), then official texts: Monaco yellow (dismissal, Penal Code art. 44, Code of Criminal Procedure arts. 215 and 241), Andorra green (judgment with committal, practice of 2022), San Marino green (low confidence) and Liechtenstein purple (Austrian-model committal procedure, StPO §§ 340-344).",
    "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This file is the dataset maintained on the main branch; the French edition is kept on the francais branch of the repository and prevails for 28/10/2026 in case of a translation discrepancy."
   },
   "contributing": [
@@ -666,9 +678,9 @@
  },
  "summary": {
   "countries": {
-   "green": 88,
-   "yellow": 28,
-   "purple": 26,
+   "green": 90,
+   "yellow": 29,
+   "purple": 27,
    "blue": 4,
    "black": 0,
    "white": 0
@@ -690,6 +702,7 @@
   ],
   "codes_by_colour": {
    "green": [
+    "AD",
     "AG",
     "AI",
     "AO",
@@ -791,6 +804,7 @@
     "SE",
     "SH",
     "SL",
+    "SM",
     "SN",
     "SR",
     "SS",
@@ -860,6 +874,7 @@
     "KM",
     "LU",
     "LV",
+    "MC",
     "MG",
     "MR",
     "MT",
@@ -890,6 +905,7 @@
     "HN",
     "HR",
     "KZ",
+    "LI",
     "LT",
     "MD",
     "ME",
@@ -975,9 +991,9 @@
    ]
   },
   "confidence": {
-   "high": 81,
-   "medium": 155,
-   "low": 36
+   "high": 82,
+   "medium": 157,
+   "low": 37
   }
  },
  "cases_to_check": [
@@ -1813,6 +1829,16 @@
    "colour": "green",
    "confidence": "high",
    "flags": [
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "SM",
+   "name": "San Marino",
+   "colour": "green",
+   "confidence": "low",
+   "flags": [
+    "low_confidence",
     "incomplete_verification"
    ]
   }
@@ -20470,6 +20496,262 @@
      "note": "White: neither the WvSr (2015) nor the Sv of Sint Maarten could be read, and the page for ECLI:NL:OGEAM:2022:131 could not be loaded. Hypothesis: green (judgment of the Gerecht in eerste aanleg in a public hearing, ontslag van alle rechtsvervolging + TBR or placement). Only the press (2020) attests to TBR imposed by the court for a 2014 homicide, with no legal basis read."
     }
    ]
+  },
+  {
+   "code": "MC",
+   "name": "Monaco",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "fr"
+   ],
+   "research_languages": [
+    "fr"
+   ],
+   "colour": "yellow",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Order of the investigating judge (juge d'instruction, Code of Criminal Procedure art. 215) or judgment of the chambre du conseil of the Court of Appeal (art. 241) declaring that there are no grounds to prosecute, since there is neither felony nor misdemeanour when the offender was in a state of démence (insanity) at the time of the act (Penal Code art. 44); possible psychiatric placement outside the criminal proceedings, by order of the President of the Court of First Instance at the request of the Prosecutor General or by decision of the Minister of State (Law No. 1.039); without a judicial investigation, in misdemeanour cases, acquittal (relaxe) by the Tribunal correctionnel",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "pretrial_phase",
+    "replacement_procedure": "simple_dismissal",
+    "replacement_procedure_detail": "If he considers that the facts constitute neither felony, nor misdemeanour, nor petty offence, the investigating judge declares by order that there are no grounds to prosecute (art. 215); if he considers that the act constitutes a felony, he transmits the file to the chambre du conseil of the Court of Appeal (art. 223), which likewise declares that there are no grounds to prosecute (art. 241) or commits the case for trial before the Tribunal criminel (art. 244).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": false,
+    "unfitness_to_stand_trial": "No provision of the Code of Criminal Procedure on the charged person's mental state at the time of trial (keyword search: démence, état mental, aliéné, trouble mental, irresponsabilité: no result)."
+   },
+   "legal_bases": "Penal Code art. 44 (démence (insanity) at the time of the act: neither felony nor misdemeanour); Code of Criminal Procedure (version of 12/02/2022) arts. 25 (Tribunal criminel), 215 (order of the investigating judge: no grounds to prosecute), 223 (transmission in felony cases), 241 (chambre du conseil of the Court of Appeal: no grounds to prosecute), 244 (committal for trial before the Tribunal criminel), articles not amended by Law No. 1.534 of 9 December 2022; Law No. 1.039 of 26 June 1981 on the placement and protection of the mentally ill, art. 1 et seq.",
+   "excerpt": "les faits ne constituent ni crime, ni délit, ni contravention, […] il déclare par une ordonnance qu'il n'y a pas lieu de suivre",
+   "note": "Combined reading: there is neither felony nor misdemeanour if the offender was in a state of démence (insanity) at the time of the act (Penal Code art. 44, applied in 2014 by the Tribunal correctionnel: acquittal (relaxe)); the investigating judge (juge d'instruction, Code of Criminal Procedure art. 215) or, in felony cases, the chambre du conseil of the Court of Appeal (art. 241) then declares that there are no grounds to prosecute. Psychiatric placement outside the criminal trial (Law No. 1.039).",
+   "sources": [
+    {
+     "title": "Monaco Penal Code, art. 44 (LégiMonaco, version of 02/01/2021), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/code/code-penal@2021.01.02",
+     "language": "fr"
+    },
+    {
+     "title": "Monaco Code of Criminal Procedure, arts. 25, 215, 223, 241, 244 (LégiMonaco, version of 12/02/2022), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/code/code-procedure-penale@2022.02.12",
+     "language": "fr"
+    },
+    {
+     "title": "Law No. 1.534 of 9 December 2022 amending certain provisions of the Penal Code and the Code of Criminal Procedure relating to the judicial investigation (list of amended articles)",
+     "url": "https://legimonaco.mc/tnc/loi/2022/12-09-1.534@2022.12.17",
+     "language": "fr"
+    },
+    {
+     "title": "Law No. 1.039 of 26 June 1981 on the placement and protection of the mentally ill (version of 27/06/2020), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/tnc/loi/1981/06-26-1.039@2020.06.27",
+     "language": "fr"
+    },
+    {
+     "title": "Tribunal correctionnel, 18 July 2014, Ministère public v. J. CA. (démence (insanity), schizophrenia: acquittal), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/jurisprudence/tribunal-correctionnel/2014/07-18-12437",
+     "language": "fr"
+    },
+    {
+     "title": "Tribunal correctionnel, 24 June 2014, Ministère public v. m. A (démence (insanity): ground of non-responsibility), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/jurisprudence/tribunal-correctionnel/2014/06-24-12371",
+     "language": "fr"
+    },
+    {
+     "title": "CPT/Inf (2013) 39: report to the Government of Monaco (prison (maison d'arrêt): remand and sentenced prisoners; transfer of patients to France under the 1963 neighbourhood convention)",
+     "url": "https://rm.coe.int/16806975de",
+     "language": "fr"
+    }
+   ],
+   "group": "Europe (microstates)",
+   "oecd": false,
+   "source_file": "pass2/ext_85_micro_etats.json",
+   "colour_from_agent": "yellow",
+   "colour_derived_from_facts": "yellow",
+   "flags": []
+  },
+  {
+   "code": "AD",
+   "name": "Andorra",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "ca"
+   ],
+   "research_languages": [
+    "ca"
+   ],
+   "colour": "green",
+   "confidence": "medium",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment of the Tribunal de Corts, after an oral hearing (vista oral), acquitting the accused exempted from criminal responsibility (Penal Code art. 27.4: mental anomaly or alteration) and imposing committal to a psychiatric centre, whose maximum length the judgment sets (arts. 72-74); so in December 2022 for a murder (committal for at most 25 years, upheld by the Tribunal Superior in 2023)",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None for the reference scenario: the security measure requires the judgment to find that the person committed an act constituting an offence (Penal Code art. 72), hence an ordinary oral trial (judici oral). The court may also order a definitive dismissal (sobreseïment) when the accused (processats) appear exempt from criminal responsibility (Code of Criminal Procedure arts. 125-127), with no measure at all.",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Provisional dismissal (sobreseïment) when, after the offence, the accused (encausat) becomes insane (demència) or suffers a serious physical condition preventing them from appearing and exercising their defence, until they recover their health (Code of Criminal Procedure art. 128.3); no trial of the facts."
+   },
+   "legal_bases": "Codi penal (qualified Law 9/2005; consolidated texts of 2014 and 2015) art. 27.4 (exemption: offence committed without being able to understand its wrongfulness or to act according to that understanding, by reason of a mental anomaly or alteration), 72 (security measures applied by the court if the judgment finds an act constituting an offence and a prognosis of dangerousness), 73-74 (committal of the exempted person to a psychiatric centre, maximum length set in the judgment); Codi de procediment penal (consolidated text published in the BOPA of 22/02/2006) arts. 125 (court's choice between oral trial (judici oral) and dismissal (sobreseïment)), 126-128 (definitive or provisional dismissal), 130",
+   "excerpt": "El tribunal aplica les mesures de seguretat […] sempre que […] la sentència apreciï que el subjecte ha comès un fet constitutiu de delicte.",
+   "note": "The Tribunal de Corts tries the exempted accused at an oral hearing (vista oral) (Penal Code art. 27.4): committal to a psychiatric centre is possible only through the judgment, which finds the act and sets the maximum length of the measure (arts. 72-74); so in 2022 (murder: acquittal and committal for at most 25 years, upheld in 2023). A definitive dismissal (sobreseïment) for exemption (Code of Criminal Procedure art. 127.3) rules out any measure.",
+   "sources": [
+    {
+     "title": "Consell General: legislative decree of 26/03/2014 publishing the consolidated text of qualified Law 9/2005 on the Codi penal (PDF; arts. 27, 72-74)",
+     "url": "https://www.consellgeneral.ad/ca/arxiu/arxiu-de-lleis-i-textos-aprovats-en-legislatures-anteriors/vi-legislatura-2011-2015/copy_of_lleis-aprovades/decret-legislatiu-del-26-03-2014-de-publicacio-del-text-refos-de-la-llei-9-2005-del-21-de-febrer-qualificada-del-codi-penal/at_download/PDF",
+     "language": "ca"
+    },
+    {
+     "title": "BOPA: legislative decree of 29/04/2015 publishing the consolidated text of the Codi penal (arts. 72-78), via Legal Data Hunter",
+     "url": "https://www.bopa.ad/Documents/Detall?doc=la27038001",
+     "language": "ca"
+    },
+    {
+     "title": "BOPA: Llei 9/2005, del 21 de febrer, qualificada del Codi penal (art. 27), via Legal Data Hunter",
+     "url": "https://www.bopa.ad/Documents/Detall?doc=3BE2E",
+     "language": "ca"
+    },
+    {
+     "title": "Consell General: decree publishing the consolidated text of the Codi de procediment penal (BOPA No. 15 of 22/02/2006; arts. 125-130)",
+     "url": "https://www.consellgeneral.ad/fitxers/documents/lleis-1989-2002/text-refos-codi-procediment-penal.pdf",
+     "language": "ca"
+    },
+    {
+     "title": "Constitutional Court of Andorra: decision (aute) of 12 June 2023, case 2023-36-RE (Tribunal de Corts, December 2022: acquittal on the art. 27.4 exemption and psychiatric committal for at most 25 years; Tribunal Superior, 2 May 2023)",
+     "url": "https://www.tribunalconstitucional.ad/print/pdf/node/18597",
+     "language": "ca"
+    }
+   ],
+   "group": "Europe (microstates)",
+   "oecd": false,
+   "source_file": "pass2/ext_85_micro_etats.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": []
+  },
+  {
+   "code": "SM",
+   "name": "San Marino",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "it"
+   ],
+   "research_languages": [
+    "it"
+   ],
+   "colour": "green",
+   "confidence": "low",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment of proscioglimento (discharge) of the non-imputable person (Penal Code art. 9), with, if the person is dangerous, the security measure of the judicial psychiatric hospital (arts. 121-122), which the judge applies only with the judgment of conviction or of proscioglimento (art. 129) and which may be carried out in a foreign institution under the conventions (art. 128)",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "ordinary_trial",
+    "replacement_procedure": "none",
+    "replacement_procedure_detail": "None for the reference scenario: the Giudice Inquirente's investigation ends with a decree setting the trial hearing or with an archiving decree (Law No. 93/2008, art. 6, as worded by Law No. 24/2022); archiving, ordered if the evidence offers no legal basis to charge the accused (prevenuto) with culpability (Code of Criminal Procedure art. 135), allows no security measure, which requires a judgment (Penal Code art. 129).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "Not checked: no provision read on the accused's mental state at the time of trial (no consolidated text of the Code of Criminal Procedure found); a mental infirmity arising before or during the execution of a sentence is a matter for the judge, who orders hospitalisation (Penal Code art. 139)."
+   },
+   "legal_bases": "Codice penale (Law No. 17 of 25 February 1974, original text) art. 9 (not imputable: whoever, at the time of the act, was in a mental state excluding the capacity to understand and to will), 11-13 (dangerousness, presumed after a proscioglimento for mental infirmity), 121-122 (ospedale psichiatrico giudiziario), 128 (execution abroad under the conventions), 129 (measures applied with the judgment of conviction or of proscioglimento), 130 (provisional application), 147 (wording of Law No. 100/2013: confiscation in case of proscioglimento for mental infirmity); Codice di procedura penale art. 135 (archiviazione, wording of Law No. 24 of 2 March 2022); Law No. 93 of 17 June 2008, art. 6 (wording of Law No. 24/2022)",
+   "excerpt": "Le misure di sicurezza sono applicate dal giudice con la sentenza di condanna o di proscioglimento.",
+   "note": "Combined reading, no practice found: the security measure (judicial psychiatric hospital) is applied only with the judgment of proscioglimento (discharge) (Penal Code art. 129), given after the trial hearing; archiving (archiviazione) by the Giudice Inquirente (Code of Criminal Procedure art. 135) allows none. Penal Code read in its 1974 version (later amendments not checked, except art. 147).",
+   "sources": [
+    {
+     "title": "Consiglio Grande e Generale: Law No. 17 of 25 February 1974 enacting the new Penal Code (PDF; arts. 9, 11-13, 121-122, 128-130, 139)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17019121.html",
+     "language": "it"
+    },
+    {
+     "title": "Consiglio Grande e Generale: Law No. 86 of 11 December 1974, implementing rules of the Penal Code and reform of criminal procedure (PDF)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17019196.html",
+     "language": "it"
+    },
+    {
+     "title": "Consiglio Grande e Generale: Law No. 24 of 2 March 2022 on implementing the guarantees and efficiency of criminal proceedings (PDF; arts. 15 and 17: art. 6 of Law 93/2008 and art. 135 of the Code of Criminal Procedure)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17130840.html",
+     "language": "it"
+    },
+    {
+     "title": "Consiglio Grande e Generale: Law No. 100 of 29 July 2013 amending the Penal Code and the Code of Criminal Procedure (PDF; Penal Code art. 147)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17059556.html",
+     "language": "it"
+    }
+   ],
+   "group": "Europe (microstates)",
+   "oecd": false,
+   "source_file": "pass2/ext_85_micro_etats.json",
+   "colour_from_agent": "green",
+   "colour_derived_from_facts": "green",
+   "flags": [
+    "low_confidence",
+    "incomplete_verification"
+   ]
+  },
+  {
+   "code": "LI",
+   "name": "Liechtenstein",
+   "level": "country",
+   "parent": null,
+   "official_languages": [
+    "de"
+   ],
+   "research_languages": [
+    "de"
+   ],
+   "colour": "purple",
+   "confidence": "high",
+   "facts": {
+    "recognises_non_responsibility": true,
+    "outcome": "Judgment (Urteil) of the Kriminalgericht ordering, without a penalty, committal to a forensic therapeutic centre (forensisch-therapeutisches Zentrum, StGB § 21(1)), on the prosecutor's application for committal (Antrag auf Unterbringung) and after a public hearing (öffentliche Schlussverhandlung)",
+    "who_triggers_examination": "authorities",
+    "accused_chooses_timing": false,
+    "decision_stage": "special_trial",
+    "replacement_procedure": "genuine_special_trial",
+    "replacement_procedure_detail": "If the conditions of § 21(1) StGB appear to be met, the prosecutor files an application for committal (Antrag auf Unterbringung) subject to the rules on the indictment, preceded by an investigation with mandatory defence counsel and psychiatric expert (StPO § 340); the Kriminalgericht rules by judgment after a public hearing conducted under the ordinary rules (§ 341); appeal possible (§ 343).",
+    "committal_without_trial": false,
+    "trial_always_or_on_request": true,
+    "unfitness_to_stand_trial": "No general rule found (keyword search); where there is doubt about reason or criminal capacity (Zurechnungsfähigkeit), examination by two doctors (StPO § 87); in the committal procedure, the hearing is held in the person's absence if their condition does not allow them to take part (§ 341(5))."
+   },
+   "legal_bases": "StGB (LGBl. 1988 No. 37, version of 01.08.2026) § 11 (Zurechnungsfähigkeit, criminal capacity), § 21 (wording of LGBl. 2026 No. 172: committal to a forensic therapeutic centre (forensisch-therapeutisches Zentrum)); StPO (LGBl. 1988 No. 62, version of 01.08.2026) § 87 (examination by two doctors), §§ 340-344 (committal procedure under § 21(1) StGB); notice (Kundmachung) LGBl. 1996 No. 200 (measures of §§ 21-23 StGB in force on 1.12.1996, once accommodation was secured)",
+   "excerpt": "Das Gericht entscheidet über den Antrag nach öffentlicher Schlussverhandlung, die in sinngemässer Anwendung der Bestimmungen des XIV. und XV. Hauptstückes durchzuführen ist, durch Urteil.",
+   "note": "Austrian model: if the conditions of § 21(1) StGB appear to be met, the prosecutor files an application for committal (Antrag auf Unterbringung) that counts as an indictment (StPO §§ 340, 344); the Kriminalgericht rules by judgment after a public hearing, with defence counsel and expert present on pain of nullity (§ 341). The measures of §§ 21-23 StGB have been in force only since 1 December 1996.",
+   "sources": [
+    {
+     "title": "gesetze.li: Criminal Code (Strafgesetzbuch, StGB) of 24 June 1987, LGBl. 1988 No. 37, version of 01.08.2026 (§§ 11, 21)",
+     "url": "https://www.gesetze.li/konso/1988037000",
+     "language": "de"
+    },
+    {
+     "title": "gesetze.li: Code of Criminal Procedure (Strafprozessordnung, StPO) of 18 October 1988, LGBl. 1988 No. 62, version of 01.08.2026 (§§ 87, 340-344)",
+     "url": "https://www.gesetze.li/konso/1988062000",
+     "language": "de"
+    },
+    {
+     "title": "LGBl. 1996 No. 200: notice (Kundmachung) on the entry into force of provisions of §§ 21, 22 and 23 StGB",
+     "url": "https://gesetze.li/chrono/pdf/1996200000",
+     "language": "de"
+    },
+    {
+     "title": "gesetze.li: Execution of Sentences Act (Strafvollzugsgesetz, StVG) of 20 September 2007, art. 8 (placement of convicts in a foreign institution)",
+     "url": "https://www.gesetze.li/konso/pdf/2007295000",
+     "language": "de"
+    },
+    {
+     "title": "LGBl. 2025 No. 237: interpretative declaration on the Treaty between Liechtenstein and Austria on the accommodation of prisoners",
+     "url": "https://www.gesetze.li/chrono/pdf/2025237000",
+     "language": "de"
+    }
+   ],
+   "group": "Europe (microstates)",
+   "oecd": false,
+   "source_file": "pass2/ext_85_micro_etats.json",
+   "colour_from_agent": "purple",
+   "colour_derived_from_facts": "purple",
+   "flags": []
   }
  ]
 }

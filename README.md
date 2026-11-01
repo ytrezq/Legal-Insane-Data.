@@ -17,9 +17,9 @@ the rule, its legal basis, nuances and the confidence level.
 
 | Colour | Meaning | Countries | Subdivisions or territories |
 |---|---|---:|---:|
-| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 88 | 36 |
-| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 28 | 23 |
-| Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 26 | 3 |
+| Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 90 | 36 |
+| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 29 | 23 |
+| Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 27 | 3 |
 | Blue | **The accused chooses the timing**: the defence decides whether and when mental state is examined (e.g. Canada, R. v. Swain). | 4 | 54 |
 | Black | **No non-responsibility recognised**: every convicted person goes to prison. | 0 | 1 |
 | White | **No data / outside the scope**. | 0 | 2 |
@@ -36,7 +36,10 @@ of Asian countries including Syria, Timor-Leste and the United Arab Emirates, an
 territories except Cuba, Bahrain, Singapore and Brunei, which are left out by editorial choice: the Maldives,
 Comoros, Jersey, Guernsey, the Isle of Man, the British territories in the Caribbean and the Atlantic
 (Bermuda, Cayman Islands, British Virgin Islands, Anguilla, Montserrat, Turks and Caicos Islands, Falkland
-Islands, Saint Helena), Aruba, Curaçao, Sint Maarten and the United States Virgin Islands. An
+Islands, Saint Helena), Aruba, Curaçao, Sint Maarten and the United States Virgin Islands. The European
+microstates with their own criminal courts are included: Andorra, Liechtenstein, Monaco and San Marino; Vatican
+City is left out, as it has no prison (its convicts serve their sentences in Italy) and Italy prosecutes offences
+committed there at the Holy See's request (Lateran Treaty, art. 22). An
 authoritarian regime is not excluded as such: what matters is whether, in ordinary criminal cases, the law on
 the rights of the defence is still followed (corruption aside). Where the lack of rule of law makes the law
 only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)); this
@@ -49,7 +52,7 @@ unverified hypothesis when there is one. Contributions are especially welcome th
 
 | Path | Content |
 |---|---|
-| `data/insanity_procedure_map.json` | **The dataset** (English): 272 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
+| `data/insanity_procedure_map.json` | **The dataset** (English): 276 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
 | `maps/insanity_procedure_map.svg` / `.jpg` | English map: interactive SVG and 3740 × 2680 JPG (10 megapixels). |
 | `tools/` | Validation (`dataset.py`) and map generation (`build.sh`, Node.js + Python). |
 
