@@ -17,11 +17,11 @@ fédérée : la règle, sa base légale, les nuances et le niveau de confiance.
 | Couleur | Signification | Pays | Subdivisions ou territoires |
 |---|---|---:|---:|
 | Vert | **On juge d'abord** : pas de filtre préalable ; le procès ordinaire établit les faits, puis la juridiction de jugement constate l'irresponsabilité et ordonne elle-même la mesure. | 88 | 36 |
-| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 27 | 23 |
+| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 28 | 23 |
 | Violet | **Irresponsabilité d'abord, mais jugement** : voie spéciale, mais un vrai procès précède toujours la mesure, ou a lieu à la demande de l'accusé. | 26 | 3 |
 | Bleu | **L'accusé choisit le moment** : la défense décide si et quand l'état mental est examiné (ex. Canada, arrêt Swain). | 4 | 54 |
 | Noir | **Aucune irresponsabilité reconnue** : toute personne condamnée va en prison. | 0 | 1 |
-| Blanc | **Pas de données / hors cadrage**. | 1 | 2 |
+| Blanc | **Pas de données / hors cadrage**. | 0 | 2 |
 
 Les couleurs s'appliquent dans l'ordre noir, bleu, jaune, violet, vert ; l'altération partielle du discernement
 et le plaider-coupable sont ignorés ; l'aptitude à être jugé est décrite mais ne décide jamais de la couleur. Les
@@ -41,7 +41,7 @@ corruption). Là où l'absence d'État de droit fait que la loi n'est qu'indicat
 juridiction est écartée (voir [CONTRIBUTING.md](CONTRIBUTING.md)) ; c'est le cas de l'Arménie, de
 l'Azerbaïdjan et de la Géorgie.
 
-**Encore en blanc faute de texte de procédure lisible :** Guinée équatoriale, Zanzibar et Guernesey. Les infobulles et le JSON donnent
+**Encore en blanc faute de texte de procédure lisible :** Zanzibar et Guernesey. Les infobulles et le JSON donnent
 l'hypothèse non vérifiée quand il y en a une. Les contributions sont particulièrement bienvenues pour ceux-là.
 
 ## Fichiers

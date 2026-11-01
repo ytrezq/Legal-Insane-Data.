@@ -29,7 +29,7 @@
     "(France depuis 2008 : audience devant la chambre de l'instruction). Procès seulement si l'accusé est jugé responsable."
    ],
    "definition": "L'état mental au moment des faits est examiné pendant la phase préparatoire ; si le discernement était aboli, l'affaire se termine sans vrai procès, soit par un non-lieu ou une décision de non-renvoi, soit par une procédure amoindrie qui remplace le procès (audience devant une juridiction d'instruction, chambre du conseil, tribunal de soins non public, procédure écrite ou simplifiée, standard de preuve réduit, absence de l'accusé comme règle). La personne peut néanmoins être internée. Un procès n'a lieu que si elle est jugée responsable.",
-   "n_pays": 27,
+   "n_pays": 28,
    "n_subdivisions": 23
   },
   "violet": {
@@ -74,7 +74,7 @@
     "Ukraine occupée, Transnistrie), pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
-   "n_pays": 1,
+   "n_pays": 0,
    "n_subdivisions": 2
   }
  },
@@ -686,6 +686,7 @@
    "extension_29_10_ter": "Compléments du 29/10/2026 (19 h) : quand l'outil de lecture des agents tronquait un texte officiel, le PDF ou la page complète a été téléchargé et lu en entier (Jersey, Bermudes, Îles Vierges britanniques, Anguilla, Aruba, Îles Caïmans, Montserrat, Comores, Maldives, dont le code de procédure pénale en dhivehi) ; Saint-Martin néerlandais classé d'après un jugement du Gerecht in eerste aanleg (données ouvertes de rechtspraak.nl). Guernesey et les Malouines restent blanches : textes décisifs inaccessibles (site refusé à l'outil, application JavaScript).",
    "extension_29_10_quater": "Compléments du 29/10/2026 (23 h) : les 9 dernières requêtes Legal Data Hunter accordées par l'utilisateur (20 au total) ont servi, une à une et sans agent, aux juridictions restées blanches : Malouines (vert, CPEO 2014 s. 765-766), Djibouti (jaune, CPP art. 72, 74, 184 et 220) et Soudan du Sud (vert, CCPA 2008 s. 206-207) classés ; pour le Bénin et la Somalie, les textes décisifs ne figurent pas dans Legal Data Hunter.",
    "extension_01_11": "Compléments du 1/11/2026 : Legal Data Hunter (9 requêtes, sans agent) n'indexe aucun texte décisif pour les juridictions restées blanches ; les textes officiels complets ont alors été téléchargés et lus : Guinée (CPP 2016, PDF de la Cour suprême, reprise de la réforme française de 2008 : jaune) et Bénin (CPP 2012, CP 2018 : non-lieu, jaune, confiance faible). À la demande de l'utilisateur, la Somalie, l'Arménie, l'Azerbaïdjan et la Géorgie sont écartées du périmètre (critère de l'État de droit).",
+   "extension_01_11_bis": "Compléments du 1/11/2026 (8 h) : à la demande de l'utilisateur (aucun pays côtier en blanc de la Mauritanie à l'Angola), la Guinée équatoriale est classée d'après le Code pénal de 2022 (édition du Boletín Oficial del Estado, copie numérisée lue par reconnaissance de caractères) et la Ley de Enjuiciamiento Criminal espagnole de 1882, en vigueur en vertu du décret-loi 4/1980 (sobreseimiento libre de l'art. 637.3) : jaune, confiance faible. La recherche sur Internet a suffi, sans Legal Data Hunter.",
    "edition_anglaise": "Une édition anglaise, traduite le 28/10/2026 à partir de celle-ci, est tenue sur la branche main du dépôt pour les contributions internationales ; les deux éditions évoluent séparément."
   },
   "date": "2026-10-28",
@@ -732,11 +733,11 @@
  "synthese": {
   "pays": {
    "vert": 88,
-   "jaune": 27,
+   "jaune": 28,
    "violet": 26,
    "bleu": 4,
    "noir": 0,
-   "blanc": 1
+   "blanc": 0
   },
   "subdivisions": {
    "vert": 36,
@@ -919,6 +920,7 @@
     "FR",
     "GA",
     "GN",
+    "GQ",
     "HT",
     "JP",
     "KM",
@@ -1035,7 +1037,6 @@
    ],
    "blanc": [
     "GG",
-    "GQ",
     "TZ-ZAN"
    ]
   },
@@ -1584,7 +1585,7 @@
   {
    "code": "GQ",
    "nom": "Guinée équatoriale",
-   "couleur": "blanc",
+   "couleur": "jaune",
    "confiance": "faible",
    "drapeaux": [
     "confiance_faible",
@@ -15228,38 +15229,48 @@
     "fr",
     "en"
    ],
-   "couleur": "blanc",
+   "couleur": "jaune",
    "confiance": "faible",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Présumée (héritage espagnol : exemption pour enajenación + internement ordonné par le tribunal) mais non vérifiée : ni le Código Penal de 2022 ni la procédure applicable n'ont pu être lus.",
+    "issue": "Sobreseimiento libre prononcé par le Tribunal à la clôture du sumario lorsque le procesado apparaît exempt de responsabilité pénale (LECrim art. 637.3, 642), l'auteur atteint d'une discapacidad mental permanente ou en état d'enajenación étant exempt (CP 2022 art. 9, 2ª-3ª) ; aucune mesure de sûreté ni internement pénal prévus par le CP de 2022",
     "qui_declenche_examen": "autorites",
     "accuse_choisit_moment": false,
-    "stade_decision": "sans_objet",
-    "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Inconnu : on ne sait si l'internement peut suivre un sobreseimiento ou exige un juicio oral (valeur par défaut sans valeur probante).",
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "non_lieu_simple",
+    "procedure_remplacement_detail": "Pendant le sumario, le juge d'instruction soumet le procesado présentant des indices d'enajenación aux médecins légistes (LECrim art. 381-382) ; à la clôture, le Tribunal prononce, à la demande du parquet, le sobreseimiento libre si le procesado apparaît exempt de responsabilité pénale (art. 637.3, 642), sans juicio oral.",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": false,
-    "inaptitude_a_etre_juge": "Non vérifié. Simple souvenir non contrôlé : la LECrim espagnole de 1882 (art. 383) fait archiver la cause jusqu'à guérison si la démence survient après le délit ; son application en Guinée équatoriale est inconnue."
+    "inaptitude_a_etre_juge": "LECrim art. 383 : si la démence survient après les faits, la cause est archivée par le Tribunal compétent une fois le sumario clos, jusqu'au rétablissement du procesado ; pas de procès des faits."
    },
-   "bases_legales": "Código Penal approuvé par la Ley 4/2022 du 17/08/2022, signé le 07/09/2022 (entrée en vigueur 90 jours après publication, d'après ICOMDP ; texte non lu) ; ancien Código Penal (texto revisado de 1963, WIPO Lex GQ003, PDF non récupérable) ; Ley de Enjuiciamiento Criminal de 1882 (hypothèse tirée de la tradition espagnole, vigueur non vérifiée)",
-   "extrait": "",
-   "note": "Aucun texte lisible : le Código Penal de 2022 (Ley 4/2022) est introuvable en ligne ; celui de 1963 (WIPO Lex) et la procédure applicable (LECrim 1882 ?) n'ont pu être consultés (lien WIPO signé trop long pour l'outil). Impossible de dire qui constate l'irresponsabilité, à quel stade, ni si un juicio oral précède l'internement : blanc.",
+   "bases_legales": "Código Penal (Ley núm. 4/2022 du 17 août 2022, édition du Boletín Oficial del Estado) art. 9, 2ª-3ª (eximentes : discapacidad mental permanente ; enajenación ou trastorno mental transitorio), aucun titre de mesures de sûreté, disposition dérogatoire (abrogation du CP espagnol de 1963 appliqué en vertu du décret-loi 4/1980) ; Ley de Enjuiciamiento Criminal espagnole de 1882, en vigueur en vertu du décret-loi 4/1980 : art. 381-383 (enajenación du procesado), 634, 637.3 (sobreseimiento libre pour exemption de responsabilité), 642",
+   "extrait": "Procederá el sobreseimiento libre: […] 3.º Cuando aparezcan exentos de responsabilidad criminal los procesados como autores, cómplices o encubridores.",
+   "note": "Lecture combinée : le CP de 2022 exempte l'auteur atteint d'une discapacidad mental permanente ou en état d'enajenación (art. 9, 2ª-3ª) et ne prévoit aucune mesure de sûreté ; la procédure reste la LECrim espagnole d'avant 1968 (décret-loi 4/1980, ONU 2008), dont l'art. 637.3 prévoit le sobreseimiento libre, sans juicio oral, si le procesado est exempt de responsabilité. Pratique non vérifiée.",
    "sources": [
     {
-     "titre": "WIPO Lex – Código Penal (texto revisado de 1963), Guinea Ecuatorial (GQ003)",
-     "url": "https://www.wipo.int/wipolex/en/legislation/details/9121",
+     "titre": "Código Penal de la République de Guinée équatoriale (Ley núm. 4/2022), édition du Boletín Oficial del Estado, copie numérisée lue par OCR (art. 9, dispositions finales), liée par Hay Derecho en Guinea",
+     "url": "https://drive.google.com/file/d/1N-G7v0mvJ5us5h0MtRZJXLpMK0tYvZhM/view",
      "langue": "es"
     },
     {
-     "titre": "ICOMDP – Equatorial Guinea excludes the death penalty for ordinary crimes from its new penal code (Ley 4/2022)",
-     "url": "https://icomdp.org/equatorial-guinea-excludes-the-death-penalty-for-ordinary-crimes-from-its-new-penal-code/",
-     "langue": "en"
+     "titre": "Hay Derecho en Guinea : « Artículo 221 del Código Penal vigente » (lien vers le texte du Code pénal de 2022)",
+     "url": "https://www.hayderechoenguinea.com/noticias/opini%C3%B3n/art%C3%ADculo-221-del-c%C3%B3digo-penal-vigente",
+     "langue": "es"
     },
     {
-     "titre": "France Diplomatie – Equatorial Guinea: abolition of the death penalty (19/09/2022)",
-     "url": "https://www.diplomatie.gouv.fr/en/country-files/equatorial-guinea/events-5836/article/equatorial-guinea-abolition-of-the-death-penalty-09-19-22",
-     "langue": "en"
+     "titre": "ONU, Groupe de travail sur la détention arbitraire : mission en Guinée équatoriale (A/HRC/7/4/Add.3, 2008) ; LECrim espagnole en vigueur en vertu du décret-loi 4/1980",
+     "url": "https://documents.un.org/doc/undoc/gen/g08/106/48/pdf/g0810648.pdf",
+     "langue": "es"
+    },
+    {
+     "titre": "BOE (Espagne) : Ley de Enjuiciamiento Criminal, version consolidée du 11/11/1998 (art. 381-383, 634, 637, 642, rédaction de 1882)",
+     "url": "https://www.boe.es/eli/es/rd/1882/09/14/(1)/con/19981111",
+     "langue": "es"
+    },
+    {
+     "titre": "Boletín Oficial del Estado de Guinée équatoriale : décret-loi de prévention et de lutte contre la corruption, art. 76 (renvoi à la Ley de Enjuiciamiento Criminal), via Legal Data Hunter",
+     "url": "https://boe.gob.gq/files/ANTICORRUPCIÓN.pdf",
+     "langue": "es"
     }
    ],
    "historique": [
@@ -15268,11 +15279,17 @@
      "couleur": "blanc",
      "confiance": "faible",
      "note": "Données insuffisantes : nouveau Código Penal signé le 19/09/2022 (abolition de la peine de mort), texte non consulté. La procédure semble encore régie par la LECrim espagnole de 1882, dont l'art. 637.3 permet un sobreseimiento libre pour exemption : impossible de dire si l'internement peut suivre ce non-lieu (jaune) ou exige un juicio oral (vert)."
+    },
+    {
+     "fichier": "pass2/p2_13_afr_mixte.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Aucun texte lisible : le Código Penal de 2022 (Ley 4/2022) est introuvable en ligne ; celui de 1963 (WIPO Lex) et la procédure applicable (LECrim 1882 ?) n'ont pu être consultés (lien WIPO signé trop long pour l'outil). Impossible de dire qui constate l'irresponsabilité, à quel stade, ni si un juicio oral précède l'internement : blanc."
     }
    ],
-   "fichier_source": "pass2/p2_13_afr_mixte.json",
-   "couleur_agent": "blanc",
-   "couleur_deduite_des_faits": "vert",
+   "fichier_source": "pass2/ext_84_gq.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
    "groupe": "Afrique",
    "ocde": false,
    "drapeaux": [
