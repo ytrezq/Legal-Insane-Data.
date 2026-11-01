@@ -18,11 +18,11 @@ the rule, its legal basis, nuances and the confidence level.
 | Colour | Meaning | Countries | Subdivisions or territories |
 |---|---|---:|---:|
 | Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 88 | 36 |
-| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 25 | 23 |
+| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 27 | 23 |
 | Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 26 | 3 |
 | Blue | **The accused chooses the timing**: the defence decides whether and when mental state is examined (e.g. Canada, R. v. Swain). | 4 | 54 |
 | Black | **No non-responsibility recognised**: every convicted person goes to prison. | 0 | 1 |
-| White | **No data / outside the scope**. | 4 | 2 |
+| White | **No data / outside the scope**. | 1 | 2 |
 
 Colours are applied in the order black, blue, yellow, purple, green; diminished responsibility and plea
 bargaining are ignored; fitness to stand trial is described but never decides the colour. Federal countries are
@@ -30,8 +30,8 @@ split by unit when the rule is sub-national (United States, Australia, United Ki
 Tanzania/Zanzibar, Bosnia and Herzegovina).
 
 **Scope.** OECD and EU countries (except Turkey, and Northern Cyprus, which is under Turkish control), the
-Americas (except Cuba), Oceania, Africa (except the Maghreb, Egypt, Eritrea and the Sahel other than Senegal
-and Mauritania), the Balkans (except Serbia), Ukraine and Moldova (government-controlled areas), a selection
+Americas (except Cuba), Oceania, Africa (except the Maghreb, Egypt, Eritrea, Somalia and the Sahel other than
+Senegal and Mauritania), the Balkans (except Serbia), Ukraine and Moldova (government-controlled areas), a selection
 of Asian countries including Syria, Timor-Leste and the United Arab Emirates, and all island states and
 territories except Cuba, Bahrain, Singapore and Brunei, which are left out by editorial choice: the Maldives,
 Comoros, Jersey, Guernsey, the Isle of Man, the British territories in the Caribbean and the Atlantic
@@ -39,23 +39,23 @@ Comoros, Jersey, Guernsey, the Isle of Man, the British territories in the Carib
 Islands, Saint Helena), Aruba, Curaçao, Sint Maarten and the United States Virgin Islands. An
 authoritarian regime is not excluded as such: what matters is whether, in ordinary criminal cases, the law on
 the rights of the defence is still followed (corruption aside). Where the lack of rule of law makes the law
-only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)).
+only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)); this
+is the case of Armenia, Azerbaijan and Georgia.
 
-**Still white for lack of a readable procedural text:** Benin, Equatorial Guinea, Guinea, Somalia, Zanzibar
-and Guernsey. The tooltips and the JSON give the
+**Still white for lack of a readable procedural text:** Equatorial Guinea, Zanzibar and Guernsey. The tooltips and the JSON give the
 unverified hypothesis when there is one. Contributions are especially welcome there.
 
 ## Files
 
 | Path | Content |
 |---|---|
-| `data/insanity_procedure_map.json` | **The dataset** (English): 273 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
+| `data/insanity_procedure_map.json` | **The dataset** (English): 272 entries with facts, legal bases, a verbatim excerpt, notes, sources, confidence, history and independent checks; methodology, scope, field reference (`meta.schema`) and contribution rules. |
 | `maps/insanity_procedure_map.svg` / `.jpg` | English map: interactive SVG and 3740 × 2680 JPG (10 megapixels). |
 | `tools/` | Validation (`dataset.py`) and map generation (`build.sh`, Node.js + Python). |
 
 ## How the data was compiled
 
-The dataset was compiled on 28 and 29 October 2026 by AI research agents (Anthropic's Claude) working for the
+The dataset was compiled between 28 October and 1 November 2026 by AI research agents (Anthropic's Claude) working for the
 repository owner. Penal codes, codes of criminal procedure and case law were read in each jurisdiction's
 official language(s); where the reading tool cut an official text short, the full text was downloaded and
 read. A second pass verified weak entries, and agents that had not written the entries
@@ -82,7 +82,7 @@ sh tools/build.sh
 
 The dataset was first written in French; that original working edition, its French map and French
 documentation are kept on the [`francais`](https://github.com/ytrezq/Legal-Insane-Data./tree/francais) branch, which accepts pull requests in French on
-its own JSON file. The English dataset on `main` was translated from it on 28 and 29 October 2026.
+its own JSON file. The English dataset on `main` was translated from it between 28 October and 1 November 2026.
 
 ## Credits
 

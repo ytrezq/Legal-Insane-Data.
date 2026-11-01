@@ -29,7 +29,7 @@
     "(France since 2008: hearing before the investigating chamber). Trial only if the accused is found responsible."
    ],
    "definition": "The mental state at the time of the act is examined during the pretrial phase; if discernment was abolished, the case ends without a real trial, either through a dismissal or a decision not to commit for trial, or through a reduced procedure that replaces the trial (hearing before an investigating court, in chambers, a non-public care tribunal, a written or simplified procedure, a lower standard of proof, absence of the accused as the rule). The person may nonetheless be committed. A trial only takes place if the person is found responsible.",
-   "n_countries": 25,
+   "n_countries": 27,
    "n_subdivisions": 23
   },
   "purple": {
@@ -70,11 +70,11 @@
    "colour": "#ffffff",
    "legend": [
     "Insufficient data (procedural text not found or unreadable), countries and areas excluded from the scope (Maghreb, Egypt, Sahel except",
-    "Senegal and Mauritania, Eritrea, Cuba, Turkey, Serbia, Bahrain, Singapore, Brunei; dashed: Northern Cyprus, occupied Ukraine, Transnistria),",
-    "countries not studied."
+    "Senegal and Mauritania, Eritrea, Somalia, Cuba, Turkey, Serbia, South Caucasus, Bahrain, Singapore, Brunei; dashed: Northern Cyprus,",
+    "occupied Ukraine, Transnistria), countries not studied."
    ],
    "definition": "Insufficient reliable data to classify, countries excluded from the scope by choice (lack of rule of law: the law there is only a hint, not a requirement to follow), or countries and territories not studied.",
-   "n_countries": 4,
+   "n_countries": 1,
    "n_subdivisions": 2
   }
  },
@@ -194,7 +194,6 @@
     "ST",
     "GQ",
     "ET",
-    "SO",
     "RW",
     "MU",
     "SC",
@@ -383,6 +382,26 @@
     "code": "BN",
     "name": "Brunei",
     "reason": "excluded from the scope by choice (regime deemed a dictatorship)"
+   },
+   {
+    "code": "SO",
+    "name": "Somalia",
+    "reason": "Horn of Africa: excluded from the scope by choice (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
+   },
+   {
+    "code": "AM",
+    "name": "Armenia",
+    "reason": "South Caucasus: excluded from the scope by choice (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
+   },
+   {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "reason": "South Caucasus: excluded from the scope by choice (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
+   },
+   {
+    "code": "GE",
+    "name": "Georgia",
+    "reason": "South Caucasus: excluded from the scope by choice (rule-of-law criterion: in ordinary criminal cases the law is deemed only a hint, not a requirement)"
    }
   ],
   "outside_scope": "All other countries and territories (in particular mainland China, Russia and the rest of Eastern Europe apart from the Balkans, Ukraine and Moldova, Central Asia except Kazakhstan, the Middle East except Israel, Jordan, Syria and the United Arab Emirates, South-East Asia except Indonesia, Thailand, Malaysia, the Philippines and Timor-Leste; all island states and territories are included except Cuba, Bahrain, Singapore and Brunei, which are excluded) are left white.",
@@ -560,7 +579,7 @@
  "meta": {
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "n_entries": 273,
+  "n_entries": 272,
   "edition": "English",
   "translated_from": "irresponsabilite_penale.json (French working edition, kept on the francais branch of this repository)",
   "methodology": {
@@ -603,6 +622,7 @@
    "extension_29_10_bis": "Extension of 29/10/2026 (18:20): all island states and territories except Cuba, Bahrain (Persian Gulf), Singapore and Brunei (regimes deemed dictatorships): the Maldives added, Comoros re-checked, and island territories with their own criminal law (Jersey, Guernsey, Isle of Man, Bermuda, Cayman Islands, British Virgin Islands, Anguilla, Montserrat, Turks and Caicos Islands, Falkland Islands, Saint Helena, Aruba, Curaçao, Sint Maarten, United States Virgin Islands).",
    "extension_29_10_ter": "Additions of 29/10/2026 (19:00): where the agents' reading tool cut an official text short, the full PDF or page was downloaded and read in full (Jersey, Bermuda, British Virgin Islands, Anguilla, Aruba, Cayman Islands, Montserrat, Comoros, and the Maldives, including the Criminal Procedure Code in Dhivehi); Sint Maarten classified from a judgment of the Court of First Instance (rechtspraak.nl open data). Guernsey and the Falkland Islands stay white: the decisive texts could not be reached (site refused to the tool, JavaScript-only application).",
    "extension_29_10_quater": "Additions of 29/10/2026 (23:00): the last 9 Legal Data Hunter queries granted by the user (20 in all) were used one at a time, without agents, on the jurisdictions still white: the Falkland Islands (green, CPEO 2014 ss. 765-766), Djibouti (yellow, CPP arts. 72, 74, 184 and 220) and South Sudan (green, CCPA 2008 ss. 206-207) classified; for Benin and Somalia, the decisive texts are not in Legal Data Hunter.",
+   "extension_01_11": "Additions of 1/11/2026: Legal Data Hunter (9 queries, without agents) indexes no decisive text for the jurisdictions still white; the full official texts were then downloaded and read: Guinea (2016 CPP, Supreme Court PDF, taking over the French 2008 reform: yellow) and Benin (2012 CPP, 2018 Penal Code: dismissal, yellow, low confidence). At the user's request, Somalia, Armenia, Azerbaijan and Georgia are excluded from the scope (rule-of-law criterion).",
    "english_edition": "English edition produced on 28/10/2026 from the French working edition: notes, outcomes, legal bases and source titles translated; statutory quotations and native legal terms kept in the original language. This file is the dataset maintained on the main branch; the French edition is kept on the francais branch of the repository and prevails for 28/10/2026 in case of a translation discrepancy."
   },
   "contributing": [
@@ -646,11 +666,11 @@
  "summary": {
   "countries": {
    "green": 88,
-   "yellow": 25,
+   "yellow": 27,
    "purple": 26,
    "blue": 4,
    "black": 0,
-   "white": 4
+   "white": 1
   },
   "subdivisions": {
    "green": 36,
@@ -822,6 +842,7 @@
     "AR-Z",
     "BE",
     "BG",
+    "BJ",
     "CF",
     "CG",
     "CI",
@@ -831,6 +852,7 @@
     "EE",
     "FR",
     "GA",
+    "GN",
     "HT",
     "JP",
     "KM",
@@ -946,18 +968,15 @@
     "US-ID"
    ],
    "white": [
-    "BJ",
     "GG",
-    "GN",
     "GQ",
-    "SO",
     "TZ-ZAN"
    ]
   },
   "confidence": {
    "high": 81,
-   "medium": 154,
-   "low": 38
+   "medium": 155,
+   "low": 36
   }
  },
  "cases_to_check": [
@@ -1396,17 +1415,16 @@
   {
    "code": "GN",
    "name": "Guinea",
-   "colour": "white",
-   "confidence": "low",
+   "colour": "yellow",
+   "confidence": "medium",
    "flags": [
-    "low_confidence",
     "incomplete_verification"
    ]
   },
   {
    "code": "BJ",
    "name": "Benin",
-   "colour": "white",
+   "colour": "yellow",
    "confidence": "low",
    "flags": [
     "low_confidence",
@@ -1513,16 +1531,6 @@
    "colour": "green",
    "confidence": "medium",
    "flags": [
-    "incomplete_verification"
-   ]
-  },
-  {
-   "code": "SO",
-   "name": "Somalia",
-   "colour": "white",
-   "confidence": "low",
-   "flags": [
-    "low_confidence",
     "incomplete_verification"
    ]
   },
@@ -13892,68 +13900,51 @@
    "research_languages": [
     "fr"
    ],
-   "colour": "white",
-   "confidence": "low",
+   "colour": "yellow",
+   "confidence": "medium",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Unverified: neither the CP nor the CPP of 2016 could be read; hypothesis drawn from the French model (dismissal [non-lieu] by the investigating judge [juge d'instruction], or even a 2008-type non-responsibility procedure, then treatment), with no textual basis found; non-responsibility itself is here merely a default parameter.",
+    "outcome": "Dismissal order (non-lieu) on the ground of criminal non-responsibility for mental disorder (CPP art. 924) or judgment of the chamber supervising the investigation declaring non-responsibility (art. 929), with possible full hospitalisation and security measures (arts. 938-939); committal for trial only if non-responsibility is ruled out (art. 928)",
     "who_triggers_examination": "authorities",
     "accused_chooses_timing": false,
-    "decision_stage": "not_applicable",
-    "replacement_procedure": "none",
-    "replacement_procedure_detail": "Unknown: no article of the 2016 CPP read (copies from the Supreme Court, ecoi.net and the ISFAD library unreadable); default values with no probative value.",
-    "committal_without_trial": false,
+    "decision_stage": "pretrial_phase",
+    "replacement_procedure": "reduced_procedure",
+    "replacement_procedure_detail": "Judicial investigation is mandatory in felony cases (art. 141). At the close of the investigation, the investigating judge issues a dismissal for non-responsibility or transmits the file, of his own motion or at the request of the prosecution or a party, to the chamber supervising the investigation, which rules after a public hearing (appearance if the person's condition allows, experts and witnesses heard) by a judgment declaring non-responsibility (arts. 923-932).",
+    "committal_without_trial": true,
     "trial_always_or_on_request": false,
-    "unfitness_to_stand_trial": "Unverified (CPP not read)."
+    "unfitness_to_stand_trial": "No general provision on fitness to stand trial found (keyword search); for protected adults, a medical expert examination is mandatory before any judgment on the merits (art. 920)."
    },
-   "legal_bases": "CP (Law No. L/2016/059/AN of 26 October 2016) and CPP (Law No. L/2016/060/AN of 26 October 2016): articles on non-responsibility, expert examination, dismissal (non-lieu) and committal not read (no readable copy)",
-   "excerpt": "",
-   "note": "White: no procedural article read. Legal Data Hunter (28/10/2026) indexes only the old 1998 CPP, not the 2016 one; the only result is art. 190 of the 2016 CP (committal of a mentally ill person “passible” [liable] to a penalty, hence responsible). The copies of the 2016 CPP tried are PDFs without text. Unverified hypothesis: yellow (dismissal [non-lieu] or 2008-type procedure, then treatment).",
+   "legal_bases": "CPP (Law No. L/2016/060/AN of 26 October 2016) arts. 141 (judicial investigation mandatory for felonies), 272 (notification of expert reports concluding to non-responsibility), 920 (expert examination of protected adults), 923-932 (dismissal and declaration of criminal non-responsibility on the ground of mental disorder), 933-937 (trial courts), 938-942 (full hospitalisation and security measures); CP (Law No. L/2016/059/AN) art. 21, point 1 (to which the CPP refers)",
+   "excerpt": "il rend une ordonnance de non-lieu pour cause d'irresponsabilité pénale pour cause de trouble mental qui précise qu'il existe des charges suffisantes",
+   "note": "Takes over the French 2008 reform: judicial investigation mandatory for felonies (CPP art. 141); at the close of the investigation, the investigating judge issues a dismissal (non-lieu) for non-responsibility or refers the case to the chamber supervising the investigation (chambre de contrôle de l'instruction), which rules after a public hearing by a judgment declaring non-responsibility (arts. 923-932) and may order full hospitalisation (art. 938). Practice not verified.",
    "sources": [
     {
-     "title": "2016 Code pénal, art. 190 (committal to a special health facility), accessed via Legal Data Hunter (Supreme Court website)",
-     "url": "https://coursupreme.org.gn/fr/code-penal-2016/",
+     "title": "Supreme Court of Guinea: Law L/2016/060/AN on the Code de procédure pénale (official PDF, full text read; arts. 141, 272, 920, 923-942)",
+     "url": "https://coursupreme.org.gn/wp-content/uploads/2024/06/40-LOI-060-PORTANT-CODE-DE-PROCEDURE-PENALE-OCT-2016.pdf",
      "language": "fr"
     },
     {
-     "title": "Cour suprême de Guinée: Loi 060 portant Code de procédure pénale, Oct. 2016 (document page; PDF unreadable)",
+     "title": "Supreme Court of Guinea: page of Law 060 on the Code de procédure pénale (October 2016)",
      "url": "https://coursupreme.org.gn/en/loi-060-portant-code-de-procedure-penale-oct-2016/",
      "language": "fr"
     },
     {
-     "title": "Cour suprême de Guinée: Loi 059 portant Code pénal, October 2016 (document page; PDF unreadable)",
-     "url": "https://coursupreme.org.gn/en/loi-059-portant-code-penal-octobre-2016/",
+     "title": "Supreme Court of Guinea: Code pénal 2016 (accessed via Legal Data Hunter)",
+     "url": "https://coursupreme.org.gn/fr/code-penal-2016/",
      "language": "fr"
     },
     {
-     "title": "ecoi.net: Guinea, Nouveau Code de procédure pénale (2016) (PDF without usable text)",
+     "title": "ecoi.net: Guinea, new Code de procédure pénale (2016)",
      "url": "https://www.ecoi.net/en/document/1427849.html",
-     "language": "fr"
-    },
-    {
-     "title": "ISFAD virtual university library (Guinea): CODEPP.pdf (opened: binary data, unreadable)",
-     "url": "https://buv.isfad-gn.org/universitaire/Droit/droit%20penal%20et%20proc%c3%a9dure/pdf/CODEPP.pdf",
-     "language": "fr"
-    },
-    {
-     "title": "ACJR (Dullah Omar Institute): Code pénal guinéen (opened: binary data, unreadable)",
-     "url": "https://dullahomarinstitute.org.za/acjr/resource-centre/GN_Code_Penal%20Guineen.pdf/@@download/file/GN_Code_Penal Guineen.pdf",
-     "language": "fr"
-    },
-    {
-     "title": "Police Human Rights Resources: Nouveau Code pénal de la République de Guinée, February 2016 (opened: binary data, unreadable)",
-     "url": "https://policehumanrightsresources.org/content/uploads/2019/07/NOUVEAU-CODE-PENAL-DE-LA-REPUBLIQUE-DE-GUINEE-Fevrier-2016.pdf?x96812",
      "language": "fr"
     }
    ],
    "group": "Africa",
    "oecd": false,
-   "source_file": "pass2/ext_40_ldh.json",
-   "colour_from_agent": "white",
-   "colour_derived_from_facts": "green",
-   "hypothetical_colour": "yellow",
+   "source_file": "pass2/ext_83_textes_officiels.json",
+   "colour_from_agent": "yellow",
+   "colour_derived_from_facts": "yellow",
    "flags": [
-    "low_confidence",
     "incomplete_verification"
    ],
    "history": [
@@ -13961,19 +13952,25 @@
      "file": "pass1/21_afr_franco.json",
      "colour": "yellow",
      "confidence": "low",
-     "note": "Guinean codes not consulted (web research budget exhausted). Classification based on the common French model: judicial investigation mandatory for felonies, expert examination ordered by the investigating judge (juge d'instruction), dismissal (non-lieu), or a non-responsibility decision if the 2016 CPP adopted the French 2008 reform (unverified). In either case the colour would remain yellow. To be verified as a priority."
+     "note": "Guinean codes not consulted (web research budget exhausted). Classification based on the common French model: judicial investigation mandatory for felonies, expert examination ordered by the investigating judge, dismissal (non-lieu), or a declaration of non-responsibility if the 2016 CPP took over the French 2008 reform (not verified). In both cases the colour would remain yellow. To be checked as a priority."
     },
     {
      "file": "pass2/p2_08_afr_franco_a.json",
      "colour": "yellow",
      "confidence": "low",
-     "note": "Second pass: 2016 CP and CPP identified (Supreme Court, NATLEX, ecoi.net) but PDFs unreadable (server errors, files without text). No article read: yellow unchanged, inferred from the French model (judicial investigation mandatory for felonies, expert examination, dismissal [non-lieu], committal); a 2008-type procedure would also be yellow. To be verified as a priority."
+     "note": "Second pass: 2016 CP and CPP located (Supreme Court, NATLEX, ecoi.net) but PDFs unreadable (server errors, files without text). No article read: yellow unchanged, inferred from the French model (judicial investigation mandatory for felonies, expert examination, dismissal, committal); a 2008-type procedure would also be yellow. To be checked as a priority."
     },
     {
      "file": "pass2/p2_25_afr_franco_proc_a.json",
      "colour": "white",
      "confidence": "low",
-     "note": "White (yellow → white): no article read. 2016 CP and CPP located, but all copies tried are PDFs without text (Supreme Court, ecoi.net, ISFAD, ACJR, policehumanrightsresources); no court decision or legal scholarship found. Unverified hypothesis: yellow (dismissal [non-lieu] by the investigating judge [juge d'instruction] or 2008-type procedure, then treatment)."
+     "note": "White (yellow → white): no article read. 2016 CP and CPP located, but every copy tried is a PDF without text (Supreme Court, ecoi.net, ISFAD, ACJR, policehumanrightsresources); no decision or doctrine found. Unverified hypothesis: yellow (dismissal by the investigating judge or a 2008-type procedure, then treatment)."
+    },
+    {
+     "file": "pass2/ext_40_ldh.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White: no procedural article read. Legal Data Hunter (28/10/2026) indexes only the old 1998 CPP, not the 2016 one; all it yields is art. 190 of the 2016 CP (committal of a mentally ill person “passible” (liable) to a penalty, hence responsible). The copies of the 2016 CPP tried are PDFs without text. Unverified hypothesis: yellow (dismissal or a 2008-type procedure, then treatment)."
     }
    ]
   },
@@ -14053,56 +14050,55 @@
    "research_languages": [
     "fr"
    ],
-   "colour": "white",
+   "colour": "yellow",
    "confidence": "low",
    "facts": {
     "recognises_non_responsibility": true,
-    "outcome": "Unverified: article of the 2018 CP on mental disorder not read; in the CPP, mandatory psychiatric examination during the judicial investigation in felony cases (art. 87) and dismissal (non-lieu) by the investigating chamber (chambre de l'instruction) if the facts constitute “ni crime, ni délit, ni contravention” (neither felony, nor misdemeanour, nor petty offence) or for lack of sufficient evidence (new art. 231), with no mention of non-responsibility or committal.",
+    "outcome": "Dismissal (non-lieu) by the investigating judge (CPP art. 191) or the investigating chamber (new art. 231), since a person whose discernment was abolished is not criminally responsible (CP 2018 art. 24); no security measure provided for the non-responsible person; for misdemeanours, acquittal (relaxe) for insanity (art. 488)",
     "who_triggers_examination": "authorities",
     "accused_chooses_timing": false,
-    "decision_stage": "not_applicable",
-    "replacement_procedure": "none",
-    "replacement_procedure_detail": "Unknown: Law 2018-14 (new arts. 196, 231, 233, 360) addresses neither non-responsibility nor committal; closing orders and special procedures of the 2012 CPP not read (default values with no probative value).",
+    "decision_stage": "pretrial_phase",
+    "replacement_procedure": "simple_dismissal",
+    "replacement_procedure_detail": "Judicial investigation is mandatory in felony cases (art. 85) and the investigating judge must order a medical or medico-psychological and psychiatric examination there (art. 87); he examines whether there are charges constituting an offence (art. 190) and declares that there are no grounds to prosecute (art. 191), as does the investigating chamber (new art. 231, Law 2018-14).",
     "committal_without_trial": false,
     "trial_always_or_on_request": false,
-    "unfitness_to_stand_trial": "Unverified: no provision found in arts. 1-136 of the CPP or in Law 2018-14."
+    "unfitness_to_stand_trial": "No provision on fitness to stand trial found in the 2012 CPP (keyword search of the full text)."
    },
-   "legal_bases": "CPP (Law No. 2012-15 of 18 March 2013) art. 87 (mandatory psychiatric examination in felony cases); Law No. 2018-14 amending the CPP, new arts. 196 and 233 (indictment by the investigating judge [juge d'instruction] or the investigating chamber [chambre de l'instruction]), 201, new art. 231 (dismissal [non-lieu]: neither felony, nor misdemeanour, nor petty offence, or insufficient evidence), new art. 360 (accused found not guilty); CP (Law No. 2018-16 of 28 December 2018): article on mental disorder not read; Law No. 2020-23 not read",
-   "excerpt": "En matière criminelle, il doit prescrire un examen médical ou médico-psychologique et psychiatrique",
-   "note": "White (yellow → white): no text read says what becomes of an insane charged person. Law 2018-14 read: dismissal (non-lieu) by the investigating chamber (chambre de l'instruction) if neither felony nor misdemeanour nor petty offence, or for lack of evidence (art. 231), without mentioning non-responsibility. 2018 CP and remainder of the 2012 CPP unreadable (binary PDF; text cut off at art. 136). Hypothesis: yellow (mandatory examination, art. 87).",
+   "legal_bases": "CP (Law No. 2018-16 of 28 December 2018) art. 24 (psychological or neuropsychological disorder having abolished discernment: no criminal responsibility); CPP (Law No. 2012-15 of 18 March 2013) arts. 85 (judicial investigation mandatory for felonies), 87 (medical or medico-psychological and psychiatric examination mandatory in felony cases), 190-191 (dismissal by the investigating judge), 488 (acquittal for insanity); Law No. 2018-14, new art. 231 (dismissal by the investigating chamber); Law No. 2020-23 (does not amend these articles)",
+   "excerpt": "s’il n’existe pas de charges suffisantes contre l’inculpé, il déclare, par une ordonnance, qu’il n’y a lieu à suivre",
+   "note": "Combined reading: judicial investigation and psychiatric examination mandatory for felonies (CPP arts. 85, 87); abolished discernment excludes criminal responsibility (CP 2018 art. 24); for lack of charges, the investigating judge (arts. 190-191) or the investigating chamber (chambre de l'instruction, new art. 231) declares that there are no grounds to prosecute. No security measure for the non-responsible person; practice not verified.",
    "sources": [
     {
-     "title": "Loi n° 2018-14 modifiant et complétant la loi n° 2012-15 portant code de procédure pénale (SGG Bénin, PDF; new arts. 196, 201, 231, 233, 360 read)",
-     "url": "https://sgg.gouv.bj/doc/loi-2018-14/download",
-     "language": "fr"
-    },
-    {
-     "title": "Loi n° 2012-15 portant Code de procédure pénale en République du Bénin (UNODC SHERLOC, PDF; text layer limited to arts. 1-136)",
+     "title": "Law No. 2012-15 on the Code de procédure pénale en République du Bénin (UNODC SHERLOC, PDF; full text read: arts. 85, 87, 190-191, 488)",
      "url": "https://sherloc.unodc.org/cld/uploads/res/document/ben/2011/loi-n-2012-15-portant-code-de-procdure-pnale-en-rpublique-de-bnin_html/Benin_CPP.pdf",
      "language": "fr"
     },
     {
-     "title": "SGG Bénin: page for Law No. 2018-14 (download link)",
-     "url": "https://sgg.gouv.bj/doc/loi-2018-14/",
-     "language": "fr"
-    },
-    {
-     "title": "Loi n° 2020-23 du 29 septembre 2020 modifiant le CPP (SGG Bénin; not read)",
-     "url": "https://sgg.gouv.bj/doc/loi-2020-23/",
-     "language": "fr"
-    },
-    {
-     "title": "Policinglaw: Code pénal du Bénin, loi 2018-16 (opened: binary data, unreadable)",
+     "title": "Law No. 2018-16 on the Code pénal (Policinglaw copy, PDF; art. 24 read)",
      "url": "https://www.policinglaw.info/assets/downloads/2018_Code_penal_de_Benin.pdf",
+     "language": "fr"
+    },
+    {
+     "title": "SGG Benin: Law No. 2018-14 amending and supplementing Law No. 2012-15 on the Code de procédure pénale (PDF; new art. 231)",
+     "url": "https://sgg.gouv.bj/doc/loi-2018-14/download",
+     "language": "fr"
+    },
+    {
+     "title": "SGG Benin: Law No. 2020-23 of 29 September 2020 amending the CPP (PDF read: arts. 8, 29, 581, 584 and 789 only)",
+     "url": "https://sgg.gouv.bj/doc/loi-2020-23/download",
+     "language": "fr"
+    },
+    {
+     "title": "National Assembly of Benin: Law No. 2018-14, art. 231 (via Legal Data Hunter)",
+     "url": "https://documentation-anbenin.org/s/textes-de-lois/item/301",
      "language": "fr"
     }
    ],
    "group": "Africa",
    "oecd": false,
-   "source_file": "pass2/p2_25_afr_franco_proc_a.json",
-   "colour_from_agent": "white",
-   "colour_derived_from_facts": "green",
-   "hypothetical_colour": "yellow",
+   "source_file": "pass2/ext_83_textes_officiels.json",
+   "colour_from_agent": "yellow",
+   "colour_derived_from_facts": "yellow",
    "flags": [
     "low_confidence",
     "incomplete_verification"
@@ -14112,13 +14108,19 @@
      "file": "pass1/21_afr_franco.json",
      "colour": "yellow",
      "confidence": "medium",
-     "note": "In felony cases, the investigating judge (juge d'instruction) must order a psychiatric examination (art. 87 CPP). If discernment was abolished, the judge issues a dismissal (non-lieu) (appeal to the investigating chamber [chambre de l'instruction]); otherwise committal for trial before the court sitting in felony matters. Unverified: the 2018 CP article, the existence of a 2008-type procedure (the colour would remain yellow) and the treatment regime."
+     "note": "In felony cases, the investigating judge must order a psychiatric examination (CPP art. 87). If discernment was abolished, he issues a dismissal (non-lieu) (appeal to the investigating chamber); otherwise committal to the court ruling in felony matters. Not verified: the article of the 2018 CP, the existence of a 2008-type procedure (the colour would remain yellow) and the treatment regime."
     },
     {
      "file": "pass2/p2_08_afr_franco_a.json",
      "colour": "yellow",
      "confidence": "medium",
-     "note": "Read: 2012 CPP up to art. 136 (mandatory psychiatric examination in felony cases, art. 87) and Law 2018-14 (felonies: investigating judge [juge d'instruction], then investigating chamber [chambre de l'instruction], which indicts or rules that there are no grounds to proceed). Not read: the 2018 CP article on mental disorder, the closing orders, the treatment regime. Yellow inferred from the French model, unverified."
+     "note": "Read: 2012 CPP up to art. 136 (psychiatric examination mandatory in felony cases, art. 87) and Law 2018-14 (felonies: investigating judge then investigating chamber, which indicts or declares that there are no grounds to prosecute). Not read: the article of the 2018 CP on psychological disorder, the closing orders, the treatment regime. Yellow inferred from the French model, not verified."
+    },
+    {
+     "file": "pass2/p2_25_afr_franco_proc_a.json",
+     "colour": "white",
+     "confidence": "low",
+     "note": "White (yellow → white): no text read says what becomes of an insane charged person. Law 2018-14 read: dismissal by the investigating chamber if the facts constitute neither felony, nor misdemeanour, nor petty offence, or for lack of charges (art. 231), without mentioning non-responsibility. 2018 CP and the rest of the 2012 CPP unreadable (binary PDF; text cut at art. 136). Hypothesis: yellow (mandatory examination, art. 87)."
     }
    ]
   },
@@ -15288,78 +15290,6 @@
      "colour": "green",
      "confidence": "medium",
      "note": "National rule (federal Criminal Code). The prosecutor brings the case before the court; in case of doubt, the court orders an expert examination (CP art. 51) and then rules: the person not criminally responsible is not punished and the court orders committal or treatment (arts. 129-131). The Criminal Procedure and Evidence Code (Proclamation 1410/2026) succeeds the 1961 CPP: entry into force and content not verified."
-    }
-   ]
-  },
-  {
-   "code": "SO",
-   "name": "Somalia",
-   "level": "country",
-   "parent": null,
-   "official_languages": [
-    "so",
-    "ar"
-   ],
-   "research_languages": [
-    "so",
-    "ar",
-    "en",
-    "it"
-   ],
-   "colour": "white",
-   "confidence": "low",
-   "facts": {
-    "recognises_non_responsibility": true,
-    "outcome": "Not punishable for total mental infirmity (CP art. 50); a person acquitted on grounds of infirmity is committed to an asylum for the insane for at least 2 years (5 years if the offence is punishable by at least 10 years, 10 years if by death or life imprisonment), art. 176, a measure ordered by the judge in the judgment (art. 165); procedural route under the CPP not read.",
-    "who_triggers_examination": "authorities",
-    "accused_chooses_timing": false,
-    "decision_stage": "not_applicable",
-    "replacement_procedure": "none",
-    "replacement_procedure_detail": "Unknown: the 1963 CPP could not be read; CP art. 165 has the measure ordered by the “Judge” in the judgment of acquittal and art. 166 allows provisional committal during the investigation or the trial.",
-    "committal_without_trial": false,
-    "trial_always_or_on_request": false,
-    "unfitness_to_stand_trial": "Not verified (CPP rule not read). CP art. 166: the judge may provisionally commit a mentally deranged person during the investigation or the trial; art. 142: infirmity arising after conviction, enforcement deferred and committal."
-   },
-   "legal_bases": "Penal Code / Codice penale (Legislative Decree No. 5 of 16/12/1962), arts. 47, 50, 51, 142, 164-166, 172-173, 176 (UNODC English translation, numbering to be checked against the original); Criminal Procedure Code / Codice di procedura penale (Legislative Decree No. 1 of 1/6/1963) – articles not read; draft new Penal Code approved by the Council of Ministers on 4/12/2025, not adopted as of 26/06/2026",
-   "excerpt": "In the case of acquittal for mental infirmity [50 P.C.] […] the offender shall be committed to a lunatic asylum",
-   "note": "Penal Code read (English translation): arts. 50 (total infirmity: not punishable), 165 (measure ordered by the judge in the judgment), 176 (asylum ≥2 years). 1963 CPP unreadable (scans, site blocked to automated access): who finds the infirmity and at what stage remains unknown, yellow or green undecidable: white. Draft new Penal Code not adopted (June 2026). Somaliland/Puntland not verified.",
-   "sources": [
-    {
-     "title": "Penal Code of Somalia, Decree-Law No. 5 of 16/12/1962 (UNODC SHERLOC, English translation)",
-     "url": "https://sherloc.unodc.org/cld/uploads/res/document/som/1962/penal_code_html/Penal_Code_of_Somalia.pdf",
-     "language": "en"
-    },
-    {
-     "title": "ecoi.net – The Criminal Procedure Code, Somalia (1963), catalogue entry (text not read)",
-     "url": "https://www.ecoi.net/en/document/325122",
-     "language": "en"
-    },
-    {
-     "title": "NUSOJ – draft Penal Code (26/06/2026)",
-     "url": "https://nusoj.org/2026/06/26/nusoj-sounds-alarm-over-repressive-draft-penal-code-threatening-media-freedom-and-fundamental-rights/",
-     "language": "en"
-    },
-    {
-     "title": "Arab Legislation Portal – Somalia Penal Code 1962",
-     "url": "https://alp.unescwa.org/legislations/somalia-penal-code-1962",
-     "language": "en"
-    }
-   ],
-   "group": "Africa",
-   "oecd": false,
-   "source_file": "pass2/p2_13_afr_mixte.json",
-   "colour_from_agent": "white",
-   "colour_derived_from_facts": "green",
-   "flags": [
-    "low_confidence",
-    "incomplete_verification"
-   ],
-   "history": [
-    {
-     "file": "pass1/22_afr_divers.json",
-     "colour": "white",
-     "confidence": "low",
-     "note": "Insufficient data: 1962 Penal Code and 1963 CPP not accessible here (somalilandlaw.com blocked, refworld inaccessible, WIPO Lex without these codes, web search exhausted). Impossible to verify who finds mental infirmity, at what stage, who orders committal, or the practice in Somaliland and Puntland."
     }
    ]
   },
