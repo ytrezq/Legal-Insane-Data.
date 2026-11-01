@@ -29,7 +29,7 @@
     "(France depuis 2008 : audience devant la chambre de l'instruction). Procès seulement si l'accusé est jugé responsable."
    ],
    "definition": "L'état mental au moment des faits est examiné pendant la phase préparatoire ; si le discernement était aboli, l'affaire se termine sans vrai procès, soit par un non-lieu ou une décision de non-renvoi, soit par une procédure amoindrie qui remplace le procès (audience devant une juridiction d'instruction, chambre du conseil, tribunal de soins non public, procédure écrite ou simplifiée, standard de preuve réduit, absence de l'accusé comme règle). La personne peut néanmoins être internée. Un procès n'a lieu que si elle est jugée responsable.",
-   "n_pays": 25,
+   "n_pays": 27,
    "n_subdivisions": 23
   },
   "violet": {
@@ -70,11 +70,11 @@
    "couleur": "#ffffff",
    "legende": [
     "Données insuffisantes (texte de procédure introuvable ou illisible), pays et zones écartés du cadrage (Maghreb, Égypte, Sahel hors Sénégal",
-    "et Mauritanie, Érythrée, Cuba, Turquie, Serbie, Bahreïn, Singapour, Brunei ; tirets : Chypre du Nord, Ukraine occupée, Transnistrie),",
-    "pays non étudiés."
+    "et Mauritanie, Érythrée, Somalie, Cuba, Turquie, Serbie, Caucase du Sud, Bahreïn, Singapour, Brunei ; tirets : Chypre du Nord,",
+    "Ukraine occupée, Transnistrie), pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
-   "n_pays": 4,
+   "n_pays": 1,
    "n_subdivisions": 2
   }
  },
@@ -194,7 +194,6 @@
     "ST",
     "GQ",
     "ET",
-    "SO",
     "RW",
     "MU",
     "SC",
@@ -405,23 +404,72 @@
    },
    {
     "code": "CY-N",
-    "nom": "CY-N",
+    "nom": "Chypre du Nord",
     "raison": "territoire sous contrôle turc (« République turque de Chypre du Nord »), traité comme la Turquie : écarté du périmètre (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
    },
    {
     "code": "BH",
-    "nom": "BH",
+    "nom": "Bahreïn",
     "raison": "État insulaire du golfe Persique : écarté du périmètre par choix du cadrage"
    },
    {
     "code": "SG",
-    "nom": "SG",
+    "nom": "Singapour",
     "raison": "écarté du périmètre par choix du cadrage (régime jugé dictatorial)"
    },
    {
     "code": "BN",
-    "nom": "BN",
+    "nom": "Brunei",
     "raison": "écarté du périmètre par choix du cadrage (régime jugé dictatorial)"
+   },
+   {
+    "code": "SO",
+    "nom": "Somalie",
+    "raison": "Corne de l'Afrique : écarté du périmètre par choix du cadrage (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)",
+    "fiche_archivee": {
+     "couleur_recherchee": "blanc",
+     "confiance": "faible",
+     "note": "Code pénal lu (traduction anglaise) : art. 50 (infirmité totale : non punissable), 165 (mesure ordonnée par le juge dans le jugement), 176 (asile ≥2 ans). CPP de 1963 illisible (scans, site interdit aux robots) : qui constate l'infirmité et à quel stade reste inconnu, jaune ou vert indécidable : blanc. Projet de nouveau Code pénal non adopté (juin 2026). Somaliland/Puntland non vérifiés.",
+     "bases_legales": "Penal Code / Codice penale (décret législatif n° 5 du 16/12/1962), art. 47, 50, 51, 142, 164-166, 172-173, 176 (traduction anglaise UNODC, numérotation à confronter à l'original) ; Criminal Procedure Code / Codice di procedura penale (décret législatif n° 1 du 1/6/1963) – articles non lus ; projet de nouveau Code pénal approuvé par le Conseil des ministres le 4/12/2025, non adopté au 26/06/2026",
+     "sources": [
+      {
+       "titre": "Penal Code of Somalia, décret-loi n° 5 du 16/12/1962 (UNODC SHERLOC, traduction anglaise)",
+       "url": "https://sherloc.unodc.org/cld/uploads/res/document/som/1962/penal_code_html/Penal_Code_of_Somalia.pdf",
+       "langue": "en"
+      },
+      {
+       "titre": "ecoi.net – The Criminal Procedure Code, Somalia (1963), fiche de catalogue (texte non lu)",
+       "url": "https://www.ecoi.net/en/document/325122",
+       "langue": "en"
+      },
+      {
+       "titre": "NUSOJ – draft Penal Code (26/06/2026)",
+       "url": "https://nusoj.org/2026/06/26/nusoj-sounds-alarm-over-repressive-draft-penal-code-threatening-media-freedom-and-fundamental-rights/",
+       "langue": "en"
+      },
+      {
+       "titre": "Arab Legislation Portal – Somalia Penal Code 1962",
+       "url": "https://alp.unescwa.org/legislations/somalia-penal-code-1962",
+       "langue": "en"
+      }
+     ],
+     "fichier": "pass2/p2_13_afr_mixte.json"
+    }
+   },
+   {
+    "code": "AM",
+    "nom": "Arménie",
+    "raison": "Caucase du Sud : écarté du périmètre par choix du cadrage (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
+   },
+   {
+    "code": "AZ",
+    "nom": "Azerbaïdjan",
+    "raison": "Caucase du Sud : écarté du périmètre par choix du cadrage (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
+   },
+   {
+    "code": "GE",
+    "nom": "Géorgie",
+    "raison": "Caucase du Sud : écarté du périmètre par choix du cadrage (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
    }
   ],
   "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie, Syrie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie, Philippines et Timor oriental ; les États et territoires insulaires sont tous inclus sauf Cuba, Bahreïn, Singapour et Brunei, écartés) sont laissés en blanc.",
@@ -637,11 +685,12 @@
    "extension_29_10_bis": "Extension du 29/10/2026 (18 h 20) : tous les États et territoires insulaires, sauf Cuba, Bahreïn (golfe Persique), Singapour et Brunei (régimes jugés dictatoriaux) : Maldives ajoutées, Comores revérifiées, et territoires insulaires à droit pénal propre (Jersey, Guernesey, Île de Man, Bermudes, Îles Caïmans, Îles Vierges britanniques, Anguilla, Montserrat, Îles Turques-et-Caïques, Malouines, Sainte-Hélène, Aruba, Curaçao, Saint-Martin néerlandais, Îles Vierges des États-Unis).",
    "extension_29_10_ter": "Compléments du 29/10/2026 (19 h) : quand l'outil de lecture des agents tronquait un texte officiel, le PDF ou la page complète a été téléchargé et lu en entier (Jersey, Bermudes, Îles Vierges britanniques, Anguilla, Aruba, Îles Caïmans, Montserrat, Comores, Maldives, dont le code de procédure pénale en dhivehi) ; Saint-Martin néerlandais classé d'après un jugement du Gerecht in eerste aanleg (données ouvertes de rechtspraak.nl). Guernesey et les Malouines restent blanches : textes décisifs inaccessibles (site refusé à l'outil, application JavaScript).",
    "extension_29_10_quater": "Compléments du 29/10/2026 (23 h) : les 9 dernières requêtes Legal Data Hunter accordées par l'utilisateur (20 au total) ont servi, une à une et sans agent, aux juridictions restées blanches : Malouines (vert, CPEO 2014 s. 765-766), Djibouti (jaune, CPP art. 72, 74, 184 et 220) et Soudan du Sud (vert, CCPA 2008 s. 206-207) classés ; pour le Bénin et la Somalie, les textes décisifs ne figurent pas dans Legal Data Hunter.",
+   "extension_01_11": "Compléments du 1/11/2026 : Legal Data Hunter (9 requêtes, sans agent) n'indexe aucun texte décisif pour les juridictions restées blanches ; les textes officiels complets ont alors été téléchargés et lus : Guinée (CPP 2016, PDF de la Cour suprême, reprise de la réforme française de 2008 : jaune) et Bénin (CPP 2012, CP 2018 : non-lieu, jaune, confiance faible). À la demande de l'utilisateur, la Somalie, l'Arménie, l'Azerbaïdjan et la Géorgie sont écartées du périmètre (critère de l'État de droit).",
    "edition_anglaise": "Une édition anglaise, traduite le 28/10/2026 à partir de celle-ci, est tenue sur la branche main du dépôt pour les contributions internationales ; les deux éditions évoluent séparément."
   },
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "nb_entrees": 273,
+  "nb_entrees": 272,
   "contribuer": [
    "Voir CONTRIBUTING.md. Les pull requests ne modifient que le JSON (donnees/irresponsabilite_penale.json) ; les cartes en sont régénérées.",
    "Une couleur autre que blanc suppose d'avoir lu le mécanisme procédural décisif (qui statue, à quel stade, dans quel type d'audience) dans une source primaire (loi, décision) ou une doctrine qui la cite ; sinon l'entrée reste blanche avec une couleur_hypothese.",
@@ -683,11 +732,11 @@
  "synthese": {
   "pays": {
    "vert": 88,
-   "jaune": 25,
+   "jaune": 27,
    "violet": 26,
    "bleu": 4,
    "noir": 0,
-   "blanc": 4
+   "blanc": 1
   },
   "subdivisions": {
    "vert": 36,
@@ -859,6 +908,7 @@
     "AR-Z",
     "BE",
     "BG",
+    "BJ",
     "CF",
     "CG",
     "CI",
@@ -868,6 +918,7 @@
     "EE",
     "FR",
     "GA",
+    "GN",
     "HT",
     "JP",
     "KM",
@@ -983,18 +1034,15 @@
     "US-ID"
    ],
    "blanc": [
-    "BJ",
     "GG",
-    "GN",
     "GQ",
-    "SO",
     "TZ-ZAN"
    ]
   },
   "confiance": {
    "élevée": 81,
-   "moyenne": 154,
-   "faible": 38
+   "moyenne": 155,
+   "faible": 36
   }
  },
  "cas_a_verifier": [
@@ -1433,17 +1481,16 @@
   {
    "code": "GN",
    "nom": "Guinée",
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "jaune",
+   "confiance": "moyenne",
    "drapeaux": [
-    "confiance_faible",
     "verification_incomplete"
    ]
   },
   {
    "code": "BJ",
    "nom": "Bénin",
-   "couleur": "blanc",
+   "couleur": "jaune",
    "confiance": "faible",
    "drapeaux": [
     "confiance_faible",
@@ -1550,16 +1597,6 @@
    "couleur": "vert",
    "confiance": "moyenne",
    "drapeaux": [
-    "verification_incomplete"
-   ]
-  },
-  {
-   "code": "SO",
-   "nom": "Somalie",
-   "couleur": "blanc",
-   "confiance": "faible",
-   "drapeaux": [
-    "confiance_faible",
     "verification_incomplete"
    ]
   },
@@ -13929,57 +13966,42 @@
    "langues_recherche": [
     "fr"
    ],
-   "couleur": "blanc",
-   "confiance": "faible",
+   "couleur": "jaune",
+   "confiance": "moyenne",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Non vérifiée : ni le CP ni le CPP de 2016 n'ont pu être lus ; hypothèse tirée du modèle français (non-lieu du juge d'instruction, voire procédure d'irresponsabilité de type 2008, puis soins), sans base textuelle constatée ; l'irresponsabilité elle-même n'est ici qu'un paramètre par défaut.",
+    "issue": "Ordonnance de non-lieu pour cause d'irresponsabilité pénale pour cause de trouble mental (CPP art. 924) ou arrêt de déclaration d'irresponsabilité de la chambre de contrôle de l'instruction (art. 929), avec hospitalisation complète et mesures de sûreté possibles (art. 938-939) ; renvoi en jugement seulement si l'irresponsabilité est écartée (art. 928)",
     "qui_declenche_examen": "autorites",
     "accuse_choisit_moment": false,
-    "stade_decision": "sans_objet",
-    "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Inconnu : aucun article du CPP de 2016 lu (copies de la Cour suprême, d'ecoi.net et de la bibliothèque ISFAD illisibles) ; valeurs par défaut sans valeur probante.",
-    "internement_sans_proces": false,
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "procedure_amoindrie",
+    "procedure_remplacement_detail": "L'instruction est obligatoire en matière criminelle (art. 141). Au règlement, le juge d'instruction rend un non-lieu pour irresponsabilité ou transmet le dossier, d'office ou à la demande du parquet ou d'une partie, à la chambre de contrôle de l'instruction, qui statue après une audience publique (comparution si l'état de la personne le permet, experts et témoins entendus) par un arrêt de déclaration d'irresponsabilité (art. 923-932).",
+    "internement_sans_proces": true,
     "proces_toujours_ou_sur_demande": false,
-    "inaptitude_a_etre_juge": "Non vérifié (CPP non lu)."
+    "inaptitude_a_etre_juge": "Aucune disposition générale sur l'aptitude à être jugé repérée (recherche par mots-clés) ; pour les majeurs protégés, expertise médicale obligatoire avant tout jugement au fond (art. 920)."
    },
-   "bases_legales": "CP (loi n° L/2016/059/AN du 26 octobre 2016) et CPP (loi n° L/2016/060/AN du 26 octobre 2016) : articles sur l'irresponsabilité, l'expertise, le non-lieu et l'internement non lus (aucune copie lisible)",
-   "extrait": "",
-   "note": "Blanc : aucun article de procédure lu. Legal Data Hunter (28/10/2026) n'indexe que l'ancien CPP de 1998, pas celui de 2016 ; il n'en ressort que l'art. 190 du CP de 2016 (internement d'un malade mental « passible » d'une peine, donc responsable). Les copies du CPP de 2016 essayées sont des PDF sans texte. Hypothèse non vérifiée : jaune (non-lieu ou procédure de type 2008, puis soins).",
+   "bases_legales": "CPP (loi n° L/2016/060/AN du 26 octobre 2016) art. 141 (instruction obligatoire en matière de crime), 272 (notification des expertises concluant à l'irresponsabilité), 920 (expertise des majeurs protégés), 923-932 (non-lieu et déclaration d'irresponsabilité pénale pour cause de trouble mental), 933-937 (juridictions de jugement), 938-942 (hospitalisation complète et mesures de sûreté) ; CP (loi n° L/2016/059/AN) art. 21, point 1 (auquel renvoie le CPP)",
+   "extrait": "il rend une ordonnance de non-lieu pour cause d'irresponsabilité pénale pour cause de trouble mental qui précise qu'il existe des charges suffisantes",
+   "note": "Reprise de la réforme française de 2008 : instruction obligatoire pour les crimes (CPP art. 141) ; au règlement, le juge d'instruction rend un non-lieu pour irresponsabilité ou saisit la chambre de contrôle de l'instruction, qui statue en audience publique par un arrêt de déclaration d'irresponsabilité (art. 923-932) et peut ordonner l'hospitalisation complète (art. 938). Pratique non vérifiée.",
    "sources": [
     {
-     "titre": "Code pénal de 2016, art. 190 (internement en maison spéciale de santé), consulté via Legal Data Hunter (site de la Cour suprême)",
-     "url": "https://coursupreme.org.gn/fr/code-penal-2016/",
+     "titre": "Cour suprême de Guinée : loi L/2016/060/AN portant Code de procédure pénale (PDF officiel, texte intégral lu ; art. 141, 272, 920, 923-942)",
+     "url": "https://coursupreme.org.gn/wp-content/uploads/2024/06/40-LOI-060-PORTANT-CODE-DE-PROCEDURE-PENALE-OCT-2016.pdf",
      "langue": "fr"
     },
     {
-     "titre": "Cour suprême de Guinée : Loi 060 portant Code de procédure pénale, oct. 2016 (page du document ; PDF non lisible)",
+     "titre": "Cour suprême de Guinée : page de la loi 060 portant Code de procédure pénale (octobre 2016)",
      "url": "https://coursupreme.org.gn/en/loi-060-portant-code-de-procedure-penale-oct-2016/",
      "langue": "fr"
     },
     {
-     "titre": "Cour suprême de Guinée : Loi 059 portant Code pénal, octobre 2016 (page du document ; PDF non lisible)",
-     "url": "https://coursupreme.org.gn/en/loi-059-portant-code-penal-octobre-2016/",
+     "titre": "Cour suprême de Guinée : Code pénal 2016 (consulté via Legal Data Hunter)",
+     "url": "https://coursupreme.org.gn/fr/code-penal-2016/",
      "langue": "fr"
     },
     {
-     "titre": "ecoi.net : Guinée, Nouveau Code de procédure pénale (2016) (PDF sans texte exploitable)",
+     "titre": "ecoi.net : Guinée, Nouveau Code de procédure pénale (2016)",
      "url": "https://www.ecoi.net/en/document/1427849.html",
-     "langue": "fr"
-    },
-    {
-     "titre": "Bibliothèque universitaire virtuelle ISFAD (Guinée) : CODEPP.pdf (ouvert : données binaires, illisible)",
-     "url": "https://buv.isfad-gn.org/universitaire/Droit/droit%20penal%20et%20proc%c3%a9dure/pdf/CODEPP.pdf",
-     "langue": "fr"
-    },
-    {
-     "titre": "ACJR (Dullah Omar Institute) : Code pénal guinéen (ouvert : données binaires, illisible)",
-     "url": "https://dullahomarinstitute.org.za/acjr/resource-centre/GN_Code_Penal%20Guineen.pdf/@@download/file/GN_Code_Penal Guineen.pdf",
-     "langue": "fr"
-    },
-    {
-     "titre": "Police Human Rights Resources : Nouveau Code pénal de la République de Guinée, février 2016 (ouvert : données binaires, illisible)",
-     "url": "https://policehumanrightsresources.org/content/uploads/2019/07/NOUVEAU-CODE-PENAL-DE-LA-REPUBLIQUE-DE-GUINEE-Fevrier-2016.pdf?x96812",
      "langue": "fr"
     }
    ],
@@ -14001,16 +14023,20 @@
      "couleur": "blanc",
      "confiance": "faible",
      "note": "Blanc (jaune → blanc) : aucun article lu. CP et CPP de 2016 repérés, mais toutes les copies essayées sont des PDF sans texte (Cour suprême, ecoi.net, ISFAD, ACJR, policehumanrightsresources) ; aucune décision ni doctrine trouvée. Hypothèse non vérifiée : jaune (non-lieu du juge d'instruction ou procédure de type 2008, puis soins)."
+    },
+    {
+     "fichier": "pass2/ext_40_ldh.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc : aucun article de procédure lu. Legal Data Hunter (28/10/2026) n'indexe que l'ancien CPP de 1998, pas celui de 2016 ; il n'en ressort que l'art. 190 du CP de 2016 (internement d'un malade mental « passible » d'une peine, donc responsable). Les copies du CPP de 2016 essayées sont des PDF sans texte. Hypothèse non vérifiée : jaune (non-lieu ou procédure de type 2008, puis soins)."
     }
    ],
-   "fichier_source": "pass2/ext_40_ldh.json",
-   "couleur_agent": "blanc",
-   "couleur_deduite_des_faits": "vert",
+   "fichier_source": "pass2/ext_83_textes_officiels.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
    "groupe": "Afrique",
    "ocde": false,
-   "couleur_hypothese": "jaune",
    "drapeaux": [
-    "confiance_faible",
     "verification_incomplete"
    ]
   },
@@ -14090,47 +14116,47 @@
    "langues_recherche": [
     "fr"
    ],
-   "couleur": "blanc",
+   "couleur": "jaune",
    "confiance": "faible",
    "faits": {
     "reconnait_irresponsabilite": true,
-    "issue": "Non vérifiée : article du CP 2018 sur le trouble psychique non lu ; au CPP, examen psychiatrique obligatoire à l'instruction en matière criminelle (art. 87) et non-lieu de la chambre de l'instruction si les faits ne constituent « ni crime, ni délit, ni contravention » ou faute de charges suffisantes (art. 231 nouveau), sans mention de l'irresponsabilité ni de l'internement.",
+    "issue": "Non-lieu du juge d'instruction (CPP art. 191) ou de la chambre de l'instruction (art. 231 nouveau), la personne au discernement aboli n'étant pas pénalement responsable (CP 2018 art. 24) ; aucune mesure de sûreté prévue pour l'irresponsable ; en matière correctionnelle, relaxe pour démence (art. 488)",
     "qui_declenche_examen": "autorites",
     "accuse_choisit_moment": false,
-    "stade_decision": "sans_objet",
-    "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Inconnu : la loi 2018-14 (art. 196, 231, 233, 360 nouveaux) ne vise ni l'irresponsabilité ni l'internement ; ordonnances de règlement et procédures particulières du CPP 2012 non lues (valeurs par défaut sans valeur probante).",
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "non_lieu_simple",
+    "procedure_remplacement_detail": "L'instruction est obligatoire en matière criminelle (art. 85) et le juge d'instruction doit y prescrire un examen médical ou médico-psychologique et psychiatrique (art. 87) ; il examine s'il existe des charges constitutives d'infraction (art. 190) et déclare n'y avoir lieu à suivre (art. 191), comme la chambre de l'instruction (art. 231 nouveau, loi 2018-14).",
     "internement_sans_proces": false,
     "proces_toujours_ou_sur_demande": false,
-    "inaptitude_a_etre_juge": "Non vérifié : aucune disposition repérée dans les art. 1-136 du CPP ni dans la loi 2018-14."
+    "inaptitude_a_etre_juge": "Aucune disposition sur l'aptitude à être jugé repérée dans le CPP 2012 (recherche par mots-clés dans le texte intégral)."
    },
-   "bases_legales": "CPP (loi n° 2012-15 du 18 mars 2013) art. 87 (examen psychiatrique obligatoire en matière criminelle) ; loi n° 2018-14 modifiant le CPP, art. 196 et 233 nouveaux (mise en accusation par le juge d'instruction ou la chambre de l'instruction), 201, 231 nouveau (non-lieu : ni crime, ni délit, ni contravention, ou charges insuffisantes), 360 nouveau (accusé déclaré non coupable) ; CP (loi n° 2018-16 du 28 décembre 2018) : article sur le trouble psychique non lu ; loi n° 2020-23 non lue",
-   "extrait": "En matière criminelle, il doit prescrire un examen médical ou médico-psychologique et psychiatrique",
-   "note": "Blanc (jaune → blanc) : aucun texte lu ne dit ce que devient l'inculpé dément. Loi 2018-14 lue : non-lieu de la chambre de l'instruction si ni crime ni délit ni contravention, ou faute de charges (art. 231), sans viser l'irresponsabilité. CP 2018 et suite du CPP 2012 illisibles (PDF binaire ; texte coupé à l'art. 136). Hypothèse : jaune (examen obligatoire, art. 87).",
+   "bases_legales": "CP (loi n° 2018-16 du 28 décembre 2018) art. 24 (trouble psychique ou neuropsychique ayant aboli le discernement : pas de responsabilité pénale) ; CPP (loi n° 2012-15 du 18 mars 2013) art. 85 (instruction obligatoire en matière de crime), 87 (examen médical ou médico-psychologique et psychiatrique obligatoire en matière criminelle), 190-191 (non-lieu du juge d'instruction), 488 (relaxe pour démence) ; loi n° 2018-14, art. 231 nouveau (non-lieu de la chambre de l'instruction) ; loi n° 2020-23 (ne modifie pas ces articles)",
+   "extrait": "s’il n’existe pas de charges suffisantes contre l’inculpé, il déclare, par une ordonnance, qu’il n’y a lieu à suivre",
+   "note": "Lecture combinée : instruction et examen psychiatrique obligatoires pour les crimes (CPP art. 85, 87) ; l'abolition du discernement exclut la responsabilité pénale (CP 2018 art. 24) ; faute de charges, le juge d'instruction (art. 190-191) ou la chambre de l'instruction (art. 231 nouveau) dit n'y avoir lieu à suivre. Pas de mesure de sûreté pour l'irresponsable ; pratique non vérifiée.",
    "sources": [
     {
-     "titre": "Loi n° 2018-14 modifiant et complétant la loi n° 2012-15 portant code de procédure pénale (SGG Bénin, PDF ; art. 196, 201, 231, 233, 360 nouveaux lus)",
-     "url": "https://sgg.gouv.bj/doc/loi-2018-14/download",
-     "langue": "fr"
-    },
-    {
-     "titre": "Loi n° 2012-15 portant Code de procédure pénale en République du Bénin (UNODC SHERLOC, PDF ; couche texte limitée aux art. 1-136)",
+     "titre": "Loi n° 2012-15 portant Code de procédure pénale en République du Bénin (UNODC SHERLOC, PDF ; texte intégral lu : art. 85, 87, 190-191, 488)",
      "url": "https://sherloc.unodc.org/cld/uploads/res/document/ben/2011/loi-n-2012-15-portant-code-de-procdure-pnale-en-rpublique-de-bnin_html/Benin_CPP.pdf",
      "langue": "fr"
     },
     {
-     "titre": "SGG Bénin : fiche de la loi n° 2018-14 (lien de téléchargement)",
-     "url": "https://sgg.gouv.bj/doc/loi-2018-14/",
-     "langue": "fr"
-    },
-    {
-     "titre": "Loi n° 2020-23 du 29 septembre 2020 modifiant le CPP (SGG Bénin ; non lue)",
-     "url": "https://sgg.gouv.bj/doc/loi-2020-23/",
-     "langue": "fr"
-    },
-    {
-     "titre": "Policinglaw : Code pénal du Bénin, loi 2018-16 (ouvert : données binaires, illisible)",
+     "titre": "Loi n° 2018-16 portant code pénal (copie Policinglaw, PDF ; art. 24 lu)",
      "url": "https://www.policinglaw.info/assets/downloads/2018_Code_penal_de_Benin.pdf",
+     "langue": "fr"
+    },
+    {
+     "titre": "SGG Bénin : loi n° 2018-14 modifiant et complétant la loi n° 2012-15 portant code de procédure pénale (PDF ; art. 231 nouveau)",
+     "url": "https://sgg.gouv.bj/doc/loi-2018-14/download",
+     "langue": "fr"
+    },
+    {
+     "titre": "SGG Bénin : loi n° 2020-23 du 29 septembre 2020 modifiant le CPP (PDF lu : art. 8, 29, 581, 584 et 789 seulement)",
+     "url": "https://sgg.gouv.bj/doc/loi-2020-23/download",
+     "langue": "fr"
+    },
+    {
+     "titre": "Assemblée nationale du Bénin : loi n° 2018-14, art. 231 (via Legal Data Hunter)",
+     "url": "https://documentation-anbenin.org/s/textes-de-lois/item/301",
      "langue": "fr"
     }
    ],
@@ -14146,14 +14172,19 @@
      "couleur": "jaune",
      "confiance": "moyenne",
      "note": "Lus : CPP 2012 jusqu'à l'art. 136 (examen psychiatrique obligatoire en matière criminelle, art. 87) et loi 2018-14 (crimes : juge d'instruction puis chambre de l'instruction, qui met en accusation ou dit n'y avoir lieu à suivre). Non lus : l'article du CP 2018 sur le trouble psychique, les ordonnances de règlement, le régime des soins. Jaune inféré du modèle français, non vérifié."
+    },
+    {
+     "fichier": "pass2/p2_25_afr_franco_proc_a.json",
+     "couleur": "blanc",
+     "confiance": "faible",
+     "note": "Blanc (jaune → blanc) : aucun texte lu ne dit ce que devient l'inculpé dément. Loi 2018-14 lue : non-lieu de la chambre de l'instruction si ni crime ni délit ni contravention, ou faute de charges (art. 231), sans viser l'irresponsabilité. CP 2018 et suite du CPP 2012 illisibles (PDF binaire ; texte coupé à l'art. 136). Hypothèse : jaune (examen obligatoire, art. 87)."
     }
    ],
-   "fichier_source": "pass2/p2_25_afr_franco_proc_a.json",
-   "couleur_agent": "blanc",
-   "couleur_deduite_des_faits": "vert",
+   "fichier_source": "pass2/ext_83_textes_officiels.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
    "groupe": "Afrique",
    "ocde": false,
-   "couleur_hypothese": "jaune",
    "drapeaux": [
     "confiance_faible",
     "verification_incomplete"
@@ -15325,78 +15356,6 @@
    "groupe": "Afrique",
    "ocde": false,
    "drapeaux": [
-    "verification_incomplete"
-   ]
-  },
-  {
-   "code": "SO",
-   "nom": "Somalie",
-   "niveau": "pays",
-   "parent": null,
-   "langues_officielles": [
-    "so",
-    "ar"
-   ],
-   "langues_recherche": [
-    "so",
-    "ar",
-    "en",
-    "it"
-   ],
-   "couleur": "blanc",
-   "confiance": "faible",
-   "faits": {
-    "reconnait_irresponsabilite": true,
-    "issue": "Non punissable pour infirmité mentale totale (CP art. 50) ; l'acquitté pour infirmité est interné en asile d'aliénés au moins 2 ans (5 ans si l'infraction est punie d'au moins 10 ans, 10 ans si peine de mort ou perpétuité), art. 176, mesure ordonnée par le juge dans le jugement (art. 165) ; voie procédurale du CPP non lue.",
-    "qui_declenche_examen": "autorites",
-    "accuse_choisit_moment": false,
-    "stade_decision": "sans_objet",
-    "procedure_remplacement": "aucune",
-    "procedure_remplacement_detail": "Inconnu : le CPP de 1963 n'a pu être lu ; le CP art. 165 fait ordonner la mesure par le « Judge » dans le jugement d'acquittement et l'art. 166 permet un internement provisoire pendant l'instruction ou le procès.",
-    "internement_sans_proces": false,
-    "proces_toujours_ou_sur_demande": false,
-    "inaptitude_a_etre_juge": "Non vérifié (règle du CPP non lue). CP art. 166 : le juge peut interner provisoirement une personne d'esprit dérangé pendant l'instruction ou le procès ; art. 142 : infirmité survenue après condamnation, exécution différée et internement."
-   },
-   "bases_legales": "Penal Code / Codice penale (décret législatif n° 5 du 16/12/1962), art. 47, 50, 51, 142, 164-166, 172-173, 176 (traduction anglaise UNODC, numérotation à confronter à l'original) ; Criminal Procedure Code / Codice di procedura penale (décret législatif n° 1 du 1/6/1963) – articles non lus ; projet de nouveau Code pénal approuvé par le Conseil des ministres le 4/12/2025, non adopté au 26/06/2026",
-   "extrait": "In the case of acquittal for mental infirmity [50 P.C.] […] the offender shall be committed to a lunatic asylum",
-   "note": "Code pénal lu (traduction anglaise) : art. 50 (infirmité totale : non punissable), 165 (mesure ordonnée par le juge dans le jugement), 176 (asile ≥2 ans). CPP de 1963 illisible (scans, site interdit aux robots) : qui constate l'infirmité et à quel stade reste inconnu, jaune ou vert indécidable : blanc. Projet de nouveau Code pénal non adopté (juin 2026). Somaliland/Puntland non vérifiés.",
-   "sources": [
-    {
-     "titre": "Penal Code of Somalia, décret-loi n° 5 du 16/12/1962 (UNODC SHERLOC, traduction anglaise)",
-     "url": "https://sherloc.unodc.org/cld/uploads/res/document/som/1962/penal_code_html/Penal_Code_of_Somalia.pdf",
-     "langue": "en"
-    },
-    {
-     "titre": "ecoi.net – The Criminal Procedure Code, Somalia (1963), fiche de catalogue (texte non lu)",
-     "url": "https://www.ecoi.net/en/document/325122",
-     "langue": "en"
-    },
-    {
-     "titre": "NUSOJ – draft Penal Code (26/06/2026)",
-     "url": "https://nusoj.org/2026/06/26/nusoj-sounds-alarm-over-repressive-draft-penal-code-threatening-media-freedom-and-fundamental-rights/",
-     "langue": "en"
-    },
-    {
-     "titre": "Arab Legislation Portal – Somalia Penal Code 1962",
-     "url": "https://alp.unescwa.org/legislations/somalia-penal-code-1962",
-     "langue": "en"
-    }
-   ],
-   "historique": [
-    {
-     "fichier": "pass1/22_afr_divers.json",
-     "couleur": "blanc",
-     "confiance": "faible",
-     "note": "Données insuffisantes : Code pénal de 1962 et CPP de 1963 non consultables ici (somalilandlaw.com bloqué, refworld inaccessible, WIPO Lex sans ces codes, recherche web épuisée). Impossible de vérifier qui constate l'infirmité mentale, à quel stade, qui ordonne l'internement, ni la pratique au Somaliland et au Puntland."
-    }
-   ],
-   "fichier_source": "pass2/p2_13_afr_mixte.json",
-   "couleur_agent": "blanc",
-   "couleur_deduite_des_faits": "vert",
-   "groupe": "Afrique",
-   "ocde": false,
-   "drapeaux": [
-    "confiance_faible",
     "verification_incomplete"
    ]
   },

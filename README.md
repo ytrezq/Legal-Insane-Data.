@@ -17,11 +17,11 @@ fédérée : la règle, sa base légale, les nuances et le niveau de confiance.
 | Couleur | Signification | Pays | Subdivisions ou territoires |
 |---|---|---:|---:|
 | Vert | **On juge d'abord** : pas de filtre préalable ; le procès ordinaire établit les faits, puis la juridiction de jugement constate l'irresponsabilité et ordonne elle-même la mesure. | 88 | 36 |
-| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 25 | 23 |
+| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 27 | 23 |
 | Violet | **Irresponsabilité d'abord, mais jugement** : voie spéciale, mais un vrai procès précède toujours la mesure, ou a lieu à la demande de l'accusé. | 26 | 3 |
 | Bleu | **L'accusé choisit le moment** : la défense décide si et quand l'état mental est examiné (ex. Canada, arrêt Swain). | 4 | 54 |
 | Noir | **Aucune irresponsabilité reconnue** : toute personne condamnée va en prison. | 0 | 1 |
-| Blanc | **Pas de données / hors cadrage**. | 4 | 2 |
+| Blanc | **Pas de données / hors cadrage**. | 1 | 2 |
 
 Les couleurs s'appliquent dans l'ordre noir, bleu, jaune, violet, vert ; l'altération partielle du discernement
 et le plaider-coupable sont ignorés ; l'aptitude à être jugé est décrite mais ne décide jamais de la couleur. Les
@@ -29,7 +29,7 @@ et le plaider-coupable sont ignorés ; l'aptitude à être jugé est décrite ma
 Argentine, Inde/Kerala, Tanzanie/Zanzibar, Bosnie-Herzégovine).
 
 **Périmètre.** Pays de l'OCDE et de l'UE (hors Turquie et Chypre du Nord, sous contrôle turc), Amériques (hors
-Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée et Sahel sauf Sénégal et Mauritanie), Balkans (hors
+Cuba), Océanie, Afrique (hors Maghreb, Égypte, Érythrée, Somalie et Sahel sauf Sénégal et Mauritanie), Balkans (hors
 Serbie), Ukraine et Moldavie (zones contrôlées), une sélection de pays d'Asie dont la Syrie, le Timor
 oriental et les Émirats arabes unis, et tous les États et territoires insulaires, sauf Cuba, Bahreïn, Singapour
 et Brunei, écartés par choix du cadrage : Maldives, Comores, Jersey, Guernesey, île de Man, territoires
@@ -38,23 +38,23 @@ Montserrat, Turques-et-Caïques, Malouines, Sainte-Hélène), Aruba, Curaçao, S
 Vierges des États-Unis. Un régime autoritaire n'est pas exclu en tant que tel :
 ce qui compte est que, pour le droit commun, la loi sur les droits de la défense reste suivie (hors
 corruption). Là où l'absence d'État de droit fait que la loi n'est qu'indicative, pas une obligation, la
-juridiction est écartée (voir [CONTRIBUTING.md](CONTRIBUTING.md)).
+juridiction est écartée (voir [CONTRIBUTING.md](CONTRIBUTING.md)) ; c'est le cas de l'Arménie, de
+l'Azerbaïdjan et de la Géorgie.
 
-**Encore en blanc faute de texte de procédure lisible :** Bénin, Guinée, Guinée équatoriale, Somalie,
-Zanzibar et Guernesey. Les infobulles et le JSON donnent
+**Encore en blanc faute de texte de procédure lisible :** Guinée équatoriale, Zanzibar et Guernesey. Les infobulles et le JSON donnent
 l'hypothèse non vérifiée quand il y en a une. Les contributions sont particulièrement bienvenues pour ceux-là.
 
 ## Fichiers
 
 | Chemin | Contenu |
 |---|---|
-| `donnees/irresponsabilite_penale.json` | **Le jeu de données** : 273 entrées avec les faits, les bases légales, un extrait verbatim, des notes, les sources, la confiance, l'historique et les contrôles indépendants ; méthodologie, périmètre, description des champs (`meta.schema`) et règles de contribution. |
+| `donnees/irresponsabilite_penale.json` | **Le jeu de données** : 272 entrées avec les faits, les bases légales, un extrait verbatim, des notes, les sources, la confiance, l'historique et les contrôles indépendants ; méthodologie, périmètre, description des champs (`meta.schema`) et règles de contribution. |
 | `cartes/irresponsabilite_penale.svg` / `.jpg` | Carte : SVG interactif et JPG de 3740 × 2680 pixels (10 mégapixels). |
 | `outils/` | Validation (`donnees.py`) et génération de la carte (`construire.sh`, Node.js + Python). |
 
 ## Comment les données ont été établies
 
-Le jeu de données a été établi les 28 et 29 octobre 2026 par des agents de recherche d'IA (Claude, d'Anthropic) pour
+Le jeu de données a été établi du 28 octobre au 1er novembre 2026 par des agents de recherche d'IA (Claude, d'Anthropic) pour
 le compte du propriétaire du dépôt. Les codes pénaux, codes de procédure pénale et la jurisprudence ont été lus
 dans la ou les langues officielles de chaque juridiction ; quand l'outil de lecture tronquait un texte officiel,
 le texte complet a été téléchargé et lu. Une seconde passe a vérifié les entrées fragiles, et
