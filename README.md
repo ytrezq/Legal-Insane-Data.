@@ -18,11 +18,11 @@ the rule, its legal basis, nuances and the confidence level.
 | Colour | Meaning | Countries | Subdivisions or territories |
 |---|---|---:|---:|
 | Green | **Judge first**: no pretrial gate; the ordinary trial establishes the facts, then the trial court finds the accused not responsible and orders the measure itself. | 88 | 36 |
-| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 27 | 23 |
+| Yellow | **Non-responsibility first, no real trial**: mental state examined before any trial; dismissal, or a reduced procedure replacing the trial (e.g. France since 2008). | 28 | 23 |
 | Purple | **Non-responsibility first, but a trial**: special track, but a real trial always precedes the measure, or takes place at the accused's request. | 26 | 3 |
 | Blue | **The accused chooses the timing**: the defence decides whether and when mental state is examined (e.g. Canada, R. v. Swain). | 4 | 54 |
 | Black | **No non-responsibility recognised**: every convicted person goes to prison. | 0 | 1 |
-| White | **No data / outside the scope**. | 1 | 2 |
+| White | **No data / outside the scope**. | 0 | 2 |
 
 Colours are applied in the order black, blue, yellow, purple, green; diminished responsibility and plea
 bargaining are ignored; fitness to stand trial is described but never decides the colour. Federal countries are
@@ -42,7 +42,7 @@ the rights of the defence is still followed (corruption aside). Where the lack o
 only a hint rather than a requirement, the jurisdiction is left out (see [CONTRIBUTING.md](CONTRIBUTING.md)); this
 is the case of Armenia, Azerbaijan and Georgia.
 
-**Still white for lack of a readable procedural text:** Equatorial Guinea, Zanzibar and Guernsey. The tooltips and the JSON give the
+**Still white for lack of a readable procedural text:** Zanzibar and Guernsey. The tooltips and the JSON give the
 unverified hypothesis when there is one. Contributions are especially welcome there.
 
 ## Files
