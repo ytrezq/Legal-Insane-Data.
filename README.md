@@ -16,9 +16,9 @@ fédérée : la règle, sa base légale, les nuances et le niveau de confiance.
 
 | Couleur | Signification | Pays | Subdivisions ou territoires |
 |---|---|---:|---:|
-| Vert | **On juge d'abord** : pas de filtre préalable ; le procès ordinaire établit les faits, puis la juridiction de jugement constate l'irresponsabilité et ordonne elle-même la mesure. | 88 | 36 |
-| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 28 | 23 |
-| Violet | **Irresponsabilité d'abord, mais jugement** : voie spéciale, mais un vrai procès précède toujours la mesure, ou a lieu à la demande de l'accusé. | 26 | 3 |
+| Vert | **On juge d'abord** : pas de filtre préalable ; le procès ordinaire établit les faits, puis la juridiction de jugement constate l'irresponsabilité et ordonne elle-même la mesure. | 90 | 36 |
+| Jaune | **Irresponsabilité d'abord, sans vrai procès** : état mental examiné avant tout procès ; non-lieu, ou procédure amoindrie qui remplace le procès (France depuis 2008). | 29 | 23 |
+| Violet | **Irresponsabilité d'abord, mais jugement** : voie spéciale, mais un vrai procès précède toujours la mesure, ou a lieu à la demande de l'accusé. | 27 | 3 |
 | Bleu | **L'accusé choisit le moment** : la défense décide si et quand l'état mental est examiné (ex. Canada, arrêt Swain). | 4 | 54 |
 | Noir | **Aucune irresponsabilité reconnue** : toute personne condamnée va en prison. | 0 | 1 |
 | Blanc | **Pas de données / hors cadrage**. | 0 | 2 |
@@ -35,7 +35,10 @@ oriental et les Émirats arabes unis, et tous les États et territoires insulair
 et Brunei, écartés par choix du cadrage : Maldives, Comores, Jersey, Guernesey, île de Man, territoires
 britanniques des Caraïbes et de l'Atlantique (Bermudes, Caïmans, Îles Vierges britanniques, Anguilla,
 Montserrat, Turques-et-Caïques, Malouines, Sainte-Hélène), Aruba, Curaçao, Saint-Martin néerlandais et Îles
-Vierges des États-Unis. Un régime autoritaire n'est pas exclu en tant que tel :
+Vierges des États-Unis. Les micro-États d'Europe dotés de leurs propres juridictions pénales sont inclus : Andorre,
+le Liechtenstein, Monaco et Saint-Marin ; le Vatican est écarté, car il n'a pas de prison (ses condamnés purgent
+leur peine en Italie) et l'Italie y poursuit les délits à la demande du Saint-Siège (Traité du Latran, art. 22).
+Un régime autoritaire n'est pas exclu en tant que tel :
 ce qui compte est que, pour le droit commun, la loi sur les droits de la défense reste suivie (hors
 corruption). Là où l'absence d'État de droit fait que la loi n'est qu'indicative, pas une obligation, la
 juridiction est écartée (voir [CONTRIBUTING.md](CONTRIBUTING.md)) ; c'est le cas de l'Arménie, de
@@ -48,7 +51,7 @@ l'hypothèse non vérifiée quand il y en a une. Les contributions sont particul
 
 | Chemin | Contenu |
 |---|---|
-| `donnees/irresponsabilite_penale.json` | **Le jeu de données** : 272 entrées avec les faits, les bases légales, un extrait verbatim, des notes, les sources, la confiance, l'historique et les contrôles indépendants ; méthodologie, périmètre, description des champs (`meta.schema`) et règles de contribution. |
+| `donnees/irresponsabilite_penale.json` | **Le jeu de données** : 276 entrées avec les faits, les bases légales, un extrait verbatim, des notes, les sources, la confiance, l'historique et les contrôles indépendants ; méthodologie, périmètre, description des champs (`meta.schema`) et règles de contribution. |
 | `cartes/irresponsabilite_penale.svg` / `.jpg` | Carte : SVG interactif et JPG de 3740 × 2680 pixels (10 mégapixels). |
 | `outils/` | Validation (`donnees.py`) et génération de la carte (`construire.sh`, Node.js + Python). |
 

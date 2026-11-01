@@ -2,7 +2,7 @@
  "titre": "Abolition totale du discernement : juger d'abord, ou établir l'irresponsabilité d'abord ?",
  "description": "Carte du monde en projection de Mollweide classant les droits pénaux selon le sort procédural d'un accusé dont le discernement était totalement aboli par un trouble mental au moment des faits : on juge d'abord (vert), irresponsabilité établie d'abord sans vrai procès (jaune), irresponsabilité établie d'abord mais jugement (violet), l'accusé choisit le moment de l'examen (bleu), aucune irresponsabilité reconnue (noir), pas de données ou hors cadrage (blanc).",
  "sous_titre": "Crime grave (ex. homicide), discernement totalement aboli au moment des faits · altération partielle et plaider-coupable ignorés · droit en vigueur au 28 octobre 2026",
- "sous_titre_2": "Périmètre : OCDE et UE, Amériques, Océanie, Afrique, Balkans, Ukraine et Moldavie (zones contrôlées), Asie (sélection), États et territoires insulaires ; exclusions en blanc (voir la légende)",
+ "sous_titre_2": "Périmètre : OCDE et UE, Amériques, Océanie, Afrique, Balkans, Ukraine et Moldavie (zones contrôlées), Asie (sélection), États et territoires insulaires, micro-États d'Europe ; exclusions en blanc (voir la légende)",
  "legende_reperes": "Cercle : État trop petit pour être visible à cette échelle (même couleur que sur la carte). Survol d'un pays : base légale, nuances, confiance.",
  "pied": [
   "Méthode : recherche juridique dans la langue officielle de chaque pays (codes pénaux, codes de procédure, jurisprudence) par des agents, seconde passe de vérification des entrées faibles, puis contrôle indépendant des entrées à fort enjeu. Sources, extraits et confiance de chaque entrée : fichier JSON associé.",
@@ -18,7 +18,7 @@
     "constate l'irresponsabilité et ordonne elle-même la mesure de soins ou de sûreté."
    ],
    "definition": "Aucune porte d'entrée préalable : l'affaire va à un procès ordinaire ; la juridiction de jugement établit d'abord les faits, puis statue sur l'irresponsabilité (acquittement, exemption, verdict spécial) et ordonne elle-même la mesure. L'expertise psychiatrique est ordonnée par les autorités ou le tribunal, non au choix de l'accusé.",
-   "n_pays": 88,
+   "n_pays": 90,
    "n_subdivisions": 36
   },
   "jaune": {
@@ -29,7 +29,7 @@
     "(France depuis 2008 : audience devant la chambre de l'instruction). Procès seulement si l'accusé est jugé responsable."
    ],
    "definition": "L'état mental au moment des faits est examiné pendant la phase préparatoire ; si le discernement était aboli, l'affaire se termine sans vrai procès, soit par un non-lieu ou une décision de non-renvoi, soit par une procédure amoindrie qui remplace le procès (audience devant une juridiction d'instruction, chambre du conseil, tribunal de soins non public, procédure écrite ou simplifiée, standard de preuve réduit, absence de l'accusé comme règle). La personne peut néanmoins être internée. Un procès n'a lieu que si elle est jugée responsable.",
-   "n_pays": 28,
+   "n_pays": 29,
    "n_subdivisions": 23
   },
   "violet": {
@@ -40,7 +40,7 @@
     "le juge du fond, mêmes preuves) a toujours lieu avant la mesure, ou à la demande de l'accusé."
    ],
    "definition": "L'irresponsabilité est examinée d'abord et détourne l'affaire vers une procédure spéciale, mais la juridiction de jugement tient une vraie audience de fond avec les garanties du procès pénal ordinaire (débat oral contradictoire, administration complète de la preuve des faits, même standard de preuve) avant toute mesure, ou l'accusé peut obtenir un procès complet sur demande malgré l'abolition de son discernement.",
-   "n_pays": 26,
+   "n_pays": 27,
    "n_subdivisions": 3
   },
   "bleu": {
@@ -70,8 +70,8 @@
    "couleur": "#ffffff",
    "legende": [
     "Données insuffisantes (texte de procédure introuvable ou illisible), pays et zones écartés du cadrage (Maghreb, Égypte, Sahel hors Sénégal",
-    "et Mauritanie, Érythrée, Somalie, Cuba, Turquie, Serbie, Caucase du Sud, Bahreïn, Singapour, Brunei ; tirets : Chypre du Nord,",
-    "Ukraine occupée, Transnistrie), pays non étudiés."
+    "et Mauritanie, Érythrée, Somalie, Cuba, Turquie, Serbie, Caucase du Sud, Bahreïn, Singapour, Brunei, Vatican ; tirets :",
+    "Chypre du Nord, Ukraine occupée, Transnistrie), pays non étudiés."
    ],
    "definition": "Données fiables insuffisantes pour classer, pays écartés du périmètre par choix du cadrage (absence d'État de droit : la loi n'y est qu'indicative, pas une obligation à suivre), ou pays et territoires non étudiés.",
    "n_pays": 0,
@@ -280,6 +280,12 @@
     "CW",
     "SX",
     "VI"
+   ],
+   "europe_micro_etats": [
+    "AD",
+    "LI",
+    "MC",
+    "SM"
    ]
   },
   "exclus": [
@@ -470,9 +476,14 @@
     "code": "GE",
     "nom": "Géorgie",
     "raison": "Caucase du Sud : écarté du périmètre par choix du cadrage (critère de l'État de droit : en droit commun, la loi n'y est jugée qu'indicative, pas une obligation)"
+   },
+   {
+    "code": "VA",
+    "nom": "Vatican",
+    "raison": "Europe, micro-État : écarté du périmètre, la justice pénale relevant en partie de l'Italie (pas de prison : les condamnés purgent leur peine en Italie, qui poursuit aussi, à la demande du Saint-Siège, les délits commis au Vatican ; Traité du Latran, art. 22)"
    }
   ],
-  "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie, Syrie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie, Philippines et Timor oriental ; les États et territoires insulaires sont tous inclus sauf Cuba, Bahreïn, Singapour et Brunei, écartés) sont laissés en blanc.",
+  "hors_perimetre": "Tous les autres pays et territoires (notamment Chine continentale, Russie et autres pays d'Europe de l'Est hors Balkans, Ukraine et Moldavie, Asie centrale hors Kazakhstan, Moyen-Orient hors Israël, Jordanie, Syrie et Émirats arabes unis, Asie du Sud-Est hors Indonésie, Thaïlande, Malaisie, Philippines et Timor oriental ; les États et territoires insulaires sont tous inclus sauf Cuba, Bahreïn, Singapour et Brunei, de même que les micro-États d'Europe sauf le Vatican, ces exceptions étant écartées) sont laissés en blanc.",
   "marqueurs": {
    "TV": [
     179.2,
@@ -687,11 +698,12 @@
    "extension_29_10_quater": "Compléments du 29/10/2026 (23 h) : les 9 dernières requêtes Legal Data Hunter accordées par l'utilisateur (20 au total) ont servi, une à une et sans agent, aux juridictions restées blanches : Malouines (vert, CPEO 2014 s. 765-766), Djibouti (jaune, CPP art. 72, 74, 184 et 220) et Soudan du Sud (vert, CCPA 2008 s. 206-207) classés ; pour le Bénin et la Somalie, les textes décisifs ne figurent pas dans Legal Data Hunter.",
    "extension_01_11": "Compléments du 1/11/2026 : Legal Data Hunter (9 requêtes, sans agent) n'indexe aucun texte décisif pour les juridictions restées blanches ; les textes officiels complets ont alors été téléchargés et lus : Guinée (CPP 2016, PDF de la Cour suprême, reprise de la réforme française de 2008 : jaune) et Bénin (CPP 2012, CP 2018 : non-lieu, jaune, confiance faible). À la demande de l'utilisateur, la Somalie, l'Arménie, l'Azerbaïdjan et la Géorgie sont écartées du périmètre (critère de l'État de droit).",
    "extension_01_11_bis": "Compléments du 1/11/2026 (8 h) : à la demande de l'utilisateur (aucun pays côtier en blanc de la Mauritanie à l'Angola), la Guinée équatoriale est classée d'après le Code pénal de 2022 (édition du Boletín Oficial del Estado, copie numérisée lue par reconnaissance de caractères) et la Ley de Enjuiciamiento Criminal espagnole de 1882, en vigueur en vertu du décret-loi 4/1980 (sobreseimiento libre de l'art. 637.3) : jaune, confiance faible. La recherche sur Internet a suffi, sans Legal Data Hunter.",
+   "extension_01_11_ter": "Compléments du 1/11/2026 (9 h) : à la demande de l'utilisateur, micro-États d'Europe. Vérification préalable : Monaco, Andorre, Saint-Marin et le Liechtenstein ont leurs propres juridictions pénales (le Liechtenstein peut placer des condamnés dans un établissement étranger, un traité avec l'Autriche organisant l'hébergement de détenus) ; le Vatican, sans prison (peines purgées en Italie, poursuites confiées à l'Italie à la demande du Saint-Siège, Traité du Latran, art. 22), est écarté. Lectures : Legal Data Hunter (10 requêtes, sans agent, jusqu'à sa limite quotidienne : Monaco, Code pénal d'Andorre), puis textes officiels : Monaco jaune (non-lieu, CP art. 44, CPP art. 215 et 241), Andorre vert (sentence avec internement, pratique de 2022), Saint-Marin vert (confiance faible) et Liechtenstein violet (procédure d'internement de modèle autrichien, StPO §§ 340-344).",
    "edition_anglaise": "Une édition anglaise, traduite le 28/10/2026 à partir de celle-ci, est tenue sur la branche main du dépôt pour les contributions internationales ; les deux éditions évoluent séparément."
   },
   "date": "2026-10-28",
   "projection": "Mollweide",
-  "nb_entrees": 272,
+  "nb_entrees": 276,
   "contribuer": [
    "Voir CONTRIBUTING.md. Les pull requests ne modifient que le JSON (donnees/irresponsabilite_penale.json) ; les cartes en sont régénérées.",
    "Une couleur autre que blanc suppose d'avoir lu le mécanisme procédural décisif (qui statue, à quel stade, dans quel type d'audience) dans une source primaire (loi, décision) ou une doctrine qui la cite ; sinon l'entrée reste blanche avec une couleur_hypothese.",
@@ -732,9 +744,9 @@
  },
  "synthese": {
   "pays": {
-   "vert": 88,
-   "jaune": 28,
-   "violet": 26,
+   "vert": 90,
+   "jaune": 29,
+   "violet": 27,
    "bleu": 4,
    "noir": 0,
    "blanc": 0
@@ -756,6 +768,7 @@
   ],
   "codes_par_couleur": {
    "vert": [
+    "AD",
     "AG",
     "AI",
     "AO",
@@ -857,6 +870,7 @@
     "SE",
     "SH",
     "SL",
+    "SM",
     "SN",
     "SR",
     "SS",
@@ -926,6 +940,7 @@
     "KM",
     "LU",
     "LV",
+    "MC",
     "MG",
     "MR",
     "MT",
@@ -956,6 +971,7 @@
     "HN",
     "HR",
     "KZ",
+    "LI",
     "LT",
     "MD",
     "ME",
@@ -1041,9 +1057,9 @@
    ]
   },
   "confiance": {
-   "élevée": 81,
-   "moyenne": 155,
-   "faible": 36
+   "élevée": 82,
+   "moyenne": 157,
+   "faible": 37
   }
  },
  "cas_a_verifier": [
@@ -1879,6 +1895,16 @@
    "couleur": "vert",
    "confiance": "élevée",
    "drapeaux": [
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "SM",
+   "nom": "Saint-Marin",
+   "couleur": "vert",
+   "confiance": "faible",
+   "drapeaux": [
+    "confiance_faible",
     "verification_incomplete"
    ]
   }
@@ -20535,6 +20561,262 @@
    "couleur_deduite_des_faits": "vert",
    "groupe": "Territoires insulaires",
    "ocde": true,
+   "drapeaux": []
+  },
+  {
+   "code": "MC",
+   "nom": "Monaco",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "fr"
+   ],
+   "langues_recherche": [
+    "fr"
+   ],
+   "couleur": "jaune",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Ordonnance du juge d'instruction (CPP art. 215) ou arrêt de la chambre du conseil de la cour d'appel (art. 241) déclarant qu'il n'y a pas lieu de suivre, puisqu'il n'y a ni crime ni délit lorsque l'auteur était en état de démence au temps de l'action (CP art. 44) ; placement psychiatrique éventuel hors procédure pénale, par ordonnance du président du tribunal de première instance saisi par le procureur général ou par décision du ministre d'État (loi n° 1.039) ; sans instruction, en matière correctionnelle, relaxe par le tribunal correctionnel",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "phase_preparatoire",
+    "procedure_remplacement": "non_lieu_simple",
+    "procedure_remplacement_detail": "S'il estime que les faits ne constituent ni crime, ni délit, ni contravention, le juge d'instruction déclare par ordonnance qu'il n'y a pas lieu de suivre (art. 215) ; s'il estime que le fait constitue un crime, il transmet le dossier à la chambre du conseil de la cour d'appel (art. 223), qui déclare de même qu'il n'y a pas lieu de suivre (art. 241) ou renvoie devant le tribunal criminel (art. 244).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": false,
+    "inaptitude_a_etre_juge": "Aucune disposition du Code de procédure pénale sur l'état mental de l'inculpé au moment du procès (recherche par mots-clés : démence, état mental, aliéné, trouble mental, irresponsabilité : aucun résultat)."
+   },
+   "bases_legales": "Code pénal art. 44 (démence au temps de l'action : ni crime ni délit) ; Code de procédure pénale (version du 12/02/2022) art. 25 (tribunal criminel), 215 (ordonnance du juge d'instruction : pas lieu de suivre), 223 (transmission en matière criminelle), 241 (chambre du conseil de la cour d'appel : pas lieu de suivre), 244 (renvoi devant le tribunal criminel), articles que la loi n° 1.534 du 9 décembre 2022 ne modifie pas ; loi n° 1.039 du 26 juin 1981 concernant le placement et la protection des malades mentaux, art. 1er et suivants",
+   "extrait": "les faits ne constituent ni crime, ni délit, ni contravention, […] il déclare par une ordonnance qu'il n'y a pas lieu de suivre",
+   "note": "Lecture combinée : il n'y a ni crime ni délit si l'auteur était en état de démence au temps de l'action (CP art. 44, appliqué en 2014 par le tribunal correctionnel : relaxe) ; le juge d'instruction (CPP art. 215) ou, en matière criminelle, la chambre du conseil de la cour d'appel (art. 241) déclare alors qu'il n'y a pas lieu de suivre. Placement psychiatrique hors procès pénal (loi n° 1.039).",
+   "sources": [
+    {
+     "titre": "Code pénal de Monaco, art. 44 (LégiMonaco, version du 02/01/2021), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/code/code-penal@2021.01.02",
+     "langue": "fr"
+    },
+    {
+     "titre": "Code de procédure pénale de Monaco, art. 25, 215, 223, 241, 244 (LégiMonaco, version du 12/02/2022), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/code/code-procedure-penale@2022.02.12",
+     "langue": "fr"
+    },
+    {
+     "titre": "Loi n° 1.534 du 9 décembre 2022 modifiant certaines dispositions du Code pénal et du Code de procédure pénale relatives à l'instruction (liste des articles modifiés)",
+     "url": "https://legimonaco.mc/tnc/loi/2022/12-09-1.534@2022.12.17",
+     "langue": "fr"
+    },
+    {
+     "titre": "Loi n° 1.039 du 26 juin 1981 concernant le placement et la protection des malades mentaux (version du 27/06/2020), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/tnc/loi/1981/06-26-1.039@2020.06.27",
+     "langue": "fr"
+    },
+    {
+     "titre": "Tribunal correctionnel, 18 juillet 2014, Ministère public c/ J. CA. (démence, schizophrénie : relaxe), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/jurisprudence/tribunal-correctionnel/2014/07-18-12437",
+     "langue": "fr"
+    },
+    {
+     "titre": "Tribunal correctionnel, 24 juin 2014, Ministère public c/ m. A (démence : cause d'irresponsabilité), via Legal Data Hunter",
+     "url": "https://legimonaco.mc/jurisprudence/tribunal-correctionnel/2014/06-24-12371",
+     "langue": "fr"
+    },
+    {
+     "titre": "CPT/Inf (2013) 39 : rapport au Gouvernement de Monaco (maison d'arrêt : prévenus et condamnés ; transfert de patients vers la France selon la convention de voisinage de 1963)",
+     "url": "https://rm.coe.int/16806975de",
+     "langue": "fr"
+    }
+   ],
+   "fichier_source": "pass2/ext_85_micro_etats.json",
+   "couleur_agent": "jaune",
+   "couleur_deduite_des_faits": "jaune",
+   "groupe": "Europe (micro-États)",
+   "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "AD",
+   "nom": "Andorre",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "ca"
+   ],
+   "langues_recherche": [
+    "ca"
+   ],
+   "couleur": "vert",
+   "confiance": "moyenne",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Sentence du Tribunal de Corts, après vista oral, acquittant l'accusé exempté de responsabilité pénale (CP art. 27.4 : anomalie ou altération mentale) et lui imposant l'internement en centre psychiatrique, dont la sentence fixe la durée maximale (art. 72-74) ; ainsi en décembre 2022 pour un assassinat (internement de 25 ans au plus, confirmé par le Tribunal Superior en 2023)",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune pour le scénario de référence : la mesure de sûreté suppose que la sentence constate que le sujet a commis un fait constitutif d'infraction (CP art. 72), donc un judici oral ordinaire. Le tribunal peut aussi prononcer un sobreseïment définitif quand les processats apparaissent exempts de responsabilité pénale (CPP art. 125-127), sans aucune mesure.",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Sobreseïment provisoire lorsque, après les faits, survient la démence de l'encausat ou une affection physique grave qui l'empêche de comparaître et d'exercer sa défense, jusqu'à ce qu'il recouvre la santé (CPP art. 128.3) ; pas de procès des faits."
+   },
+   "bases_legales": "Codi penal (Llei 9/2005 qualificada ; textes refondus de 2014 et 2015) art. 27.4 (exemption : infraction commise sans pouvoir comprendre l'illicéité du fait ou agir selon cette compréhension, en raison d'une anomalie ou altération mentale), 72 (mesures de sûreté appliquées par le tribunal si la sentence constate un fait constitutif d'infraction et un pronostic de dangerosité), 73-74 (internement en centre psychiatrique de l'exempté, durée maximale fixée dans la sentence) ; Codi de procediment penal (texte refondu publié au BOPA du 22/02/2006) art. 125 (choix du tribunal entre judici oral et sobreseïment), 126-128 (sobreseïment définitif ou provisoire), 130",
+   "extrait": "El tribunal aplica les mesures de seguretat […] sempre que […] la sentència apreciï que el subjecte ha comès un fet constitutiu de delicte.",
+   "note": "Le Tribunal de Corts juge en vista oral l'accusé exempté (CP art. 27.4) : l'internement en centre psychiatrique n'est possible que par la sentence, qui constate le fait et fixe la durée maximale de la mesure (art. 72-74) ; ainsi en 2022 (assassinat : acquittement et internement de 25 ans au plus, confirmés en 2023). Le sobreseïment définitif pour exemption (CPP art. 127.3) exclut toute mesure.",
+   "sources": [
+    {
+     "titre": "Consell General : décret législatif du 26/03/2014 de publication du texte refondu de la Llei 9/2005 qualificada del Codi penal (PDF ; art. 27, 72-74)",
+     "url": "https://www.consellgeneral.ad/ca/arxiu/arxiu-de-lleis-i-textos-aprovats-en-legislatures-anteriors/vi-legislatura-2011-2015/copy_of_lleis-aprovades/decret-legislatiu-del-26-03-2014-de-publicacio-del-text-refos-de-la-llei-9-2005-del-21-de-febrer-qualificada-del-codi-penal/at_download/PDF",
+     "langue": "ca"
+    },
+    {
+     "titre": "BOPA : décret législatif du 29/04/2015 de publication du texte refondu du Codi penal (art. 72-78), via Legal Data Hunter",
+     "url": "https://www.bopa.ad/Documents/Detall?doc=la27038001",
+     "langue": "ca"
+    },
+    {
+     "titre": "BOPA : Llei 9/2005, del 21 de febrer, qualificada del Codi penal (art. 27), via Legal Data Hunter",
+     "url": "https://www.bopa.ad/Documents/Detall?doc=3BE2E",
+     "langue": "ca"
+    },
+    {
+     "titre": "Consell General : décret de publication du texte refondu du Codi de procediment penal (BOPA núm. 15 du 22/02/2006 ; art. 125-130)",
+     "url": "https://www.consellgeneral.ad/fitxers/documents/lleis-1989-2002/text-refos-codi-procediment-penal.pdf",
+     "langue": "ca"
+    },
+    {
+     "titre": "Tribunal Constitucional d'Andorra : aute du 12 juin 2023, causa 2023-36-RE (Tribunal de Corts, décembre 2022 : acquittement pour l'exemption de l'art. 27.4 et internement psychiatrique de 25 ans au plus ; Tribunal Superior, 2 mai 2023)",
+     "url": "https://www.tribunalconstitucional.ad/print/pdf/node/18597",
+     "langue": "ca"
+    }
+   ],
+   "fichier_source": "pass2/ext_85_micro_etats.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Europe (micro-États)",
+   "ocde": false,
+   "drapeaux": []
+  },
+  {
+   "code": "SM",
+   "nom": "Saint-Marin",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "it"
+   ],
+   "langues_recherche": [
+    "it"
+   ],
+   "couleur": "vert",
+   "confiance": "faible",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Sentence de proscioglimento de la personne non imputable (CP art. 9), avec, si elle est dangereuse, la mesure de sûreté de l'hôpital psychiatrique judiciaire (art. 121-122), que le juge n'applique qu'avec la sentence de condamnation ou de proscioglimento (art. 129) et qui peut être exécutée dans un établissement étranger selon les conventions (art. 128)",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_ordinaire",
+    "procedure_remplacement": "aucune",
+    "procedure_remplacement_detail": "Aucune pour le scénario de référence : l'instruction du Giudice Inquirente se termine par un décret fixant l'audience des débats ou par un décret d'archivage (loi n° 93/2008, art. 6, rédaction de la loi n° 24/2022) ; l'archivage, prononcé si les preuves n'offrent pas de fondement légal pour contester au prevenuto sa culpabilité (CPP art. 135), ne permet aucune mesure de sûreté, qui exige une sentence (CP art. 129).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Non vérifié : aucune disposition lue sur l'état mental de l'imputé au moment du procès (pas de texte consolidé du Code de procédure pénale trouvé) ; l'infirmité psychique survenue avant ou pendant l'exécution d'une peine relève du juge, qui ordonne l'hospitalisation (CP art. 139)."
+   },
+   "bases_legales": "Codice penale (loi n° 17 du 25 février 1974, texte d'origine) art. 9 (non imputable celui qui, au moment du fait, se trouvait dans un état mental excluant la capacité de comprendre et de vouloir), 11-13 (dangerosité, présumée après proscioglimento pour infirmité mentale), 121-122 (ospedale psichiatrico giudiziario), 128 (exécution à l'étranger selon les conventions), 129 (mesures appliquées avec la sentence de condamnation ou de proscioglimento), 130 (application provisoire), 147 (rédaction de la loi n° 100/2013 : confiscation en cas de proscioglimento pour infirmité mentale) ; Codice di procedura penale art. 135 (archiviazione, rédaction de la loi n° 24 du 2 mars 2022) ; loi n° 93 du 17 juin 2008, art. 6 (rédaction de la loi n° 24/2022)",
+   "extrait": "Le misure di sicurezza sono applicate dal giudice con la sentenza di condanna o di proscioglimento.",
+   "note": "Lecture combinée, sans pratique trouvée : la mesure de sûreté (hôpital psychiatrique judiciaire) n'est appliquée qu'avec la sentence de proscioglimento (CP art. 129), rendue après l'audience des débats ; l'archivage par le Giudice Inquirente (CPP art. 135) n'en permet aucune. Code pénal lu dans sa version de 1974 (modifications ultérieures non vérifiées, sauf l'art. 147).",
+   "sources": [
+    {
+     "titre": "Consiglio Grande e Generale : Legge 25 febbraio 1974 n. 17, emanazione del nuovo codice penale (PDF ; art. 9, 11-13, 121-122, 128-130, 139)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17019121.html",
+     "langue": "it"
+    },
+    {
+     "titre": "Consiglio Grande e Generale : Legge 11 dicembre 1974 n. 86, norme di attuazione del Codice Penale e di riforma della Procedura Penale (PDF)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17019196.html",
+     "langue": "it"
+    },
+    {
+     "titre": "Consiglio Grande e Generale : Legge 2 marzo 2022 n. 24, disposizioni per implementare le garanzie e l'efficienza del processo penale (PDF ; art. 15 et 17 : art. 6 de la loi 93/2008 et art. 135 CPP)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17130840.html",
+     "langue": "it"
+    },
+    {
+     "titre": "Consiglio Grande e Generale : Legge 29 luglio 2013 n. 100, modifiche al Codice Penale ed al Codice di Procedura Penale (PDF ; art. 147 CP)",
+     "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17059556.html",
+     "langue": "it"
+    }
+   ],
+   "fichier_source": "pass2/ext_85_micro_etats.json",
+   "couleur_agent": "vert",
+   "couleur_deduite_des_faits": "vert",
+   "groupe": "Europe (micro-États)",
+   "ocde": false,
+   "drapeaux": [
+    "confiance_faible",
+    "verification_incomplete"
+   ]
+  },
+  {
+   "code": "LI",
+   "nom": "Liechtenstein",
+   "niveau": "pays",
+   "parent": null,
+   "langues_officielles": [
+    "de"
+   ],
+   "langues_recherche": [
+    "de"
+   ],
+   "couleur": "violet",
+   "confiance": "élevée",
+   "faits": {
+    "reconnait_irresponsabilite": true,
+    "issue": "Jugement (Urteil) du Kriminalgericht ordonnant, sans peine, l'internement dans un forensisch-therapeutisches Zentrum (StGB § 21 Abs. 1), sur Antrag auf Unterbringung de l'accusateur et après audience publique (öffentliche Schlussverhandlung)",
+    "qui_declenche_examen": "autorites",
+    "accuse_choisit_moment": false,
+    "stade_decision": "proces_special",
+    "procedure_remplacement": "vrai_proces_special",
+    "procedure_remplacement_detail": "Si les conditions du § 21 Abs. 1 StGB paraissent réunies, l'accusateur dépose un Antrag auf Unterbringung soumis aux règles de l'acte d'accusation, précédé d'une instruction avec défenseur et expert psychiatre obligatoires (StPO § 340) ; le Kriminalgericht statue par jugement après audience publique menée selon les règles ordinaires (§ 341) ; appel possible (§ 343).",
+    "internement_sans_proces": false,
+    "proces_toujours_ou_sur_demande": true,
+    "inaptitude_a_etre_juge": "Pas de règle générale trouvée (recherche par mots-clés) ; en cas de doute sur la raison ou la Zurechnungsfähigkeit, examen par deux médecins (StPO § 87) ; dans la procédure d'internement, audience tenue en l'absence de l'intéressé si son état ne lui permet pas d'y participer (§ 341 Abs. 5)."
+   },
+   "bases_legales": "StGB (LGBl. 1988 Nr. 37, version du 01.08.2026) § 11 (Zurechnungsfähigkeit), § 21 (rédaction de LGBl. 2026 Nr. 172 : internement en forensisch-therapeutisches Zentrum) ; StPO (LGBl. 1988 Nr. 62, version du 01.08.2026) § 87 (examen par deux médecins), §§ 340-344 (procédure d'internement selon § 21 Abs. 1 StGB) ; Kundmachung LGBl. 1996 Nr. 200 (mesures des §§ 21-23 StGB en vigueur le 1.12.1996, une fois l'hébergement assuré)",
+   "extrait": "Das Gericht entscheidet über den Antrag nach öffentlicher Schlussverhandlung, die in sinngemässer Anwendung der Bestimmungen des XIV. und XV. Hauptstückes durchzuführen ist, durch Urteil.",
+   "note": "Modèle autrichien : si les conditions du § 21 Abs. 1 StGB paraissent réunies, l'accusateur dépose un Antrag auf Unterbringung qui vaut acte d'accusation (StPO §§ 340, 344) ; le Kriminalgericht statue par jugement après audience publique, défenseur et expert présents à peine de nullité (§ 341). Les mesures des §§ 21-23 StGB ne sont en vigueur que depuis le 1er décembre 1996.",
+   "sources": [
+    {
+     "titre": "gesetze.li : Strafgesetzbuch (StGB) vom 24. Juni 1987, LGBl. 1988 Nr. 37, Fassung 01.08.2026 (§§ 11, 21)",
+     "url": "https://www.gesetze.li/konso/1988037000",
+     "langue": "de"
+    },
+    {
+     "titre": "gesetze.li : Strafprozessordnung (StPO) vom 18. Oktober 1988, LGBl. 1988 Nr. 62, Fassung 01.08.2026 (§§ 87, 340-344)",
+     "url": "https://www.gesetze.li/konso/1988062000",
+     "langue": "de"
+    },
+    {
+     "titre": "LGBl. 1996 Nr. 200 : Kundmachung über das Inkrafttreten von Bestimmungen der §§ 21, 22 und 23 StGB",
+     "url": "https://gesetze.li/chrono/pdf/1996200000",
+     "langue": "de"
+    },
+    {
+     "titre": "gesetze.li : Strafvollzugsgesetz (StVG) vom 20. September 2007, art. 8 (placement des condamnés dans un établissement étranger)",
+     "url": "https://www.gesetze.li/konso/pdf/2007295000",
+     "langue": "de"
+    },
+    {
+     "titre": "LGBl. 2025 Nr. 237 : Interpretative Erklärung zum Vertrag zwischen Liechtenstein und Österreich über die Unterbringung von Häftlingen",
+     "url": "https://www.gesetze.li/chrono/pdf/2025237000",
+     "langue": "de"
+    }
+   ],
+   "fichier_source": "pass2/ext_85_micro_etats.json",
+   "couleur_agent": "violet",
+   "couleur_deduite_des_faits": "violet",
+   "groupe": "Europe (micro-États)",
+   "ocde": false,
    "drapeaux": []
   }
  ]
